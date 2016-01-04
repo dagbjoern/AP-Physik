@@ -1,0 +1,20 @@
+\section{Fehlerrechnung}
+ \label{fehlerrechnung}
+Bei dem Versuch entstehen Messfehler,
+diese gilt es in Folgenden zu erörtern.
+Bei der Messung weicht die Kapazität des Koppelkondensators $C_k$ laut Gerät um $\pm 20 \%$ ab. Für die Werte $C,L $ und $C_Sp$ gilt
+ein geschätzte Fehler von$ \pm 5 \% $.
+Bei der Messung der Frequenz bei jeder Messreihe
+wurde diese mit Hilfe des Ozilloskopes gemessen,
+da diese nicht expliziet am Generator abgelesenwerden kann.
+Dadurch entsteht eine Fehler, da die Frequenzen
+nur durch positionieren von Cursorn bestimmt werden
+die nicht genau einzustellen sind. Dieser Fehler beträgt $\pm 5 kHz$
+\\
+Der Fehler einzelnen Frequenzen, die aus der Theorie berechnet werden, wird mit der Gauß´schen Fehlerfortpflanzung
+berechnenet \eqref{eqn:gaus}.
+\begin{equation}
+\Delta f= \sqrt{\left(\frac{\partial f}{\partial x}\Delta x \right)^{2} + \left( \frac{\partial f}{\partial y}\Delta y\right)^2...}\label{eqn:gaus}
+\end{equation}
+\\
+Dies übernimmt das Programm Python mit Hilfe uncertainties.

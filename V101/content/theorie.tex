@@ -1,0 +1,51 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+Die Charakteristika von Rotationsbewegubgen sind das Drehmoment,
+die Winkelbeschleunigung und das Trägheitsmoment.
+Das Gesamtträgheitsmoment, mit den Masseelementen $m_{\mathrm{i}}$ und dem Abstand $r_{\mathrm{i}}$
+der Massen zur Drehachse, egibt sich zu:
+\begin{equation}
+  I=\sum_{\mathrm{i}} r_{\mathrm{i}}^2\cdot m_{\mathrm{i}}.
+\end{equation}
+Dementsprechend gilt für infinitesimale Massen $dm$:
+\begin{equation}
+  I=\int r^2dm.
+\end{equation}
+Entspricht die Drehachse nicht einer der Schwepunktsachsen des Körpers, sondern
+ist paralell um den Abstand $a$ versetzt, so kann das Trägheitsmoment mit dem Satzt
+von Steiner berechnet werden. Dieser setzt sich zusammen aus dem Trägheitsmoment $I_{\mathrm{s}}$
+bezüglich der Drechachse durch den Schwerpunkt, der Gesammtmasse $m$ und dem Abstand $a$
+zu:
+\begin{equation}
+  I=I_{\mathrm{s}}+m\cdot a^2.
+\end{equation}
+Für das Drehmoment für einen drehbaren Körper gilt:
+\begin{equation}
+ \vec{M}=\vec{F}\times\vec{r}.
+\end{equation}
+$\vec{F}$ ist dabei die greifende Kraft im Abstand $\vec{r}$ zur Achse.
+Ist das System schwingungsfähig, so wirkt ein rücktreibendes Drehmoment
+der Auslenkung um $\varphi$ entgegen. Dies führt zu harmonischen Schwingungen
+mit der Schwingdauer:
+\begin{equation}
+  T=2\pi\sqrt{\frac{I_{\mathrm{{ges}}}}{D}}.
+\end{equation}
+Für $D$ die Winkelrichtgröße gilt die Beziehung $M=D\cdot\varphi$, hieraus lässt
+sich, durch Umstellen, das Trägheitsmoment berechnen.
+Es gilt:
+\begin{equation}
+ I=\frac{T^2 D}{4\pi^2}-I_{\mathrm{D}}.\label{eqn:I}
+\end{equation}
+$I_{\mathrm{D}}$ ist das Trägheitsmoment der Drillachse und $I_{\mathrm{ges}}$ setzt sich in diesm Versuch zusammen aus dem Trägheitsmoment des Körpers und dem der Drillachse.
+Die Winkelrichtgröße bestimmt sich nach:
+\begin{equation}
+  D=\bigl|\frac{F\cdot r}{\varphi}\bigr|. \label{eqn:D}
+\end{equation}\\
+Der Betrag darf verwendet werden, da die Winkelrichtgröße immer positiv ist.
+Beispiele für Trägheitsmomente verschiedener Körper:
+\begin{align}
+  I_{\mathrm{Kugel}}&=\frac{2}{5} m (\frac{D}{2})^2.\label{eqn:Kugel}\\
+  I_{\mathrm{Zylinder\parallel}}&=\frac{m(\frac{D}{2})^2}{2}\label{eqn:zs}.\\
+  I_{\mathrm{Zylinder\bot\parallel}}&=m\left(\frac{(\frac{D}{2})^2}{4}+\frac{h^2}{12}\right).\label{eqn:zl}
+\end{align}

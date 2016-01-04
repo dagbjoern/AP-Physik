@@ -1,0 +1,20 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
+\contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Bestimmung der Winkelrichtgröße $D$ und des Eigenträgheitsmomentes $I_{\mathrm {D}}$ der Drillachse}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Statistische Methode}{5}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Dynamische Methode}{5}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Trägheitsmoment von geometrischen Figuren}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Trägheitsmoment einer Puppe}{5}{subsection.2.3}
+\contentsline {section}{\numberline {3}Fehlerrechnung}{5}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Statische Methode}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Dynamische Methode}{7}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Trägheitsmoment von geometrischen Figuren}{9}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Zylinder}{9}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Kugel}{9}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}Trägheitsmoment einer Puppe}{10}{subsection.4.4}
+\contentsline {section}{\numberline {5}Diskussion}{12}{section.5}
+\contentsline {section}{\nonumberline Literatur}{12}{section*.11}

@@ -1,0 +1,7 @@
+# Fdb version 3
+["pdflatex"] 1447256571 "main.tex" "build/main.pdf" "main" 1447256571
+  "build/main.aux" 1447255970 9 a94a2480d3289e625eea47cd1b285758 ""
+  "main.tex" 1444991795 361 a43207f7795b1a579fd71871331c005a ""
+  (generated)
+  "build/main.pdf"
+  "build/main.log"
