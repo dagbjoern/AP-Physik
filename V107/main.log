@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.10.13)  5 JAN 2016 00:51
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.10.13)  5 JAN 2016 11:20
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -322,7 +322,7 @@ Lua-only attribute luaotfload@cursbase = 6
 Lua-only attribute luaotfload@curscurs = 7
 Lua-only attribute luaotfload@cursdone = 8
 Lua-only attribute luaotfload@state = 9
-luaotfload | main : fontloader loaded in 0.131 seconds
+luaotfload | main : fontloader loaded in 0.125 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
@@ -2346,20 +2346,20 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 \openout4 = main.toc
  [2
 
-] (./content/theorie.tex) (./content/durchfuehrung.tex
-<bild.PNG, id=47, 218.61674pt x 286.671pt>
+] (./content/theorie.tex) (./content/durchfuehrung.tex [3]
+<bild.PNG, id=61, 218.61674pt x 286.671pt>
 File: bild.PNG Graphic file (type png)
  <use bild.PNG>
-Package pdftex.def Info: bild.PNG used on input line 10.
+Package pdftex.def Info: bild.PNG used on input line 11.
 (pdftex.def)             Requested size: 209.12778pt x 274.23431pt.
 )
-(./content/fehlerrechnung.tex [3] [4<./bild.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 9--17
+(./content/fehlerrechnung.tex [4<./bild.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 10--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--24
+Underfull \hbox (badness 10000) in paragraph at lines 20--25
 
  []
 
@@ -2415,17 +2415,16 @@ luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [6] [7] <plot.pd
-f, id=114, 578.16pt x 433.62pt>
+f, id=119, 578.16pt x 433.62pt>
 File: plot.pdf Graphic file (type pdf)
 
 <use plot.pdf>
 Package pdftex.def Info: plot.pdf used on input line 116.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
- [8] [9<./plot.pdf>]) (./content/diskussion.tex)(load luc: C:/texlive/2015/texmf
--var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
+ [8] [9<./plot.pdf>]) (./content/diskussion.tex [10])(load luc: C:/texlive/2015/
+texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 24.
-
-(c:/texlive/2015/texmf-dist/tex/latex/euenc/eu2lmtt.fd
+ (c:/texlive/2015/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-re
 gular.luc)
@@ -2433,7 +2432,6 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
  [11]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
@@ -2446,12 +2444,19 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: C65980B22DF97C5FC545BE6E076D31E8;8237
-(rerunfilecheck)             After:  A7D069AD765CCBDA0FE39F1FC8BA02EA;8237.
-Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 5BFCBEE5A63B4FBE5C7D81589D1B90F0;1034.
+(rerunfilecheck)             Before: 87CCA63A037CCDDFAB11D1D4CA4AA06C;8305
+(rerunfilecheck)             After:  68549D69E322517AE98BAAC9101700AB;8278.
+
+Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `main.toc':
+(rerunfilecheck)             Before: 1E5A23B1B0ABBB681C1D37E7F82F2D4C;1034
+(rerunfilecheck)             After:  91E8F6CD5FCEC11B9F9DD6AF013B7684;1024.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 
@@ -2460,15 +2465,42 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44164 strings out of 494897
+ 44173 strings out of 494897
  100000,1648299 words of node,token memory allocated
  621 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 5 kern, 10 attribute, 80 glue_spec, 10 attr
 ibute_list, 1 action, 1 write nodes
-   avail lists: 1:2,2:7759,3:178,4:1207,5:264,6:2560,7:61,8:16,9:401,10:310,11:1
+   avail lists: 1:2,2:6052,3:155,4:1240,5:208,6:1943,7:61,8:15,9:401,10:232,11:1
  46445 multiletter control sequences out of 65536+600000
- 170 fonts using 39285055 bytes
- 69i,19n,104p,1248b,2661s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 170 fonts using 39284239 bytes
+ 69i,19n,104p,1248b,2071s stack positions out of 5000i,500n,10000p,200000b,100000s
+LuaTeX warning (dest): name{equation.3.15} has been referenced but does not exis
+t, replaced by a fixed one
+
+LuaTeX warning (dest): name{equation.3.14} has been referenced but does not exis
+t, replaced by a fixed one
+
+LuaTeX warning (dest): name{equation.2.7} has been referenced but does not exist
+, replaced by a fixed one
+
+LuaTeX warning (dest): name{subsection.3.5} has been referenced but does not exi
+st, replaced by a fixed one
+
+LuaTeX warning (dest): name{subsection.3.4} has been referenced but does not exi
+st, replaced by a fixed one
+
+LuaTeX warning (dest): name{subsection.3.3} has been referenced but does not exi
+st, replaced by a fixed one
+
+LuaTeX warning (dest): name{subsection.3.2} has been referenced but does not exi
+st, replaced by a fixed one
+
+LuaTeX warning (dest): name{subsection.3.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+LuaTeX warning (dest): name{subsection.2.1} has been referenced but does not exi
+st, replaced by a fixed one
+
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/te
 xlive/2015/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf><c:/tex
 live/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2
@@ -2480,10 +2512,10 @@ ist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/f
 onts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/
 opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/
 public/lm/lmroman12-bold.otf>
-Output written on main.pdf (11 pages, 237950 bytes).
+Output written on main.pdf (11 pages, 238216 bytes).
 
-PDF statistics: 330 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 48 named destinations out of 1000 (max. 131072)
+PDF statistics: 339 PDF objects out of 1000 (max. 8388607)
+ 237 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 131072)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

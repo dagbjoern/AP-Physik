@@ -2,13 +2,13 @@
 \defcounter {refsection}{0}\relax 
 \select@language {german}
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {section}{\numberline {2}Durchführung}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Fehlerrechnung}{5}{subsection.2.1}
-\contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Volumen und Dichte}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Berechnung der Apparatekonstante}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Viskosität bei Temperaturänderung}{8}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Bestimmung der Andradeschen Gleichung}{8}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Reynoldsche Zahl}{10}{subsection.3.5}
-\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
+\contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
+\contentsline {section}{\numberline {3}Fehlerrechnung}{5}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Volumen und Dichte}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Berechnung der Apparatekonstante}{6}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Viskosität bei Temperaturänderung}{8}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Bestimmung der Andradeschen Gleichung}{8}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Reynoldsche Zahl}{10}{subsection.4.5}
+\contentsline {section}{\numberline {5}Diskussion}{10}{section.5}
 \contentsline {section}{\nonumberline Literatur}{11}{section*.6}
