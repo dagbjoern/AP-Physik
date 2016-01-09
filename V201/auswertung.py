@@ -62,8 +62,11 @@ ckz=ck(m_zw,m_z,Tzm,Tzw,Tz)
 ckg=ck(m_gw,m_g,Tgm,Tgw,Tg)
 #ckg=ck(465.18,107.67,295.63,293.40,352.19)
 
+
 ckz=unp.uarray(np.average(ckz),np.std(ckz))
 Tzm=np.average(Tzm)
+print('Abweichung von ckz',ab(noms(ckz),0.23))
+print('Abweichung von ckg',ab(ckg,0.715))
 
 print('ckz',ckz)
 print('ckg',ckg)
