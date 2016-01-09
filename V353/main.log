@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.10.13)  1 DEC 2015 14:58
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.10.13)  8 JAN 2016 14:44
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -311,8 +311,8 @@ Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 )
 Lua module: luaotfload-main 2014/08/10 2.50003 OpenType layout system.(using wri
 te cache: C:/texlive/2015/texmf-var/luatex-cache/generic)(using read cache: C:/t
-exlive/2015/texmf-var/luatex-cache/generic C:/Users/Dag-Björn/.texlive2015/texmf
--var/luatex-cache/generic)
+exlive/2015/texmf-var/luatex-cache/generic C:/Users/Ksenia/.texlive2015/texmf-va
+r/luatex-cache/generic)
 Lua-only attribute luaotfload@kernpair = 1
 Lua-only attribute luaotfload@ligacomp = 2
 Lua-only attribute luaotfload@markbase = 3
@@ -2360,34 +2360,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--14
 File: schaltbild2.PNG Graphic file (type png)
  <use schaltbild2.PNG>
 Package pdftex.def Info: schaltbild2.PNG used on input line 40.
-(pdftex.def)             Requested size: 292.7776pt x 141.5235pt.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 44.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 44.
+(pdftex.def)             Requested size: 209.12778pt x 101.0879pt.
 
 [3] [4<./schaltbild2.PNG>]) (./content/durchfuehrung.tex
-<aufbaua.PNG, id=80, 438.13687pt x 132.495pt>
+<aufbaua.PNG, id=81, 438.13687pt x 132.495pt>
 File: aufbaua.PNG Graphic file (type png)
  <use aufbaua.PNG>
 Package pdftex.def Info: aufbaua.PNG used on input line 8.
 (pdftex.def)             Requested size: 292.7776pt x 88.53868pt.
 
-<aufbaub.PNG, id=84, 365.11406pt x 121.20282pt>
+<aufbaub.PNG, id=85, 365.11406pt x 121.20282pt>
 File: aufbaub.PNG Graphic file (type png)
  <use aufbaub.PNG>
 Package pdftex.def Info: aufbaub.PNG used on input line 19.
 (pdftex.def)             Requested size: 292.7776pt x 97.19354pt.
- [5<./aufbaua.PNG><./aufbaub.PNG>] <aufbaucd.PNG, id=98, 432.11438pt x 148.3040
+ [5<./aufbaua.PNG><./aufbaub.PNG>] <aufbaucd.PNG, id=99, 432.11438pt x 148.3040
 6pt>
 File: aufbaucd.PNG Graphic file (type png)
 
 <use aufbaucd.PNG>
 Package pdftex.def Info: aufbaucd.PNG used on input line 33.
 (pdftex.def)             Requested size: 292.7776pt x 100.4856pt.
- <messungc.PNG, id=102, 318.43968pt x 139.27031pt>
+ <messungc.PNG, id=103, 318.43968pt x 139.27031pt>
 File: messungc.PNG Graphic file (type png)
 
 <use messungc.PNG>
@@ -2395,42 +2389,39 @@ Package pdftex.def Info: messungc.PNG used on input line 41.
 (pdftex.def)             Requested size: 292.7776pt x 128.04735pt.
  [6<./aufbaucd.PNG><./messungc.PNG>])
 (./content/fehlerrechnung.tex) (./content/auswertung.tex
-<MAP001.png, id=118, 240.9pt x 144.54pt>
+<MAP001.png, id=119, 240.9pt x 144.54pt>
 File: MAP001.png Graphic file (type png)
  <use MAP001.png>
-Package pdftex.def Info: MAP001.png used on input line 7.
+Package pdftex.def Info: MAP001.png used on input line 8.
 (pdftex.def)             Requested size: 250.95587pt x 150.57828pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--41
+Underfull \hbox (badness 10000) in paragraph at lines 4--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--41
+Underfull \hbox (badness 10000) in paragraph at lines 4--42
 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7<./MAP001.png>] <a.pdf, id=130, 578.16pt x 433.62pt>
+[7<./MAP001.png>] <a.pdf, id=132, 578.16pt x 433.62pt>
 File: a.pdf Graphic file (type pdf)
  <use a.pdf>
-Package pdftex.def Info: a.pdf used on input line 51.
+Package pdftex.def Info: a.pdf used on input line 52.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.01247pt on input line 53.
+(Font)              scaled to size 7.01247pt on input line 54.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 4.9808pt on input line 53.
+(Font)              scaled to size 4.9808pt on input line 54.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.01224pt on input line 53.
+(Font)              scaled to size 7.01224pt on input line 54.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.98067pt on input line 53.
+(Font)              scaled to size 4.98067pt on input line 54.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
@@ -2439,18 +2430,18 @@ luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8] <b.pdf, id=142, 578.16pt x 433.62pt>
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 58--63
+
+ []
+
+<b.pdf, id=144, 578.16pt x 433.62pt>
 File: b.pdf Graphic file (type pdf)
  <use b.pdf>
-Package pdftex.def Info: b.pdf used on input line 72.
+Package pdftex.def Info: b.pdf used on input line 73.
 (pdftex.def)             Requested size: 418.25555pt x 313.68826pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--117
+Underfull \hbox (badness 10000) in paragraph at lines 64--104
 
  []
 
@@ -2460,92 +2451,91 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9<./a.pdf>] [10<./b.pdf>] [11] <c.pdf, id=258, 578.16pt x 433.62pt>
+[9<./a.pdf>] [10<./b.pdf>] <c.pdf, id=256, 578.16pt x 433.62pt>
 File: c.pdf Graphic file (type pdf)
-
-<use c.pdf>
-Package pdftex.def Info: c.pdf used on input line 124.
+ <use c.pdf>
+Package pdftex.def Info: c.pdf used on input line 112.
 (pdftex.def)             Requested size: 418.25555pt x 313.68826pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12
+[11
 
 <./c.pdf>] <d.pdf, id=321, 578.16pt x 433.62pt>
 File: d.pdf Graphic file (type pdf)
  <use d.pdf>
-Package pdftex.def Info: d.pdf used on input line 165.
-(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
- [13]
+Package pdftex.def Info: d.pdf used on input line 153.
+(pdftex.def)             Requested size: 334.60571pt x 250.9506pt.
+ [12]
 
-LaTeX Warning: Command \textless invalid in math mode on input line 189.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 189.
+LaTeX Warning: Command \textless invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 189.
+LaTeX Warning: Command \textless invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 189.
+LaTeX Warning: Command \textless invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 189.
+LaTeX Warning: Command \textless invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 189.
+LaTeX Warning: Command \textless invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 189.
+LaTeX Warning: Command \textless invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 189.
+LaTeX Warning: Command \textless invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 203.
+LaTeX Warning: Command \textless invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 203.
+LaTeX Warning: Command \textless invalid in math mode on input line 191.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 203.
+LaTeX Warning: Command \textless invalid in math mode on input line 191.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 203.
+LaTeX Warning: Command \textless invalid in math mode on input line 191.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 203.
+LaTeX Warning: Command \textless invalid in math mode on input line 191.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 203.
+LaTeX Warning: Command \textless invalid in math mode on input line 191.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 203.
+LaTeX Warning: Command \textless invalid in math mode on input line 191.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 203.
+LaTeX Warning: Command \textless invalid in math mode on input line 191.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 191.
 
 <MAP007.png, id=331, 240.9pt x 144.54pt>
 File: MAP007.png Graphic file (type png)
  <use MAP007.png>
-Package pdftex.def Info: MAP007.png used on input line 206.
+Package pdftex.def Info: MAP007.png used on input line 194.
 (pdftex.def)             Requested size: 250.95587pt x 150.57828pt.
 
 <MAP006.png, id=332, 240.9pt x 144.54pt>
 File: MAP006.png Graphic file (type png)
  <use MAP006.png>
-Package pdftex.def Info: MAP006.png used on input line 212.
+Package pdftex.def Info: MAP006.png used on input line 200.
 (pdftex.def)             Requested size: 250.95587pt x 150.57828pt.
 
 <MAP005.png, id=333, 240.9pt x 144.54pt>
 File: MAP005.png Graphic file (type png)
  <use MAP005.png>
-Package pdftex.def Info: MAP005.png used on input line 218.
+Package pdftex.def Info: MAP005.png used on input line 206.
 (pdftex.def)             Requested size: 250.95587pt x 150.57828pt.
 )
 (./content/diskussion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 203--1
+Underfull \hbox (badness 10000) in paragraph at lines 191--1
 
  []
 
@@ -2558,19 +2548,31 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14<./d.pdf>] [15<./MAP007.png><./MAP006.png><./MAP005.png>])
+[13<./d.pdf>] [14<./MAP007.png><./MAP006.png><./MAP005.png>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [16
+ [15
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 9EB2C35EEC77023CA9C8CD3E907B454E;13075.
-Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 191FDC12E95CA246566415704F9DACFF;1325.
+
+
+Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `main.aux':
+(rerunfilecheck)             Before: 5E23791437D9E7272403660261682980;13085
+(rerunfilecheck)             After:  753B61A399881BBBA2BA2A2E6AF9EFC4;15860.
+
+Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `main.toc':
+(rerunfilecheck)             Before: D558AEA6895409F677F6B9018BE0C341;1325
+(rerunfilecheck)             After:  97B586B639A126EAEF9101CCC0AE6D57;1707.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2578,14 +2580,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44009 strings out of 494897
+ 44015 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 649 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 20 attribute, 62 glue_spec, 20 att
+ 650 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 20 attribute, 61 glue_spec, 20 att
 ribute_list, 1 write nodes
-   avail lists: 1:2,2:6596,3:213,4:897,5:199,6:2220,7:80,8:17,9:204,10:286,11:1
- 46341 multiletter control sequences out of 65536+600000
- 113 fonts using 24972559 bytes
+   avail lists: 1:2,2:6617,3:218,4:911,5:200,6:2229,7:89,8:17,9:204,10:289,11:1
+ 46344 multiletter control sequences out of 65536+600000
+ 113 fonts using 24972387 bytes
  69i,15n,104p,1248b,2071s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/te
 xlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/20
@@ -2596,10 +2598,10 @@ texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf
 -dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist
 /fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/op
 entype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (16 pages, 228319 bytes).
+Output written on main.pdf (15 pages, 229334 bytes).
 
-PDF statistics: 512 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 65 named destinations out of 1000 (max. 131072)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 521 PDF objects out of 1000 (max. 8388607)
+ 321 compressed objects within 4 object streams
+ 68 named destinations out of 1000 (max. 131072)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

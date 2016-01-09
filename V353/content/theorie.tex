@@ -1,7 +1,7 @@
 \section{Theorie}
 \label{sec:Theorie}
 \subsection{Ziel}
-Ziel des Versuchs 351 ist die Untersuchung von RC-Gliedern.
+Ziel des Versuchs 353 behandelt die Untersuchung von RC-Gliedern.
  Dabei werden Zeitkonstante, Frequenzabhängikeit von Amplitude und Phasenverschiebung bestimmt, sowie die Eignung als Integrator betrachtet.
 \subsection{Ent- und Aufladevorgang eines Kondensators}
 Als Relaxationserscheinung wird die nicht-oszillatorische Rückkehr eines Systems in seinen Ausgangszustand bezeichnet, welches zuvor aus diesem rausgenommen wird.
@@ -29,7 +29,7 @@ Es greift die Annahme, dass der Kondensator sich nach unendlich langer Zeit entl
 hierbei wird RC als Zeitkonstante bezeichnet, diese gibt das Maß für die Geschwindigkeit an, mit welcher das System in den Zustand $Q(\infty)$ strebt.\\
 Für den Aufladevorgang gelten analoge Annahmen, sodass sich, mit den Randbedingungen $Q(0)=0$ und $Q(\infty)=CU_0$, eine Gleichung für den Aufladevorgang ableiten lässt:
 \begin{equation}
-  Q(t)=CU_0(1-e^{-\frac{t}{RC}}).\label{eqn:aufladung}
+  Q(t)=CU_0\left(1-e^{-\frac{t}{RC}}\right).\label{eqn:aufladung}
   \end{equation}
   $U_0$ beschreibt die anliegende Spannung einer Spannungsquelle.
 \subsection{Frequenzabhängigkeit von Phasenverschiebung und Amplitude}
@@ -37,15 +37,15 @@ Relaxationsvorgänge treten auch in Systemen auf, die periodisch aus der Ausgang
 Mit der Verwendung einer Wechselspannung als anliegende Spannung, kann der RC-Kreis weiterhin als ein Beispiel verwendet werden, wie in Abbildung zu sehen.\\ %Abbildung 2
 \begin{figure}
   \centering
-  \includegraphics[width=0.7\textwidth]{schaltbild2.PNG}
+  \includegraphics[width=0.5\textwidth]{schaltbild2.PNG}
   \caption{Schaltungsbeispiel.\cite{skript}}
   \label{fig:schaltung2}
 \end{figure}\\
-Gilt für $\omega$, in der Wechselspannung $U(t)=U_0\cos\omega t$, die Beziehung $\omega\textless\textless\frac{1}{RC}$
+Gilt für $\omega$, in der Wechselspannung $U(t)=U_0\cos\omega t$, die Beziehung $\omega\ll\frac{1}{RC}$
 so sind $U_C(t)$ und $U(t)$ zu jedem Zeitpunk fast gleich.
 Mit größerer Frequenz ergibt sich eine immer größer werdende Phasenverschiebung $\phi$ zwischen der Generator-und Kondensatorspannung,
 ebenfalls nimmt die Amplitude der Kondensatorspannung ab.\\
-Für den allgemeinen RC-Kreis gilt mit dem Ansatz $U_C(t)=A(\omega)\cos(\omega t+\phi{\omega})$,
+Für den allgemeinen RC-Kreis gilt mit dem Ansatz $U_C(t)=A(\omega)\cos(\omega t+\phi(\omega))$,
 der zweiten Kirchhoffschen Regel und einigen Umformungen:
 \begin{equation}
   U_0\cos\omega t =-A\omega RC\sin(\omega t+\phi)+A(\omega)\cos(\omega t+\phi).\label{eqn:RCallgemein}
@@ -62,7 +62,14 @@ Ebenfalls lässt sich aus der Gleichung \eqref{eqn:RCallgemein} eine frequenzabh
 $A(\omega)$ geht gegen $U_0$ für $\omega\longrightarrow 0$ und verschwindet bei $\omega\longrightarrow\infty$.
 \subsection{Eigenschaft als Integrator}
 Ein RC-Kreis kann Wechselspannungen $U_t$ mit Frequenzen größer als $\frac{1}{RC}$ integrieren.
-Unter dieser Bedingung ergibt sich folgendes Integral:
+Mit dem zweiten kirchhoffschen-Gesetz:
+\begin{align}
+  U_t=U_R(t)+U_C(t)=I(t)\cdot R+U_C(t)
+\end{align}
+und $I(t)=C\frac{dU_C}{dt}$
+ergibt sich:
 \begin{equation}
-  U_C(t)=\frac{1}{RC}\int_{0}^{1} U(t') \, \symup{d}t.'\label{eqn:integration}
+  U_C(t)=\frac{1}{RC}\int_{0}^{1} U(t') \, \symup{d}t.'\label{eqn:integration}.
 \end{equation}
+Dies lässt sich daraus folgern, dass unter der Bedingung, $\omega\ll\frac{1}{RC}$, gilt: $\lvert U_c \rvert \ll \lvert U_R \rvert$ und $\lvert U_C \rvert \ll \lvert U \rvert$.
+Damit ist $U(t)=RC\frac{dU_C}{dt}$ und es ergibt sich das obenstehende Integral.

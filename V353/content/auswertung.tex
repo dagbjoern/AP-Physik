@@ -1,4 +1,5 @@
 \section{Auswertung}
+\subsection{Bestimmung der Zeitkonstante am Aufladevorgang}
 \label{sec:Auswertung}
 Die Messwerte zur ersten Messung finden sich in Tabelle \ref{tab:a} wieder.
 Diese werden aus dem Graph aus Abbildung \ref{abb:osz} entnommen, den das Oszilloskop anzeigt. %tabelle
@@ -39,7 +40,7 @@ Diese werden aus dem Graph aus Abbildung \ref{abb:osz} entnommen, den das Oszill
 Am Anfang wird die Formel \eqref{eqn:aufladung} in die folgegende
 Form gebracht.
 \begin{equation}
-1-\frac{U_C}{U_0}=e^{-{\frac{1}{RC}*t}}
+1-\frac{U_C}{U_0}=e^{-{\frac{1}{RC}\cdot t}}
 \end{equation}
 Zur Auswertung der ersten Messreihe wird der Logarithmus
 von $1-\frac{U_C}{U_0}$ gegen die Zeit $t$ aufgetragen, wie in Abbildung \ref{abb:a} zu sehen.
@@ -59,7 +60,7 @@ Das Ergebniss ist $1/RC$ als Steigung der Graden.
 Der Kehrwert der Steigung ist nun die Zeitkonstante $RC$.\\
 $RC$ ist hierbei $0.00111\pm0.05 s$
 \\
-\\
+\subsection{Bestimmung der Zeitkonstante mittels Frequenzabhängigkeit der Amplitude }
 Erneut wird die Zeitkonstante bestimmt, nur diesmal unter
 der Betrachtung von der Frequenzabhängigkeit von der Amplitude von $U_C$.
 Die Amplitude wird halblogarithmisch gegen die Frequenz aufgetragen, und eine Ausgleichsrechnung
@@ -77,47 +78,34 @@ Hier beträgt die Zeitkonstante $RC=0.000936 \pm 0.000000007s$
   \centering
   \caption{Messwerte zur Bestimmung der Zeitkonstante aus Aufladevorgang.}
   \label{tab:b}
-   \begin{tabular}{c c}
+   \begin{tabular}{c c || c c}
      \toprule
-    {$f $ \:/\: Hz} & {$A $ \:/\: \si{\volt}}\\
+    {$f $ \:/\: Hz} & {$A $ \:/\: \si{\volt}} & {$f $ \:/\: Hz} & {$A $ \:/\: \si{\volt}}\\
     \midrule
-    50  \pm0.5 &   6.078\pm0.0005 \\
-    100 \pm0.5 &   4.923\pm0.0005 \\
-    150 \pm0.5 &   3.937\pm0.0005 \\
-    200 \pm0.5 &   3.204\pm0.0005 \\
-    250 \pm0.5 &   2.683\pm0.0005 \\
-    300 \pm0.5 &   2.295\pm0.0005 \\
-    350 \pm0.5 &   2.000\pm0.0005 \\
-    400 \pm0.5 &   1.77 \pm0.0005 \\
-    500 \pm0.5 &   1.432\pm0.0005 \\
-    600 \pm0.5 &   1.202\pm0.0005 \\
-    700 \pm0.5 &   1.036\pm0.0005 \\
-    800 \pm0.5 &   0.91 \pm0.0005 \\
-    900 \pm0.5 &   0.811\pm0.0005 \\
-    950 \pm0.5 &   0.768\pm0.0005 \\
-    1000\pm0.5 &   0.729\pm0.0005 \\
-    1100\pm0.5 &   0.666\pm0.0005 \\
-    1250\pm0.5 &   0.587\pm0.0005 \\
-    1300\pm0.5 &   0.564\pm0.0005 \\
-    1400\pm0.5 &   0.524\pm0.0005 \\
-    1500\pm0.5 &   0.488\pm0.0005 \\
-    2500\pm0.5 &   0.295\pm0.0005 \\
-    3000\pm0.5 &   0.246\pm0.0005 \\
-    3500\pm0.5 &   0.211\pm0.0005 \\
-    4000\pm0.5 &   0.186\pm0.0005 \\
-    4500\pm0.5 &   0.166\pm0.0005 \\
-    5000\pm0.5 &   0.149\pm0.0005 \\
-    6000\pm0.5 &   0.125\pm0.0005 \\
-    7000\pm0.5 &   0.108\pm0.0005 \\
-   10000\pm0.5 &   0.075\pm0.0005 \\
+    50  \pm0.5 &   6.078\pm0.0005 &  1100\pm0.5 &   0.666\pm0.0005 \\
+    100 \pm0.5 &   4.923\pm0.0005 &  1250\pm0.5 &   0.587\pm0.0005 \\
+    150 \pm0.5 &   3.937\pm0.0005 &  1300\pm0.5 &   0.564\pm0.0005 \\
+    200 \pm0.5 &   3.204\pm0.0005 &  1400\pm0.5 &   0.524\pm0.0005 \\
+    250 \pm0.5 &   2.683\pm0.0005 &  1500\pm0.5 &   0.488\pm0.0005 \\
+    300 \pm0.5 &   2.295\pm0.0005 &  2500\pm0.5 &   0.295\pm0.0005 \\
+    350 \pm0.5 &   2.000\pm0.0005 &  3000\pm0.5 &   0.246\pm0.0005 \\
+    400 \pm0.5 &   1.77 \pm0.0005 &  3500\pm0.5 &   0.211\pm0.0005 \\
+    500 \pm0.5 &   1.432\pm0.0005 &  4000\pm0.5 &   0.186\pm0.0005 \\
+    600 \pm0.5 &   1.202\pm0.0005 &  4500\pm0.5 &   0.166\pm0.0005 \\
+    700 \pm0.5 &   1.036\pm0.0005 &  5000\pm0.5 &   0.149\pm0.0005 \\
+    800 \pm0.5 &   0.91 \pm0.0005 &  6000\pm0.5 &   0.125\pm0.0005 \\
+    900 \pm0.5 &   0.811\pm0.0005 &  7000\pm0.5 &   0.108\pm0.0005 \\
+    950 \pm0.5 &   0.768\pm0.0005 &  10000\pm0.5 &   0.075\pm0.0005 \\
+    1000\pm0.5 &   0.729\pm0.0005\\
   \bottomrule
   \end{tabular}
 \end{table}
 \\
 \FloatBarrier
+\subsection{Bestimmung der Zeitkonstante mittels Frequenzabhängigkeit der Phase}
 Ein letztes Mal wird die Zeitkonstante bestimmt, diesmal mit Hilfe der Phasenverschiebung von Generator und Kondensartorspannung in Abhängigkeit von der Frequenz.
 Die Werte aus Tabelle \ref{tab:c} werden gegeneinander Aufgetragen, wie in Abb.\ref{abb:c} .Die Phasenverschiebung $\phi$ wird für
-die Tabelle nach Formel $\phi=\frac{a}{b}*2\pi$ errechnet.
+die Tabelle nach Formel $\phi=\frac{a}{b}\cdot2\pi$ errechnet.
 Das Ergebnis hierbei für Zeitkonstante RC ist $0.00087\pm0.0000002 s$
 \begin{figure}[h]
   \centering
@@ -162,11 +150,12 @@ aus der Tabelle \ref{tab:b} und \ref{tab:c} in einem
 Polarplott dargestellt wie in Abbildung \ref{abb:d} zu sehen.
 \begin{figure}
 \centering
-\includegraphics[width=0.7\textwidth]{d.pdf}
-\caption{Amplitude $A_0$ in Abbhängigkeit von der Phasenverschiebung $phi$ }
+\includegraphics[width=0.8\textwidth]{d.pdf}
+\caption{Amplitude $A_0$ in Abbhängigkeit von der Phasenverschiebung $\phi$ }
 \label{abb:d}
 \end{figure}
 \FloatBarrier
+\subsection{Eignung als Integrator}
 Die folgenden Abbildungen zeigen die integrierten Kurven von Dreiecks-,Rechtsecks-und Sinusspannung.
 Für eine Phase Sinusspannung, ergibt sich, wie in Abbildung \ref{abb:sinus} zu sehen, eine Cosinusspannung, dies entspricht auch der Stammfunktion:
 \begin{align}
