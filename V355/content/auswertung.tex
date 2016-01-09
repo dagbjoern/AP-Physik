@@ -1,17 +1,12 @@
 \newpage
 \section{Auswertung}
 \label{sec:Auswertung}
-\subsection{Eigenschaften der Bauteile}
-Für die Messungen werden Bauteile mit folgenden für die Auswertung relevanten Eigenschaften eingesetzt:
-Induktivität der Spule: $L=(23,954\pm )mH$\\
-Kapazität vom Kondensator: $(C=0,7932\pm )nF$\\
-Kapazität der Spule: $C_{Sp}=(0,028\pm )nF$\\
 \subsection{Abstimmung der Resonanzfrequenz}
-Der Theoriewert für die Resonanzfrequenz ist gegeben durch Gleichung \eqref{eqn:Frequenz1},
+Der Theoriewert für die Resonanzfrequenz ist gegeben durch Gleichung \eqref{eqn:Frequenz1};
 diese muss angepasst werden, da die Spule ebenfalls eine geringe Kapazität $C_{Sp}$ besitzt.\\
 Es gilt somit:\\
 \begin{equation}
-  \nu^{+}=\frac{1}{2\pi\sqrt{LC+C_{Sp}}}=(35,9\pm 1,2)kHz
+  \nu^{+}=\frac{1}{2\pi\sqrt{LC+C_{Sp}}}=(35,9\pm 1,2)kHz.
 \end{equation}\\
 Der Fehler errechnet sich mit der Gauß'schen Fehlerfortpflanzung \eqref{eqn:gaus}.
 Bei der Messung ist es nicht möglich beide Schwingkreise auf die gleiche Resonanzfrequenz abzustimmen, deshalb folgen zwei Messwerte:
@@ -23,15 +18,15 @@ f_2&=(33,11 \pm )kHz
 Der theoretische Wert für das Verhältnis ergibt sich nach Gleichung \eqref{eqn:verhaeltnis}.
 Mit der Anpassung, bedingt durch die Kapazität $C_{Sp}$ der Spule, gilt für $\nu^{+}$ und $\nu^{-}$:
 \begin{align}
-  \nu^{+}&=\frac{1}{2\pi\sqrt{LC+C_{Sp}}}\label{eqn:angepasst1} \\
-  \nu^{-}&=\frac{1}{2\pi\sqrt{L\left(\frac{1}{C}+\frac{2}{C_K}\right)^{-1}+C_{Sp}}}\label{eqn:angepasst2}
+  \nu^{+}&=\frac{1}{2\pi\sqrt{LC+LC_{Sp}}}\label{eqn:angepasst1} \\
+  \nu^{-}&=\frac{1}{2\pi\sqrt{L\left(\frac{1}{C}+\frac{2}{C_K}\right)^{-1}+LC_{Sp}}}\label{eqn:angepasst2}.
 \end{align}\\
-Die Abweichung von dem Verhältnis nach der Theorie $n$ und dem gemessenen Verhältnis $n_{M}$ errechnet sich nach:\\
+Die relative Abweichung von dem Verhältnis nach der Theorie $n$ und dem gemessenen Verhältnis $n_{M}$ errechnet sich nach:\\
 \begin{equation}
   a=\frac{\lvert n_{M}-n\rvert}{n}
 \end{equation}\\
 Für $n_M$ wird, durch die geringe Ausprägung der Wellen, ein Ablesefehler von $\pm 1$ angenommen.\\
-
+Die errechneten Werte für das Verhätnis, nach Theorie und Messung, und die Abweichung finden sich in Tabelle \ref{tab:a}
 \begin{table}
  \centering
  \caption{Verhältnis von Schwingungs- und Schwebungfrequenz von Theorie und Messwerten }
@@ -40,14 +35,14 @@ Für $n_M$ wird, durch die geringe Ausprägung der Wellen, ein Ablesefehler von 
    \toprule
 {$ n_M $} & {$ n $} & {$ a $} \\
 \midrule
-n.v.    &2.2 \pm  0.2  & n.v. \\
-n.v.    &3.8 \pm  0.6  & n.v.\\
-2 \pm 2 &4.5  \pm 0.7 & 0.56\\
-6 \pm 2 &7.1  \pm 1.2 & 0.16\\
-6 \pm 2 &9.9  \pm 1.8 & 0.39\\
-8 \pm 2 &11.7 \pm 2.2 & 0.32\\
-10\pm 2 &14.1 \pm 2.7 & 0.29\\
-12\pm 2 &16.7 \pm 3.2 & 0.28\\
+        &2,2 \pm  0.2  &    \\
+        &3,8 \pm  0.6  &    \\
+2 \pm 2 &4,5  \pm 0.7 & 0.56\\
+6 \pm 2 &7,1  \pm 1.2 & 0.16\\
+6 \pm 2 &9,9  \pm 1.8 & 0.39\\
+8 \pm 2 &11,7 \pm 2.2 & 0.32\\
+10\pm 2 &14,1 \pm 2.7 & 0.29\\
+12\pm 2 &16,7 \pm 3.2 & 0.28\\
 
 
 \bottomrule
@@ -55,10 +50,10 @@ n.v.    &3.8 \pm  0.6  & n.v.\\
 \end{table}
 
 \subsection{Bestimmung der Fundamentalfrequenzen}
-In der Folgenden Tabelle werden die gemessenen Fundamentalfrequenzen $f_n$ mit den theoretischen Frequenzen $\nu^{+/-}$ verglichen.
+In Tabelle \ref{tab:b} werden die gemessenen Fundamentalfrequenzen $f_n$ mit den theoretischen Frequenzen $\nu^{+/-}$ verglichen.
 Dies geschieht mit zwei Unterschiedlichen Verfahren
 Die theoretischen Frequenzen berechnen sich nach Gleichung \eqref{eqn:angepasst1} und \eqref{eqn:angepasst2}.
-Fehler ergeben sich wieder nach der Formel \eqref{eqn:gaus}. Ein Ablesefehler von $\pm 5 kHz$ wird abgeschätzt.
+Ein Ablesefehler von $\pm 5 kHz$ wird abgeschätzt.
 \subsubsection{Ohne Sweep}
 
 \begin{table}
@@ -67,16 +62,16 @@ Fehler ergeben sich wieder nach der Formel \eqref{eqn:gaus}. Ein Ablesefehler vo
  \label{tab:b)}
  \begin{tabular}{c c c c c }
    \toprule
-{$C_k/ nF  $} & {$ f1/kHz $} & {$ \nu^+/kHz $} & {$f2/kHz $} & {$\nu^-/kHz$}\\
+{$C_k in \si{\nano\farad}  $} & {$ f1 in \si{\kilo\hertz}$} & {$ \nu^+ in \si{\kilo\hertz} $} & {$f2 in \si{\kilo\hertz} $} & {$\nu^- in \si{\kilo\hertz}$}\\
    \midrule
-1.0\pm0.2    & 33.1\pm5   & 35.9 \pm 1.2 &  79.3\pm5  &   56.2\pm 3.5\\
-2.2\pm0.4    & 33.1\pm5   & 35.9 \pm 1.2 &  59.5\pm5  &   46.5\pm 2.3\\
-2.7\pm0.5    & 32.6\pm5   & 35.9 \pm 1.2 &  56.8\pm5  &   44.8\pm 2.0\\
-4.7\pm0.9    & 33.7\pm5   & 35.9 \pm 1.2 &  48.0\pm5  &   41.3\pm 1.6\\
-6.8\pm1.4    & 33.7\pm5   & 35.9 \pm 1.2 &  43.8\pm5  &   39.7\pm 1.4\\
-8.2\pm1.6    & 32.8\pm5   & 35.9 \pm 1.2 &  41.8\pm5  &   39.1\pm 1.4\\
-10.0\pm0.20  & 32.8\pm5   & 35.9 \pm 1.2 &  39.3\pm5  &   38.5\pm 1.4\\
-12.0\pm0.24  & 33.1\pm5   & 35.9 \pm 1.2 &  40.0\pm5  &   38.1\pm 1.3\\
+1,0\pm0,2    & 33,1\pm5   & 35,9 \pm 1,2 &  79,3\pm5  &   56,2\pm 3,5\\
+2,2\pm0,4    & 33,1\pm5   & 35,9 \pm 1,2 &  59,5\pm5  &   46,5\pm 2,3\\
+2,7\pm0,5    & 32,6\pm5   & 35,9 \pm 1,2 &  56,8\pm5  &   44,8\pm 2,0\\
+4,7\pm0,9    & 33,7\pm5   & 35,9 \pm 1,2 &  48,0\pm5  &   41,3\pm 1,6\\
+6,8\pm1,4    & 33,7\pm5   & 35,9 \pm 1,2 &  43,8\pm5  &   39,7\pm 1,4\\
+8,2\pm1,6    & 32,8\pm5   & 35,9 \pm 1,2 &  41,8\pm5  &   39,1\pm 1,4\\
+10,0\pm2,0   & 32,8\pm5   & 35,9 \pm 1,2 &  39,3\pm5  &   38,5\pm 1,4\\
+12,0\pm2,4   & 33,1\pm5   & 35,9 \pm 1,2 &  40,0\pm5  &   38,1\pm 1,3\\
 \bottomrule
 \end{tabular}
 
@@ -94,9 +89,9 @@ eingesetzt.
 Hierbei ist $f_{start}$ die Startfrequenz
 ,$f_{end}$ die Endfrequenz und
 $T$ die Dauer des Sweeps.
-$f_{start}$ beträgt an dieser Stelle $19.23 \pm 5 kHz$.
-$f_{end}=97.66 \pm 5kHz$ und $T=1s$
-Die Ergebnisse sind in der Tabelle 3 dargestellt.
+$f_{start}$ beträgt an dieser Stelle $(19,23 \pm 5 )\si{\kilo\hertz}$,
+$f_{end}=(97,66 \pm 5)\si{\kilo\hertz}$ und $T=1s$
+Die Ergebnisse sind in der Tabelle \ref{tab:c} dargestellt.
 
 
 \begin{table}
@@ -106,7 +101,7 @@ Die Ergebnisse sind in der Tabelle 3 dargestellt.
    \toprule
    & \multicolumn{2}{c}{Zeitlicher Abstand $t_n$}\\
    & \multicolumn{2}{c}{vom Sweepanfang}\\
-{$C_k/ nF $} & {$t_1/ms$} & {$t_2/ms$} & {$ f_1/kHz $} & {$ \nu^+/kHz $} & {$f_2/kHz $} & {$\nu^-/kHz$}\\
+{$C_k in \si{\nano\farad} $} & {$t_1 in \si{\second}$} & {$t_2 in \si{\second}$} & {$ f_1 in \si{\kilo\hertz} $} & {$ \nu^+ in \si{\kilo\hertz} $} & {$f_2 in \si{\kilo\herz} $} & {$\nu^- in \si{\kilo\hertz}$}\\
    \midrule
    1.0 \pm 0.2 & 180\pm5 & 784\pm5 & 33.3\pm 4.2 & 35.9\pm 1.2 &  80.7 \pm 4.1 & 56.2\pm 3.5 \\
    2.2 \pm 0.4 & 176\pm5 & 524\pm5 & 33.0\pm 4.2 & 35.9\pm 1.2 &  60.3 \pm 3.6 &  46.5\pm 2.3 \\

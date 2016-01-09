@@ -1,4 +1,4 @@
-\section{Durchführung}
+\section{Aufbau und Durchführung}
 \label{sec:Durchführung}
  \subsection{Vorbereitung}
   \label{subsec:Vorbereitung}
@@ -8,18 +8,18 @@ beiden Schwingkeise aufeinander abgestimmt werden.
 Bei dem Versuchsaufbau existiert ein Schwingkreis
 mit konstanter(1) und einer mit variablen(2) Kapazität.
 Zu erst muss die Resonanzfrequenz des ersten
-Schwingkreises gemessen werden dafür wird die Schaltung
-wie in \ref{abb:messungresonanz} aufgebaut.
+Schwingkreises gemessen werden.Dafür wird die Schaltung
+wie in Abbildung \ref{abb:messungresonanz} aufgebaut.
 \begin{figure}[h]
      \centering
-     \includegraphics[width=0.6\textwidth]{resonanzbestimmung.PNG}
+     \includegraphics[width=0.5\textwidth]{resonanzbestimmung.PNG}
      \caption{Schaltung zur bestimmung der
      Resonanzfrequenz eines Schwingkreis.\cite{skript} }
      \label{abb:messungresonanz}
 \end{figure}\\
 Desweiteren wird das Oszilloskop in den X-Y-Betrieb geschaltet und
 die Frequenz am Sinus-Generator so geregelt, dass die Lissajous-Figur
-eine Gerade ergibt, dies bedeutet das die Frequenz der Resonanzfrequenz des
+eine Gerade ergibt; dies bedeutet das die Frequenz der Resonanzfrequenz des
 Schwingkreises entspricht. Die Messung wird nun für den anderen Schwingkreis wiederholt
 mit dem Unteschied, dass die Frequenz am Sinus-Generator, die zuvor eingestellt wurde,
 konstant bleibt und nur die Kapazität so verändert wird, so dass wieder die Lissajous-Figur
@@ -31,8 +31,8 @@ Für die Versuchsdurchführung wird nun die Schaltung
 wie in Abbildung \ref{abb:schwebungsaufbau} aufgebaut.
 \begin{figure}[h]
    \centering
-   \includegraphics[width=0.7\textwidth]{Aufbau_a).PNG}
-   \caption{Schaltung zur Untersuchung von Schwebung bei gekoppelten Schwingkreisen \cite{skript}}
+   \includegraphics[width=0.9\textwidth]{Aufbau_a).PNG}
+   \caption{Schaltung zur Untersuchung von Schwebungen bei gekoppelten Schwingkreisen \cite{skript}}
    \label{abb:schwebungsaufbau}
 \end{figure}\\
 Nun wird mit einer Rechteckspannung der
@@ -54,7 +54,7 @@ eine Sinusgenerator ausgetauscht und außerdem
 noch mit anderen Eingang des Oszilloskop verbunden(\ref{abb:fundamentalaufbau})
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.6\textwidth]{physik.PNG}
+  \includegraphics[width=0.7\textwidth]{physik.PNG}
   \caption{Schaltung zur Untersuchung von Fundamentalfrequenzen bei gekoppelten Schwingkreisen \cite{skript}}
   \label{abb:fundamentalaufbau}
 \end{figure}\\
@@ -65,21 +65,29 @@ Das Oszilloskop wird wieder im X-Y-Betrieb benutzt
 und eine Fundamentalfrequenz lässt sich messen
 , wenn die Lissajous-Figur eine Gerade ist.
 Dies geschied zweimal, da es einmal $\nu^+$ und
-$\nu^-$ gibt. (Dies wurde hierbei aber nicht mit den Lissajour-Figuren gemessen
-sondern in dem durch leichtes verstellen der Frequenz, die Frequenzen ausgewählt wurde wo die Amplituden Maximal war.
+$\nu^-$ gibt. Dies wurde hierbei aber nicht mit den Lissajour-Figuren gemessen
+sondern in dem durch leichtes Verstellen der Frequenz, die Frequenzen ausgewählt wurde wo die Amplitude maximal war.
 Somit wurde auch deutlich ob es sich um $\nu^+ $ oder $\nu^-$ handelte.   \\
 \\
 Die Fundamentalfrequenzen lassen sich
-ebenfalls durch eine andere Messung bestimmen.
-dafür wird der Sinus-Generator
+ebenfalls durch das Frequenzspektrum ermitteln.
+Dafür wird der Sinus-Generator
 aus Abbildung \ref{abb:fundamentalaufbau}
 in den Sweepmodus geschaltet.
 Der Sweep wird so eingestellt, dass dieser unterhalb
-der in der Vorbereitung\ref{subsec:Vorbereitung}
+der in der Vorbereitung \ref{subsec:Vorbereitung}
 gemessenen Frequenzen anfängt
 und oberhalb aufhört.
-Das Oszilloskop nimmt nun den Spannungsverlauf des
+Das Oszilloskop nimmt den Spannungsverlauf des
 2. Schwingkreises auf. Die zwei Hochpunkte sind die
-beiden Fundamentalfrequenzen, wo nun der zeitlich
+beiden Fundamentalfrequenzen, wo der zeitlich
 Abstand zum Sweepanfang gemessen wird.
-Dies wird nun für die anderen Kapazitäten wiederholen.
+Dies wird  für die anderen Kapazitäten wiederholt.\\
+
+\subsection{Eigenschaften der Bauteile}
+Für die Messungen werden Bauteile mit folgenden Eigenschaften eingesetzt:
+\begin{align}
+\text{Induktivität der Spule:}\ \ L&=23,954\si{\micro\henry} \notag\\
+\text{Kapazität des Kondensators:} \ \ C&=0,7932\si{\nano\farad} \notag\\
+\text{Kapazität der Spule:} \ \ C_{Sp}&=0,028\si{\nano\farad} \notag\\
+\end{align}
