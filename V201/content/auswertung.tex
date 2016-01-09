@@ -45,7 +45,7 @@ c_\mathrm{k}=\frac{(c_\mathrm{w} m_\mathrm{w}+c_\mathrm{g} m_\mathrm{g})(T_\math
 Werden nun die gemessenen Werte für Zinn aus der Tabelle \ref{tab.zinn} in die Formel \eqref{eqn:ck} eingesetzt und die erhaltenen $c_{\mathrm{Zinn}}$ gemittelt.
 Daraus ergibt sich ein $c_{\mathrm{Zinn}}$ von
 \begin{align*}
-c_\mathrm{Zinn} =
+c_\mathrm{Zinn} =  0,426 \,\si{\joule\per\kelvin\kilo\gram}
 \end{align*}
 \begin{table}
   \centering
@@ -66,13 +66,30 @@ $m_\mathrm{Zinn}/\si{\gram}$ & $m_\mathrm{Wasser}/\si{\gram}$ & $T_\mathrm{Zinn}
 Die spezifische Wärmekapazität von Graphit ergibt sich aus den Werten von Tabelle \ref{tab:graphit},
 die ebenfalls in die Formel \eqref{eqn:ck} eigesetzt werden.
 
+\begin{align*}
+c_\mathrm{Graphit} = 0,806 \,\si{\joule\per\kelvin\gram}
+\end{align*}
+\begin{table}
+  \centering
+  \caption{Messwerte aus dem Versuch mit Graphit.}
+  \label{tab:graphit}
+   \begin{tabular}{c c c c c}
+\toprule
+Masse Zinn & Masse Wasser & Temperatur Zinn & Temperatur Wasser  & Mischtemperatur \\
+$m_\mathrm{Graphit}/\si{\gram}$ & $m_\mathrm{Wasser}/\si{\gram}$ & $T_\mathrm{Graphit}/\si{\kelvin}$ & $T_\mathrm{Wasser}/\si{\kelvin}$ & $T_\mathrm{Misch}/\si{\kelvin}$ \\
+\midrule
+107.67 & 465.18 & 352.19 & 293.40 & 296.63 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 
 
 
 \subsection{Bestimmung der Molwärme von Zinn und Graphit}
 Die Molwärme für konstantes Volumen berechnet sich nach:
-\begin{align*}
-  C_\mathrm{V}&=C_\mathrm{P}-9\alpha^2\kappa V_\mathrm{0}T_\mathrm{m}\\
-  C_\mathrm{V}&=c_\mathrm{k}\cdot M-9\alpha^2\kappa \frac{M}{\rho}T_\mathrm{m}.
-\end{align*}
+\begin{align}
+  C_\mathrm{V} & =C_\mathrm{P}-9\alpha^2\kappa V_\mathrm{0}T_\mathrm{m}\\
+  C_\mathrm{V} & =c_\mathrm{k}\cdot M_\mathrm{k}-9\alpha^2\kappa \frac{M_\mathrm{k}}{\rho}T_\mathrm{m}.
+\end{align}
 Die Werte für $\rho$, $M$, $\alpha$ und $\kappa$ finden sich in der Versuchsanleitung.

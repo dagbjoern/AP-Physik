@@ -59,6 +59,10 @@ ckz=ck(m_zw,m_z,Tzm,Tzw,Tz)
 #ckg=ck(m_gw,m_g,Tgm,Tgw,Tg)
 ckg=ck(465.18,107.67,295.63,293.40,352.19)
 
+
+
+print('ckz',np.average(ckz))
+print('ckg',ckg)
 Cz=C(ckz,Molz,az,kz,rhoz,Tzm)
 Cg=C(ckg,Molg,ag,kg,rhog,Tgm)
 
