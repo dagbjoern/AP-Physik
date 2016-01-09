@@ -8,5 +8,8 @@
 \contentsline {subsection}{\numberline {2.1}Messung zur Bestimmung der Wärmekapazität des Kaloriemeters}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Messung zur Bestimmung der spezifischen Wärmekapazität unterschiedlicher Stoffe}{4}{subsection.2.2}
 \contentsline {section}{\numberline {3}Auswertung}{4}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{4}{section.4}
-\contentsline {section}{\numberline {5}Einleitung}{4}{section.5}
+\contentsline {subsection}{\numberline {3.1}Bestimmung der spezifische Wärmekapazität vom Kaloriemeter}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bestimmung der spezifische Wärmekapazität von Zinn und Graphit}{5}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Bestimmung der Molwärme von Zinn und Graphit}{5}{subsection.3.3}
+\contentsline {section}{\numberline {4}Diskussion}{5}{section.4}
+\contentsline {section}{\numberline {5}Einleitung}{5}{section.5}

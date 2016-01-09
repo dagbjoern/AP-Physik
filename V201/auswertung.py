@@ -39,7 +39,7 @@ T0m=327.82
 print(Mwk,Mww,Twk,Tww,T0m)
 
 cgmg=(cw*Mww*(Tww-T0m)-cw*Mwk*(T0m-Twk))/(T0m-Twk)
-print(cgmg)
+print('cgmg',cgmg)
 
 
 def ck(mw,mk,Tm,Tw,Tk):
