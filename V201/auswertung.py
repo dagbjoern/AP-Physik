@@ -48,6 +48,9 @@ def ck(mw,mk,Tm,Tw,Tk):
 def C(c,M,a,k,rho,Tm):         #molwärme
     return c*M-9*(a**2)*k*(M/rho)*Tm
 
+def ab(am,at):
+    return (am-at)/at
+
 
 m_g=107.67
 m_gw=465.18#
@@ -56,23 +59,24 @@ Tgm=296.63
 Tg=352.19
 
 ckz=ck(m_zw,m_z,Tzm,Tzw,Tz)
-#ckg=ck(m_gw,m_g,Tgm,Tgw,Tg)
-ckg=ck(465.18,107.67,295.63,293.40,352.19)
+ckg=ck(m_gw,m_g,Tgm,Tgw,Tg)
+#ckg=ck(465.18,107.67,295.63,293.40,352.19)
 
+ckz=unp.uarray(np.average(ckz),np.std(ckz))
+Tzm=np.average(Tzm)
 
-
-print('ckz',np.average(ckz))
+print('ckz',ckz)
 print('ckg',ckg)
 Cz=C(ckz,Molz,az,kz,rhoz,Tzm)
 Cg=C(ckg,Molg,ag,kg,rhog,Tgm)
 
-print('Cz',np.average(Cz))
+
+print('Cz',Cz)
 print('Cg',Cg)
 print('3R',3*8.3144598)
 
-
-
-
+print('Abweichung von 3R z',ab(noms(Cz),3*8.3144598))
+print('Abweichung von 3R g',ab(Cg,3*8.3144598))
 #print(ckz)
 #print('Graphit ck',ckg)
 #print('Zinn ck',np.average(ckz))
