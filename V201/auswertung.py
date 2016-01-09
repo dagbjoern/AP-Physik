@@ -8,7 +8,7 @@ from scipy.optimize import curve_fit
 
 #Messung Zinn
 m_z,m_zw,Tzw,Tzm,Tz=np.genfromtxt('zinn.txt', unpack=True)
-# 
+
 
 #Messung Graphit
 m_g=107.67
