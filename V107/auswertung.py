@@ -61,6 +61,8 @@ ngr=Kgr*(rhog-rhow)*T
 
 m, b, r, p, stdsm=stats.linregress(noms(1/Temp),np.log(noms(Kgr*(rhog-1)*T)))
 x=np.linspace(20+273.15,65+273.15)
+print('1/T',1/Temp)
+print('ln(eha/pas)',unp.log(Kgr*(rhog-1)*T))
 
 print('Geschwindigkeit klein=',Vk,'Zeitmittelwert=',Tk)
 plt.figure(1)
