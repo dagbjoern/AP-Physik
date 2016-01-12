@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.6)  11 JAN 2016 21:16
+||||||| merged common ancestors
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.10.13)  9 JAN 2016 17:25
+=======
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.10.13)  12 JAN 2016 11:11
+>>>>>>> fast fertig
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -294,6 +300,7 @@ Package: xparse 2015/12/20 v6326 L3 Experimental document command parser
 \l__xparse_v_nesting_int=\count117
 )
 (c:/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload.sty
+<<<<<<< HEAD
 Package: luaotfload 2015/12/09 v2.6 OpenType layout system
 Lua module: luaotfload-main 2015/12/09 2.60001 OpenType layout system.
 Lua module: lualibs 2015-12-02 2.3 ConTeXt Lua standard libraries.
@@ -301,6 +308,67 @@ Lua module: lualibs-extended 2015-12-02 2.3 ConTeXt Lua libraries -- extended co
 llection.(using write cache: C:/texlive/2015/texmf-var/luatex-cache/generic)(usi
 ng read cache: C:/texlive/2015/texmf-var/luatex-cache/generic C:/Users/Ksenia/.t
 exlive2015/texmf-var/luatex-cache/generic)
+||||||| merged common ancestors
+Package: luaotfload 2014/08/10 v2.5-4 OpenType layout system
+
+(c:/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(c:/texlive/2015/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count118
+)
+\CatcodeTableOther=\catcodetable6
+\CatcodeTableExpl=\catcodetable7
+)
+Lua module: luaotfload-main 2014/08/10 2.50003 OpenType layout system.(using wri
+te cache: C:/texlive/2015/texmf-var/luatex-cache/generic)(using read cache: C:/t
+exlive/2015/texmf-var/luatex-cache/generic C:/Users/Dag-Björn/.texlive2015/texmf
+-var/luatex-cache/generic)
+Lua-only attribute luaotfload@kernpair = 1
+Lua-only attribute luaotfload@ligacomp = 2
+Lua-only attribute luaotfload@markbase = 3
+Lua-only attribute luaotfload@markmark = 4
+Lua-only attribute luaotfload@markdone = 5
+Lua-only attribute luaotfload@cursbase = 6
+Lua-only attribute luaotfload@curscurs = 7
+Lua-only attribute luaotfload@cursdone = 8
+Lua-only attribute luaotfload@state = 9
+luaotfload | main : fontloader loaded in 0.152 seconds
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
+=======
+Package: luaotfload 2014/08/10 v2.5-4 OpenType layout system
+
+(c:/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(c:/texlive/2015/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count118
+)
+\CatcodeTableOther=\catcodetable6
+\CatcodeTableExpl=\catcodetable7
+)
+Lua module: luaotfload-main 2014/08/10 2.50003 OpenType layout system.(using wri
+te cache: C:/texlive/2015/texmf-var/luatex-cache/generic)(using read cache: C:/t
+exlive/2015/texmf-var/luatex-cache/generic C:/Users/Dag-Björn/.texlive2015/texmf
+-var/luatex-cache/generic)
+Lua-only attribute luaotfload@kernpair = 1
+Lua-only attribute luaotfload@ligacomp = 2
+Lua-only attribute luaotfload@markbase = 3
+Lua-only attribute luaotfload@markmark = 4
+Lua-only attribute luaotfload@markdone = 5
+Lua-only attribute luaotfload@cursbase = 6
+Lua-only attribute luaotfload@curscurs = 7
+Lua-only attribute luaotfload@cursdone = 8
+Lua-only attribute luaotfload@state = 9
+luaotfload | main : fontloader loaded in 0.125 seconds
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
+>>>>>>> fast fertig
 luaotfload | conf : Root cache directory is C:/texlive/2015/texmf-var/luatex-cac
 he/generic/names.
 Lua-only attribute luaotfload@state = 1
@@ -2346,7 +2414,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
  [2
 
 ] (./content/einleitung.tex) (./content/theorie.tex
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
@@ -2369,6 +2437,7 @@ luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"(load luc: C:/texl
 ive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)(load luc
 : C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)
+<<<<<<< HEAD
  [5]
 Underfull \hbox (badness 10000) in paragraph at lines 24--37
 
@@ -2379,11 +2448,34 @@ LaTeX Warning: Reference `tab.zinn' on page 6 undefined on input line 44.
 
 
 Overfull \hbox (20.30789pt too wide) in paragraph at lines 57--67
+||||||| merged common ancestors
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--38
+
+ []
+
+
+LaTeX Warning: Reference `tab.zinn' on page 6 undefined on input line 45.
+
+
+Overfull \hbox (20.30789pt too wide) in paragraph at lines 58--68
+=======
+ [5]
+Overfull \hbox (20.30789pt too wide) in paragraph at lines 59--69
+>>>>>>> fast fertig
  [][][] 
  []
 
+<<<<<<< HEAD
 [6]
 Overfull \hbox (20.30789pt too wide) in paragraph at lines 82--90
+||||||| merged common ancestors
+
+Overfull \hbox (20.30789pt too wide) in paragraph at lines 83--91
+=======
+[6]
+Overfull \hbox (20.30789pt too wide) in paragraph at lines 84--92
+>>>>>>> fast fertig
  [][][] 
  []
 
@@ -2417,13 +2509,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `main.aux' has not changed.
+<<<<<<< HEAD
 (rerunfilecheck)             Checksum: A8DCBBD802B4A3FF2E2E86AA724413B7;10388.
+||||||| merged common ancestors
+(rerunfilecheck)             Checksum: BA69C2AFB95FE4E64F714C3DF521DF25;10388.
+=======
+(rerunfilecheck)             Checksum: 5F617EB5712241848D30D6EBE732061E;9937.
+>>>>>>> fast fertig
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: CF6C13793FBF0B114C192F3D8F8DCB90;1441.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: B0AFB50CF7B13B66E7BB8407AA27B768;1429.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2431,15 +2525,41 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
 )
 
 Here is how much of LuaTeX's memory you used:
+<<<<<<< HEAD
  44094 strings out of 494897
+||||||| merged common ancestors
+ 44008 strings out of 494897
+=======
+ 44011 strings out of 494897
+>>>>>>> fast fertig
  100000,1648299 words of node,token memory allocated
+<<<<<<< HEAD
  604 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 2 kern, 8 attribute, 68 glue_spec, 8 attrib
+||||||| merged common ancestors
+ 613 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 3 kern, 9 attribute, 68 glue_spec, 9 attrib
+=======
+ 610 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 3 kern, 9 attribute, 68 glue_spec, 9 attrib
+>>>>>>> fast fertig
 ute_list, 2 action, 1 write nodes
+<<<<<<< HEAD
    avail lists: 1:1,2:890,3:224,4:945,5:198,6:1933,7:36,8:18,9:302,10:264,11:1
  46419 multiletter control sequences out of 65536+600000
  119 fonts using 25501875 bytes
  69i,21n,104p,1001b,2105s stack positions out of 5000i,500n,10000p,200000b,100000s
+||||||| merged common ancestors
+   avail lists: 1:3,2:5986,3:224,4:1271,5:198,6:1923,7:55,8:18,9:423,10:261,11:1
+ 46331 multiletter control sequences out of 65536+600000
+ 119 fonts using 25501875 bytes
+ 69i,21n,104p,1248b,2071s stack positions out of 5000i,500n,10000p,200000b,100000s
+=======
+   avail lists: 1:2,2:6014,3:220,4:899,5:212,6:1930,7:36,8:20,9:466,10:261,11:1
+ 46329 multiletter control sequences out of 65536+600000
+ 119 fonts using 25502219 bytes
+ 69i,19n,104p,1248b,2071s stack positions out of 5000i,500n,10000p,200000b,100000s
+>>>>>>> fast fertig
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/te
 xlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf><c:/texlive/
 2015/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/texlive/2015/t
@@ -2454,10 +2574,26 @@ e/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype
 ic/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm
 /lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman1
 2-bold.otf>
+<<<<<<< HEAD
 Output written on main.pdf (8 pages, 79520 bytes).
+||||||| merged common ancestors
+Output written on main.pdf (8 pages, 79077 bytes).
+=======
+Output written on main.pdf (8 pages, 79908 bytes).
+>>>>>>> fast fertig
 
+<<<<<<< HEAD
 PDF statistics: 261 PDF objects out of 1000 (max. 8388607)
  204 compressed objects within 3 object streams
  47 named destinations out of 1000 (max. 131072)
+||||||| merged common ancestors
+PDF statistics: 261 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 131072)
+=======
+PDF statistics: 265 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 131072)
+>>>>>>> fast fertig
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

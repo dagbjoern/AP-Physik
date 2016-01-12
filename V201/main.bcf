@@ -2239,11 +2239,10 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">sample</bcf:citekey>
+    <bcf:citekey order="1">ck</bcf:citekey>
     <bcf:citekey order="2">ck</bcf:citekey>
     <bcf:citekey order="3">ck</bcf:citekey>
     <bcf:citekey order="4">ck</bcf:citekey>
-    <bcf:citekey order="5">ck</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>
