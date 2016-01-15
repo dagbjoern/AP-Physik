@@ -20,10 +20,17 @@ p2=8.14+p2
 
 m, b, r, p, stdsm=stats.linregress(Tg,np.log(p1))
 
+print
+
 def F(x,a,b,c,d):
     return a*x**3+b*x**2+c*x+d
 
 params, covariance =curve_fit(F,T2,p2)
+
+print('linrgress')
+print('a =', b)
+print('b =', m)
+
 
 
 a = params[0]
@@ -31,7 +38,7 @@ b = params[1]
 c = params[2]
 d = params[3]
 
-
+print('Polynom')
 print('a =', params[0])
 print('b =', params[1])
 print('c =', params[2])
