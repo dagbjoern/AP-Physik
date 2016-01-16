@@ -5,8 +5,10 @@ In der Tabelle \ref{tab:p<1} sind die gemessenen Werte
 von der Temperatur des Gases und der Druck
 von der ersten Messung, die mit dem Versuchaufbau aus
 dem Kapitel \ref{sec:p<1} durchgeführt wurde, aufgetragen.
-
-
+Der  Umgebungsdruck beträgt:
+\begin{align*}
+p_\mathrm{0}=1\si{\bar} \text{\footnote{Dieser Wert wurde bei der Messung vergessen zu messen und wird hier nur als 1 angenommen.}}
+\end{align*}
 \begin{table}  %Tabelle 1.Messung
   \centering
   \caption{Messwerte die mit Hilfe des Gerätes aus der Abbildung \ref{abb:p<1} gemessen wurden, bei einem Druch unter $1\,\si{\bar}$.}
@@ -39,22 +41,41 @@ dem Kapitel \ref{sec:p<1} durchgeführt wurde, aufgetragen.
   \end{tabular}
 \end{table}
 
-Werden diese nun in der Form $\log p$ in Abhängigkeit von $T$ aufgeträgen,
-lässt sich mit Hilfe der Linearen Regression eine Ausgleichsgrade bestimmen.
+Werden diese nun in der Form $\log(p/p_\mathrm{0})$ in Abhängigkeit von
+$1/T$ aufgeträgen,
+lässt sich mit Hilfe der Linearen Regression eine
+Ausgleichsgrade bestimmen.
 Dies ist in der Abbildung \ref{abb:plot1} dargestellt.
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{plot1.pdf}
-  \caption{Messwerte aus Tabelle \ref{tab:p<1} die in der Form $T_\mathrm{g}$ nach $\log p$ aufgetragen sind . }
+  \caption{Messwerte aus Tabelle \ref{tab:p<1} die in der Form $1/T_\mathrm{g}$ nach $\log(p/p_\mathrm{0}$ aufgetragen sind . }
   \label{abb:plot1}
 \end{figure}
 Aus der Linearen Regression ergibt sich für die Parameter:
 \begin{align*}
-  a=& -14,405\,\si{\bar}
-  b=&   0,039\,\si{\bar\per\kelvin}
+  a=& 11,63\,\si{\bar}
+  b=&  -4373,84\,\si{\bar\kelvin}
 \end{align*}
-
-
+Nun ergibt sich aus der Clausius-Clapeyronschen Gleichung
+unter der Annahme, dass $V_\mathrm{F}$ gegen über
+$V_\mathrm{D}$ vernächlässigbar ist und  für $V_\mathrm{D}$
+die idealen Gasgleichung gilt und $L$ Druck- und
+Temperaturunabhängig ist, die folgende Formel:
+\begin{align}
+  p=&p_\mathrm{0}\exp\left(-\frac{L}{R}\cdot\frac{1}{T}\right).\\
+\intertext{wird die Formel nun so verändert:}
+\log(p)=& \log(p_\mathrm{0})\left(-\frac{L}{R}\cdot\frac{1}{T}\right)\\
+\log\left(\frac{p}{p_\mathrm{0}}\right)=-\frac{L}{R}\cdot\frac{1}{T}\\
+\intertext{Somit ist das aus der Linearen Regression berechnete Steigung}
+b=-\frac{L}{R}\\
+\intertext{durch umstellen der Gleichung ergibt sich}
+L=-b\cdot R\\
+\end{align}
+\begin{align*}
+\intertext{somit ergibt sich für die Verdampfungswärme }
+L=(36,4\pm0.8)\cdot 10^3 \,\si{\joule\per\mol}
+\end{align*}
 
 \subsection{Messung bei einem Druck über $1\si{\bar}$}
 Bei dieser Messung ergeben sich die in Tabelle \ref{tab:p>1} aufgelisteten Messwerte für $T_\mathrm{g}$ und $p$.
@@ -109,20 +130,43 @@ Die Konstanten des Polynoms werden mit scipy eine Erweiterung von Python ausgere
   \label{abb:plot2}
 \end{figure}
 
-
-
+Um wieder die Verdampfungswärme $L$ zu berechene,
+wird wieder die Clausius-Clapeyronsche Gleichung
+verwendet. Da bei der Messung der kritische Punkt überschritten
+wird, kann $L$ nicht mehr als konstant angenommen werden.
+Trotzdem kann, wie schon bei der Messung unter einem Bar,
+$V_mathrm{F}$ gegen über $V_mathrm{D}$ vernachlässigt werden.
+Jedoch gilt für $V_mathrm{D}$ nicht mehr die Allgemeine
+Gasgleichung sondern die Näherung:
+\begin{align}
+\left(p+\frac{a}{V_\mathrm{D}^2}\right)\cdot V_\mathrm{D}=R\cdot T \, \, \text{mit}  a=0,9\,\si{\joule\cubic\meter\per\mol\tothe{2}}\\
+\intertext{Diese Näherung nach $V_mathrm{D}$ umgestellt ergibt:}
+V_{\mathrm{D\pm}}=\frac{RT}{2p}\pm\sqrt{\left(\frac{RT}{2p}\right)^2-a}
+%V_{mathrm{D-}}=\frac{RT}{2p}-\sqrt{\left\frac{RT}{2p}\right)^2-a}
+\end{align}
+wobei nun zwischen $V_\mathrm{D+}$ und  $V_\mathrm{D-}$ unterschieden werden muss.
+Wird nun die Clausius-Clapeyronsche Gleichung nach $L$ umgestellt, ergibt sich:
+\begin{align}
+  L=&V_\mathrm{D\pm}\cdot \frac{\delta p}{\delta T} \cdot T\label{eqn:L}
+\intertext{Für die Gleichung muss folglich noch die Ableitung von p bestimmt werden:}
+p'(T)=&3a\cdot T^2+ 2b\cdot T + c
+\intertext{Nun wird alles in die Gleichung \eqref{eqn:L} eingesetzt:}
+L=\frac{RT}{2(a\cdot T^3+b\cdot T^2 + c\cdot T + d)}\pm\sqrt{\left(\frac{RT}{2(a\cdot T^3+b\cdot T^2 + c\cdot T + d)}\right)^2-a} \cdot (3a\cdot T^2+ 2b\cdot T + c)\cdot T
+\end{align}
+Die Wärmekapazität wird nun in Abhängigkeit von der Temperatur aufgetragen wie in den Abbildungen \ref{abb:-} und \ref{abb:+}
+zusehen.
 
 
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{plot3.pdf}
-  \caption{Verdampfungswärme $L$ in Abhängigkeit von $T$ aus der Formel \eqref{eqn:-}.}
-  \label{abb:graph-}
+  \caption{Verdampfungswärme $L$ in Abhängigkeit von $T$ aus der Formel \eqref{eqn:L} mit negativem Vorzeichen vor der Wurzel.}
+  \label{abb:g-}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{plot4.pdf}
-  \caption{Verdampfungswärme $L$ in Abhänigkeit von $T$ aus der Formel \eqref{eqn:+}.}
-  \label{abb:graph+}
+  \caption{Verdampfungswärme $L$ in Abhänigkeit von $T$ aus der Formel \eqref{eqn:L} mit positivem Vorzeichen vor der Wurzel.}
+  \label{abb:+}
 \end{figure}

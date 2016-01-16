@@ -18,7 +18,7 @@ p2=8.14+p2
 
 
 
-m, b, r, p, stdsm=stats.linregress(Tg,np.log(p1))
+m, b, r, p, stdsm=stats.linregress(1/Tg,np.log(p1))
 
 print
 
@@ -26,15 +26,16 @@ def F(x,a,b,c,d):
     return a*x**3+b*x**2+c*x+d
 
 params, covariance =curve_fit(F,T2,p2)
-
+m=unp.uarray(m,stdsm)
 print('linrgress')
 print('a =', b)
 print('b =', m)
 
 
+print('Verdampfungswärem L=',-m*R)
 
 a = params[0]
-b = params[1]
+bk = params[1]
 c = params[2]
 d = params[3]
 
@@ -47,10 +48,10 @@ print('d =', params[3])
 
 
 
-x1=np.linspace(20+273.15,100+273.15)
+x1=np.linspace(1/(20+273.15),1/(100+273.15))
 plt.figure(1)
-plt.plot(Tg, np.log(p1),'rx')
-plt.plot(x1,m*x1+b,'b-')
+plt.plot(1/Tg, np.log(p1),'rx')
+plt.plot(x1,noms(m)*x1+b,'b-')
 plt.savefig('plot1.pdf')
 
 
@@ -61,10 +62,10 @@ plt.plot(x2,F(x2,*params),'b-')
 plt.savefig('plot2.pdf')
 
 def p_t(T):
-    return a*T**3+b*T**2+c*T+d
+    return a*T**3+bk*T**2+c*T+d
 
 def p_t_abl(T):
-    return 3*a*T**2+2*b*T+c
+    return 3*a*T**2+2*bk*T+c
 
 def L_max(T):
     return T*((R*T/(2*p_t(T)))+np.sqrt((R*T/(2*p_t(T)))**2-(0.9/p_t(T))))*p_t_abl(T)
