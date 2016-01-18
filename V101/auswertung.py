@@ -107,13 +107,13 @@ Rzmit=Dbmit/2
 print('Dz',Dzmit)
 #Iz=Tz**2*D_federmit/(4*np.pi**2)#Gemssenes Trägheitsmoment
 Iz=Tz**2*Ddyn/(4*np.pi**2)#Gemssenes Trägheitsmoment
-
 Iz=Iz#abziehen der Drehachse
 
 Mz=unp.uarray(1.9739,0.00005)#masse Zylinder
 
 Iztheo=(Mz*(Rzmit**2))/2#theorie wert
 
+print('Zeitgemittelt=',Tz)
 print('I_Zylindermittelwert=',Iz)
 print('I_Zylindermittelwerttheorie=',Iztheo)
 print('rel',(Iz-Iztheo)/Iztheo)
@@ -136,6 +136,7 @@ Iktheo=(2/5)*Mk*Rzmit**2
 
 
 
+print('Zeitgemittelt =',Tk)
 print('I_Kugelmittelwert=',Ik)
 print('I_Kugeltheorie',Iktheo)
 print('rel',(Ik-Iktheo)/(Iktheo))

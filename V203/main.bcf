@@ -2239,10 +2239,9 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">skript</bcf:citekey>
-    <bcf:citekey order="2">skript</bcf:citekey>
-    <bcf:citekey order="3">skript</bcf:citekey>
-    <bcf:citekey order="4">skript</bcf:citekey>
+    <bcf:citekey order="1">L</bcf:citekey>
+    <bcf:citekey order="2">L</bcf:citekey>
+    <bcf:citekey order="3">sample</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>

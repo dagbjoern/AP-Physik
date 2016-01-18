@@ -18,7 +18,7 @@ Die errchneten Werte werden gemittelt und es ergibt sich eine Winkelrichtgröße
 
 \subsection{Dynamische Methode}
 \label{sec:Dynamische}
-Die Messwerte für die Dynamische Methode sind in dem Abb.\ref{abb:b} in der Form $T^2$ gegen $a^2$ Aufgetragen.
+Die Messwerte für die Dynamische Methode sind in dem Abb.\ref{abb:b} in der Form $T^2$ gegen $a^2$ aufgetragen.
 Es besteht ein linearer Zusammenhang zwischen $T^2$ und $a^2$
 wie in der Formel \eqref{eqn:cool}.
 \begin{align}
@@ -26,17 +26,24 @@ I  &= 2(I_{\mathrm{z}}+m\cdot a^2) \\
 D\cdot \frac{T^2}{4\pi^2}-I_{\mathrm{D}} &= 2(I_{\mathrm{z}}+m\cdot a^2)
 \intertext{durch einstetzen der Formel \eqref{eqn:I} und umformen nach $a^2$ ergibt sich} %
 a^2 &= D_{\mathrm{dyn}}\cdot \frac{T^2}{8\pi^2m}-\frac{I_{\mathrm{D}}}{2m}-\frac{I_{\mathrm{z}}}{m}\label{eqn:cool}
-\intertext{Durch eine Lineareregression lässt sich mit dem Y-Achsenabschnitt $b$ und durch Umformen $I_{\mathrm{D}}$ bestimmen:}
-b&=-\frac{I_{\mathrm{z}}}{m}-\frac{I_{\mathrm{D}}}{2m}\\
-I_D&=-2mb-2I_z
+\intertext{Durch die Lineareregression lässt sich mit dem  Y-Achsenabschnitt  $a$ berechnen und somit durch Umformen  $I_{\mathrm{D}}$ bestimmen:}
+a&=-\frac{I_{\mathrm{z}}}{m}-\frac{I_{\mathrm{D}}}{2m}\\
+I_D&=-2ma-2I_z
 \intertext{Durch einsetzten des Trägheitsmoments des Zylinders \eqref{eqn:zl} ergibt sich}
-I_{\mathrm{D}}&=-2mb-2m\left(\frac{\left(\frac{d_{\mathrm{{z}}}}{2}\right)^2}{4}+\frac{h_{\mathrm{z}}^2}{12}\right)
-\intertext{Durch einsetzen der gemittelten gemessenen Größen}
+I_{\mathrm{D}}&=-2ma-2m\left(\frac{\left(\frac{d_{\mathrm{{z}}}}{2}\right)^2}{4}+\frac{h_{\mathrm{z}}^2}{12}\right)
+\intertext{Durch Einsetzen der gemittelten gemessenen Größen}
  m&=(0,2225\pm0,000005)\, \si{\kilo\gram}\\
  d_{z1}&=(0,03494\pm0,00003)\,\si{meter}\\
 H_z&=0,0300\pm0,00006\,\si{meter}
 \intertext{ergibt sich für das Trägheitsmoment der Drillachse}
 I_D&=(0,0027454\pm0,0000002)\,\si{\kilo\gram\meter\tothe{2}}
+\intertext{Ebenfalls lässt sich mit Hilfe der aus der Linearenregression berechneten Steigung $b$ die dynamische Winkelrichtgröße $ D_\mathrm{dyn}$ bestimmen:  }
+b=\frac{D_\mathrm{dyn}}{8\pi^2m}.\\
+D_\mathrm{dyn}=8a\pi^2m.\\
+\intertext{Durch einsetzen der Werte ergibt sich}
+D_\mathrm{dyn}=(0,0295\pm0,0004)\, \si{\kilo\gram}.\\
+Da sich die dynamische Winkelrichtgröße von der statisch gemessenen Winkelrichtgröße unterscheidet, wird die dynamische Winkelrichtgröße im
+folgendem Teil als Winkelrichtgröße verwendet, da die folgenden Trägheitsmoment ebenfalls mit der Dynamischen Medthode bestimmt werden.
 \end{align}
 \begin{figure}
    \centering
@@ -49,22 +56,26 @@ I_D&=(0,0027454\pm0,0000002)\,\si{\kilo\gram\meter\tothe{2}}
 \subsubsection{Zylinder}
 Nun werden die Werte für das Trägheitsmoment eines Zylinder,
 mit der Masse
-\begin{align}
+\begin{align*}
 m=(1,9739\pm0,00005)\,\si{\meter}
-\end{align}
+\end{align*}
 einmal mit der Formel  \eqref{eqn:I}
 aus den Messwerten berechnet.
-Dafür werden die gemessenen Zeiten gemittelt, und es ergibt sich ein
-\begin{align}
-I_{\mathrm{gmessen}}=(-0,0004\pm0,0005)\,\si{\kilo\gram\mete\squared}   
-
- und  aus der Theoretischenformel \eqref{eqn:zs} für
+Dafür werden die gemessenen Zeiten gemittelt,
+\begin{align*}
+T\overline= (1,455\pm0,016)\,\si{\second}\\
+\intertext{und es ergibt sich ein}
+I_{\mathrm{gemessen}}=(-0,0004\pm0,0005)\,\si{\kilo\gram\meter\squared}.
+\end{align*}
+Aus der Theoretischenformel \eqref{eqn:zs} für
 einen Zylinder der parallel zur Drehachse verläuft mit dem Durchmesser
-\begin{align}
-  d_{z2}=(0.08019\pm0.00011)\,\si{\meter}
-\end{align}
-berechnet. Diese sind in Tabelle \ref{tab:Zylinder} dargestellt.
-\input{content/tabelleBz}
+\begin{align*}
+  d_{z2}=(0.08019\pm0.00011)\,\si{\meter},
+\intertext{ergibt sich eine theoretisches Trägheitsmoment}
+I_\mathrm{theorie}= 0.0003011\pm0.0000006\,\si{\kilo\gram\meter\squared}.
+\intertext{Somit beträgt die Abweichung von Theoriewerte die mit der Formel \eqref{eqn:abweich} berechnet wird}
+a=(425\pm13)\,\si{\percent}.
+\end{align*}
 \subsubsection{Kugel}
 Dies mal werden die Werte für das Trägheitsmoment eine Kugel,
 die die Masse $(m=0,8125\pm0,00005)\si{\meter} $ besitzt, wieder mit der Formel  \eqref{eqn:I}
