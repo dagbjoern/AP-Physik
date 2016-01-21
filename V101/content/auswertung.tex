@@ -63,9 +63,9 @@ einmal mit der Formel  \eqref{eqn:I}
 aus den Messwerten berechnet.
 Dafür werden die gemessenen Zeiten gemittelt,
 \begin{align*}
-T\overline= (1,455\pm0,016)\,\si{\second}\\
+\overline{T}= (1,455\pm0,016)\,\si{\second}\\
 \intertext{und es ergibt sich ein}
-I_{\mathrm{gemessen}}=(-0,0004\pm0,0005)\,\si{\kilo\gram\meter\squared}.
+I_{\mathrm{gemessen}}=(0,00158\pm0,00004)\,\si{\kilo\gram\meter\squared}.
 \end{align*}
 Aus der Theoretischenformel \eqref{eqn:zs} für
 einen Zylinder der parallel zur Drehachse verläuft mit dem Durchmesser
@@ -77,18 +77,35 @@ I_\mathrm{theorie}= 0.0003011\pm0.0000006\,\si{\kilo\gram\meter\squared}.
 a=(425\pm13)\,\si{\percent}.
 \end{align*}
 \subsubsection{Kugel}
-Dies mal werden die Werte für das Trägheitsmoment eine Kugel,
-die die Masse $(m=0,8125\pm0,00005)\si{\meter} $ besitzt, wieder mit der Formel  \eqref{eqn:I}
-aus den Messwerten und aus der Theoretischenformel \eqref{eqn:Kugel} für eine
+Dies mal wird das Trägheitsmoment eine Kugel,
+die die Masse
+\begin{align*}
+m=(0,8125\pm0,00005)\si{\meter}
+\end{align*}
+besitzt, berechnet. Zuerst wird dieses wieder mit der Formel  \eqref{eqn:I}
+aus den Messwerten bestimmt. Dafür werden
+wieder die gemessenen Zeiten gemittelt,
+\begin{align*}
+  \overline{T}=(1,486\pm0,007)\,\si{\second}
+\intertext{und es ergibt sich ein}
+I_\mathrm{gemessen}=0,00165\pm0,00003)\,\si{\kilo\gram\meter\squared}.
+\end{align*}
+Aus der Theoretischenformel \eqref{eqn:Kugel} für eine
 Kugel mit dem Durchmesser
-\begin{align}
-  d_{k}=(0.1365\pm0.0019)\si{\meter}
-\end{align}
-berechnet. Diese sind in Tabelle \ref{tab:Kugel} dargestellt.
-\input{content/tabelleBk}
+\begin{align*}
+  d_\mathrm{k}=(0,1365\pm0,0019)\,\si{\meter}
+\end{align*}
+ergibt sich ein theoretisches Trägheitsmoment von
+\begin{align*}
+I_{theorie}=(0,00151\pm0,00004)\,\si{\kilo\gram\meter\squared}.
+\intertext{Die relative Abweichung nach der Formel \eqref{eqn:abweich} beträgt somit:}
+a=(8,9\pm3,5)\,\si{\percent}.
+\end{align*}
 \newpage
 \subsection{Trägheitsmoment einer Puppe}
-Der Körper der Puppe wird mit verschiedenen Zylindern genähert, wie in Abbildung \ref{fig:puppe} zu sehen.
+Der Körper der Puppe wird mit verschiedenen
+Zylindern genähert, wie in Abbildung \ref{fig:puppe}
+ zu sehen ist.
 \begin{figure}
  \centering
  \includegraphics[width=0.3\textwidth]{puppe.PNG}
@@ -105,69 +122,63 @@ Die gemessenen Werte werden gemittelt und es ergeben sich folgende Werte für di
     $ $ & Höhe$/\si{\meter}$ & $Durchmesser / \si{\meter}$\\
     \midrule
     Beine & 0.2327\pm 0.0003 & 0.021\pm0.004 \\
-    Arme  & 0.181\pm 0.002 & 0.016\pm 0.003 \\
+    Arme  & 0.18
+    1\pm 0.002 & 0.016\pm 0.003 \\
     Kopf  & 0.0772\pm 0.0.0005 & 0.03\pm 0.01 \\
     Torso & 0.122\pm 0.001 & 0.045\pm 0.008 \\
     \bottomrule
    \end{tabular}
 \end{table}
-Mit der Masse der Puppe $m_{ges}= (0,3407\pm0,0005)\si{\kilo\gram}$
-und dem gesamt Volumen $V_{ges}=(0,0005\pm0,0001)\si{\meter\tothe{3}}$
-ergibt sich mit:
+\FloatBarrier
+Mit der Masse der Puppe
+\begin{align*}
+  m_{\mathrm{ges}}= (0,3407\pm0,0005)\,\si{\kilo\gram}
+\intertext{und dem gesamt Volumen }
+V_{\mathrm{ges}}=(0,0005\pm0,0001)\,\si{\meter\tothe{3}}\\
+\end{align*}
+ergibt sich mit
 \begin{align}
   \rho=\frac{m}{V}
 \end{align}
-eine Dichte von $\rho=(7,4\pm1,6)\si{\kilo\gram\meter\tothe{-3}}$\\
-\\
-Mit diesen Ergebnissen lässt sich das gesamt Trägheitsmoment $I_{ges}$ bestimmen,
-dies ergibt sich aus den einzelnen Trägheitsmomenten der Zylinder, diese lassen sich mit Hilfe der Formel \eqref{eqn:zs}
-und des Steinerschen Satzes bestimmen. Für das gesamt Trägheitsmoment ergibt sich:
+\begin{align*}
+\intertext{eine Dichte von}
+\rho=(7,4\pm1,6)\,\si{\kilo\gram\meter\tothe{-3}}
+\end{align*}
+Mit diesen Ergebnissen lässt sich das theoretische Gesamtträgheitsmoment $I_\mathrm{gesTheo}$ bestimmen.
+Dies ergibt sich aus den einzelnen Trägheitsmomenten der Zylinder, diese lassen sich mit Hilfe der Formel \eqref{eqn:zs}
+und des Steinerschen Satzes bestimmen. Das Gesamtträgheitsmoment ergibt sich aus:
 \begin{align}
-  I_{ges}=I_{Kopf}+I_{Torso}+2\cdot I_{Arm}+2\cdot I_{Bein}
+  I_\mathrm{GesTheo}=I_\mathrm{Kopf}+I_\mathrm{Torso}+2\cdot I_\mathrm{Arm}+2\cdot I_\mathrm{Bein}
 \end{align}
-Der Zahlenwert ist in Tabelle \ref{tab:puppegrade} zusammen mit den, aus den Messwerten, nach Formel \eqref{eqn:I} berechneten
-Trägheitsmomenten zu finden.
-\begin{table}
-  \centering
-  \caption{Schwingdauer, gemessenes und theoretisches Trägheitsmoment der Puppe ohne ausgestreckte Arme}
-  \label{tab:puppegrade}
-  \begin{tabular}{c c c}
-    \toprule
-$Schwingdauer/\si{\second}$ & $I_{gemessen}/\si{\kilo\gram\meter\tothe{2}}$ & $I_{theorie}/ \si{\meter}$\\
-    \midrule
-    0,550\pm0,1   &  -0,0024\pm0,0001   &  0,00011\pm0,00003\\
-    0,640\pm0,1   &  -0,0023\pm0,0002   &  0,00011\pm0,00003\\
-    0,652\pm0,1   &  -0,0023\pm0,0002   &  0,00011\pm0,00003\\
-    0,654\pm0,1   &  -0,0023\pm0,0002   &  0,00011\pm0,00003\\
-    0,658\pm0,1   &  -0,0023\pm0,0002   &  0,00011\pm0,00003\\
-    0,630\pm0,1   &  -0,0023\pm0,0002   &  0,00011\pm0,00003\\
-    0,664\pm0,1   &  -0,0023\pm0,0002   &  0,00011\pm0,00003\\
-    0,700\pm0,1   &  -0,0022\pm0,0002   &  0,00011\pm0,00003\\
-    0,698\pm0,1   &  -0,0022\pm0,0002   &  0,00011\pm0,00003\\
-    0,682\pm0,1   &  -0,0022\pm0,0002   &  0,00011\pm0,00003\\
-    \bottomrule
-   \end{tabular}
-\end{table}
-Analog wird dies Für den Körper mit ausgestreckten Armen gehandhabt, hierbei verändert sich das Trägheitsmoment der Arme, dieses berechnet sich hier mit Hilfe von Formel \eqref{eqn:zl}.
-Der Theoretische und die mit Messwerten errechneten Werte finden sich in Tabelle \ref{tab:puppeausgestreckt}
-\begin{table}
-  \centering
-  \caption{Schwingdauer, gemessenes und theoretisches Trägheitsmoment der Puppe mit ausgestreckten Armen}
-  \label{tab:puppeausgestreckt}
-  \begin{tabular}{c c c}
-    \toprule
-$Schwingdauer/\si{\second}$ & $I_{gemessen}/\si{\kilo\gram\meter\tothe{2}}$ & $I_{theorie}/ \si{\meter}$\\
-    \midrule
-    1.11\pm0.1  &  -0.0014\pm0.0004  &  0.0007\pm0.0002\\
-    1.09\pm0.1  &  -0.0014\pm0.0004  &  0.0007\pm0.0002\\
-    1.08\pm0.1  &  -0.0014\pm0.0004  &  0.0007\pm0.0002\\
-    1.12\pm0.1  &  -0.0014\pm0.0004  &  0.0007\pm0.0002\\
-    1.11\pm0.1  &  -0.0014\pm0.0004  &  0.0007\pm0.0002\\
-    1.12\pm0.1  &  -0.0014\pm0.0004  &  0.0007\pm0.0002\\
-    1.12\pm0.1  &  -0.0013\pm0.0004  &  0.0007\pm0.0002\\
-    1.09\pm0.1  &  -0.0014\pm0.0004  &  0.0007\pm0.0002\\
-    1.10\pm0.1  &  -0.0014\pm0.0004  &  0.0007\pm0.0002\\
-    1.08\pm0.1  &  -0.0014\pm0.0004  &  0.0007\pm0.0002\\
-    \bottomrule
-   \end{tabular}
-\end{table}
+Die einzelnen Trägheitsmomente der Zylinder werden
+mit Hilfe der Formel \eqref{eqn:zs} berechent.
+Nur für die ausgestreckten Arme wird
+die Formel \eqref{eqn:zl} benötigt.
+Somit folgt für die einzelnen Trägheitsmomente mit angelegten Armen
+\begin{align*}
+I_\mathrm{Kopf} &=(0,0000022\pm0,0000041)\,\si{\kilo\gram\meter\squared},\\
+I_\mathrm{Torso}&=(0,000037\pm0,000022)\,\si{\kilo\gram\meter\squared},\\
+I_\mathrm{Arm}  &=(0,000026\pm0,000012)\,\si{\kilo\gram\meter\squared},\\
+I_\mathrm{Bein} &=(0,0000093\pm0,0000057)\,\si{\kilo\gram\meter\squared}\\
+\intertext{und somit ein Gesamtträgheitsmoment bei angelegten Armen von}
+I_\mathrm{GesTheoAn}&=(0,000109\pm0,000030)\,\si{\kilo\gram\meter\squared}.\\
+\intertext{Bei ausgestreckten Armen unterscheidet sich nur das Trägheitsmoment der Arme}
+I_\mathrm{Arm}&=(0,00010\pm0,00004)\,\si{\kilo\gram\meter\squared}\\
+\intertext{und als Gesamttägheitsmoment mit ausgestreckten Armen egibt sich}
+I_\mathrm{GesTheoAus}&=(0,00089\pm0,00030)\,\si{\kilo\gram\meter\squared}\\
+\end{align*}
+Für das gemessene Gesamtträgheitmoment
+müssen für beide Fälle
+die gemessenen Zeiten gemittelt werden.
+\begin{align*}
+\overline{T}_\mathrm{an} &=(0,65\pm0,04)\,\si{\second}\\
+\overline{T}_\mathrm{aus}&=(1.099\pm0.014)\,\si{\second}
+\end{align*}
+Diese Zeiten werden wieder in die Formel \eqref{eqn:I}
+eingesetzt und es ergibt sich für den Fall das
+die Arme angelegt sind eine Trägheitsmoment von:
+\begin{align*}
+I_\mathrm{GesMessAn}&=(0,00032\pm0,00004)\,\si{\kilo\gram\meter\squared}\\
+\intertext{Für den Fall das die Puppe die Arme aussteckt:}
+I_\mathrm{GesMessAus}&= (0,000903\pm0,000026)\,\si{\kilo\gram\meter\squared}.\\
+\end{align*}

@@ -173,9 +173,21 @@ Igemessen_a=(Ta**2)*Ddyn/(4*np.pi**2)
 #print(Igemessen_a)
 # Igemessen_a=Igemessen_a-I_D#abziehen der Drehachse
 #print(Igemessen_a)
+print('gemittelte Zeit an',Tg)
+print('gemittelte Zeit aus',Ta)
 
 Itheorie_g=Izp(Kd,Kh,0)+Izp(Td,Th,0)+2*Izp(Bd,Bh,Bd/2)+2*Izp(Ad,Ah,(Td/2)+(Ad/2))
-Itheorie_a=Izp(Kd,Kh,0)+Izp(Td,Th,0)+2*Izp(Bd,Bh,Bd/2)+2*Izp(Ad,Ah,(Td/2)+(Ah/2))
+Itheorie_a=Izp(Kd,Kh,0)+Izp(Td,Th,0)+2*Izp(Bd,Bh,Bd/2)+2*Izs(Ad,Ah,(Td/2)+(Ah/2))
+
+print('Trägheitsmoment Kopf',Izp(Kd,Kh,0))
+print('Trägheitsmoment Torso',Izp(Td,Th,0))
+print('Trägheitsmoment Bein',Izp(Bd,Bh,Bd/2))
+print('Trägheitsmoment Arm angelegt ',Izp(Ad,Ah,(Td/2)+(Ad/2)))
+print('Trägheitsmoment Arm ausgestreckt ',Izs(Ad,Ah,(Td/2)+(Ad/2)))
+
+
+
+
 
 print('I_puppe  g =',Igemessen_g)
 print('I_puppetheorie g=',Itheorie_g)

@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  18 JAN 2016 11:27
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  19 JAN 2016 01:23
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -2457,19 +2457,13 @@ File: b.pdf Graphic file (type pdf)
  <use b.pdf>
 Package pdftex.def Info: b.pdf used on input line 50.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
- [8] [9<./b.pdf>]
-(./content/tabelleBk.tex) [10] <puppe.PNG, id=219, 469.15276pt x 210.7875pt>
+ [8] [9<./b.pdf>] [10]
+<puppe.PNG, id=218, 469.15276pt x 210.7875pt>
 File: puppe.PNG Graphic file (type png)
-
-<use puppe.PNG>
-Package pdftex.def Info: puppe.PNG used on input line 94.
+ <use puppe.PNG>
+Package pdftex.def Info: puppe.PNG used on input line 111.
 (pdftex.def)             Requested size: 125.47794pt x 56.37625pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--125
-
- []
-
-) (./content/diskussion.tex [11<./puppe.PNG>]) [12]
+ [11<./puppe.PNG>]) (./content/diskussion.tex) [12]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
  [13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
@@ -2477,9 +2471,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 7F52DDE1A48E2F50F385B78789641DDE;12330.
+(rerunfilecheck)             Checksum: 78843BAFC134089244DF185018FE6A4C;11378.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: A495E4CBEBDEB2C42C375FA01B9E5108;1648.
+(rerunfilecheck)             Checksum: B2C3899D37631FD55945E780CF3B57DD;1647.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2487,14 +2481,14 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44182 strings out of 494897
+ 44164 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 744 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 9 kern, 15 attribute, 96 glue_spec, 15 attr
+ 742 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 9 kern, 14 attribute, 96 glue_spec, 14 attr
 ibute_list, 1 action, 1 write nodes
-   avail lists: 1:2,2:1074,3:394,4:1438,5:303,6:2659,7:84,8:28,9:601,10:241,11:1
- 46449 multiletter control sequences out of 65536+600000
- 136 fonts using 30716543 bytes
+   avail lists: 1:2,2:1076,3:396,4:1434,5:303,6:2161,7:63,8:28,9:601,10:241,11:1
+ 46443 multiletter control sequences out of 65536+600000
+ 136 fonts using 30716755 bytes
  69i,21n,104p,1048b,2430s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/te
 xlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/tex
@@ -2505,10 +2499,10 @@ texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf
 -dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist
 /fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/op
 entype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (13 pages, 133309 bytes).
+Output written on main.pdf (13 pages, 131999 bytes).
 
-PDF statistics: 365 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
- 84 named destinations out of 1000 (max. 131072)
+PDF statistics: 361 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 131072)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
