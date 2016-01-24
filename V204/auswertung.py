@@ -43,16 +43,36 @@ def tief(t,T,tief1):
     return np.sort(ttief, axis=None)
 
 def k(p,c,Thnah,Ttnah,thnah,ttnah,Thfern,Ttfern,thfern,ttfern):
- k=(p*c*(0.03)**2)/(2*Phasenver(thnah,ttnah,thfern,ttfern)*np.log(Ampver(Thnah,Ttnah)/Ampver(Thfern,Ttfern)))
+ k=(p*c*(0.03)**2)/(2*Phasenver(thnah,ttnah,thfern,ttfern)*unp.log(Ampver(Thnah,Ttnah)/Ampver(Thfern,Ttfern)))
  return k
 
 def Ampver(Th,Tt):
-     return np.average((Th-Tt)/2)
+    T=unp.uarray(np.average((Th-Tt)/2),np.std((Th-Tt)/2))
+    return T
+
+
+
+def Warme(k,A,Tnah,Tfern,t,time):
+    dQ=[]
+    thoch=np.array(dQ)
+    i=0
+    y=0
+    while y < len(time):
+        while t[i] != time[y]:
+            i=i+1
+        y=y+1
+        lol=-k*A*((Tnah[i]-Tfern[i])/3)
+        dQ=np.append(dQ,lol)
+    return dQ
+
+
+
+
 
 def Phasenver(thnah,ttnah,thfern,ttfern):
     dt1=np.average(thfern-thnah)
     dt2=np.average(ttfern-ttnah)
-    dt=np.average([dt1,dt2])
+    dt=unp.uarray(np.average([dt1,dt2]),np.std([dt1,dt2]))
     return dt
 
 c_mes=385.
@@ -88,7 +108,18 @@ A7th=hoch(t3,T37,A7Th)
 A7tt=tief(t3,T37,A7Tt)
 A8th=hoch(t3,T38,A8Th)
 A8tt=tief(t3,T38,A8Tt)
+time=np.array([100,200,300,400,500])
+print('Wärmestrom messing breit', Warme(81,0.000048,T12,T11,t1,time))
+print('Wärmestrom messing schmal', Warme(81,0.000028,T13,T14,t1,time))
+print('Wärmestrom alu', Warme(200,0.000048,T16,T15,t1,time))
+print('Wärmestrom stahl', Warme(20,0.000048,T17,T18,t1,time))
 
+def ab(am,at):
+    return (am-at)/at
+
+print('abweichung messing=',ab(k(p_mes,c_mes,A2Th,A2Tt,A2th,A2tt,A1Th,A1Tt,A1th,A1tt),81) )
+print('abweichung alu=',ab(k(p_alu,c_alu,A6Th,A6Tt,A6th,A6tt,A5Th,A5Tt,A5th,A5tt),200))
+print('abweichung stahl=',ab(k(p_stahl,c_stahl,A7Th,A7Tt,A7th,A7tt,A8Th,A8Tt,A8th,A8tt),20))
 #def k(p,c,Thnah,Ttnah,thnah,ttnah,Thfern,Ttf..
 #def Phasenver(thnah,ttnach,thfern,ttfern)
 #def Ampver(Th,Tt):
@@ -96,12 +127,20 @@ print('messing=',k(p_mes,c_mes,A2Th,A2Tt,A2th,A2tt,A1Th,A1Tt,A1th,A1tt))
 print('alu=',k(p_alu,c_alu,A6Th,A6Tt,A6th,A6tt,A5Th,A5Tt,A5th,A5tt))
 print('stahl=',k(p_stahl,c_stahl,A7Th,A7Tt,A7th,A7tt,A8Th,A8Tt,A8th,A8tt))
 
+
+print('phasenverschiebung messing',Phasenver(A2th,A2tt,A1th,A1tt))
+print('phasenverschiebung alu',Phasenver(A6th,A6tt,A5th,A5tt))
+print('phasenverschiebung messing',Phasenver(A7th,A7tt,A8th,A8tt))
 #print(Phasenver(A2th,A2tt,A1th,A1tt))
 # dt1=np.average(thfern-thnah)
 # dt2=np.average(ttfern-ttnah)
-print(A2Th)
-print(A2Tt)
-print(Ampver(A2Th,A2Tt))
+print('Amplitude messing 1',Ampver(A1Th,A1Tt))
+print('Amplitude messing 2',Ampver(A2Th,A2Tt))
+print('Amplitude alu 5',Ampver(A5Th,A5Tt))
+print('Amplitude alu 6',Ampver(A6Th,A6Tt))
+print('Amplitude stahl 7',Ampver(A7Th,A7Tt))
+print('Amplitude stahl 8',Ampver(A8Th,A8Tt))
+
 
 plt.figure(1)#T1T4
 plt.plot(t1,T11+273.15,'b-',label=r'$Temperatur\ am\ Punkt\ T1 $')
@@ -129,10 +168,6 @@ plt.legend(loc='best')
 plt.grid(True)
 plt.savefig('plotT7-T8.pdf')
 
-
-
-
-
 plt.figure(4)#T2-T1
 plt.plot(t1,T12-T11,'r-',label=r'$Temperaturdifferents\ T2-T1 $')
 plt.xlabel(r'$Zeit\ \frac{t}{s}$')
@@ -158,6 +193,21 @@ plt.ylabel(r'$Temperatur\ \frac{T}{K} $')
 plt.legend(loc='best')
 plt.grid(True)
 plt.savefig('plotT7T8.pdf')
+
+
+plt.figure(7)#T5T6
+plt.plot(t2,T25+273.15,'b-',label=r'$Temperatur\ am\ Punkt\ T5 $')
+plt.plot(t2,T26+273.15,'r-',label=r'$Temperatur\ am\ Punkt\ T6 $')
+plt.xlabel(r'$Zeit\ \frac{t}{s}$')
+plt.ylabel(r'$Temperatur\ \frac{T}{K} $')
+plt.legend(loc='best')
+plt.grid(True)
+plt.savefig('plotT5T6.pdf')
+
+
+
+
+
 
 #ausgeben der Temperatur nach 700 s
 print('Temperatur nach 700s für T1:',T11[700/0.2])
