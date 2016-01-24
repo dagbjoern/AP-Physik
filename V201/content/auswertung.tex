@@ -1,44 +1,40 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 \subsection{Bestimmung der Wärmekapazität vom Kaloriemeter}
-Um die Wärmekapazität des Kaloriemeters zu bestimmen muss folgende Beziehung betrachtet werden:
-Die vom warmen Wasser abgegebene Wärmemenge
+Um die Wärmekapazität des Kalorimeters zu bestimmen, muss folgende Beziehung betrachtet werden;
+die vom warmen Wasser abgegebene Wärmemenge
 \begin{align}
 Q_\mathrm{1}=c_\mathrm{k} m_\mathrm{k}(T_\mathrm{k}-T_\mathrm{m})
 \end{align}
-entspricht der vom kalten Wasser und von den Wänden des kaloriemeters aufgenommenen Wärmemenge:
+entspricht der vom kalten Wasser und von den Wänden des Kalorimeters aufgenommenen Wärmemenge:
 \begin{align}
 Q_\mathrm{2}=(c_\mathrm{w} m_\mathrm{w} + c_\mathrm{g} m_\mathrm{g}) (T_\mathrm{m}-T_\mathrm{w}).
 \end{align}
-$c_\mathrm{w}$ ist hier die spezifische Wärmekapazität des Wassers.
+Hierbei ist $c_\mathrm{w}$ die spezifische Wärmekapazität des Wassers.
 Da $Q_\mathrm {1}=Q_\mathrm{2}$ gilt, ergibt sich nach weiteren Umformungen:
 \begin{align}
-c_\mathrm{g} m_\mathrm{g}=\frac{c_\mathrm{w} m_\mathrm{w}(T_\mathrm{w}-T_\mathrm{m})-c_\mathrm{w} m_\mathrm{k}(T_\mathrm{m}-T_\mathrm{k})}{(T_\mathrm{m}-T_\mathrm{k})}
+c_\mathrm{g} m_\mathrm{g}=\frac{c_\mathrm{w} m_\mathrm{y}(T_\mathrm{y}-T'_\mathrm{m})-c_\mathrm{w} m_\mathrm{x}(T_\mathrm{m}-T'_\mathrm{x})}{(T'_\mathrm{m}-T_\mathrm{x})}.
 \end{align}\\
 %\begin{align*}
 %c_\mathrm{g}=
 %m_\mathrm{g}=\frac{c_\mathrm{w} m_\mathrm{w}(T_\mathrm{w}-T_\mathrm{m})-c_\mathrm{w} m_\mathrm{k}(T_\mathrm{m}-T_\mathrm{k})}{(T_\mathrm{m}-T_\mathrm{k})}
 %\end{align*}\\
-Mit den folgenden Werten,
-\begin{align}
-  c_\mathrm{g}m_\mathrm{g}=256,73 \si{\joule\per\kelvin}.
-\intertext{Wärmekapazität Wasser:}
-  c_\mathrm{w}&=4,18\,\si{\joule\per\gram\per\kelvin}\\
-\intertext{Masse warmes Wasser:}
-  m_\mathrm{w}&=327,11 \,\si{\gram}\\
-\intertext{Masse kaltes Wasser:}
-  m_\mathrm{k}&=240,06 \, \si{\gram}\\
-\intertext{Temperatur warmes Wasser:}
-  T_\mathrm{w}&=358,4 \, \si{\kelvin}\\
-\intertext{Temperatur kaltes Wasser:}
-  T_\mathrm{k}&=294,64\, \si{\kelvin}\\
-\intertext{Temperatur gemischtes Wasser:}
-  T_\mathrm{m}&=327,82\, \si{\kelvin}\\
-\intertext{ergibt sich für die Wärmekapazität des Kalorimeters:}
-  c_\mathrm{g}m_\mathrm{g}&=256,73 \si{\joule\per\kelvin}
-\end{align}
-
-
+\begin{table}
+   \centering
+   \caption{Werte für die Bestimmung der Wärmekapazität des Kaloriemeters.}
+   \label{tab:nullmessung}
+    \begin{tabular}{c c c c c c}
+     \toprule
+      $c_\mathrm{w}\:/\ \si{\joule\per\gram\per\kelvin}$ & $m_\mathrm{y}\:/\ \si{\gram}$ & $m_\mathrm{x}\:/\ \si{\gram}$ & $T_\mathrm{y}\:/\ \si{\kelvin}$ &  $T_\mathrm{x}\:/\ \si{\kelvin}$ & $T'_\mathrm{m}/\si{\kelvin}$  \\
+      \midrule
+      4,18 & 327,11 & 240,06 & 358,4 & 294,64 & 327,82 \\
+      \bottomrule
+    \end{tabular}
+\end{table}
+Mit den Werten aus Tabelle \ref{tab:nullmessung} ergibt sich eine Wärmekapazität von:
+\begin{align*}
+  c_\mathrm{g}m_\mathrm{g}&=256,73 \si{\joule\per\kelvin}.
+\end{align*}\\
 \subsection{Bestimmung der spezifische Wärmekapazität von Zinn und Graphit}
 Für die spezifische Wärmekapazitat von verschiedenen Stoffen ergibt sich:
 \begin{align}
@@ -47,7 +43,7 @@ c_\mathrm{k}=\frac{(c_\mathrm{w} m_\mathrm{w}+c_\mathrm{g} m_\mathrm{g})(T_\math
 Werden nun die gemessenen Werte für Zinn aus der Tabelle \ref{tab:zinn} in die Formel \eqref{eqn:ck} eingesetzt und die erhaltenen $c_{\mathrm{Zinn}}$ gemittelt.
 Daraus ergibt sich ein $c_{\mathrm{Zinn}}$ von
 \begin{align*}
-c_\mathrm{Zinn} &=  (0,43\pm0,13 \,\si{\joule\per\kelvin\gram}.\\
+c_\mathrm{Zinn} &=  (0,43\pm0,13) \,\si{\joule\per\kelvin\gram}.\\
 \intertext{Dieser weicht um $85\si{\percent}$ von dem Literaturwert}
  c_\mathrm{zTheorie} &= 0,23 \,\si{\joule\per\kelvin\gram}
 \intertext{ab.\cite{ck}}

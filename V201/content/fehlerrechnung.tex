@@ -16,11 +16,11 @@ Numpy 1.9.2, einer Erweiterung von Python 3.2.0, berechnet.
 Die Fehlerfortpflanzung wird mit der Gauß´schen Fehlerfortpflanzung berechnet
  \eqref{eqn:gaus}.
 \begin{equation}
-\Delta f= \sqrt{\left(\frac{\partial f}{\partial x}\Delta x \right)^{2} + \left( \frac{\partial f}{\partial y}\Delta y\right)^2...}\label{eqn:gaus}.
+\Delta f=\sqrt{\sum_{j=1}^n \left(\frac{\partial f}{\partial x_j}\Delta x_j \right)^{2} }\label{eqn:gaus}.
 \end{equation}
 Diese wird von der Erweiterung Uncertainties 2.4.6.1 von Python 3.2.0 übernommen.\\
 \\
 Für die Abweichung von den Theoriewerten wird die Formel benutzt:
 \begin{align}
-  \biggl|  \frac{a_\mathrm{Messung}-a_\mathrm{Theorie}}{a_\mathrm{Theorie}}  \biggr|.
+ a=\biggl|  \frac{a_\mathrm{Messung}-a_\mathrm{Theorie}}{a_\mathrm{Theorie}}  \biggr|.
 \end{align}
