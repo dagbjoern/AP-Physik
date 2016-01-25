@@ -20,7 +20,7 @@ Sg6,Sg12,Sg18,Sg24,Sg30,Sg36,Sg42,Sg48,Sg54,Sg60=np.genfromtxt('schwebung1.txt',
 #länge Stecke
 L=unp.uarray(0.45,0.005)
 #grundfequenz
-v_0=unp.uarray(20.7416,0)
+v_0=unp.uarray(20741.6,0)
 #wellenlänge
 Lw=np.array([0.0,0.0,0.0,0.0])
 
@@ -29,6 +29,8 @@ Lw[0]=w1[1]-w1[0]
 Lw[1]=w1[2]-w1[1]
 Lw[2]=w2[1]-w2[0]
 Lw[3]=w2[2]-w2[1]
+print('Wellenlänge',Lw)
+Lw=Lw*1e-3
 
 Ld=unp.uarray(np.average(Lw),np.std(Lw))
 print('Wellenlänge',Ld)
@@ -46,7 +48,6 @@ Schw=unp.uarray([np.average(Sg6),np.average(Sg12),np.average(Sg18),np.average(Sg
 np.average(Sg30),np.average(Sg36),
 np.average(Sg42),np.average(Sg48),
 np.average(Sg54),np.average(Sg60)],[np.std(Sg6),np.std(Sg12),np.std(Sg18),np.std(Sg24),np.std(Sg30),np.std(Sg36),np.std(Sg42),np.std(Sg48),np.std(Sg54),np.std(Sg60)])
-Schw=Schw*1e-3
 #gemittelte Zeit
 T=unp.uarray([np.average(_V6),np.average(_V12),np.average(_V18),np.average(_V24),
 np.average(_V30),np.average(_V36),
@@ -68,8 +69,8 @@ np.std(_36r),np.std(_42r),np.std(_48r),np.std(_54r),np.std(_60r)])#frequenz rüc
 
 
 
-ve=v_0+(2*Gesch[9]/Ld)
-vq=v_0+(1/(1-(2*Gesch[9]/c)))
+ve=v_0*(1+(Gesch[9]/c))
+vq=v_0*(1/(1-(Gesch[9]/c)))
 print('ve',ve)
 print('vq',vq)#unterschied zwischen gleichung 2 und 5
 mv , bv , rv ,pv , stdv =stats.linregress(noms(Gesch),noms(Vgesv-v_0))

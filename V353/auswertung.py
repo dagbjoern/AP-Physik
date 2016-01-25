@@ -15,7 +15,13 @@ y=1-(U_c/U_0)
 #plt.figure(1)
 #plt.plot(1/(b*10**-3),phi,'rx')
 #plt.savefig('plot.pdf')
-m , b , r ,p ,std =stats.linregress(noms(T),np.log(noms(y)))
+print(T)
+index= [12,13]
+Tt=np.delete(T, index)
+print(Tt)
+yy=np.delete(y, index)
+
+m , b , r ,p ,std =stats.linregress(noms(Tt),np.log(noms(yy)))
 
 plt.figure(1)
 plt.errorbar(t ,noms(y),xerr=stds(T),yerr=stds(y), fmt='rx')
@@ -42,14 +48,14 @@ def F(x,  RC ):
 
 params, pcov = curve_fit(F, noms(W), noms(AU))
 plt.figure(2)
-x=np.logspace(0,5,1000)
+x=np.logspace(1,5,1000)
 plt.plot(x,F(x,params),label=r'$Ausgleichsfunktion$')
 plt.errorbar(w,noms(AU),xerr=stds(W),yerr=stds(AU), fmt='rx')
 plt.plot(w,noms(AU),'kx',label=r'$Messwerte$')
 plt.legend(loc='best')
 plt.xscale('log')
 plt.xlabel(r'$ \frac{f}{\frac{1}{s}}$')
-plt.ylabel(r'$ \frac{A_U}{U_0}$')
+plt.ylabel(r'$ \frac{U_a}{U_0}$')
 plt.savefig('b.pdf')
 print('RC b)=',params, 'fehler =' ,pcov)
 
@@ -64,7 +70,7 @@ phi=A/B*2*np.pi
 def D(x, RC):
     return np.arctan(-x*RC)
 params, pcov = curve_fit(D, noms(W),noms(phi))
-x=np.logspace(0,5,1000)
+x=np.logspace(1,4,1000)
 plt.figure(3)
 plt.plot(x,D(x,params),label=r'$Ausgleichsfunktion$')
 plt.errorbar(w, noms(phi),xerr=stds(W),yerr=stds(phi),fmt='rx')

@@ -11,8 +11,8 @@ Es gilt somit:\\
 Der Fehler errechnet sich mit der Gauß'schen Fehlerfortpflanzung \eqref{eqn:gaus}.
 Bei der Messung ist es nicht möglich beide Schwingkreise auf die gleiche Resonanzfrequenz abzustimmen, deshalb folgen zwei Messwerte:
 \begin{align}
-f_1&=(32,89 \pm )kHz\\
-f_2&=(33,11 \pm )kHz
+f_1&=(32,89\pm5)\,\si{\kilo\hertz}\\
+f_2&=(33,11\pm5)\,\si{\kilo\hertz}
 \end{align}
 \subsection{Verhältnis von Schwingung und Schwebung}
 Der theoretische Wert für das Verhältnis ergibt sich nach Gleichung \eqref{eqn:verhaeltnis}.
@@ -49,18 +49,19 @@ Die errechneten Werte für das Verhätnis, nach Theorie und Messung, und die Abw
 
 \subsection{Bestimmung der Fundamentalfrequenzen}
 In Tabelle \ref{tab:b} werden die gemessenen Fundamentalfrequenzen $f_n$ mit den theoretischen Frequenzen $\nu^{+/-}$ verglichen.
-Dies geschieht mit zwei Unterschiedlichen Verfahren
+Dies geschieht mit zwei unterschiedlichen Verfahren.
 Die theoretischen Frequenzen berechnen sich nach Gleichung \eqref{eqn:angepasst1} und \eqref{eqn:angepasst2}.
-Ein Ablesefehler von $\pm 5 kHz$ wird abgeschätzt.
+Ein Ablesefehler von $\pm 5 \si{\kilo\hertz}$ wird abgeschätzt.
 \subsubsection{Ohne Sweep}
-
+In der Tabelle \ref{tab:b} sind die Messwerte der Fundamentalfrequenzen für die unterschiedlichen Koppelkondensatoren, die mit Hilfe von Lissajousfiguren und Spannungsmaxima gemessen werden, und die
+entsprechenden Theoriewerte aufgelistet.
 \begin{table}
  \centering
  \caption{Theorie und Messwerte der Fundamentalfrequenzen mit Aufbau \ref{abb:fundamentalaufbau} ohne Sweep}
  \label{tab:b)}
  \begin{tabular}{c c c c c }
    \toprule
-{$C_k \ \mathrm{in} \ \si{\nano\farad}  $} & {$ f1 \ \mathrm{in} \ \si{\kilo\hertz}$} & {$ \nu^+ \ \mathrm{in} \ \si{\kilo\hertz} $} & {$f2 \ \mathrm{in} \si{\kilo\hertz} $} & {$\nu^- \ \mathrm{in} \ \si{\kilo\hertz}$}\\
+{$C_k \ \mathrm{in} \ \si{\nano\farad}  $} & {$ f_1 \ \mathrm{in} \ \si{\kilo\hertz}$} & {$ \nu^+ \ \mathrm{in} \ \si{\kilo\hertz} $} & {$f_2 \ \mathrm{in} \ \si{\kilo\hertz} $} & {$\nu^- \ \mathrm{in} \ \si{\kilo\hertz}$}\\
    \midrule
 1,0\pm0,2    & 33,1\pm5   & 35,9 \pm 1,2 &  79,3\pm5  &   56,2\pm 3,5\\
 2,2\pm0,4    & 33,1\pm5   & 35,9 \pm 1,2 &  59,5\pm5  &   46,5\pm 2,3\\
@@ -77,12 +78,11 @@ Ein Ablesefehler von $\pm 5 kHz$ wird abgeschätzt.
 
 \subsubsection{Mit Sweep}
 
-Nun wird die Messung mit dem Sweep durchgeführt.
-Um aus den gemessenen Zeiten die Fundamentalfrequenz
-zu errechnen werden diese in die Gleichung \eqref{eqn:Sweep}
-eingesetzt.
+Nun wird eine Aufnahme des Frequenzspektrums mit Hilfe vom Sweep erstellt.
+Um aus dem gemessenen Freqzenzspektrum die Fundamentalfrequenzen
+zu errechnen, wird die Gleichung \eqref{eqn:Sweep} genutzt:
 \begin{equation}
-  f_n=f_{start}+(f_{end}-f_{start})\frac{t_n}{T}\label{eqn:Sweep}
+  f_n=f_{start}+(f_{end}-f_{start})\frac{t_n}{T}\label{eqn:Sweep}.
 \end{equation}
 Hierbei ist $f_{start}$ die Startfrequenz
 ,$f_{end}$ die Endfrequenz und
@@ -94,12 +94,14 @@ Die Ergebnisse sind in der Tabelle \ref{tab:c} dargestellt.
 
 \begin{table}
  \centering
- \caption{Theorie und Messwerte der Fundamentalfrequenzen mit Aufbau \ref{abb:fundamentalaufbau} mit Hilfe von Sweep}\label{tab:c)}
+ \caption{Theorie und Messwerte der Fundamentalfrequenzen mit Aufbau \ref{abb:fundamentalaufbau} mit Hilfe von Sweep.}
+ \label{tab:c}
  \begin{tabular}{c c c c c c c }
    \toprule
-   & \multicolumn{2}{c}{Zeitlicher Abstand $t_n$}\\
-   & \multicolumn{2}{c}{vom Sweepanfang}\\
-{$C_k \ \mathrm{in} \ \si{\nano\farad} $} & {$t_1 in \si{\second}$} & {$t_2 in \si{\second}$} & {$ f_1 in \si{\kilo\hertz} $} & {$ \nu^+ in \si{\kilo\hertz} $} & {$f_2 in \si{\kilo\hertz} $} & {$\nu^- in \si{\kilo\hertz}$}\\
+    & \multicolumn{2}{c}{Zeitlicher Abstand $t_n$}\\
+    & \multicolumn{2}{c}{vom Sweepanfang}\\
+{$C_k \ \mathrm{in} \ \si{\nano\farad} $} & {$t_1 \ \mathrm{in} \ \si{\second}$} & {$t_2 \ \mathrm{in} \ \si{\second}$} & {$ f_1 \ \mathrm{in} \ \si{\kilo\hertz} $}
+& {$\nu^+ \ \mathrm{in} \ \si{\kilo\hertz} $} & {$f_2 \ \mathrm{in} \ \si{\kilo\hertz} $} & {$\nu^- \ \mathrm{in} \ \si{\kilo\hertz}$}\\
    \midrule
    1,0 \pm 0,2 & 180\pm5 & 784\pm5 & 33,3\pm 4,2 & 35,9\pm 1,2 &  80,7 \pm 4,1 & 56,2\pm 3,5 \\
    2,2 \pm 0,4 & 176\pm5 & 524\pm5 & 33,0\pm 4,2 & 35,9\pm 1,2 &  60,3 \pm 3,6 &  46,5\pm 2,3 \\
@@ -112,3 +114,4 @@ Die Ergebnisse sind in der Tabelle \ref{tab:c} dargestellt.
 \bottomrule
 \end{tabular}
 \end{table}
+Die gemessenen Werte ähnenln denen aus der Messung ohne Sweep gemessenen Fundamentalfrequenzen.
