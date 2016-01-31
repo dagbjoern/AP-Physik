@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  24 JAN 2016 18:33
+||||||| merged common ancestors
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  16 JAN 2016 16:37
+=======
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2015.10.13)  24 JAN 2016 18:22
+>>>>>>> theorie und durchführung
  restricted \write18 enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2015/10/01> patch level 2
-Babel <3.9n> and hyphenation patterns for 79 languages loaded.
+LaTeX2e <2015/10/01> patch level 1
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
 (./header.tex (c:/texlive/2015/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2015/10/03 v3.19a KOMA-Script document class (article)
 (c:/texlive/2015/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -171,17 +177,17 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 Package: fontspec 2015/09/24 v2.4e Font selection for XeLaTeX and LuaLaTeX
 
 (c:/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2016/01/03 v6358 L3 programming layer (loader) 
+Package: expl3 2015/09/27 v6111 L3 programming layer (loader) 
 
 (c:/texlive/2015/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2016/01/03 v6358 L3 programming layer (code)
-L3 Module: l3bootstrap 2016/01/01 v6339 L3 Bootstrap code
+Package: expl3 2015/09/27 v6111 L3 programming layer (code) 
+L3 Module: l3bootstrap 2015/09/10 v5983 L3 Bootstrap code
 \ucharcat@table=\catcodetable5
-L3 Module: l3names 2015/12/21 v6328 L3 Namespace for primitives
-L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3names 2015/09/27 v6108 L3 Namespace for primitives
+L3 Module: l3basics 2015/09/22 v6033 L3 Basic definitions
 L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
-L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
-L3 Module: l3str 2016/01/03 v6357 L3 Strings
+L3 Module: l3tl 2015/09/23 v6037 L3 Token lists
+L3 Module: l3str 2015/09/20 v6021 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2015/09/25 v6089 L3 Integers
 \c_max_int=\count90
@@ -190,13 +196,13 @@ L3 Module: l3int 2015/09/25 v6089 L3 Integers
 \g_tmpa_int=\count93
 \g_tmpb_int=\count94
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
-L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+L3 Module: l3prg 2015/09/10 v5983 L3 Control structures
 \g__prg_map_int=\count95
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
-L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
+L3 Module: l3token 2015/09/23 v6040 L3 Experimental token manipulation
 L3 Module: l3prop 2015/08/05 v5777 L3 Property lists
-L3 Module: l3msg 2015/09/28 v6113 L3 Messages
-L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
+L3 Module: l3msg 2015/09/23 v6037 L3 Messages
+L3 Module: l3file 2015/09/23 v6037 L3 File and I/O operations
 \l_iow_line_count_int=\count96
 \l__iow_target_count_int=\count97
 \l__iow_current_line_int=\count98
@@ -221,7 +227,7 @@ L3 Module: l3skip 2015/09/25 v6089 L3 Dimensions and skips
 \l_tmpb_muskip=\muskip13
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
-L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+L3 Module: l3keys 2015/09/23 v6037 L3 Key-value interfaces
 \g__keyval_level_int=\count101
 \l_keys_choice_int=\count102
 L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
@@ -261,7 +267,7 @@ L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
 \l__coffin_display_x_dim=\dimen117
 \l__coffin_display_y_dim=\dimen118
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
-L3 Module: l3candidates 2015/12/20 v6325 L3 Experimental additions to l3kernel
+L3 Module: l3candidates 2015/09/23 v6039 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen119
 \l__box_bottom_dim=\dimen120
 \l__box_left_dim=\dimen121
@@ -279,14 +285,17 @@ L3 Module: l3candidates 2015/12/20 v6325 L3 Experimental additions to l3kernel
 \l__coffin_scaled_total_height_dim=\dimen132
 \l__coffin_scaled_width_dim=\dimen133
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
-L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
+L3 Module: l3luatex 2015/09/10 v5983 L3 Experimental LuaTeX-specific functions
+)
+(c:/texlive/2015/texmf-dist/tex/latex/l3kernel/l3unicode-data.def
+File: l3unicode-data.def 2015/07/20 v5676 L3 Unicode data
 )
 (c:/texlive/2015/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
-File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
+File: l3pdfmode.def 2015/09/10 v5983 L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count112
 ))
 (c:/texlive/2015/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2015/12/20 v6326 L3 Experimental document command parser
+Package: xparse 2015/09/27 v6111 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count113
 \l__xparse_m_args_int=\count114
 \l__xparse_mandatory_args_int=\count115
@@ -294,45 +303,64 @@ Package: xparse 2015/12/20 v6326 L3 Experimental document command parser
 \l__xparse_v_nesting_int=\count117
 )
 (c:/texlive/2015/texmf-dist/tex/luatex/luaotfload/luaotfload.sty
-Package: luaotfload 2015/12/09 v2.6 OpenType layout system
-Lua module: luaotfload-main 2015/12/09 2.60001 OpenType layout system.
-Lua module: lualibs 2015-12-02 2.3 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2015-12-02 2.3 ConTeXt Lua libraries -- extended co
-llection.(using write cache: C:/texlive/2015/texmf-var/luatex-cache/generic)(usi
-ng read cache: C:/texlive/2015/texmf-var/luatex-cache/generic C:/Users/Dag-Bj
-�rn/.texlive2015/texmf-var/luatex-cache/generic)
-luaotfload | conf : Root cache directory is C:/texlive/2015/texmf-var/luatex-cac
-he/generic/names.
-Lua-only attribute luaotfload@state = 1
-Lua-only attribute luaotfload@cursbase = 2
-Lua-only attribute luaotfload@noligature = 3
-luaotfload | init : Context OpenType loader version “2.82”
+Package: luaotfload 2014/08/10 v2.5-4 OpenType layout system
+
+(c:/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
+
+(c:/texlive/2015/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
+\@catcodetablestackcnt=\count118
+)
+\CatcodeTableOther=\catcodetable6
+\CatcodeTableExpl=\catcodetable7
+)
+Lua module: luaotfload-main 2014/08/10 2.50003 OpenType layout system.(using wri
+te cache: C:/texlive/2015/texmf-var/luatex-cache/generic)(using read cache: C:/t
+exlive/2015/texmf-var/luatex-cache/generic C:/Users/Ksenia/.texlive2015/texmf-va
+r/luatex-cache/generic)
+Lua-only attribute luaotfload@kernpair = 1
+Lua-only attribute luaotfload@ligacomp = 2
+Lua-only attribute luaotfload@markbase = 3
+Lua-only attribute luaotfload@markmark = 4
+Lua-only attribute luaotfload@markdone = 5
+Lua-only attribute luaotfload@cursbase = 6
+Lua-only attribute luaotfload@curscurs = 7
+Lua-only attribute luaotfload@cursdone = 8
+Lua-only attribute luaotfload@state = 9
+luaotfload | main : fontloader loaded in 0.047 seconds
 Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
-Inserting `luaotfload.define_font' at position 1 in `define_font'.
-Lua-only attribute luaotfload_color_attribute = 4
+Inserting `luaotfload.find_vf_file' at position 1 in `find_vf_file'.
 luaotfload | conf : Root cache directory is C:/texlive/2015/texmf-var/luatex-cac
 he/generic/names.
+luaotfload | conf : Root cache directory is C:/texlive/2015/texmf-var/luatex-cac
+he/generic/names.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
 font'.
 Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 _font'.
-Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
-t_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+<<<<<<< HEAD
 .
 luaotfload | main : initialization completed in 0.359 seconds)
+||||||| merged common ancestors
+.
+luaotfload | main : initialization completed in 0.328 seconds)
+=======
+.)
+>>>>>>> theorie und durchführung
 Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
-\l_fontspec_script_int=\count118
-\l_fontspec_language_int=\count119
-\l_fontspec_strnum_int=\count120
+\l_fontspec_script_int=\count119
+\l_fontspec_language_int=\count120
+\l_fontspec_strnum_int=\count121
 \l__fontspec_tmpa_dim=\dimen134
 \l__fontspec_tmpb_dim=\dimen135
 \l__fontspec_tmpc_dim=\dimen136
-
-(c:/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+ (c:/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
 Package: fontspec-patches 2015/09/24 v2.4e Font selection for XeLaTeX and LuaLaT
 eX
 LaTeX Info: Redefining \em on input line 49.
@@ -383,7 +411,7 @@ LaTeX Font Info:    Try loading font information for EU2+lmss on input line 357.
 File: eu2lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmsans10-re
 gular.luc))
-\tipaTiiicode=\count121
+\tipaTiiicode=\count122
 \tipasavetokens=\toks18
 \tipachecktokens=\toks19
 
@@ -403,7 +431,7 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (c:/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count122
+\Gread@gobject=\count123
 ))
 \Gin@req@height=\dimen137
 \Gin@req@width=\dimen138
@@ -513,7 +541,7 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 . 
 . Defining command \DeclareFontsExtensions with sig. 'm' on line 322.
 .................................................
-\l__fontspec_tmp_int=\count123
+\l__fontspec_tmp_int=\count124
 LaTeX Info: Redefining \itshape on input line 2151.
 LaTeX Info: Redefining \slshape on input line 2156.
 LaTeX Info: Redefining \scshape on input line 2161.
@@ -522,16 +550,6 @@ LaTeX Info: Redefining \upshape on input line 2166.
 (c:/texlive/2015/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
 (c:/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-(c:/texlive/2015/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
-Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
-
-(c:/texlive/2015/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
-Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
-\@catcodetablestackcnt=\count124
-)
-\CatcodeTableOther=\catcodetable6
-\CatcodeTableExpl=\catcodetable7
 )
 luatex-hyphen: using data file: c:/texlive/2015/texmf-var/tex/generic/config/lan
 guage.dat.lua
@@ -616,7 +634,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (c:/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+Package: mathtools 2015/06/17 v1.17 mathematical typesetting tools
 
 (c:/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
@@ -655,11 +673,11 @@ Package: icomma 2002/03/10 v2.0 (WaS)
 Package: unicode-math 2015/09/24 v0.8c Unicode maths in XeLaTeX and LuaLaTeX
 
 (c:/texlive/2015/texmf-dist/tex/latex/ucharcat/ucharcat.sty
-Package: ucharcat 2015/11/19 v0.03 ucharcat for luaLaTeX (DPC)
+Package: ucharcat 2015/08/23 v0.02 ucharcat for luaLaTeX (DPC)
 \ucharcat@table=\catcodetable8
 )
 (c:/texlive/2015/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2015/12/20 v6326 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2015/09/27 v6111 LaTeX2e option processing using LaTeX3 keys
 )
 (c:/texlive/2015/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
@@ -1072,7 +1090,7 @@ LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
 (Font)                  EU2/XITSMath(1)/m/n --> EU2/XITSMath(1)/bx/n on input li
 ne 43.
  (c:/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2016/01/05 v2.6o A comprehensive (SI) units package
+Package: siunitx 2015/09/14 v2.6l A comprehensive (SI) units package
 
 (c:/texlive/2015/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
@@ -1125,119 +1143,119 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7213.
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7206.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIPostPower with sig. 'mm' on line 7216.
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7209.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7219.
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7212.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIPrePower with sig. 'mm' on line 7222.
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7215.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIQualifier with sig. 'mm' on line 7225.
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7218.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7228.
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7221.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7231.
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7224.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7246.
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7239.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \num with sig. 'om' on line 7254.
+. Defining command \num with sig. 'om' on line 7247.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7262.
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7255.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \numrange with sig. 'omm' on line 7270.
+. Defining command \numrange with sig. 'omm' on line 7263.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7281.
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7274.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \SIrange with sig. 'ommm' on line 7292.
+. Defining command \SIrange with sig. 'ommm' on line 7285.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \SI with sig. 'omom' on line 7303.
+. Defining command \SI with sig. 'omom' on line 7296.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \sisetup with sig. 'm' on line 7306.
+. Defining command \sisetup with sig. 'm' on line 7299.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tablenum with sig. 'om' on line 7318.
+. Defining command \tablenum with sig. 'om' on line 7311.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \si with sig. 'om' on line 7329.
+. Defining command \si with sig. 'om' on line 7322.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7376.
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7369.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
-. 7378.
+. 7371.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7380.
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7373.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7382.
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7375.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
-. 7384.
+. 7377.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7385.
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7378.
 .................................................
 
 (c:/texlive/2015/texmf-dist/tex/latex/beamer/translator/translator.sty
@@ -1245,25 +1263,25 @@ Package: translator 2010/06/12 ver 1.10
 
 (c:/texlive/2015/texmf-dist/tex/latex/beamer/translator/translator-language-map
 pings.tex))) (c:/texlive/2015/texmf-dist/tex/latex/mhchem/mhchem.sty
-Package: mhchem 2015/11/29 v4.03 for typesetting chemical formulae
+Package: mhchem 2015/07/23 v4.02 for typesetting chemical formulae
 
 (c:/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3regex.sty
-Package: l3regex 2015/12/20 v6326 L3 Experimental regular expressions
+Package: l3regex 2015/09/27 v6111 L3 Experimental regular expressions
 
 (c:/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3tl-build.sty
-Package: l3tl-build 2015/12/20 v6326 L3 Experimental token list construction
+Package: l3tl-build 2015/07/28 v5700 L3 Experimental token list construction
 \l__tl_build_start_index_int=\count162
 \l__tl_build_index_int=\count163
 )
 (c:/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3tl-analysis.sty
-Package: l3tl-analysis 2015/11/09 v6244 L3 Experimental token lists analysis
+Package: l3tl-analysis 2015/09/26 v6106 L3 Experimental token lists analysis
 \l__tl_analysis_normal_int=\count164
 \l__tl_analysis_index_int=\count165
 \l__tl_analysis_nesting_int=\count166
 \l__tl_analysis_type_int=\count167
 )
 (c:/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3flag.sty
-Package: l3flag 2015/12/20 v6326 L3 Experimental flags
+Package: l3flag 2015/09/27 v6111 L3 Experimental flags
 )
 (c:/texlive/2015/texmf-dist/tex/latex/l3experimental/l3str/l3str-convert.sty
 Package: l3str-convert 2015/09/26 v6106 L3 Experimental string encoding conversi
@@ -1307,66 +1325,67 @@ ons
 \l__regex_zeroth_submatch_int=\count269
 )
 (c:/texlive/2015/texmf-dist/tex/latex/chemgreek/chemgreek.sty
-Package: chemgreek 2016/01/07 v1.0d interfaceforuprightgreeklettersforuseinchemi
+Package: chemgreek 2015/07/01 v1.0a interfaceforuprightgreeklettersforuseinchemi
 stry (CN)
 \l__chemgreek_tmpa_int=\count270
 \g__chemgreek_tmpa_int=\count271
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newchemgreekmapping with sig. 'O{}mm' on line 336.
+. Defining command \newchemgreekmapping with sig. 'O{}mm' on line 330.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \renewchemgreekmapping with sig. 'O{}mm' on line 339.
+. Defining command \renewchemgreekmapping with sig. 'O{}mm' on line 333.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \declarechemgreekmapping with sig. 'O{}mm' on line 342.
+. Defining command \declarechemgreekmapping with sig. 'O{}mm' on line 336.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newchemgreekmappingalias with sig. 'mm' on line 347.
+. Defining command \newchemgreekmappingalias with sig. 'mm' on line 341.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \renewchemgreekmappingalias with sig. 'mm' on line 350.
+. Defining command \renewchemgreekmappingalias with sig. 'mm' on line 344.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \declarechemgreekmappingalias with sig. 'mm' on line 353.
+. Defining command \declarechemgreekmappingalias with sig. 'mm' on line 347.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \changechemgreeksymbol with sig. 'mmmm' on line 383.
+. Defining command \changechemgreeksymbol with sig. 'mmmm' on line 377.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chemgreekmappingsymbol with sig. 'mm' on line 477.
+. Defining command \chemgreekmappingsymbol with sig. 'mm' on line 471.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \activatechemgreekmapping with sig. 'sm' on line 486.
+. Defining command \activatechemgreekmapping with sig. 'sm' on line 480.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \selectchemgreekmapping with sig. 'm' on line 491.
+. Defining command \selectchemgreekmapping with sig. 'm' on line 485.
 .................................................
 )
 (c:/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \l__mhchem_ce_distanceFromLastComma_int=\count272
-\__mhchem_arrow_extPgfLength_skip=\skip67
+\mhchem@arrow@params=\toks26
+\mhchem@arrowlength@pgf=\skip67
 \mhchem@bondwidth=\skip68
 \mhchem@bondheight=\skip69
 \mhchem@smallbondwidth@tmpA=\skip70
@@ -1390,7 +1409,7 @@ Package: csquotes 2015/07/18 v5.1f context-sensitive quotations (JAW)
 \csq@qlevel=\count277
 \csq@maxlvl=\count278
 \csq@tshold=\count279
-\csq@ltx@everypar=\toks26
+\csq@ltx@everypar=\toks27
 
 (c:/texlive/2015/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2015/07/18 v5.1f csquotes generic definitions (JAW)
@@ -1487,14 +1506,14 @@ Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (c:/texlive/2015/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
-Package: xtemplate 2015/12/20 v6326 L3 Experimental prototype document functions
+Package: xtemplate 2015/09/27 v6111 L3 Experimental prototype document functions
 
 \l__xtemplate_tmp_dim=\dimen175
 \l__xtemplate_tmp_int=\count280
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip77
 )
-Package: xfrac 2015/12/20 v6326 L3 Experimental split-level fractions
+Package: xfrac 2014/05/04 v4728 L3 Experimental split-level fractions
 \l__xfrac_slash_box=\box51
 \l__xfrac_tmp_box=\box52
 \l__xfrac_denominator_bot_sep_dim=\dimen176
@@ -1507,20 +1526,20 @@ Package: xfrac 2015/12/20 v6326 L3 Experimental split-level fractions
 .................................................
 . xtemplate info: "declare-object-type"
 . 
-. Declaring object type 'xfrac' taking 3 argument(s) on line 111.
+. Declaring object type 'xfrac' taking 3 argument(s) on line 96.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \sfrac with sig. 'omom' on line 451.
+. Defining command \sfrac with sig. 'omom' on line 436.
 .................................................
 )
 (c:/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count281
-\float@exts=\toks27
+\float@exts=\toks28
 \float@box=\box53
-\@float@everytoks=\toks28
+\@float@everytoks=\toks29
 \@floatcapt=\box54
 )
 Package scrhack Info: loading float hack on input line 67.
@@ -1786,7 +1805,7 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 (c:/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
-\MT@toks=\toks29
+\MT@toks=\toks30
 \MT@count=\count289
 LaTeX Info: Redefining \textls on input line 766.
 \MT@outer@kern=\dimen257
@@ -1806,10 +1825,10 @@ Package microtype Info: Loading configuration file microtype.cfg.
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2015/12/22 v3.2 programmable bibliographies (PK/JW/AB)
+Package: biblatex 2015/04/19 v3.0 programmable bibliographies (PK/JW/AB)
 
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex2.sty
-Package: biblatex2 2015/12/22 v3.2 programmable bibliographies (biber) (PK/JW/AB
+Package: biblatex2 2015/04/19 v3.0 programmable bibliographies (biber) (PK/JW/AB
 )
 
 (c:/texlive/2015/texmf-dist/tex/latex/logreq/logreq.sty
@@ -1956,7 +1975,7 @@ Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2015/12/22 v3.2 biblatex compatibility (PK/JW/AB)
+File: blx-compat.def 2015/04/19 v3.0 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
@@ -1975,12 +1994,12 @@ Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2015/12/22 v3.2 biblatex bibliography style (PK/JW/AB)
+File: numeric.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2015/12/22 v3.2 biblatex bibliography style (PK/JW/AB)
+File: standard.bbx 2015/04/19 v3.0 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count406
 \c@bbx:relatedtotal=\count407
 ))
@@ -1988,7 +2007,7 @@ Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2015/12/22 v3.2 biblatex citation style (PK/JW/AB)
+File: numeric.cbx 2015/04/19 v3.0 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -2120,14 +2139,10 @@ Package csquotes Warning: Using preliminary 'polyglossia' interface.
 (csquotes)                Some of the multilingual features may not
 (csquotes)                work as expected.
 
-
-Package biblatex Warning: Upgrade package 'polyglossia' to >v1.42.0 recommended.
-
-
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/german.lbx
-File: german.lbx 2015/12/22 v3.2 biblatex localization (PK/JW/AB)
+File: german.lbx 2015/04/19 v3.0 biblatex localization (PK/JW/AB)
 ) (./main.aux
 luatex-hyphen: loading patterns and exceptions for: ngerman (\language31)
 luatex-hyphen: info: no hyphenation exceptions for this language)
@@ -2168,12 +2183,12 @@ LaTeX Font Info:    ... okay on input line 11.
 \scratchbox=\box55
 \nofMPsegments=\count420
 \nofMParguments=\count421
-\everyMPshowfont=\toks30
+\everyMPshowfont=\toks31
 \MPscratchCnt=\count422
 \MPscratchDim=\dimen263
 \MPnumerator=\count423
 \makeMPintoPDFobject=\count424
-\everyMPtoPDFconversion=\toks31
+\everyMPtoPDFconversion=\toks32
 ) (c:/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -2193,7 +2208,7 @@ dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
 (c:/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
-File: siunitx-abbreviations.cfg 2016/01/05 v2.6o siunitx: Abbreviated units
+File: siunitx-abbreviations.cfg 2015/09/14 v2.6l siunitx: Abbreviated units
 )
 .................................................
 . chemgreek info: "mapping-activated"
