@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  24 JAN 2016 17:29
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  26 JAN 2016 11:27
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -323,7 +323,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.344 seconds)
+luaotfload | main : initialization completed in 0.313 seconds)
 Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
 \l_fontspec_script_int=\count118
 \l_fontspec_language_int=\count119
@@ -2125,10 +2125,11 @@ Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2015/12/22 v3.2 biblatex localization (PK/JW/AB)
-)
-No file main.aux.
-
+) (./main.aux
+luatex-hyphen: loading patterns and exceptions for: ngerman (\language31)
+luatex-hyphen: info: no hyphenation exceptions for this language)
 \openout1 = main.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -2145,6 +2146,7 @@ LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 11.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 11.
+
 (c:/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -2183,8 +2185,6 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
-luatex-hyphen: loading patterns and exceptions for: ngerman (\language31)
-luatex-hyphen: info: no hyphenation exceptions for this language
 (c:/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-
 dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -2222,14 +2222,14 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout3 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
+Package biblatex Info: ... file 'main.bbl' found.
 
-No file main.bbl.
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 11.
 Package biblatex Info: Reference segment=0 on input line 11.
 \AtBeginShipoutBox=\box56
 Package hyperref Info: Link coloring OFF on input line 11.
-(c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
+ (c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -2339,229 +2339,176 @@ luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" [1
 Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 
 
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+(./main.toc)
 \tf@toc=\write4
 
 \openout4 = main.toc
-[2
+ [2
 
-] (./content/durchfuehrung.tex
+] (./content/theorie.tex(load luc: C:/texlive/2015/texmf-var/luatex-cache/generi
+c/fonts/otf/lmroman8-regular.luc)
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"(load luc: C:/texl
+ive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc))
+(./content/durchfuehrung.tex
 
 LaTeX Warning: Reference `abb:aufbau' on page 3 undefined on input line 4.
 
-<aufbau.png, id=20, 408.02437pt x 238.64156pt>
+<aufbau.png, id=44, 408.02437pt x 238.64156pt>
 File: aufbau.png Graphic file (type png)
  <use aufbau.png>
 Package pdftex.def Info: aufbau.png used on input line 12.
 (pdftex.def)             Requested size: 292.7776pt x 171.24644pt.
-(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-reg
-ular.luc)
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"(load luc: C:/texl
-ive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)) (./con
-tent/auswertung.tex
-
-LaTeX Warning: Reference `abb:T1T4' on page 3 undefined on input line 5.
-
-
-LaTeX Warning: Reference `abb:T5T8' on page 3 undefined on input line 5.
-
-
-LaTeX Warning: Reference `abb:Aufbau' on page 3 undefined on input line 8.
-
-[3<./aufbau.png>] <plotT1T4.pdf, id=35, 578.16pt x 433.62pt>
+ [3])
+(./content/fehlerrechnung.tex [4<./aufbau.png>] [5]) (./content/auswertung.tex
+<plotT1T4.pdf, id=84, 578.16pt x 433.62pt>
 File: plotT1T4.pdf Graphic file (type pdf)
+ <use plotT1T4.pdf>
+Package pdftex.def Info: plotT1T4.pdf used on input line 11.
+(pdftex.def)             Requested size: 250.95587pt x 188.21295pt.
 
-<use plotT1T4.pdf>
-Package pdftex.def Info: plotT1T4.pdf used on input line 13.
-(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
- <plotT5T8.pdf, id=36, 578.16pt x 433.62pt>
+<plotT5T8.pdf, id=85, 578.16pt x 433.62pt>
 File: plotT5T8.pdf Graphic file (type pdf)
-
-<use plotT5T8.pdf>
-Package pdftex.def Info: plotT5T8.pdf used on input line 19.
-(pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
-
-
-LaTeX Warning: Reference `abb:T1T4' on page 4 undefined on input line 24.
-
-
-LaTeX Warning: Reference `abb:T5T8' on page 4 undefined on input line 24.
-
+ <use plotT5T8.pdf>
+Package pdftex.def Info: plotT5T8.pdf used on input line 17.
+(pdftex.def)             Requested size: 250.95587pt x 188.21295pt.
 (load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman9-reg
 ular.luc)
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 9.00014pt on input line 38.
+(Font)              scaled to size 9.00014pt on input line 35.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 8.99986pt on input line 38.
+(Font)              scaled to size 8.99986pt on input line 35.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"(load luc: C:/texl
-ive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) [4<./plo
-tT1T4.pdf>]
+ive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)
+Underfull \hbox (badness 10000) in paragraph at lines 22--43
 
-LaTeX Warning: Citation 'L' on page 5 undefined on input line 57.
+ []
 
+[6<./plotT1T4.pdf><./plotT5T8.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 48--56
 
-LaTeX Warning: Reference `eqn:dq' on page 5 undefined on input line 65.
+ []
 
-
-LaTeX Warning: Reference `tab:dQdt' on page 5 undefined on input line 80.
-
-
-LaTeX Warning: Reference `abb:T2-T1' on page 5 undefined on input line 101.
-
-
-LaTeX Warning: Reference `abb:T7-T8' on page 5 undefined on input line 101.
-
-<plotT2-T1.pdf, id=96, 578.16pt x 433.62pt>
+[7] <plotT2-T1.pdf, id=206, 578.16pt x 433.62pt>
 File: plotT2-T1.pdf Graphic file (type pdf)
  <use plotT2-T1.pdf>
-Package pdftex.def Info: plotT2-T1.pdf used on input line 105.
+Package pdftex.def Info: plotT2-T1.pdf used on input line 101.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.01247pt on input line 106.
+(Font)              scaled to size 7.01247pt on input line 102.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 4.9808pt on input line 106.
+(Font)              scaled to size 4.9808pt on input line 102.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.01224pt on input line 106.
+(Font)              scaled to size 7.01224pt on input line 102.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.98067pt on input line 106.
+(Font)              scaled to size 4.98067pt on input line 102.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-<plotT7-T8.pdf, id=97, 578.16pt x 433.62pt>
+<plotT7-T8.pdf, id=207, 578.16pt x 433.62pt>
 File: plotT7-T8.pdf Graphic file (type pdf)
  <use plotT7-T8.pdf>
-Package pdftex.def Info: plotT7-T8.pdf used on input line 111.
+Package pdftex.def Info: plotT7-T8.pdf used on input line 107.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
-
-
-LaTeX Warning: Reference `abb:T7-T8' on page 5 undefined on input line 121.
-
-
-LaTeX Warning: Reference `abb:T2-T1' on page 5 undefined on input line 122.
-
-[5<./plotT5T8.pdf>] [6<./plotT2-T1.pdf>]
-
-LaTeX Warning: Reference `abb:T1T2' on page 7 undefined on input line 130.
-
-
-LaTeX Warning: Reference `abb:T5T6' on page 7 undefined on input line 130.
-
-
-LaTeX Warning: Reference `abb:T7T8' on page 7 undefined on input line 130.
-
-<plotT1T2.pdf, id=208, 578.16pt x 433.62pt>
+ [8<./plotT2-T1.pdf>] <plotT1T2.pdf, id=272, 578.16pt x 433.62pt>
 File: plotT1T2.pdf Graphic file (type pdf)
  <use plotT1T2.pdf>
-Package pdftex.def Info: plotT1T2.pdf used on input line 134.
+Package pdftex.def Info: plotT1T2.pdf used on input line 129.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 
-<plotT5T6.pdf, id=209, 578.16pt x 433.62pt>
+<plotT5T6.pdf, id=273, 578.16pt x 433.62pt>
 File: plotT5T6.pdf Graphic file (type pdf)
  <use plotT5T6.pdf>
-Package pdftex.def Info: plotT5T6.pdf used on input line 140.
+Package pdftex.def Info: plotT5T6.pdf used on input line 135.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 
-<plotT7T8.pdf, id=210, 578.16pt x 433.62pt>
+<plotT7T8.pdf, id=274, 578.16pt x 433.62pt>
 File: plotT7T8.pdf Graphic file (type pdf)
  <use plotT7T8.pdf>
-Package pdftex.def Info: plotT7T8.pdf used on input line 146.
+Package pdftex.def Info: plotT7T8.pdf used on input line 141.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 
-
-LaTeX Warning: Reference `eqn:k' on page 7 undefined on input line 150.
-
-
-Overfull \hbox (7.2876pt too wide) in paragraph at lines 127--155
+Overfull \hbox (7.2876pt too wide) in paragraph at lines 122--145
 []\EU2/lmr/m/n/10.95 Nun soll die Wär-me-leit-fä-hig-keit der ein-zel-nen Ma-
 te-ria-li-en durch die Angström-Meßverfahren
  []
 
-[7<./plotT7-T8.pdf>] [8<./plotT1T2.pdf><./plotT5T6.pdf>]
+[9<./plotT7-T8.pdf>] [10<./plotT1T2.pdf><./plotT5T6.pdf>] [11<./plotT7T8.pdf>])
+(./content/diskussion.tex [12])(load luc: C:/texlive/2015/texmf-var/luatex-cache
+/generic/fonts/otf/lmromancaps10-regular.luc)
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 24.
 
-LaTeX Warning: Reference `tab:crho' on page 9 undefined on input line 189.
+(c:/texlive/2015/texmf-dist/tex/latex/euenc/eu2lmtt.fd
+File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-re
+gular.luc)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: EU2).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
 
-[9<./plotT7T8.pdf>]
+(./main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 2776C7E9DFDF7E953AE55935C39A1A6B;8240.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: FFD89500543A4A231A54C225C638B2E1;973.
 
-LaTeX Warning: Reference `eqn:k' on page 10 undefined on input line 206.
-
-
-LaTeX Warning: Reference `eqn:abweich' on page 10 undefined on input line 216.
-
-) (./content/diskussion.tex) [10]
-
-LaTeX Warning: Empty bibliography on input line 23.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-[11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
-
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  2ABB16A235AB255569D4D3474F981962;6961.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 25.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44048 strings out of 494897
+ 44188 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 479 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 6 attribute, 61 glue_spec, 6 attrib
-ute_list, 1 write nodes
-   avail lists: 1:3,2:731,3:122,4:900,5:137,6:1734,7:53,8:8,9:286,10:230,11:1
- 46422 multiletter control sequences out of 65536+600000
- 136 fonts using 30716967 bytes
- 69i,21n,104p,953b,1965s stack positions out of 5000i,500n,10000p,200000b,100000s
-<c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/te
-xlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf><c:/texlive/
-2015/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2015/t
-exmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/te
-xmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/tex
-mf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2015/texmf-dist/
-fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/fonts
-/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/open
-type/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/publ
-ic/lm/lmroman12-bold.otf>
-Output written on main.pdf (11 pages, 343837 bytes).
+ 549 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 2 kern, 7 attribute, 68 glue_spec, 7 attrib
+ute_list, 1 action, 1 write nodes
+   avail lists: 1:1,2:745,3:157,4:899,5:249,6:1996,7:94,8:14,9:337,10:261,11:1
+ 46496 multiletter control sequences out of 65536+600000
+ 139 fonts using 30979443 bytes
+ 69i,21n,104p,953b,2428s stack positions out of 5000i,500n,10000p,200000b,100000s
+<c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/te
+xlive/2015/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf><c:/tex
+live/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2
+015/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2015/te
+xmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf><c:/texlive/2015/texmf-di
+st/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2015/texmf-dist/fon
+ts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opent
+ype/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/openty
+pe/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentyp
+e/public/lm-math/latinmodern-math.otf><c:/texlive/2015/texmf-dist/fonts/opentype
+/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/publ
+ic/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm
+/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman1
+2-bold.otf>
+Output written on main.pdf (13 pages, 370185 bytes).
 
-PDF statistics: 519 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 34 named destinations out of 1000 (max. 131072)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 626 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
+ 53 named destinations out of 1000 (max. 131072)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

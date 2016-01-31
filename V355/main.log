@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  25 JAN 2016 12:30
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  26 JAN 2016 11:39
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -323,7 +323,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.428 seconds)
+luaotfload | main : initialization completed in 0.742 seconds)
 Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
 \l_fontspec_script_int=\count118
 \l_fontspec_language_int=\count119
@@ -2350,7 +2350,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--11
 
  []
 
-<Prinzipschaltbild.PNG, id=20, 349.305pt x 208.52907pt>
+<Prinzipschaltbild.PNG, id=58, 349.305pt x 208.52907pt>
 File: Prinzipschaltbild.PNG Graphic file (type png)
 
 <use Prinzipschaltbild.PNG>
@@ -2396,7 +2396,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--76
 
  []
 
-<schwebung.PNG, id=69, 369.63094pt x 161.10187pt>
+<schwebung.PNG, id=102, 369.63094pt x 161.10187pt>
 File: schwebung.PNG Graphic file (type png)
  <use schwebung.PNG>
 Package pdftex.def Info: schwebung.PNG used on input line 81.
@@ -2406,7 +2406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--89
 
  []
 
-<SchaltbildSinus.PNG, id=73, 362.10281pt x 197.98969pt>
+<SchaltbildSinus.PNG, id=106, 362.10281pt x 197.98969pt>
 File: SchaltbildSinus.PNG Graphic file (type png)
 
 <use SchaltbildSinus.PNG>
@@ -2435,20 +2435,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--111
  []
 
 [7]) (./content/durchfuehrung.tex
-<resonanzbestimmung.PNG, id=97, 286.06876pt x 360.74776pt>
+<resonanzbestimmung.PNG, id=129, 286.06876pt x 360.74776pt>
 File: resonanzbestimmung.PNG Graphic file (type png)
 
 <use resonanzbestimmung.PNG>
 Package pdftex.def Info: resonanzbestimmung.PNG used on input line 15.
 (pdftex.def)             Requested size: 209.12778pt x 263.72346pt.
 
-<Aufbau_a).PNG, id=101, 561.89925pt x 269.20575pt>
+<Aufbau_a).PNG, id=133, 561.89925pt x 269.20575pt>
 File: Aufbau_a).PNG Graphic file (type png)
  <use Aufbau_a).PNG>
 Package pdftex.def Info: Aufbau_a).PNG used on input line 34.
 (pdftex.def)             Requested size: 376.42744pt x 180.35046pt.
 
-<physik.PNG, id=105, 643.203pt x 335.45325pt>
+<physik.PNG, id=137, 643.203pt x 335.45325pt>
 File: physik.PNG Graphic file (type png)
  <use physik.PNG>
 Package pdftex.def Info: physik.PNG used on input line 57.
@@ -2494,14 +2494,7 @@ LaTeX Warning: Reference `tab:b' on page 12 undefined on input line 51.
 
 LaTeX Warning: Reference `tab:b' on page 12 undefined on input line 56.
 
-[12]
-
-LaTeX Warning: Reference `eqn:Sweep' on page 13 undefined on input line 83.
-
-
-LaTeX Warning: Reference `tab:c' on page 13 undefined on input line 92.
-
-) (./content/diskussion.tex [13] [14]
+[12]) (./content/diskussion.tex [13] [14]
 
 LaTeX Warning: Reference `ean:angepasst2' on page 15 undefined on input line 40.
 
@@ -2522,24 +2515,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: F3BC1BB623CD47AB33D408690C1FEDCD;13622.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: D3097E4B494A033E5CACAA90551F00DB;1652.
 
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 111D7A99AD65D716BD06B9A4A9DD10CF;11682
-(rerunfilecheck)             After:  F3BC1BB623CD47AB33D408690C1FEDCD;13622.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  D3097E4B494A033E5CACAA90551F00DB;1652.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 
@@ -2550,13 +2532,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 24.
 Here is how much of LuaTeX's memory you used:
  44067 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 677 words of node memory still in use:
+ 676 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 7 kern, 12 attribute, 86 glue_spec, 12 attr
 ibute_list, 1 write nodes
-   avail lists: 1:1,2:1091,3:216,4:1627,5:229,6:3209,7:253,8:20,9:568,10:412,11:
+   avail lists: 1:1,2:1087,3:229,4:1630,5:229,6:3209,7:253,8:21,9:568,10:412,11:
 1
  46396 multiletter control sequences out of 65536+600000
- 105 fonts using 22411627 bytes
+ 105 fonts using 22411475 bytes
  69i,15n,104p,953b,2430s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/te
 xlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/tex
@@ -2567,10 +2549,10 @@ texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf
 -dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist
 /fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/op
 entype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (15 pages, 220919 bytes).
+Output written on main.pdf (15 pages, 222228 bytes).
 
-PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
+PDF statistics: 335 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
  77 named destinations out of 1000 (max. 131072)
  145 words of extra memory for PDF output out of 10000 (max. 10000000)
 

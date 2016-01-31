@@ -16,5 +16,6 @@
 \contentsline {subsection}{\numberline {4.1}Bestimmung der Zeitkonstante am Aufladevorgang}{7}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Bestimmung der Zeitkonstante mittels Frequenzabhängigkeit der Amplitude}{9}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Bestimmung der Zeitkonstante mittels Frequenzabhängigkeit der Phase}{11}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Eignung als Integrator}{13}{subsection.4.4}
 \contentsline {section}{\numberline {5}Diskussion}{15}{section.5}
 \contentsline {section}{\nonumberline Literatur}{15}{section*.18}

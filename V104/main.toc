@@ -8,11 +8,12 @@
 \contentsline {subsection}{\numberline {3.2}Messung der Wellenlänge}{5}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Frequenzmessung}{5}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Schwebung}{6}{subsection.3.4}
-\contentsline {section}{\numberline {4}Auswertung}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Geschwindigkeit des Wagens}{7}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Wellenlänge}{7}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Frequenzmessung}{8}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Schwebungsmethode}{8}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Lineare Ausgleichsrechnung}{8}{subsection.4.5}
-\contentsline {section}{\numberline {5}Diskussion}{13}{section.5}
-\contentsline {section}{\nonumberline Literatur}{13}{section*.14}
+\contentsline {section}{\numberline {4}Fehlerrechnung}{8}{section.4}
+\contentsline {section}{\numberline {5}Auswertung}{9}{section.5}
+\contentsline {subsection}{\numberline {5.1}Geschwindigkeit des Wagens}{9}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Wellenlänge}{9}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Frequenzmessung}{10}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Schwebungsmethode}{10}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Lineare Ausgleichsrechnung}{12}{subsection.5.5}
+\contentsline {section}{\numberline {6}Diskussion}{15}{section.6}
+\contentsline {section}{\nonumberline Literatur}{15}{section*.14}

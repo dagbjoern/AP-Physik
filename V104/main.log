@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  24 JAN 2016 21:42
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  26 JAN 2016 11:13
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -323,7 +323,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.344 seconds)
+luaotfload | main : initialization completed in 0.406 seconds)
 Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
 \l_fontspec_script_int=\count118
 \l_fontspec_language_int=\count119
@@ -827,15 +827,15 @@ luaotfload | load : Lookup/name: "Latin Modern Math" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "Latin Modern Math" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "Latin Modern Math" -> "latinmodern-math.otf"
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 41.
+(Font)              `operators' in the math version `normal' on input line 43.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> EU2/LatinModernMath(0)/m/n on input line
- 41.
+ 43.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 41.
+(Font)              `operators' in the math version `bold' on input line 43.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU2/LatinModernMath(0)/bx/n on input li
-ne 41.
+ne 43.
 luaotfload | load : Lookup/name: "Latin Modern Math" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "Latin Modern Math" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "Latin Modern Math" -> "latinmodern-math.otf"
@@ -891,15 +891,15 @@ e=10-},{Size=7-10,Font=Latin
 . 22\font =163840sp\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 41.
+(Font)              `symbols' in the math version `normal' on input line 43.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> EU2/LatinModernMath(1)/m/n on input lin
-e 41.
+e 43.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 41.
+(Font)              `symbols' in the math version `bold' on input line 43.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> EU2/LatinModernMath(1)/bx/n on input li
-ne 41.
+ne 43.
 luaotfload | load : Lookup/name: "Latin Modern Math" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "Latin Modern Math" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "Latin Modern Math" -> "latinmodern-math.otf"
@@ -945,16 +945,16 @@ e=10-},{Size=7-10,Font=Latin
 . \fontdimen 12\font =393216sp\relax \fontdimen 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 41
+(Font)              `largesymbols' in the math version `normal' on input line 43
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/m/n on input lin
-e 41.
+e 43.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 41.
+(Font)              `largesymbols' in the math version `bold' on input line 43.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/bx/n on input li
-ne 41.
+ne 43.
 luaotfload | load : Lookup/name: "XITS Math" -> "xits-math.otf"(load luc: C:/tex
 live/2015/texmf-var/luatex-cache/generic/fonts/otf/xits-math.luc)
 luaotfload | load : Lookup/name: "XITS Math" -> "xits-math.otf"
@@ -1009,10 +1009,10 @@ luaotfload | load : Lookup/name: "XITS Math" -> "xits-math.otf"
 \sym__um_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/m/n on input lin
-e 42.
+e 44.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
 (Font)                  EU2/XITSMath(0)/m/n --> EU2/XITSMath(0)/bx/n on input li
-ne 42.
+ne 44.
 luaotfload | load : Lookup/name: "XITS Math" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITS Math" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITS Math" -> "xits-math.otf"
@@ -1064,10 +1064,10 @@ luaotfload | load : Lookup/name: "XITS Math" -> "xits-math.otf"
 \sym__um_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `normal'
 (Font)                  EU2/XITSMath(1)/m/n --> EU2/XITSMath(1)/m/n on input lin
-e 43.
+e 45.
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
 (Font)                  EU2/XITSMath(1)/m/n --> EU2/XITSMath(1)/bx/n on input li
-ne 43.
+ne 45.
  (c:/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2016/01/05 v2.6o A comprehensive (SI) units package
 
@@ -1520,7 +1520,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks28
 \@floatcapt=\box54
 )
-Package scrhack Info: loading float hack on input line 67.
+Package scrhack Info: loading float hack on input line 69.
 
 (c:/texlive/2015/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2015/10/03 v3.19a KOMA-Script package (hacking package float)
@@ -2006,7 +2006,7 @@ File: biblatex.cfg
 )))
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 115.
+(scrhack)             need that hack, on input line 117.
 
 (c:/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -2116,6 +2116,9 @@ Package color Info: Driver file: pdftex.def on input line 142.
 )
 (c:/texlive/2015/texmf-dist/tex/latex/ncctools/extdash.sty
 Package: extdash 2005/01/29 v1.2 Extended Dash Package (NCC)
+)
+(c:/texlive/2015/texmf-dist/tex/latex/was/icomma.sty
+Package: icomma 2002/03/10 v2.0 (WaS)
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
@@ -2354,51 +2357,61 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
  [2
 
 ] (./content/Einleitung.tex) (./content/theorie.tex)
-(./content/durchfuehrung.tex [3] <Aufbau1.png, id=69, 532.389pt x 346.896pt>
+(./content/durchfuehrung.tex [3] <Aufbau1.png, id=71, 532.389pt x 346.896pt>
 File: Aufbau1.png Graphic file (type png)
 
 <use Aufbau1.png>
 Package pdftex.def Info: Aufbau1.png used on input line 13.
 (pdftex.def)             Requested size: 292.7776pt x 190.7722pt.
- [4<./Aufbau1.png>] <schall.png, id=80, 421.575pt x 120.45pt>
+ [4<./Aufbau1.png>] <schall.png, id=82, 421.575pt x 120.45pt>
 File: schall.png Graphic file (type png)
 
 <use schall.png>
 Package pdftex.def Info: schall.png used on input line 33.
 (pdftex.def)             Requested size: 292.7776pt x 83.65276pt.
- <Frequenzmessung.PNG, id=84, 460.72125pt x 169.23225pt>
+ <Frequenzmessung.PNG, id=86, 460.72125pt x 169.23225pt>
 File: Frequenzmessung.PNG Graphic file (type png)
 
 <use Frequenzmessung.PNG>
 Package pdftex.def Info: Frequenzmessung.PNG used on input line 48.
 (pdftex.def)             Requested size: 292.7776pt x 107.54134pt.
- <digitalebausteile.png, id=88, 626.34pt x 293.898pt>
+ <digitalebausteile.png, id=90, 626.34pt x 293.898pt>
 File: digitalebausteile.png Graphic file (type png)
 
 <use digitalebausteile.png>
 Package pdftex.def Info: digitalebausteile.png used on input line 65.
 (pdftex.def)             Requested size: 292.7776pt x 137.38315pt.
  [5<./schall.png><./Frequenzmessung.PNG>]
-<Schwebung.PNG, id=101, 467.346pt x 189.70876pt>
+<Schwebung.PNG, id=103, 467.346pt x 189.70876pt>
 File: Schwebung.PNG Graphic file (type png)
  <use Schwebung.PNG>
 Package pdftex.def Info: Schwebung.PNG used on input line 91.
 (pdftex.def)             Requested size: 292.7776pt x 118.84557pt.
 )
-(./content/auswertung.tex [6<./digitalebausteile.png><./Schwebung.PNG>](load luc
-: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)
-(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-reg
-ular.luc)
+(./content/fehlerrechnung.tex [6<./digitalebausteile.png><./Schwebung.PNG>]
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 10--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--25
+
+ []
+
+) (./content/auswertung.tex [8](load luc: C:/texlive/2015/texmf-var/luatex-cache
+/generic/fonts/otf/lmroman8-regular.luc)(load luc: C:/texlive/2015/texmf-var/lua
+tex-cache/generic/fonts/otf/lmroman6-regular.luc)
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"(load luc: C:/texl
-ive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) [7] <gr
-aph.pdf, id=144, 578.16pt x 433.62pt>
+ive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc) [9] [10
+] [11]
+<graph.pdf, id=185, 578.16pt x 433.62pt>
 File: graph.pdf Graphic file (type pdf)
-
-<use graph.pdf>
+ <use graph.pdf>
 Package pdftex.def Info: graph.pdf used on input line 185.
 (pdftex.def)             Requested size: 418.25555pt x 313.68826pt.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
@@ -2418,40 +2431,39 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf" <graph2.pdf, id=
-147, 578.16pt x 433.62pt>
+luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
+<graph2.pdf, id=188, 578.16pt x 433.62pt>
 File: graph2.pdf Graphic file (type pdf)
  <use graph2.pdf>
 Package pdftex.def Info: graph2.pdf used on input line 191.
 (pdftex.def)             Requested size: 376.42744pt x 282.31943pt.
-
-[8] [9] [10<./graph.pdf>] [11<./graph2.pdf>]) (./content/diskussion.tex
-[12])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
+ [12<./graph.pdf>]
+[13<./graph2.pdf>]) (./content/diskussion.tex [14])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: E3B0DADE6B6AA0688562B86B546990A8;11426.
+(rerunfilecheck)             Checksum: B878B9151CA3E450FEF5AB8BD6777260;11955.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 41B1C2FD45BAF9A2F2462FEA39771F3D;1312.
+(rerunfilecheck)             Checksum: E1E5E23410EF7DEDD4B226605BE171C7;1384.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44163 strings out of 494897
+ 44206 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 520 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 2 kern, 7 attribute, 61 glue_spec, 7 attrib
+ 623 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 3 kern, 8 attribute, 79 glue_spec, 8 attrib
 ute_list, 1 write nodes
-   avail lists: 1:2,2:1595,3:202,4:2269,5:220,6:2874,7:142,8:35,9:511,10:274,11:
+   avail lists: 1:2,2:1304,3:224,4:1936,5:218,6:2248,7:142,8:23,9:388,10:221,11:
 1
- 46471 multiletter control sequences out of 65536+600000
+ 46486 multiletter control sequences out of 65536+600000
  126 fonts using 27978167 bytes
  69i,22n,104p,953b,2442s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/te
@@ -2464,10 +2476,10 @@ dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/
 fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts
 /opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype
 /public/lm/lmroman12-bold.otf>
-Output written on main.pdf (13 pages, 216040 bytes).
+Output written on main.pdf (15 pages, 223044 bytes).
 
-PDF statistics: 448 PDF objects out of 1000 (max. 8388607)
- 298 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 131072)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 475 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 131072)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

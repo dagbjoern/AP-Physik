@@ -42,9 +42,9 @@ b=\frac{D_\mathrm{dyn}}{8\pi^2m}.\\
 D_\mathrm{dyn}=8a\pi^2m.\\
 \intertext{Durch einsetzen der Werte ergibt sich}
 D_\mathrm{dyn}=(0,0295\pm0,0004)\, \si{\kilo\gram}.\\
+\end{align}
 Da sich die dynamische Winkelrichtgröße von der statisch gemessenen Winkelrichtgröße unterscheidet, wird die dynamische Winkelrichtgröße im
 folgendem Teil als Winkelrichtgröße verwendet, da die folgenden Trägheitsmoment ebenfalls mit der Dynamischen Medthode bestimmt werden.
-\end{align}
 \begin{figure}
    \centering
    \includegraphics[width=0.7\textwidth]{b.pdf}
@@ -63,18 +63,25 @@ einmal mit der Formel  \eqref{eqn:I}
 aus den Messwerten berechnet.
 Dafür werden die gemessenen Zeiten gemittelt,
 \begin{align*}
-\overline{T}= (1,455\pm0,016)\,\si{\second}\\
+\overline{T}&= (1,455\pm0,016)\,\si{\second}\\
 \intertext{und es ergibt sich ein}
-I_{\mathrm{gemessen}}=(0,00158\pm0,00004)\,\si{\kilo\gram\meter\squared}.
+I_{\mathrm{gemessen}}&=-(0,00116\pm0,00004)\,\si{\kilo\gram\meter\squared}.
+\intertext{Das gemessene Trägheitsmoment ist laut
+der Formel \eqref{eqn:I} negativ, da dies Physikalisch
+nicht möglich ist, wird auf das Abziehen des Trägheitsmoment der Drillachse verzichtet.
+Im Folgenden wird nun immer auf das Abziehen von $I_\mathrm{D}$ verzichtet,
+da alle Trägheitsmomente sonst negativ werden.
+Ohne Abziehen von $I_\mathrm{D}$ ergibt sich für das Trägheitsmoment der Zylinders:}
+I_{\mathrm{gemessen}}&=(0,00158\pm0,00004)\,\si{\kilo\gram\meter\squared}.
 \end{align*}
 Aus der Theoretischenformel \eqref{eqn:zs} für
 einen Zylinder der parallel zur Drehachse verläuft mit dem Durchmesser
 \begin{align*}
-  d_{z2}=(0.08019\pm0.00011)\,\si{\meter},
+  d_{z2}&=(0.08019\pm0.00011)\,\si{\meter},
 \intertext{ergibt sich eine theoretisches Trägheitsmoment}
-I_\mathrm{theorie}= 0.0003011\pm0.0000006\,\si{\kilo\gram\meter\squared}.
+I_\mathrm{theorie}&= 0.0003011\pm0.0000006\,\si{\kilo\gram\meter\squared}.
 \intertext{Somit beträgt die Abweichung von Theoriewerte die mit der Formel \eqref{eqn:abweich} berechnet wird}
-a=(425\pm13)\,\si{\percent}.
+a&=(425\pm13)\,\si{\percent}.
 \end{align*}
 \subsubsection{Kugel}
 Dies mal wird das Trägheitsmoment eine Kugel,
@@ -86,9 +93,9 @@ besitzt, berechnet. Zuerst wird dieses wieder mit der Formel  \eqref{eqn:I}
 aus den Messwerten bestimmt. Dafür werden
 wieder die gemessenen Zeiten gemittelt,
 \begin{align*}
-  \overline{T}=(1,486\pm0,007)\,\si{\second}
+  \overline{T}&=(1,486\pm0,007)\,\si{\second}
 \intertext{und es ergibt sich ein}
-I_\mathrm{gemessen}=0,00165\pm0,00003)\,\si{\kilo\gram\meter\squared}.
+I_\mathrm{gemessen}&=0,00165\pm0,00003)\,\si{\kilo\gram\meter\squared}.
 \end{align*}
 Aus der Theoretischenformel \eqref{eqn:Kugel} für eine
 Kugel mit dem Durchmesser
@@ -97,9 +104,9 @@ Kugel mit dem Durchmesser
 \end{align*}
 ergibt sich ein theoretisches Trägheitsmoment von
 \begin{align*}
-I_{theorie}=(0,00151\pm0,00004)\,\si{\kilo\gram\meter\squared}.
+I_{theorie}&=(0,00151\pm0,00004)\,\si{\kilo\gram\meter\squared}.
 \intertext{Die relative Abweichung nach der Formel \eqref{eqn:abweich} beträgt somit:}
-a=(8,9\pm3,5)\,\si{\percent}.
+a&=(8,9\pm3,5)\,\si{\percent}.
 \end{align*}
 \newpage
 \subsection{Trägheitsmoment einer Puppe}
@@ -181,4 +188,14 @@ die Arme angelegt sind eine Trägheitsmoment von:
 I_\mathrm{GesMessAn}&=(0,00032\pm0,00004)\,\si{\kilo\gram\meter\squared}\\
 \intertext{Für den Fall das die Puppe die Arme aussteckt:}
 I_\mathrm{GesMessAus}&= (0,000903\pm0,000026)\,\si{\kilo\gram\meter\squared}.\\
+\end{align*}
+Der gemessenen Werte für den Fall, dass die Puppe die Arme angelegt hat,
+weicht um
+\begin{align*}
+  a_\mathrm{An}=190\,\si{\percent}
+\end{align*}
+ab. Im Fall, dass die Puppe die Arme ausstreckt, ergibt sich
+eine Abweichung von dem Theoriewerten von:
+\begin{align*}
+  a_\mathrm{Aus}=2\,\si{\percent}
 \end{align*}
