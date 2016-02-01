@@ -1,9 +1,9 @@
 \section{Theorie}
 \label{sec:Theorie}
-Brückenschaltungen werden genutzt um größen zu vermessen, die sich als elektrischer Wiederstände darstellen lassen. Dazu zählen auch
-komplexe Widerstände von Spulen und Kondensatoren.
+Brückenschaltungen werden genutzt um größen zu vermessen, die sich als elektrische Wiederstände darstellen lassen. Dazu zählen auch
+komplexe Widerstände, wie die von Spulen und Kondensatoren.
 Grundsätzlich bestehen Brückenschaltungen aus vier Widerständen, wie in Abbildung \ref{fig:einfachbruecke}.
-Es kann die Brückenspannung an den Punkten $A$ und $B$ bestimmt werden.
+Es kann die Brückenspannung an den Punkten $A$ und $B$ abgegriffen werden.
 \begin{figure}
  \centering
  \includegraphics[width=0.4\textwidth]{bruecke.PNG}
@@ -16,6 +16,8 @@ Mit den Kirchhoffschen Regeln:
   \sum_k I_\mathrm{k}&=0
   \intertext{2. Die Summe der Spannungen in einer Masche ist, unter Beachtung des Vorzeichens, gleich Null:}
   \sum_k U_\mathrm{k}&=0
+  \intertext{und dem Ohmschen-Gesetzt:}
+  U&=R\cdot I
  \end{align}
  ergibt sich für die Brückenspannung:
  \begin{align}
@@ -27,7 +29,7 @@ verschwindet unabhängig von der Speisespannung $U_\mathrm{S}$, wenn gilt:
   R_\mathrm{1}R_\mathrm{4}=R_\mathrm{2}R_\mathrm{3}.
 \end{align}
 Dieser Zusammenhang bezeichnet die abgeglichene Brücke, damit ist eine
-Widerstandsmessung möglich. Ist Einer der Wiederstände unbekannt, kann
+Widerstandsmessung möglich. Ist Einer der Widerstände unbekannt, kann
 mindestens ein Anderer so variiert werden bis die Brückenspannung verschwindet,
 aus dem Verhältnis kann der unbekannte Widerstand bestimmt werden.
 \subsection{Wheatstonesche Brücke}
@@ -45,14 +47,14 @@ Nach Formel \eqref{eqn:verhältnis} gilt für $R_\mathrm{X}$:
 \end{align}
 $R_\mathrm{X}$ hängt nur vom Verhältnis $R_\mathrm{3}$ zu $R_\mathrm{4}$ ab, diese werden in diesem Versuch als Potentiometer realisiert.\\
 \subsection{Kapazitätsmessbrücke}
-Bei einem realen Kondensator treten Wärmeverluste auf, um dies bei Berechnungen zu berücksichtigen, wird zu seiner Kapazität ein fiktiver Ohmscher Widerstand in Reihe geschaltet.
+Bei realen Kondensatoren treten Verluste in Form von Wärme auf, um dies bei Berechnungen zu berücksichtigen, wird zu seiner Kapazität ein fiktiver Ohmscher Widerstand in Reihe geschaltet.
 \begin{figure}
  \centering
  \includegraphics[width=0.4\textwidth]{kapazitaet.PNG}
  \caption{Aufbau einer Kapazitätsmessbrücke.}
  \label{fig:kapazitaet}
  \end{figure}
-In Abbildung \ref{fig:kapazitaet} ist eine Kapazitätsmessbrücke dargestellt.Diese besteht aus einer unbekannten Kapazität $C_\mathrm{X}$,
+In Abbildung \ref{fig:kapazitaet} ist eine Kapazitätsmessbrücke dargestellt. Diese besteht aus einer unbekannten Kapazität $C_\mathrm{X}$,
 einem unbekannten Widerstand $R_\mathrm{X}$, einer bekannten Kapazität $C_\mathrm{2}$ und zum Ausgleich, von der von $R_\mathrm{X}$ verursachten Phasenverschiebung,
 ein variabler Widerstand $R_\mathrm{2}$.
 Es gilt:
@@ -67,9 +69,9 @@ Es gilt:
  \caption{Aufbau einer Induktivitätsmessbrücke.}
  \label{fig:induktivitaet}
  \end{figure}
- In Abbildung \ref{fig:induktivitaet} ist eine Induktivitätsmessbrücke, die ist ähnlich aufgebaut wie die Kapazitätsmessbrücke,
- nur werden die Kapazitäten durch Induktivitäten vertauscht.
- Weil die Komplexen wiederstände unterschiedlich definiert sind, ergeben sich andere Formeln für $R_\mathrm{X}$ und $L_\mathrm{X}$:
+ In Abbildung \ref{fig:induktivitaet} ist eine Induktivitätsmessbrücke zu sehen, die ist ähnlich aufgebaut wie die Kapazitätsmessbrücke,
+ nur werden die Kapazitäten durch Induktivitäten ausgetauscht.
+ Weil die komplexen Widerstände von Induktivitäten anders definiert sind als die der Kapazitäten, ergeben sich andere Formeln für $R_\mathrm{X}$ und $L_\mathrm{X}$:
  \begin{align}
    R_\mathrm{X}=R_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}}\\
    L_\mathrm{X}=L_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}}
@@ -100,7 +102,7 @@ In dem Aufbau gibt es keine Abgleichelemente, alle Eigenschaften der Bauteile si
  \end{figure}
 Für die Brückenspannung gilt:
 \begin{align}
-  U_\mathrm{Br}=U_\mathrm{S}\frac{1-\omega^2 R^2 C^2}{1-\omega^2 R^2 C^2 + 4j \omega R C}\label{eqn:ubr}
+  U_\mathrm{Br}=U_\mathrm{S}\frac{1-\omega^2 R^2 C^2}{1-\omega^2 R^2 C^2 + 4j \omega R C}\label{eqn:ubr}.
 \end{align}
 Für die Frequenz $\omega_0=\frac{1}{RC}$ verschwindet die Brückenspannung.
 Mit der normierten Frequenz $\Omega:=\frac{\omega}{\omega_0}$ und weiteren Umformungen gilt:
