@@ -152,7 +152,7 @@ def TT_B(w,w_0):
     return np.sqrt(noms(((O**2-1)**2)/((1-O**2)**2 + 16*O**2)))
 
 u_s=1.65
-x=np.linspace(20*np.pi*2,30000*np.pi*2,2000)
+x=np.linspace(20*np.pi*2,6000*np.pi*2,2000)
 
 plt.figure(1)
 plt.plot(noms(x/(w_0)),TT_B(x,w_0),'b-',label=r'$Theoriekurve$')
@@ -161,7 +161,7 @@ plt.xlabel(r'$\Omega$')
 plt.ylabel(r'$U_{Br}/U_S$')
 plt.legend(loc='best')
 plt.grid(True)
-plt.savefig('plot.pdf')
+plt.savefig('plot2.pdf')
 
 U_2=0.005/fk(2)
 print('U_2',U_2)
@@ -169,7 +169,7 @@ print('k',U_2/u_s)
 #np.savetxt('tabelle14.txt',np.column_stack((r314,r414,R3_414,R214,rx14)),fmt='%r',delimiter=' & ')
 #np.savetxt('tabelle11.txt',np.column_stack((r311,r411,R3_411,R211,rx11)),fmt='%r',delimiter=' & ')
 #np.savetxt('tabelle3.txt',np.column_stack((r33,r43,R3_43,C23,cx3)),fmt='%r',delimiter=' & ')
-#np.savetxt('tabelle1.txt',np.column_stack((r31,r41,R3_41,C21,cx1)),fmt='%r',delimiter=' & ')
+np.savetxt('tabelle1.txt',np.column_stack((r31,r41,R3_41,C21,cx1)),fmt='%r',delimiter=' & ')
 #np.savetxt('tabelle8.txt',np.column_stack((r38,r48,R3_48,R28,C28,rx8,cx8)),fmt='%r',delimiter=' & ')
 #np.savetxt('tabelle17.txt',np.column_stack((r317,r417,R3_417,R217,L217,rx17,lx17)),fmt='%r',delimiter=' & ')
 #np.savetxt('tabelle17m.txt',np.column_stack((R317m,R417m,R217m,C417m,rx17m ,lx17m)),fmt='%r',delimiter=' & ')

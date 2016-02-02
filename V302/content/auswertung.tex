@@ -5,25 +5,26 @@ In den Tabellen \ref{tab:11} und \ref{tab:14}
 sind die eingestellten Werte der
 Wheatstoneschen Brücke für unterschiedliche $R_2$ aufgelistet.
 Dadurch kann der unbekannte Widerstand $R_\mathrm{x}$ mit der
-Formel \eqref{eqn:} berechent werden.
+Formel \eqref{eqn:Wheat} berechent werden.
 \input{tabelle11.tex}
 \input{tabelle14.tex}
+\FloatBarrier
 Nun werden die Werte für die unterschiedlichen $R_\mathrm{x}$ gemittelt und
 es ergeben sich die gemessenen Wiederstände:
 \begin{align*}
-R_11=   (497,9\pm8,7)\,\si{\ohm}
-R_14=(939)\,\si{\ohm}
+R_{11}=   (497,9\pm8,7)\,\si{\ohm}\\
+R_{14}=(939\pm16,5)\,\si{\ohm}
 \end{align*}
 
 \subsection{Kapazitätsmessbrücke}
-Die Tabellen \ref{tab:1} und \ref{tab:2} enthalten
+Die Tabellen \ref{tab:1} und \ref{tab:3} enthalten
 die Messwerte zur Bestimmung der Kapazität zweier
 Kondensatoren.
 Da es sich bei diese um hochwertigen Kondensatornen
 handelt, kann auf den $R_2$ Widerstand
 verzichtet werden.
 Zur Fehlerbestimmung wird der Kondensator $C_2$ variiert
-und mit der Formel \eqref{eqn:  } lässt sich
+und mit der Formel \eqref{eqn:CC} lässt sich
 aus den Messwerten die Kapaitäten $C_\mathrm{x}$ für die einzelnen
 Kondensatoren bestimmen.
 \input{tabelle1.tex}
@@ -32,17 +33,18 @@ Kondensatoren bestimmen.
 Werden die bestimmten Kapazitäten gemittelt
 ergibt sich für
 \begin{align*}
-  C_1&=(558,1\pm1,8)\,\si{\nano\farad}
+  C_1&=(651,2\pm2,0)\,\si{\nano\farad}
 \intertext{und}
   C_3&=(403,3\pm1,3)\,\si{\nano\farad}.
 \end{align*}
 
 In Tabelle \ref{tab:8} sind die Messwerte
 für eine RC-Kombination
-aufgetragen. Da ebenfalls der Widerstand $R_\mathrm{x}$
+aufgetragen. Da ebenfalls der Widerstand $R_\mathrm{x}$ mit Hilfe der Formel \eqref{eqn:CR}
 bestimmt wird, wird ein Stellglied $R_2$ verwendet. Wie
 bei den anderen Messungen auch wird wieder $C_2$ variiert.
 \input{tabelle8.tex}
+\FloatBarrier
 Für die gemittelte Kapazität ergibt sich
 \begin{align*}
  C_8=(282,8\pm0,9)\,\si{\nano\farad}
@@ -53,12 +55,13 @@ Für die gemittelte Kapazität ergibt sich
 Nun wird die die Induktiviät und Widerstand einer
 RL-Kombination mit der Induktivitätsmessbrücke bestimmt.
 Die Tabelle \ref{tab:17} enthält die Einstellung
-der Brücke und sowohl die aus Formel \eqref{eqn:}
+der Brücke und sowohl die aus Formel \eqref{eqn:LL}
 berechente Induktivität
 $L_x$ als auch den aus Formel
-\eqref{eqn:} berechneten Widerstand $R_x$.
+\eqref{eqn:LR} berechneten Widerstand $R_x$.
 Zur Fehlerbestimmung wird $L_2$ varriert.
 \input{tabelle17.tex}
+\FloatBarrier
 Für die gemittelte Induktivität
 ergibt sich:
 \begin{align*}
@@ -72,9 +75,10 @@ der gleiche RL-Kombination wird
 diesmal mit der Maxwwell-Brücke bestimmt. Die
 Einstellung der Brücke sind in der Tabelle \ref{tab:17m}
 aufgelistet mit den aus den Formeln
-\eqref{eqn:} und \eqref{eqn:} berechenten Werte für
+\eqref{eqn:LM} und \eqref{eqn:RM} berechenten Werte für
 die Induktion und den Widerstand.
 \input{tabelle17m.tex}
+\FloatBarrier
 Der gemittelte Wert für die Induktion der
 RL-Kombination beträgt:
 \begin{align*}
@@ -100,42 +104,30 @@ Frequenzen $\nu$ aufgelistet.
   \centering
   \caption{Messwerte für die Ausgangsspannung $U_{Br}$ bei unterschiedlichen Frequenzen $\nu$.}
   \label{tab:TT}
-  \begin{tabular}{c c}
+  \begin{tabular}{c c || c c}
     \toprule
-  $\nu/\si{\hertz}$ & $U_\mathrm{Br}/\si{\volt} $\\
+  $\nu/\si{\hertz}$ & $U_\mathrm{Br}/\si{\volt} $ & $\nu/\si{\hertz}$ & $U_\mathrm{Br}/\si{\volt} $\\
     \midrule
-    20       &   1,65\\
-    50       &   1,5\\
-    80       &   1,25\\
-    100      &   1,1\\
-    140      &   0,85\\
-    170      &   0,7\\
-    200      &   0,54\\
-    220      &   0,46\\
-    250      &   0,39\\
-    280      &   0,26\\
-    310      &   0,17\\
-    340      &   0,1\\
-    360      &   0,047\\
-    380      &   0,005\\
-    384      &   0,009\\
-    400      &   0,041\\
-    450      &  0,14\\
-    500      &   0,23\\
-    800      &   0,61\\
-    1000     &  0,79\\
-    2000     &   1,2\\
-    5000     &   1,45\\
-    10000    &   1,5\\
-    18000    &   1,5\\
-    28000    &   1,5\\
-    30000    &  1,5\\
+    20       &   1,65 &380      &   0,005\\
+    50       &   1,5  &384      &   0,009\\
+    80       &   1,25 &400      &   0,041\\
+    100      &   1,1  &450      &  0,14\\
+    140      &   0,85 &500      &   0,23\\
+    170      &   0,7  &800      &   0,61\\
+    200      &   0,54 &1000     &  0,79\\
+    220      &   0,46 &2000     &   1,2\\
+    250      &   0,39 &5000     &   1,45\\
+    280      &   0,26 &10000    &   1,5\\
+    310      &   0,17 &18000    &   1,5\\
+    340      &   0,1  &28000    &   1,5\\
+    360      &   0,047&30000    &  1,5\\
     \bottomrule
   \end{tabular}
 \end{table}
+\FloatBarrier
 Die Werte aus der Tabelle \ref{tab:TT}
-werden nun in der Abbildung \ref{abb:TT}
-in der Form $U_\mathrm{Br}/U_\mathrm{S}$
+werden nun in den Abbildungen \ref{abb:TT}
+ und \ref{abb:TTb} in der Form $U_\mathrm{Br}/U_\mathrm{S}$
 in Abhängigkeit von $\Omega$ aufgetragen.
 Wobei
 \begin{align*}
@@ -143,26 +135,38 @@ Wobei
 \intertext{ist und das gemessene $\nu$ beträgt}
 \nu_0=380\,\si{\hertz}.
 \end{align*}
-Die Abbildung \ref{abb:TT} enthält ebenfalls
+Die Abbildungen \ref{abb:TT} und \ref{abb:TTb }enthalten ebenfalls
 eine Theoriekurve, die mit Hilfe der Formel
 \eqref{eqn:TT} berechnet wird.
 Aus den Werten für die Kapazität  $C_\mathrm{TT}$ und
-den Widerstand $R_\mathrm{TT}$, ergibt sich ein Kreisfrequenz von
+den Widerstand $R_\mathrm{TT}$ ergibt sich ein Kreisfrequenz von
 \begin{align*}
   \omega_0&=\frac{1}{RC}=(2480\pm70)\,\si{\hertz}.
 \intertext{Daraus kann die theoretische Frequenz $v_\mathrm{0-Theorie}$ berechnet werden.}
 \nu_\mathrm{0-Theorie}&=2\pi\cdot\omega_0=(394,6\pm11,9)\,\si{\hertz}
 \end{align*}
-Folglich beträgt $\Omega$ für die Theoriekurve:
+Die Abweichung des gemessenen $v_0$ vom theoretischen $V_0$ beträgt laut der Formel \eqref{eqn:abweich}:
+\begin{align*}
+a=3,7\,\si{\percent}
+\end{align*}
+Für die Theoriekurve beträgt $\Omega$ somit:
 \begin{align*}
   \Omega=\frac{\nu}{\nu_\mathrm{0-Theorie}}
 \end{align*}
 \begin{figure}
- \centering
- \includegraphics[width=0.7\textwidth]{plot.pdf}
+  \centering
+  \includegraphics[width=0.5\textwidth]{plot.pdf}
   \caption{Messwerte und Theoriekurve für $U_\mathrm{Br}/U_\mathrm{S}$ in Abhängikeit von der Frequenz $\nu$ bei der TT-Brücke.}
   \label{abb:TT}
 \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{plot2.pdf}
+  \caption{Messwerte und Theoriekurve für $U_\mathrm{Br}/U_\mathrm{S}$ in Abhängikeit von der Frequenz $\nu$ für einen kleineren
+  $\Omega$ Bereich.}
+  \label{abb:TTb}
+\end{figure}
+\FloatBarrier
 \subsection{Bestimmung des Klirrfaktor}
 Für die Bestimmung des Klirrfaktors wird
 die Formel \eqref{eqn:klirr}

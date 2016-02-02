@@ -7,8 +7,8 @@ Es kann die Brückenspannung an den Punkten $A$ und $B$ abgegriffen werden.
 \begin{figure}
  \centering
  \includegraphics[width=0.4\textwidth]{bruecke.PNG}
- \caption{Aufbau einer einfachen Brückenschaltung.}
- \label{fig:einfchbruecke}
+ \caption{Aufbau einer einfachen Brückenschaltung.\cite{sample}}
+ \label{fig:einfachbruecke}
  \end{figure}\\
 Mit den Kirchhoffschen Regeln:
  \begin{align}
@@ -36,14 +36,14 @@ aus dem Verhältnis kann der unbekannte Widerstand bestimmt werden.
 \begin{figure}
  \centering
  \includegraphics[width=0.4\textwidth]{wheat.PNG}
- \caption{Aufbau Wheatstonesche Brücke.}
+ \caption{Aufbau Wheatstonesche Brücke.\cite{sample}}
  \label{fig:wheat}
  \end{figure}
 In der Abbildung \ref{fig:wheat} findet sich der Aufbau einer Wheatstoneschen Brücke, diese besteht nur aus ohmschen Widerständen.
 Anstelle von $R_\mathrm{1}$ wird hier ein unbekannter Widerstand $R_\mathrm{X}$ verwendet.
 Nach Formel \eqref{eqn:verhältnis} gilt für $R_\mathrm{X}$:
 \begin{align}
-  R_\mathrm{X}=R_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}}.
+  R_\mathrm{X}=R_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}}.\label{eqn:Wheat}
 \end{align}
 $R_\mathrm{X}$ hängt nur vom Verhältnis $R_\mathrm{3}$ zu $R_\mathrm{4}$ ab, diese werden in diesem Versuch als Potentiometer realisiert.\\
 \subsection{Kapazitätsmessbrücke}
@@ -59,8 +59,8 @@ einem unbekannten Widerstand $R_\mathrm{X}$, einer bekannten Kapazität $C_\math
 ein variabler Widerstand $R_\mathrm{2}$.
 Es gilt:
 \begin{align}
-  R_\mathrm{X}&=R_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}}\\
-  C_\mathrm{X}&=C_\mathrm{2}\frac{R_\mathrm{4}}{R_\mathrm{3}}.
+  R_\mathrm{X}&=R_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}}\label{eqn:CR}\\
+  C_\mathrm{X}&=C_\mathrm{2}\frac{R_\mathrm{4}}{R_\mathrm{3}}\label{eqn:CC}.
 \end{align}\\
 \subsection{Induktivitätsmessbrücke}
 \begin{figure}
@@ -73,22 +73,23 @@ Es gilt:
  nur werden die Kapazitäten durch Induktivitäten ausgetauscht.
  Weil die komplexen Widerstände von Induktivitäten anders definiert sind als die der Kapazitäten, ergeben sich andere Formeln für $R_\mathrm{X}$ und $L_\mathrm{X}$:
  \begin{align}
-   R_\mathrm{X}=R_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}}\\
-   L_\mathrm{X}=L_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}}
+   R_\mathrm{X}=R_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}}\label{eqn:LR}\\
+   L_\mathrm{X}=L_\mathrm{2}\frac{R_\mathrm{3}}{R_\mathrm{4}} \label{eqn:LL}
  \end{align}
 \subsection{Maxwell-Brücke}
+\label{sec:Max}
 Die Maxwell-Brücke wird ebenfalls zur Induktivitätsmessung genutzt.
 Hierbei wird auf die bekannte Induktivität $L_\mathrm{2}$ verzichtet, stattdessen wird ein Kapazität $C_\mathrm{4}$ verwendet, diese ist verlustärmer als eine Spule.
 \begin{figure}
  \centering
  \includegraphics[width=0.4\textwidth]{maxwell.PNG}
- \caption{Aufbau einer Maxwell-Brücke.}
+ \caption{Aufbau einer Maxwell-Brücke.\cite{sample}}
  \label{fig:maxwell}
  \end{figure}
 Für $L_\mathrm{X}$ und $R_\mathrm{X}$ gilt:
 \begin{align}
-  R_\mathrm{X}&=\frac{R_\mathrm{2}R_\mathrm{3}}{R_\mathrm{4}}\\
-  L_\mathrm{X}&=R_\mathrm{2}R_\mathrm{3}C_\mathrm{4}
+  R_\mathrm{X}&=\frac{R_\mathrm{2}R_\mathrm{3}}{R_\mathrm{4}}\label{eqn:RM}\\
+  L_\mathrm{X}&=R_\mathrm{2}R_\mathrm{3}C_\mathrm{4}\label{eqn:LM}
 \end{align}
 \subsection{TT-Brücke}
 Die TT-Brücke, zu sehen in Abbildung \ref{fig:tt}, wird als elektronischer Filter genutzt.
@@ -97,7 +98,7 @@ In dem Aufbau gibt es keine Abgleichelemente, alle Eigenschaften der Bauteile si
 \begin{figure}
  \centering
  \includegraphics[width=0.5\textwidth]{tt.PNG}
- \caption{Aufbau einer TT-Brücke.}
+ \caption{Aufbau einer TT-Brücke.\cite{sample}}
  \label{fig:tt}
  \end{figure}
 Für die Brückenspannung gilt:

@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  25 JAN 2016 15:14
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  31 JAN 2016 17:18
  restricted \write18 enabled.
 **main.tex
 (./main.tex
@@ -323,7 +323,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.401 seconds)
+luaotfload | main : initialization completed in 0.344 seconds)
 Lua module: fontspec 2013/05/20 2.3c Advanced font selection for LuaLaTeX.
 \l_fontspec_script_int=\count118
 \l_fontspec_language_int=\count119
@@ -2439,22 +2439,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
-
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: B72CE15F85B9BFAF64BA5AD581202B8C;11376
-(rerunfilecheck)             After:  9BA0880989B9A56B134D93AA1A536D0F;11376.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: 6E651B5EDE8576597BCADA47329E9863;1645
-(rerunfilecheck)             After:  5C2792B9794E80A43000EDEF1B1D25BC;1645.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 9BA0880989B9A56B134D93AA1A536D0F;11376.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 5C2792B9794E80A43000EDEF1B1D25BC;1645.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -2464,12 +2452,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 Here is how much of LuaTeX's memory you used:
  44164 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 744 words of node memory still in use:
+ 754 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 9 kern, 14 attribute, 96 glue_spec, 14 attr
 ibute_list, 1 action, 1 write nodes
-   avail lists: 1:2,2:1044,3:220,4:1209,5:222,6:2141,7:62,8:28,9:567,10:246,11:1
+   avail lists: 1:2,2:1044,3:230,4:1212,5:222,6:2245,7:62,8:28,9:567,10:257,11:1
  46443 multiletter control sequences out of 65536+600000
- 136 fonts using 30716755 bytes
+ 136 fonts using 30716543 bytes
  69i,21n,104p,1048b,2430s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/te
 xlive/2015/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/tex
@@ -2480,10 +2468,10 @@ texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf
 -dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist
 /fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/op
 entype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (13 pages, 132044 bytes).
+Output written on main.pdf (13 pages, 133140 bytes).
 
-PDF statistics: 364 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
+PDF statistics: 367 PDF objects out of 1000 (max. 8388607)
+ 277 compressed objects within 3 object streams
  80 named destinations out of 1000 (max. 131072)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

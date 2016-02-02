@@ -19,18 +19,6 @@
 
 \refsection{0}
   \sortlist{nty}{nty}
-    \entry{reykrit}{online}{}
-      \field{sortinit}{D}
-      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
-      \field{labeltitlesource}{title}
-      \field{title}{Die Lösung eines alten Rätsels: Der kritische Punkt der Rohrströmung}
-      \field{urlday}{03}
-      \field{urlmonth}{01}
-      \field{urlyear}{2016}
-      \verb{url}
-      \verb https://www.mpg.de/4804411/Rohrstroemung_kritische_Punkt
-      \endverb
-    \endentry
     \entry{sample}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{Dortmund}{D\bibinitperiod}{TU}{T\bibinitperiod}{}{}{}{}}%
@@ -42,19 +30,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Skript zum Versuch Nr.107 Das Kugelfall-Viskosimeter nach Höppler}
-      \field{year}{2014}
-    \endentry
-    \entry{rey}{online}{}
-      \field{sortinit}{V}
-      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
-      \field{labeltitlesource}{title}
-      \field{title}{Viskosität und Reynaoldszahlen}
-      \field{urlday}{03}
-      \field{urlmonth}{01}
-      \field{urlyear}{2016}
-      \verb{url}
-      \verb http://www.uni-oldenburg.de/fileadmin/user_upload/physik/ag/physikpraktika/download/GPR/pdf/Viskositaet.pdf
-      \endverb
+      \field{year}{2016}
     \endentry
   \endsortlist
 \endrefsection

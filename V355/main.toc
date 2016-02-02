@@ -8,14 +8,14 @@
 \contentsline {subsection}{\numberline {1.4}Strom in Abhängigkeit von der Frequenz}{6}{subsection.1.4}
 \contentsline {section}{\numberline {2}Aufbau und Durchführung}{8}{section.2}
 \contentsline {subsection}{\numberline {2.1}Vorbereitung}{8}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Durchführung}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Durchführung}{9}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Eigenschaften der Bauteile}{10}{subsection.2.3}
 \contentsline {section}{\numberline {3}Fehlerrechnung}{11}{section.3}
 \contentsline {section}{\numberline {4}Auswertung}{12}{section.4}
 \contentsline {subsection}{\numberline {4.1}Abstimmung der Resonanzfrequenz}{12}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Verhältnis von Schwingung und Schwebung}{12}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Bestimmung der Fundamentalfrequenzen}{12}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.3}Bestimmung der Fundamentalfrequenzen}{13}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}Ohne Sweep}{13}{subsubsection.4.3.1}
 \contentsline {subsubsection}{\numberline {4.3.2}Mit Sweep}{13}{subsubsection.4.3.2}
-\contentsline {section}{\numberline {5}Diskussion}{15}{section.5}
+\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}
 \contentsline {section}{\nonumberline Literatur}{15}{section*.12}

@@ -35,7 +35,7 @@ plt.ylabel(r'$ln(1-(U_c/U_0)) $')
 plt.savefig('a.pdf')
 M=unp.uarray(m,std)
 print('RC ist = ', 1/M, M)
-
+print('Delta Rc',std/m**2)
 
 w , a_w =np.genfromtxt('b.txt',unpack=True)
 # RC=0.001388
