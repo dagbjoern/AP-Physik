@@ -5,10 +5,10 @@
 \contentsline {subsection}{\numberline {1.1}Herleitung der DGL für die Dampfdruckkurve}{4}{subsection.1.1}
 \contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Messung unter 1 bar.}{5}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Messung über 1 bar.}{7}{subsection.2.2}
-\contentsline {section}{\numberline {3}Fehlerrechnung}{7}{section.3}
-\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Messung bei einem Druck unter 1 bar}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {2.2}Messung über 1 bar.}{6}{subsection.2.2}
+\contentsline {section}{\numberline {3}Fehlerrechnung}{6}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Messung bei einem Druck unter 1 bar}{8}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Messung bei einem Druck über 1 bar}{11}{subsection.4.2}
-\contentsline {section}{\numberline {5}Diskussion}{16}{section.5}
-\contentsline {section}{\nonumberline Literatur}{16}{section*.12}
+\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}
+\contentsline {section}{\nonumberline Literatur}{15}{section*.12}
