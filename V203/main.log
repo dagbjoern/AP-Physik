@@ -1,9 +1,9 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.6)  3 FEB 2016 14:55
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/W32TeX) (rev 5238)  (format=lualatex 2016.1.14)  3 FEB 2016 21:40
  restricted \write18 enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2015/10/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+Babel <3.9n> and hyphenation patterns for 79 languages loaded.
 (./header.tex (c:/texlive/2015/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2015/10/03 v3.19a KOMA-Script document class (article)
 (c:/texlive/2015/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -299,8 +299,8 @@ Lua module: luaotfload-main 2015/12/09 2.60001 OpenType layout system.
 Lua module: lualibs 2015-12-02 2.3 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2015-12-02 2.3 ConTeXt Lua libraries -- extended co
 llection.(using write cache: C:/texlive/2015/texmf-var/luatex-cache/generic)(usi
-ng read cache: C:/texlive/2015/texmf-var/luatex-cache/generic C:/Users/Ksenia/.t
-exlive2015/texmf-var/luatex-cache/generic)
+ng read cache: C:/texlive/2015/texmf-var/luatex-cache/generic C:/Users/Dag-Bj
+örn/.texlive2015/texmf-var/luatex-cache/generic)
 luaotfload | conf : Root cache directory is C:/texlive/2015/texmf-var/luatex-cac
 he/generic/names.
 Lua-only attribute luaotfload@state = 1
@@ -1069,7 +1069,7 @@ LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
 (Font)                  EU2/XITSMath(1)/m/n --> EU2/XITSMath(1)/bx/n on input li
 ne 43.
  (c:/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx.sty
-Package: siunitx 2015/12/31 v2.6n A comprehensive (SI) units package
+Package: siunitx 2016/01/05 v2.6o A comprehensive (SI) units package
 
 (c:/texlive/2015/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
@@ -1122,119 +1122,119 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7208.
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7213.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIPostPower with sig. 'mm' on line 7211.
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7216.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7214.
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7219.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIPrePower with sig. 'mm' on line 7217.
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7222.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIQualifier with sig. 'mm' on line 7220.
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7225.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7223.
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7228.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7226.
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7231.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7241.
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7246.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \num with sig. 'om' on line 7249.
+. Defining command \num with sig. 'om' on line 7254.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7257.
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7262.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \numrange with sig. 'omm' on line 7265.
+. Defining command \numrange with sig. 'omm' on line 7270.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7276.
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7281.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \SIrange with sig. 'ommm' on line 7287.
+. Defining command \SIrange with sig. 'ommm' on line 7292.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \SI with sig. 'omom' on line 7298.
+. Defining command \SI with sig. 'omom' on line 7303.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \sisetup with sig. 'm' on line 7301.
+. Defining command \sisetup with sig. 'm' on line 7306.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tablenum with sig. 'om' on line 7313.
+. Defining command \tablenum with sig. 'om' on line 7318.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \si with sig. 'om' on line 7324.
+. Defining command \si with sig. 'om' on line 7329.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7371.
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7376.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
-. 7373.
+. 7378.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7375.
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7380.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7377.
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7382.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
-. 7379.
+. 7384.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7380.
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7385.
 .................................................
 
 (c:/texlive/2015/texmf-dist/tex/latex/beamer/translator/translator.sty
@@ -1304,59 +1304,59 @@ ons
 \l__regex_zeroth_submatch_int=\count269
 )
 (c:/texlive/2015/texmf-dist/tex/latex/chemgreek/chemgreek.sty
-Package: chemgreek 2015/11/10 v1.0b interfaceforuprightgreeklettersforuseinchemi
+Package: chemgreek 2016/01/07 v1.0d interfaceforuprightgreeklettersforuseinchemi
 stry (CN)
 \l__chemgreek_tmpa_int=\count270
 \g__chemgreek_tmpa_int=\count271
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newchemgreekmapping with sig. 'O{}mm' on line 330.
+. Defining command \newchemgreekmapping with sig. 'O{}mm' on line 336.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \renewchemgreekmapping with sig. 'O{}mm' on line 333.
+. Defining command \renewchemgreekmapping with sig. 'O{}mm' on line 339.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \declarechemgreekmapping with sig. 'O{}mm' on line 336.
+. Defining command \declarechemgreekmapping with sig. 'O{}mm' on line 342.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \newchemgreekmappingalias with sig. 'mm' on line 341.
+. Defining command \newchemgreekmappingalias with sig. 'mm' on line 347.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \renewchemgreekmappingalias with sig. 'mm' on line 344.
+. Defining command \renewchemgreekmappingalias with sig. 'mm' on line 350.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \declarechemgreekmappingalias with sig. 'mm' on line 347.
+. Defining command \declarechemgreekmappingalias with sig. 'mm' on line 353.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \changechemgreeksymbol with sig. 'mmmm' on line 377.
+. Defining command \changechemgreeksymbol with sig. 'mmmm' on line 383.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \chemgreekmappingsymbol with sig. 'mm' on line 471.
+. Defining command \chemgreekmappingsymbol with sig. 'mm' on line 477.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \activatechemgreekmapping with sig. 'sm' on line 480.
+. Defining command \activatechemgreekmapping with sig. 'sm' on line 486.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \selectchemgreekmapping with sig. 'm' on line 485.
+. Defining command \selectchemgreekmapping with sig. 'm' on line 491.
 .................................................
 )
 (c:/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
@@ -2190,7 +2190,7 @@ dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
 (c:/texlive/2015/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
-File: siunitx-abbreviations.cfg 2015/12/31 v2.6n siunitx: Abbreviated units
+File: siunitx-abbreviations.cfg 2016/01/05 v2.6o siunitx: Abbreviated units
 )
 .................................................
 . chemgreek info: "mapping-activated"
@@ -2362,22 +2362,18 @@ Package pdftex.def Info: kreisprozess.png used on input line 39.
 <aufbau1.PNG, id=70, 404.26031pt x 459.21562pt>
 File: aufbau1.PNG Graphic file (type png)
  <use aufbau1.PNG>
-Package pdftex.def Info: aufbau1.PNG used on input line 7.
+Package pdftex.def Info: aufbau1.PNG used on input line 8.
 (pdftex.def)             Requested size: 292.7776pt x 332.58295pt.
- [5<./aufbau1.PNG>] [6] <aufbau2.PNG, id=84, 464.4853pt x 289.08pt>
+ [5<./aufbau1.PNG>] [6] <aufbau2.PNG, id=83, 464.4853pt x 289.08pt>
 File: aufbau2.PNG Graphic file (type png)
  <use aufbau2.PNG>
-Package pdftex.def Info: aufbau2.PNG used on input line 23.
+Package pdftex.def Info: aufbau2.PNG used on input line 24.
 (pdftex.def)             Requested size: 292.7776pt x 182.2184pt.
 )
 (./content/fehlerrechnung.tex [7<./aufbau2.PNG>]) (./content/auswertung.tex
-[8]
-
-LaTeX Warning: Reference `sec:p<1' on page 9 undefined on input line 8.
-
-(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-reg
-ular.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmr
-oman9-regular.luc)
+[8](load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman8-
+regular.luc)(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/
+lmroman9-regular.luc)
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
@@ -2397,9 +2393,6 @@ luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"(load luc: C:/texl
 ive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)
-
-LaTeX Warning: Reference `abb:aufbau1' on page 9 undefined on input line 16.
-
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
@@ -2440,44 +2433,35 @@ luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
 luaotfload | load : Lookup/name: "XITSMath" -> "xits-math.otf"
-
-LaTeX Warning: Reference `abb:aufbau1' on page 9 undefined on input line 16.
-
-<plot1.pdf, id=115, 578.16pt x 433.62pt>
+<plot1.pdf, id=117, 578.16pt x 433.62pt>
 File: plot1.pdf Graphic file (type pdf)
  <use plot1.pdf>
 Package pdftex.def Info: plot1.pdf used on input line 53.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
  [9] [10<./plot1.pdf>]
-
-LaTeX Warning: Reference `abb:p>1' on page 11 undefined on input line 85.
-
-
-LaTeX Warning: Reference `abb:p>1' on page 11 undefined on input line 85.
-
-[11] <plot2.pdf, id=221, 578.16pt x 433.62pt>
+[11] [12] <plot2.pdf, id=233, 578.16pt x 433.62pt>
 File: plot2.pdf Graphic file (type pdf)
  <use plot2.pdf>
-Package pdftex.def Info: plot2.pdf used on input line 130.
+Package pdftex.def Info: plot2.pdf used on input line 161.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
- [12<./plot2.pdf>]
-Overfull \hbox (75.68002pt too wide) in paragraph at lines 160--160
+ [13<./plot2.pdf>]
+Overfull \hbox (72.63593pt too wide) in paragraph at lines 191--191
 [][] 
  []
 
-<plot3.pdf, id=281, 578.16pt x 433.62pt>
+<plot3.pdf, id=292, 578.16pt x 433.62pt>
 File: plot3.pdf Graphic file (type pdf)
  <use plot3.pdf>
-Package pdftex.def Info: plot3.pdf used on input line 168.
+Package pdftex.def Info: plot3.pdf used on input line 199.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 
-<plot4.pdf, id=284, 578.16pt x 433.62pt>
+<plot4.pdf, id=295, 578.16pt x 433.62pt>
 File: plot4.pdf Graphic file (type pdf)
  <use plot4.pdf>
-Package pdftex.def Info: plot4.pdf used on input line 175.
+Package pdftex.def Info: plot4.pdf used on input line 206.
 (pdftex.def)             Requested size: 292.7776pt x 219.58177pt.
 )
-(./content/diskussion.tex [13<./plot3.pdf>])
+(./content/diskussion.tex [14] [15<./plot3.pdf><./plot4.pdf>])
 Underfull \hbox (badness 10000) in paragraph at lines 3--23
 
  []
@@ -2487,11 +2471,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--23
 
  []
 
-[14<./plot4.pdf>](load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts
-/otf/lmromancaps10-regular.luc)
+(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps1
+0-regular.luc)
 LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 24.
-
-(c:/texlive/2015/texmf-dist/tex/latex/euenc/eu2lmtt.fd
+ (c:/texlive/2015/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )(load luc: C:/texlive/2015/texmf-var/luatex-cache/generic/fonts/otf/lmmono10-re
 gular.luc)
@@ -2500,19 +2483,23 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
- [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
 
-(./main.aux)
+[16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
+ (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 84401D13200FE01625F6F6967044D7E2;10514.
+
+
+Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `main.aux':
+(rerunfilecheck)             Before: E405D77583CAA742523DE1B29BB6E52F;11190
+(rerunfilecheck)             After:  C64B487D878473FEB012BC4327752D31;10672.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: A7581520B30AC216546ACBAC595A006C;1040.
+(rerunfilecheck)             Checksum: A4D12C6A6CD485A8D05793A6ACF35FA5;1040.
 
-
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 
@@ -2521,15 +2508,21 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44338 strings out of 494897
+ 44342 strings out of 494897
  100000,1648299 words of node,token memory allocated
- 633 words of node memory still in use:
+ 636 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 2 kern, 7 attribute, 83 glue_spec, 7 attrib
 ute_list, 1 action, 1 write nodes
-   avail lists: 1:1,2:626,3:179,4:792,5:228,6:2648,7:279,8:20,9:445,10:347,11:1
- 46585 multiletter control sequences out of 65536+600000
+   avail lists: 1:1,2:653,3:182,4:897,5:228,6:2648,7:279,8:20,9:445,10:347,11:1
+ 46586 multiletter control sequences out of 65536+600000
  181 fonts using 42112263 bytes
- 69i,19n,104p,953b,2666s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 69i,19n,104p,953b,2101s stack positions out of 5000i,500n,10000p,200000b,100000s
+LuaTeX warning (dest): name{equation.4.32} has been referenced but does not exis
+t, replaced by a fixed one
+
+LuaTeX warning (dest): name{equation.3.20} has been referenced but does not exis
+t, replaced by a fixed one
+
 <c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf><c:/te
 xlive/2015/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf><c:/tex
 live/2015/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2
@@ -2543,10 +2536,10 @@ e/public/lm/lmroman10-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/pub
 lic/lm/lmroman12-regular.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/l
 m/lmsans10-bold.otf><c:/texlive/2015/texmf-dist/fonts/opentype/public/lm/lmroman
 12-bold.otf>
-Output written on main.pdf (15 pages, 260215 bytes).
+Output written on main.pdf (16 pages, 262015 bytes).
 
-PDF statistics: 559 PDF objects out of 1000 (max. 8388607)
- 342 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 131072)
+PDF statistics: 573 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 131072)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

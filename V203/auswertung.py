@@ -16,7 +16,8 @@ Tg=Tg+273.15
 T2=T2+273.15
 p2=8.14+p2
 
-
+eV=1.6022e-19
+N_a=6.022e23
 
 m, bk, r, p, stdsm=stats.linregress(1/Tg,np.log(p1))
 
@@ -30,6 +31,16 @@ params, covariance =curve_fit(F,T2,p2)
 print('linrgress')
 print('a =', bk)
 print('b =', m)
+
+m=unp.uarray(m,stdsm)
+L=-m*R
+L_a=373*R
+L_i=L-L_a
+print('L',L)
+print('L_a',L_a)
+print('L_i',L_i)
+print('L_i',L_i/(eV*N_a))
+
 
 
 
