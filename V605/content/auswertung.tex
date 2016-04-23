@@ -1,2 +1,88 @@
+\newpage
 \section{Auswertung}
 \label{sec:Auswertung}
+
+\subsection{Eichung des Okularmikrometer}
+Um die Gitterkonstante g des verwendeten Transmissionsgitter zu bestimmen,
+werden die Beugngswinkel $\phi_\mathrm{i}$ der wichtigsten Spektrallinen
+des He-Spektrums , die in der Tabelle \ref{tab:} zu finden sind, verwendet.
+\begin{table}
+  \centering
+  \caption{Beugungswinkel der Spektrallinen des He-Spektrums.}
+  \begin{tabular}{c c c}
+    \toprule
+Wellenlänge  & Beugungswinkel & $ \ $  \\
+$\lambda/\si{\nano\meter}$ & $\phi/\si{\radian}$ & $sin(\phi)$\\
+    \midrule
+    706,5 & 0,77 & 0.696\\
+    667,8 & 0,72 & 0.660\\
+    587,6 & 0,61 & 0.569\\
+    504,8 & 0,52 & 0.500\\
+    501,6 & 0,52 & 0.497\\
+    492,2 & 0,51 & 0.488\\
+    471,3 & 0,49 & 0.468\\
+    447,1 & 0,46 & 0.445\\
+    438,8 & 0,39 & 0.383\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+$sin(\phi)$ wird nun gegen $\lambda$ aufgetragen
+wie in Abbildung \ref{fig:plot1} zu sehen
+und es wird ein Lineareregression durchgeführt.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{a).pdf}
+  \caption{$sin(\phi)$ nach der Wellenlänge $\lambda$ aufgetragen.}
+  \label{fig:plot1}
+\end{figure}
+aus der Linearenregression ergeben sich die Werte:
+\begin{align*}
+b=(1033\pm19)\si{\per\meter}
+a=-11\pm10
+\end{align*}
+Aus der Formel für die Hauptmaxima \eqref{eqn:winkel}
+\begin{align*}
+  sin(\phi)= \mathrm{k}\frac{\lambda}{\mathrm{g}} \,\ \ \ \ \ \mathrm{k} = 0,1,2,\dots
+\end{align*}
+folgt, da es sich um die ersten Hauptmaxima $(k=1)$ handelt, dass
+die berechnete Steigung der Ausgleichsgrade
+\begin{align*}
+b=\frac{1}{\mathrm{g}}
+  \intertext{ist. Somit ergibt sich für die Gitterkonstante}
+\mathrm{g}=967\si{\micro\meter}
+\end{align*}
+\subsection{Berechung der Eichgröße}
+Die Eichgröße lässt sich mit Hilfe der Formel \eqref{eqn:eich}
+\begin{equation}
+  \varepsilon=\frac{(\lambda_\mathrm{1}-\lambda_\mathrm{2})}{\Delta t\cdot cos(\overline{\phi}_\mathrm{12})}\label{eqn:eich}
+\end{equation}
+berechnen. Hierbei sind $\lambda_1$ und $\lambda_2$ zwei benachtbarte Spektralinien
+und $\overline{\phi}_\mathrm{12}$ der gemittelte Winkel von den 2 gemessenen Winkel der Spektrallinien.
+$\Delta \mathrm{t}$ ist der mit dem  Okularmikro-meters
+ermittelte Abstand zwischen den beiden Spektrallinien.
+In der Tabelle \ref{tab:eich}sind die berechenten Eichgrößen dargestellt.
+\begin{table}
+  \centering
+  \caption{}
+  \begin{tabular}{c c c c c}
+    \toprule
+    $\lambda_1/\si{\nano\meter}$ & $\lambda_2/\si{\nano\meter}$ & $\overline{\phi}_{12}$ & $\Delta t/$ & Eichgröße $\varepsilon / \si{\meter}$\\
+    \midrule
+    504,8 & 501,6 & 0,522\pm0,001 & 120 & 0,03076\pm0,00003\\
+    501,6 & 492,2 & 0,515\pm0,005 & 365 & 0,02959\pm0,00009\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Die verschiedenen berechneten Eichgrößen werden nun gemittelt und es ergibt sich ein Eichgröße von:
+\begin{align*}
+  \overline\varepsilon=(0,030175\pm0,00005)\si{\meter}
+\end{align*}
+
+\subsection{Bestimmung der Abschirmungszahl $\sigma_2$}
+Um die Abschirmungszahl $\sigmal_2$ von Natrium, Kalium und Rubidium
+bestimmen zu können, ist es notwendig den Wellenlängenunterschied
+$\Delta t$ zwischen den Dublettlinien zu bestimmen. Hierzu wird die
+Formel \eqref{eqn:deltalam} verwendet
+\begin{align}
+\Delta\lambda=cos\overline{\phi}\cdot\Delta s \cdot\overline{\varepsilon}
+.Durch $\Delta\lambda$
