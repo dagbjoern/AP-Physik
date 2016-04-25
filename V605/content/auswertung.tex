@@ -5,10 +5,11 @@
 \subsection{Eichung des Okularmikrometer}
 Um die Gitterkonstante g des verwendeten Transmissionsgitter zu bestimmen,
 werden die Beugngswinkel $\phi_\mathrm{i}$ der wichtigsten Spektrallinen
-des He-Spektrums , die in der Tabelle \ref{tab:} zu finden sind, verwendet.
+des He-Spektrums , die in der Tabelle \ref{tab:rad} zu finden sind, verwendet.
 \begin{table}
   \centering
   \caption{Beugungswinkel der Spektrallinen des He-Spektrums.}
+  \label{tab:rad}
   \begin{tabular}{c c c}
     \toprule
 Wellenlänge  & Beugungswinkel & $ \ $  \\
@@ -26,25 +27,27 @@ $\lambda/\si{\nano\meter}$ & $\phi/\si{\radian}$ & $sin(\phi)$\\
     \bottomrule
   \end{tabular}
 \end{table}
-$sin(\phi)$ wird nun gegen $\lambda$ aufgetragen
+\FloatBarrier
+Der $sin(\phi)$ wird nun gegen $\lambda$ aufgetragen
 wie in Abbildung \ref{fig:plot1} zu sehen
-und es wird ein Lineareregression durchgeführt.
+und es wird eine Lineareregression durchgeführt.
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{a).pdf}
-  \caption{$sin(\phi)$ nach der Wellenlänge $\lambda$ aufgetragen.}
+  \caption{$Der sin(\phi)$ nach der Wellenlänge $\lambda$ aufgetragen.}
   \label{fig:plot1}
 \end{figure}
-aus der Linearenregression ergeben sich die Werte:
+\FloatBarrier
+Aus der Linearenregression ergeben sich die Werte:
 \begin{align*}
-b=(1.03\pm0.02)\cdot10^{-6}\si{\micro\meter}
-a=(-11\pm10)\cdot10^{-9}
+b&=(1.03\pm0.02)\cdot10^{-6}\si{\micro\meter}\\
+a&=(-11\pm10)\cdot10^{-9}
 \end{align*}
 Aus der Formel für die Hauptmaxima \eqref{eqn:winkel}
-\begin{align*}
-  sin(\phi)= \mathrm{k}\frac{\lambda}{\mathrm{g}} \,\ \ \ \ \ \mathrm{k} = 0,1,2,\dots
-\mathrm{g}\cdot sin(\phi) = k\lambda
-\end{align*}
+\begin{align}
+  \sin(\phi)&= \mathrm{k}\frac{\lambda}{\mathrm{g}} \,\ \ \ \ \ \mathrm{k} = 0,1,2,\dots \label{eqn:winkel} \\
+\mathrm{g}\cdot \sin(\phi) &= k\lambda
+\end{align}
 folgt, da es sich um die ersten Hauptmaxima $(k=1)$ handelt, dass
 die berechnete Steigung der Ausgleichsgrade
 \begin{align*}
@@ -58,36 +61,40 @@ Die Eichgröße lässt sich mit Hilfe der Formel \eqref{eqn:eich}
   \varepsilon=\frac{(\lambda_\mathrm{1}-\lambda_\mathrm{2})}{\Delta t\cdot cos(\overline{\phi}_\mathrm{12})}\label{eqn:eich}
 \end{equation}
 berechnen. Hierbei sind $\lambda_1$ und $\lambda_2$ zwei benachtbarte Spektralinien
-und $\overline{\phi}_\mathrm{12}$ der gemittelte Winkel von den 2 gemessenen Winkel der Spektrallinien.
-$\Delta \mathrm{t}$ ist der mit dem  Okularmikro-meters
+und $\overline{\phi}_\mathrm{12}$ der gemittelte Winkel
+von den 2 gemessenen Winkel der Spektrallinien.
+Das $\Delta \mathrm{t}$ ist der mit dem  Okularmikro-meters
 ermittelte Abstand zwischen den beiden Spektrallinien.
-In der Tabelle \ref{tab:eich}sind die berechenten Eichgrößen dargestellt.
+In der Tabelle \ref{tab:eich} sind die berechenten Eichgrößen dargestellt.
 \begin{table}
   \centering
-  \caption{}
+  \caption{Werte für die Berechnung der Eichgröße.}
+  \label{tab:eich}
   \begin{tabular}{c c c c c}
     \toprule
-    $\lambda_1/\si{\nano\meter}$ & $\lambda_2/\si{\nano\meter}$ & $\overline{\phi}_{12}$ & $\Delta t/$ & Eichgröße $\varepsilon / 10^{-11}\si{\meter}$\\
+    $\lambda_1/\si{\nano\meter}$ & $\lambda_2/\si{\nano\meter}$ & $\overline{\phi}_{12}/\si{\radian}$ & $\Delta t$ & Eichgröße $\varepsilon / 10^{-11}\si{\meter}$\\
     \midrule
     504,8 & 501,6 & 0,522\pm0,001 & 120 & 3,076\pm0,003\\
     501,6 & 492,2 & 0,515\pm0,005 & 365 & 2,959\pm0,009\\
     \bottomrule
   \end{tabular}
 \end{table}
+\FloatBarrier
 Die verschiedenen berechneten Eichgrößen werden nun gemittelt und es ergibt sich ein Eichgröße von:
 \begin{align*}
-  \overline\varepsilon=(0,03,0185\pm0,005)\si{\meter}
+  \overline\varepsilon=(3,019\pm0,005)\cdot10^{-11}\si{\meter}
 \end{align*}
 
 \subsection{Bestimmung der Abschirmungszahl}
 Um die Abschirmungszahl $\sigma_2$ von Natrium, Kalium und Rubidium
 bestimmen zu können, ist es notwendig den Wellenlängenunterschied
-$\Delta s$ zwischen den Dublettlinien zu bestimmen. Hierzu wird die
+$\Delta \lambda$ zwischen den Dublettlinien zu bestimmen. Hierzu wird die
 Formel \eqref{eqn:deltalam} verwendet
 \begin{align}
-\Delta\lambda=cos\overline{\phi}\cdot\Delta s \cdot\overline{\varepsilon}.
+\Delta\lambda=cos\overline{\phi}\cdot\Delta s \cdot\overline{\varepsilon}.\label{eqn:deltalam}
 \end{align}
-Durch $\Delta\lambda$ lässt sich nun die Energiedifferenz $\Delta E_\mathrm{D}$ mit der Formel \eqref{eqn:E}
+Durch $\Delta\lambda$ lässt sich nun die Energiedifferenz
+$\Delta E_\mathrm{D}$ mit der Formel \eqref{eqn:E}
 zwischen den Dublettlinien ausrechnen.
 Um nun die Abschimungszahl $\sigma_2$ zu berechnen
 wird die Formel \eqref{eqn:popo} nach $\sigma_2$ umgestellt und es ergibt sich:
@@ -116,7 +123,8 @@ die Bahndrehimpulsquantenzahl  $l=1$.
     \bottomrule
   \end{tabular}
 \end{table}
-
+\FloatBarrier
+\newpage
 \subsubsection{Kalium}
 Kalium besitzt die Kernladungszahl  $z=19$.
 Die gemessenen K-Dubletts entstehen durch die Aufspaltund
@@ -139,6 +147,7 @@ die Bahndrehimpulsquantenzahl  $l=1$.
     \bottomrule
   \end{tabular}
 \end{table}
+\FloatBarrier
 
 \subsubsection{Rubidium}
 Rubibium besitzt die Kernladungszahl  $z=37$.
@@ -160,3 +169,4 @@ die Bahndrehimpulsquantenzahl  $l=1$.
     \bottomrule
   \end{tabular}
 \end{table}
+\FloatBarrier
