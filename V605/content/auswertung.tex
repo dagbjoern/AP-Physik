@@ -37,19 +37,20 @@ und es wird ein Lineareregression durchgeführt.
 \end{figure}
 aus der Linearenregression ergeben sich die Werte:
 \begin{align*}
-b=(1033\pm19)\si{\per\meter}
-a=-11\pm10
+b=(1.03\pm0.02)\cdot10^{-6}\si{\micro\meter}
+a=(-11\pm10)\cdot10^{-9}
 \end{align*}
 Aus der Formel für die Hauptmaxima \eqref{eqn:winkel}
 \begin{align*}
   sin(\phi)= \mathrm{k}\frac{\lambda}{\mathrm{g}} \,\ \ \ \ \ \mathrm{k} = 0,1,2,\dots
+\mathrm{g}\cdot sin(\phi) = k\lambda
 \end{align*}
 folgt, da es sich um die ersten Hauptmaxima $(k=1)$ handelt, dass
 die berechnete Steigung der Ausgleichsgrade
 \begin{align*}
-b=\frac{1}{\mathrm{g}}
+b=\mathrm{g}
   \intertext{ist. Somit ergibt sich für die Gitterkonstante}
-\mathrm{g}=967\si{\micro\meter}
+\mathrm{g}=(1,03\pm0,02)\si{\micro\meter}
 \end{align*}
 \subsection{Berechung der Eichgröße}
 Die Eichgröße lässt sich mit Hilfe der Formel \eqref{eqn:eich}
@@ -66,23 +67,96 @@ In der Tabelle \ref{tab:eich}sind die berechenten Eichgrößen dargestellt.
   \caption{}
   \begin{tabular}{c c c c c}
     \toprule
-    $\lambda_1/\si{\nano\meter}$ & $\lambda_2/\si{\nano\meter}$ & $\overline{\phi}_{12}$ & $\Delta t/$ & Eichgröße $\varepsilon / \si{\meter}$\\
+    $\lambda_1/\si{\nano\meter}$ & $\lambda_2/\si{\nano\meter}$ & $\overline{\phi}_{12}$ & $\Delta t/$ & Eichgröße $\varepsilon / 10^{-11}\si{\meter}$\\
     \midrule
-    504,8 & 501,6 & 0,522\pm0,001 & 120 & 0,03076\pm0,00003\\
-    501,6 & 492,2 & 0,515\pm0,005 & 365 & 0,02959\pm0,00009\\
+    504,8 & 501,6 & 0,522\pm0,001 & 120 & 3,076\pm0,003\\
+    501,6 & 492,2 & 0,515\pm0,005 & 365 & 2,959\pm0,009\\
     \bottomrule
   \end{tabular}
 \end{table}
 Die verschiedenen berechneten Eichgrößen werden nun gemittelt und es ergibt sich ein Eichgröße von:
 \begin{align*}
-  \overline\varepsilon=(0,030175\pm0,00005)\si{\meter}
+  \overline\varepsilon=(0,03,0185\pm0,005)\si{\meter}
 \end{align*}
 
-\subsection{Bestimmung der Abschirmungszahl $\sigma_2$}
-Um die Abschirmungszahl $\sigmal_2$ von Natrium, Kalium und Rubidium
+\subsection{Bestimmung der Abschirmungszahl}
+Um die Abschirmungszahl $\sigma_2$ von Natrium, Kalium und Rubidium
 bestimmen zu können, ist es notwendig den Wellenlängenunterschied
-$\Delta t$ zwischen den Dublettlinien zu bestimmen. Hierzu wird die
+$\Delta s$ zwischen den Dublettlinien zu bestimmen. Hierzu wird die
 Formel \eqref{eqn:deltalam} verwendet
 \begin{align}
-\Delta\lambda=cos\overline{\phi}\cdot\Delta s \cdot\overline{\varepsilon}
-.Durch $\Delta\lambda$
+\Delta\lambda=cos\overline{\phi}\cdot\Delta s \cdot\overline{\varepsilon}.
+\end{align}
+Durch $\Delta\lambda$ lässt sich nun die Energiedifferenz $\Delta E_\mathrm{D}$ mit der Formel \eqref{eqn:E}
+zwischen den Dublettlinien ausrechnen.
+Um nun die Abschimungszahl $\sigma_2$ zu berechnen
+wird die Formel \eqref{eqn:popo} nach $\sigma_2$ umgestellt und es ergibt sich:
+\begin{equation}
+  \sigma_2=z-\sqrt[4]{\frac{\Delta E_\mathrm{D}\cdot{n^3}\cdot l\left(l+1\right)}{\mathrm{R}_\infty \alpha^2}} \label{eqn:sigma}
+\end{equation}
+In den fogenenden Tabellen sind die nötigen Daten und die
+entsprechende Abschirmungszahl aufgelistet.
+\subsubsection{Natrium}
+Natrium besitzt die Kernladungszahl  $z=11$.
+Die gemessenen Na-Dubletts entstehen durch die Aufspaltund des 3P-Niveaus in $3P_\frac{1}{2}$ und $3P_\frac{3}{2}$.
+Somit beträgt die Quantenzahl $n=3$ und
+die Bahndrehimpulsquantenzahl  $l=1$.
+
+\begin{table}
+  \centering
+  \caption{Gemessene und errechnete Größen zur Bestimmung der Abschirmungszahl $\sigma_2$ von Natrium. \label{tab:na}}
+  \begin{tabular}{c c c c c c c c }
+    \toprule
+    \multicolumn{2}{c}{Winkel}   & \multicolumn{4}{c}{ \ }    \\
+    $\phi_1/\si{\radian}$ & $\phi_2/\si{\radian}$ & $\overline{\phi}/\si{\radian}$ & $\overline{\lambda}/\si{\nano\meter}$ &  $\Delta \mathrm{s}$ & $\Delta\lambda/\si{\nano\meter}$ & $\Delta \mathrm{E}/\mathrm{eV}$ & $\sigma_2$ \\
+    \midrule
+    0,654 & 0,654 & 0,654\pm0 & 629\pm11 & 27  & 0,646\pm0,001 & $(1,27\pm0,02)\cdot10^{-9}$ & $11\pm2\cdot10^{-10}$ \\
+    0,620 & 0,620 & 0,620\pm0 & 600\pm11 & 26  & 0,639\pm0,001 & $(1,32\pm0,02)\cdot10^{-9}$ & $11\pm2\cdot10^{-10}$ \\
+    0,597 & 0,597 & 0,597\pm0 & 581\pm11 & 21  & 0,524\pm0,001 & $(1,12\pm0,02)\cdot10^{-9}$ & $11\pm2\cdot10^{-10}$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{Kalium}
+Kalium besitzt die Kernladungszahl  $z=19$.
+Die gemessenen K-Dubletts entstehen durch die Aufspaltund
+des 4P-Niveaus in $4P_\frac{1}{2}$ und $4P_\frac{3}{2}$.
+Somit beträgt die Quantenzahl $n=4$ und
+die Bahndrehimpulsquantenzahl  $l=1$.
+
+\begin{table}
+  \centering
+  \caption{Gemessene und errechnete Größen zur Bestimmung der Abschirmungszahl $\sigma_2$ von Kalium. \label{tab:k} }
+  \begin{tabular}{c c c c c c c c }
+    \toprule
+    \multicolumn{2}{c}{Winkel}   & \multicolumn{4}{c}{ \ }    \\
+    $\phi_1/\si{\radian}$ & $\phi_2/\si{\radian}$ & $\overline{\phi}/\si{\radian}$ & $\overline{\lambda}/\si{\nano\meter}$ &  $\Delta \mathrm{s}$ & $\Delta\lambda/\si{\nano\meter}$ & $\Delta \mathrm{E}/\mathrm{eV}$ & $\sigma_2$ \\
+    \midrule
+    0,557 & 0,559 & 0,558 & 547\pm10 & 62 & 1,587\pm0,002 & $(3,60\pm0,07)\cdot10^{-9}$ &$19\pm3\cdot10^{-10}$\\
+    0,559 & 0,560 & 0,559 & 548\pm10 & 65 & 1,662\pm0,003 & $(3,76\pm0,07)\cdot10^{-9}$ &$19\pm3\cdot10^{-10}$\\
+    0,611 & 0,612 & 0,612 & 594\pm11 & 91 & 2,248\pm0,004 & $(4,70\pm0,09)\cdot10^{-9}$ &$19\pm3\cdot10^{-10}$\\
+    0,614 & 0,616 & 0,615 & 596\pm11 & 78 & 1,922\pm0,003 & $(4,00\pm0,07)\cdot10^{-9}$ &$19\pm3\cdot10^{-10}$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsubsection{Rubidium}
+Rubibium besitzt die Kernladungszahl  $z=37$.
+Die gemessenen Na-Dubletts entstehen
+durch die Aufspaltund des 5P-Niveaus
+in $5P_\frac{1}{2}$ und $5P_\frac{3}{2}$.
+Somit beträgt die Quantenzahl $n=5$ und
+die Bahndrehimpulsquantenzahl  $l=1$.
+
+\begin{table}
+  \centering
+  \caption{Gemessene und errechnete Größen zur Bestimmung der Abschirmungszahl $\sigma_2$ von Rubidium. \label{tab:ru}}
+  \begin{tabular}{c c c c c c c c }
+    \toprule
+    \multicolumn{2}{c}{Winkel}   & \multicolumn{4}{c}{ \ }    \\
+    $\phi_1/\si{\radian}$ & $\phi_2/\si{\radian}$ & $\overline{\phi}/\si{\radian}$ & $\overline{\lambda}/\si{\nano\meter}$ &  $\Delta \mathrm{s}$ & $\Delta\lambda/\si{\nano\meter}$ & $\Delta \mathrm{E}/\mathrm{eV}$ & $\sigma_2$ \\
+    \midrule
+    0,614 & 0,672 & 0,667 & 639\pm12 & 409 & 9,70\pm0,04 & $(18,82\pm0,04)10^{-9}$ & $37\pm50\cdot10^{-9}$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
