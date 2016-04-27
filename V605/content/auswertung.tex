@@ -3,9 +3,9 @@
 \label{sec:Auswertung}
 
 \subsection{Eichung des Okularmikrometer}
-Um die Gitterkonstante g des verwendeten Transmissionsgitter zu bestimmen,
-werden die Beugngswinkel $\phi_\mathrm{i}$ der wichtigsten Spektrallinen
-des He-Spektrums , die in der Tabelle \ref{tab:rad} zu finden sind, verwendet.
+Um die Gitterkonstante g des verwendeten Transmissionsgitters zu bestimmen,
+werden die Beugungswinkel $\phi_\mathrm{i}$ der wichtigsten Spektrallinen
+des He-Spektrums, die in der Tabelle \ref{tab:rad} zu finden sind, verwendet.
 \begin{table}
   \centering
   \caption{Beugungswinkel der Spektrallinen des He-Spektrums.}
@@ -30,18 +30,18 @@ $\lambda/\si{\nano\meter}$ & $\phi/\si{\radian}$ & $sin(\phi)$\\
 \FloatBarrier
 Der $sin(\phi)$ wird nun gegen $\lambda$ aufgetragen
 wie in Abbildung \ref{fig:plot1} zu sehen
-und es wird eine Lineareregression durchgeführt.
+und es wird eine lineare Regression durchgeführt.
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{a).pdf}
-  \caption{$Der sin(\phi)$ nach der Wellenlänge $\lambda$ aufgetragen.}
+  \caption{$Der \sin(\phi)$ nach der Wellenlänge $\lambda$ aufgetragen.}
   \label{fig:plot1}
 \end{figure}
 \FloatBarrier
 Aus der Linearenregression ergeben sich die Werte:
 \begin{align*}
-b&=(1.03\pm0.02)\cdot10^{-6}\si{\micro\meter}\\
-a&=(-11\pm10)\cdot10^{-9}
+b&=(1.03\pm0.02)\cdot10^{-6}\si{\micro\meter}.\\
+a&=(-11\pm10)\cdot10^{-9}.
 \end{align*}
 Aus der Formel für die Hauptmaxima \eqref{eqn:winkel}
 \begin{align}
@@ -53,7 +53,7 @@ die berechnete Steigung der Ausgleichsgrade
 \begin{align*}
 b=\mathrm{g}
   \intertext{ist. Somit ergibt sich für die Gitterkonstante}
-\mathrm{g}=(1,03\pm0,02)\si{\micro\meter}
+\mathrm{g}=(1,03\pm0,02)\si{\micro\meter}.
 \end{align*}
 \subsection{Berechung der Eichgröße}
 Die Eichgröße lässt sich mit Hilfe der Formel \eqref{eqn:eich}
@@ -63,7 +63,7 @@ Die Eichgröße lässt sich mit Hilfe der Formel \eqref{eqn:eich}
 berechnen. Hierbei sind $\lambda_1$ und $\lambda_2$ zwei benachtbarte Spektralinien
 und $\overline{\phi}_\mathrm{12}$ der gemittelte Winkel
 von den 2 gemessenen Winkel der Spektrallinien.
-Das $\Delta \mathrm{t}$ ist der mit dem  Okularmikro-meters
+Das $\Delta \mathrm{t}$ ist der mit dem  Okularmikrometers
 ermittelte Abstand zwischen den beiden Spektrallinien.
 In der Tabelle \ref{tab:eich} sind die berechenten Eichgrößen dargestellt.
 \begin{table}
@@ -80,9 +80,11 @@ In der Tabelle \ref{tab:eich} sind die berechenten Eichgrößen dargestellt.
   \end{tabular}
 \end{table}
 \FloatBarrier
-Die verschiedenen berechneten Eichgrößen werden nun gemittelt und es ergibt sich ein Eichgröße von:
+Die verschiedenen
+berechneten Eichgrößen werden nun gemittelt
+und es ergibt sich eine Eichgröße von:
 \begin{align*}
-  \overline\varepsilon=(3,019\pm0,005)\cdot10^{-11}\si{\meter}
+  \overline\varepsilon=(3,019\pm0,005)\cdot10^{-11}\si{\meter}.
 \end{align*}
 
 \subsection{Bestimmung der Abschirmungszahl}
@@ -99,9 +101,9 @@ zwischen den Dublettlinien ausrechnen.
 Um nun die Abschimungszahl $\sigma_2$ zu berechnen
 wird die Formel \eqref{eqn:popo} nach $\sigma_2$ umgestellt und es ergibt sich:
 \begin{equation}
-  \sigma_2=z-\sqrt[4]{\frac{\Delta E_\mathrm{D}\cdot{n^3}\cdot l\left(l+1\right)}{\mathrm{R}_\infty \alpha^2}} \label{eqn:sigma}
+  \sigma_2=z-\sqrt[4]{\frac{\Delta E_\mathrm{D}\cdot{n^3}\cdot l\left(l+1\right)}{\mathrm{R}_\infty \alpha^2}}. \label{eqn:sigma}
 \end{equation}
-In den fogenenden Tabellen sind die nötigen Daten und die
+In den Tabellen\ref{tab:1}-\ref{tab:3}sind die nötigen Daten und die
 entsprechende Abschirmungszahl aufgelistet.
 \subsubsection{Natrium}
 Natrium besitzt die Kernladungszahl  $z=11$.
@@ -112,6 +114,7 @@ die Bahndrehimpulsquantenzahl  $l=1$.
 \begin{table}
   \centering
   \caption{Gemessene und errechnete Größen zur Bestimmung der Abschirmungszahl $\sigma_2$ von Natrium. \label{tab:na}}
+  \label{tab:1}
   \begin{tabular}{c c c c c c c c }
     \toprule
     \multicolumn{2}{c}{Winkel}   & \multicolumn{4}{c}{ \ }    \\
@@ -135,6 +138,7 @@ die Bahndrehimpulsquantenzahl  $l=1$.
 \begin{table}
   \centering
   \caption{Gemessene und errechnete Größen zur Bestimmung der Abschirmungszahl $\sigma_2$ von Kalium. \label{tab:k} }
+  \label{tab:2}
   \begin{tabular}{c c c c c c c c }
     \toprule
     \multicolumn{2}{c}{Winkel}   & \multicolumn{4}{c}{ \ }    \\
@@ -160,6 +164,7 @@ die Bahndrehimpulsquantenzahl  $l=1$.
 \begin{table}
   \centering
   \caption{Gemessene und errechnete Größen zur Bestimmung der Abschirmungszahl $\sigma_2$ von Rubidium. \label{tab:ru}}
+  \label{tab:3}
   \begin{tabular}{c c c c c c c c }
     \toprule
     \multicolumn{2}{c}{Winkel}   & \multicolumn{4}{c}{ \ }    \\
