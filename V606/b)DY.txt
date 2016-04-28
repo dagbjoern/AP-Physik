@@ -1,0 +1,4 @@
+#u_br vor    Rvor    U_ber nach  rnach
+1,4e-3       579       31e-3    223
+1.3e-3       591  	   29e-3    243
+1.3e-3       504       32.5e-3  223
