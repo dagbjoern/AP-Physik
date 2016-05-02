@@ -56,10 +56,12 @@ Rnach_ND=Rnach_ND*5e-6
 Rnach_DY=Rnach_DY*5e-6
 Rnach_GD=Rnach_GD*5e-6
 
-
 Delta_R_ND=Rvor_ND-Rnach_ND
 Delta_R_DY=Rvor_DY-Rnach_DY
 Delta_R_GD=Rvor_GD-Rnach_GD
+print('\n \nRvorND',Rvor_ND,'\n RnachND', Rnach_ND,'\n Delta_R_ND',Delta_R_ND)
+print('\n \nRvorGD',Rvor_GD,'\n RnachGD', Rnach_GD,'\n Delta_R_GD',Delta_R_GD)
+print('\n \nRvorDY',Rvor_DY,'\n RnachDY', Rnach_DY,'\n Delta_R_DY',Delta_R_DY)
 
 #Dichten der Stoffel
 
@@ -78,30 +80,55 @@ def Qreal(M,L,rho):
 
 #eignschafeten von den proben
 #ND203
-rhow_ND = 7.24
+rhow_ND = 7240
 M_ND=0.0095# masse der probe
 l_ND=0.16 #länge der probe
 Q_ND=Qreal(M_ND,l_ND,rhow_ND)
-#DJ203
-rhow_DY = 7.8
-M_DY=0.0185
-l_DY=0.16
-Q_DY=Qreal(M_DY,l_DY,rhow_DY)
 #GD203
-rhow_GD = 7.40
+rhow_GD = 7400
 M_GD=0.01408
 l_GD=0.16
 Q_GD=Qreal(M_GD,l_GD,rhow_GD)
+#DJ203
+rhow_DY = 7800
+M_DY=0.0185
+l_DY=0.16
+Q_DY=Qreal(M_DY,l_DY,rhow_DY)
 
+print('Qreal',Q_ND,Q_GD,Q_DY)
 
 def Fall1(U_br,Q):
     w=2*np.pi*35300
-    X=U_br*(4*l/(w*const.mu_0*(n**2)*Q))*np.sqrt((R**2)+(w**2)*(const.mu_0*(n**2)*F/l)**2)
+    X=(U_br/100)*(4*l/(w*const.mu_0*(n**2)*Q))*np.sqrt((R**2)+(w**2)*(const.mu_0*(n**2)*F/l)**2)
     return X
 
 
 def Fall2(Delta_R,Q):
+    print(Q)
+    print(F)
     return(2*Delta_R*F/(R3*Q))
 
+def Fall3(N,J,gj):
+    mu_B=(const.e*const.hbar)/(2*const.m_e)
+    return(((const.mu_0*(mu_B**2)*(gj**2)*N*J)*(J+1))/(3*const.k*293))
+
+
+J=np.array([9/2,7/2,15/2])
+gj=np.array([8/11,2,4/3])
+
+
+
+
+#momente pro Volumeneinheit
+Mol=np.array([0.33684,0.3625,0.372998])
+rho_alle=np.array([7240,7400,7800])
+N=2*const.N_A*rho_alle/Mol
+
+
+
+print('X für theorie',Fall3(N,J,gj))
 print('X für ND Fall 1',Fall1(Unach_ND,Q_ND))
 print('\n X für ND Fall 2',Fall2(Delta_R_ND,Q_ND) )
+
+
+print('N',2*const.N_A*rho_alle/Mol)
