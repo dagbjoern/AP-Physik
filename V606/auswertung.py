@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import uncertainties.unumpy as unp
-#import mpmath
 from uncertainties.unumpy import (nominal_values as noms,
                                   std_devs as stds)
 from scipy import stats
@@ -31,7 +30,7 @@ plt.figure(1)
 print(params)
 plt.plot(v,U_A,'rx',label=r'$Messwerte$')
 #plt.plot(x,gaus2(x,1.14,35300,290),'k-',label=r'$Messwerte$')
-plt.plot(x,gaus2(x,*params)-(1/np.sqrt(2))*np.max(U_A),'b-',label=r'$Ausgleichsfunktion$')
+plt.plot(x,gaus2(x,*params),'b-',label=r'$Ausgleichsfunktion$')
 plt.legend(loc='best')
 plt.xlabel(r'$Frequenz \ \nu /hz$')
 plt.ylabel(r'$frac{U_A}{U_E} $')
@@ -48,13 +47,13 @@ Uvor_DY , Rvor_DY, Unach_DY , Rnach_DY=np.genfromtxt('b)DY.txt',unpack=True)
 #
 Uvor_GD , Rvor_GD, Unach_GD , Rnach_GD=np.genfromtxt('b)GD.txt',unpack=True)
 
-Rvor_ND=Rvor_ND*5e-6
-Rvor_DY=Rvor_DY*5e-6
-Rvor_GD=Rvor_GD*5e-6
+Rvor_ND=Rvor_ND*5e-3
+Rvor_DY=Rvor_DY*5e-3
+Rvor_GD=Rvor_GD*5e-3
 
-Rnach_ND=Rnach_ND*5e-6
-Rnach_DY=Rnach_DY*5e-6
-Rnach_GD=Rnach_GD*5e-6
+Rnach_ND=Rnach_ND*5e-3
+Rnach_DY=Rnach_DY*5e-3
+Rnach_GD=Rnach_GD*5e-3
 
 Delta_R_ND=Rvor_ND-Rnach_ND
 Delta_R_DY=Rvor_DY-Rnach_DY
@@ -84,6 +83,7 @@ rhow_ND = 7240
 M_ND=0.0095# masse der probe
 l_ND=0.16 #länge der probe
 Q_ND=Qreal(M_ND,l_ND,rhow_ND)
+
 #GD203
 rhow_GD = 7400
 M_GD=0.01408
@@ -95,6 +95,7 @@ M_DY=0.0185
 l_DY=0.16
 Q_DY=Qreal(M_DY,l_DY,rhow_DY)
 
+
 print('Qreal',Q_ND,Q_GD,Q_DY)
 
 def Fall1(U_br,Q):
@@ -104,8 +105,6 @@ def Fall1(U_br,Q):
 
 
 def Fall2(Delta_R,Q):
-    print(Q)
-    print(F)
     return(2*Delta_R*F/(R3*Q))
 
 def Fall3(N,J,gj):
@@ -125,10 +124,27 @@ rho_alle=np.array([7240,7400,7800])
 N=2*const.N_A*rho_alle/Mol
 
 
-
+theo=Fall3(N,J,gj)
 print('X für theorie',Fall3(N,J,gj))
-print('X für ND Fall 1',Fall1(Unach_ND,Q_ND))
-print('\n X für ND Fall 2',Fall2(Delta_R_ND,Q_ND) )
+print('\n X für ND Fall 1',Fall1(Unach_ND,Q_ND),
+'\n X für ND Fall 2',Fall2(Delta_R_ND,Q_ND),
+'\n X für ND Fall 1 Mittelwert',np.mean(Fall1(Unach_ND,Q_ND)),np.std(Fall1(Unach_ND,Q_ND)),
+'\n X für ND Fall 2 Mittelwert',np.mean(Fall2(Delta_R_ND,Q_ND)),np.std(Fall2(Delta_R_ND,Q_ND)),
+'\n relative Abweichung fall 1',(theo[0]-np.mean(Fall1(Unach_ND,Q_ND)))/theo[0],
+'\n relative Abweichung fall 2',(theo[0]-np.mean(Fall2(Delta_R_ND,Q_ND)))/theo[0],)
 
 
-print('N',2*const.N_A*rho_alle/Mol)
+
+print('\nX für GD Fall 1',Fall1(Unach_GD,Q_GD),
+'\n X für GD Fall 2',Fall2(Delta_R_GD,Q_GD),
+'\n X für GD Fall 1 Mittelwert',np.mean(Fall1(Unach_GD,Q_GD)),np.std(Fall1(Unach_GD,Q_GD)),
+'\n X für ND Fall 2 Mittelwert',np.mean(Fall2(Delta_R_GD,Q_GD)),np.std(Fall2(Delta_R_GD,Q_GD)),
+'\n relative Abweichung fall 1',(theo[1]-np.mean(Fall1(Unach_GD,Q_GD)))/theo[2],
+'\n relative Abweichung fall 2',(theo[1]-np.mean(Fall2(Delta_R_GD,Q_GD)))/theo[2],)
+
+print('\n X für DY Fall 1',Fall1(Unach_DY,Q_DY),
+'\n X für DY Fall 2',Fall2(Delta_R_DY,Q_DY),
+'\n X für DY Fall 1 Mittelwert',np.mean(Fall1(Unach_DY,Q_DY)),np.std(Fall1(Unach_DY,Q_DY)),
+'\n X für DY Fall 2 Mittelwert',np.mean(Fall2(Delta_R_DY,Q_DY)),np.std(Fall2(Delta_R_DY,Q_DY)),
+'\n relative Abweichung fall 1',(theo[2]-np.mean(Fall1(Unach_DY,Q_DY)))/theo[2],
+'\n relative Abweichung fall 2',(theo[2]-np.mean(Fall2(Delta_R_DY,Q_DY)))/theo[2],)

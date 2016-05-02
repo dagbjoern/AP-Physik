@@ -29,17 +29,17 @@ Die zugehörigen Messwerte sind in der Tabelle \ref{tab:tab1} zu finden
     33    & 0,075\\
     34    & 0,14\\
     34,5  & 0,23\\
-    34,7  & 0,31\\
+    %34,7  & 0,31\\
     34,8  & 0,36\\
     34,9  & 0,455\\
     35    & 0,58\\
     35,05 & 0,655\\
-    35,06 & 0,68\\
+    %35,06 & 0,68\\
     35,07 & 0,705\\
     35,1  & 0,77\\
     35,12 & 0,79\\
     35,14 & 0,85\\
-    35,15 & 0,865\\
+    %35,15 & 0,865\\
     35,16 & 0,9\\
     35,18 & 0,93\\
     35,2  & 0,99\\
@@ -72,6 +72,7 @@ Die zugehörigen Messwerte sind in der Tabelle \ref{tab:tab1} zu finden
   \bottomrule
   \end{tabular}
 \end{table}
+\FloatBarrier
 Für die Durchlassfrequenz $\nu_0$  des Selektivverstärkers
 ergibt sich aus den Messwerten ein $\nu_0$ von ungefähr
 \begin{align*}
@@ -104,7 +105,7 @@ aufgelistet.
 \begin{table}
   \centering
   \caption{ Gesamtspin,-bahndrehimpuls,-drehimpuls sowie der entsprechende Landé-Faktor.}
-  \label{tab:N}
+  \label{tab:spin}
   \begin{tabular}{c c c c c}
   Stoff & S & L & J & $g_J$\\
      \midrule
@@ -121,7 +122,7 @@ aufgelistet.
 Ebenfalls wird die Anzahl N der Momente pro Volumeneinheit der Stoffe benötigt.
 Diese berechnet sich nach der Formel\eqref{eqn:N}, wobei $\rho$ die Dichte und M die molare Masse des Stoffes ist.
 \begin{align}
-  N=\frac{\rho}{M}\label{eqn:N}
+  N=2\cdot N_\mathrm{A}\cdot\frac{\rho}{M}\label{eqn:N}
 \end{align}
 In der Tabelle \ref{tab:N} sind die berechenten Momente pro Volumeneinheiten
 aufgelistet.
@@ -144,13 +145,13 @@ Mit Hilfe der Formel \eqref{eqn:XT} und den oben gelisteten Werten lässt sich n
 der Stoffe bei Raumtemperatur $T\approx293$ berechnen.
 Somit ergibt sich für die Suszeptibilität von $\mathrm{Nd_2O_3}$
 \begin{align*}
-\chi_\mathrm{Nd}=,
+\chi_\mathrm{Nd}=0,003 \  \ ,
 \intertext{für $\mathrm{Gd_2O_3}$}
-\chi_\mathrm{Gd}=,
+\chi_\mathrm{Gd}=0,014 \  \ ,
 \intertext{und für $\mathrm{Dy_2O_3}$}
-\chi_\mathrm{Dy}=.
+\chi_\mathrm{Dy}=0,025\  \ .
 \end{align*}
-\subsubsection{Experimentelle Bestimmung de Suszebtiblilitaet.}
+\subsubsection{Experimentelle Bestimmung der Suszebtiblilität.}
 eschrieben über zwei Methoden bestimmen. Bei beiden Methoden ist der
 erforderlich das reale Querschnitt $Q_\mathrm{real}$ der Proben bestimmt wird.
 Dieser berechnet sich aus der Formel \eqref{eqn:Qreal}.
@@ -179,7 +180,7 @@ die Spannung $U_\mathrm{sp}$ und die Frequnez $\nu$ der Spannungsquelle.
 
 \begin{align*}
 &\text{Daten der Messspule:}  \ \ n=250; \  \ F=86,6\si{\meter\tothe{2}}\cdot10^{-6}; \ \ l=0,135\si{\meter}; \ \ R= 0,7\si{\ohm} \\
-&\text{Daten der Brückenschaltung:}  R_3=998\si{\ohm}\
+&\text{Daten der Brückenschaltung:} \ \  R_3=998\si{\ohm}\
 \end{align*}
 Die Spannungsquelle besitzt eine Spannung von
 \begin{align*}
@@ -194,9 +195,12 @@ Nun lässt sich mit Hilfe der Messdaten, die in der Tabelle \ref{tab:mess}
 aufgelistet sind, und den vorherigen Daten
 die Suszebtilbilität \chi sowohl durch die Formel \eqref{eqn:chi1}
 und als auch  durch die Formel \eqref{eqn:chi2} berechnen.
+Die berechneten Werte sind in der Tabelle \ref{tab:X1X2}
+zu finden.
+
 \begin{align}
-\chi=\frac{U_\mathrm{Br}}{U_\mathrm{Sp}}\frac{4l}{\omega\mu_0n^2Q}\sqrt{R^2 + \omega^2\left(\mu_0\frac{n^2}{l}F\right)^2}\label{eqn:chi1}\\
-\chi=2\frac{\Delta R}{R_3}\frac{F}{Q}\label{eqn:chi2}
+\chi&=\frac{U_\mathrm{Br}}{U_\mathrm{Sp}}\frac{4l}{\omega\mu_0n^2Q}\sqrt{R^2 + \omega^2\left(\mu_0\frac{n^2}{l}F\right)^2}\label{eqn:chi1}\\
+\chi&=2\frac{\Delta R}{R_3}\frac{F}{Q}\label{eqn:chi2}
 \end{align}
 \begin{table}
   \centering
@@ -207,12 +211,12 @@ und als auch  durch die Formel \eqref{eqn:chi2} berechnen.
   Stoff &  $U_\mathrm{br}/\si{\volt}\cdot 10^{-3}$ & $U_\mathrm{br}/\si{\volt}\cdot 10^{-3}$  & $R/\si{\ohm}\cdot10^{-3}$  & $R/\si{\ohm}\cdot10^{-3}$  & $\Delta R/\si{\ohm}\cdot10^{-3}$ \\
    \midrule
   $\mathrm{Nd_2O_3}$ & 1,4  &  3,05 & 2,885 & 2,750 & 0,135\\
-                    & 1,4  &  4,6  & 3,000 & 2,770 & 0,230\\
-                    & 1,4  &  3,6  & 2,900 & 2,695 & 0,205\\
+                     & 1,4  &  4,6  & 3,000 & 2,770 & 0,230\\
+                     & 1,4  &  3,6  & 2,900 & 2,695 & 0,205\\
    \midrule
    $\mathrm{Gd_2O_3}$ & 1,3  & 15,5  & 3,08 & 2,100 & 0,980\\
-                     & 1,3  & 13,75 & 2,79 & 1,955 & 0,835\\
-                     & 1,25 & 13,5  & 2,79 & 1,955 & 0,795\\
+                      & 1,3  & 13,75 & 2,79 & 1,955 & 0,835\\
+                      & 1,25 & 13,5  & 2,79 & 1,955 & 0,795\\
    \midrule
   $\mathrm{Dy_2O_3}$ & 1,4 & 31,0 & 2,895 & 1,115 & 1,780\\
                      & 1,3 & 29,0 & 2,955 & 1,215 & 1,740\\
@@ -221,20 +225,44 @@ und als auch  durch die Formel \eqref{eqn:chi2} berechnen.
   \end{tabular}
 \end{table}
 \FloatBarrier
+\begin{table}
+  \centering
+  \caption{Die berechneten Suszebtibilitäten aus den Messwerten durch die Formeln \ref{eqn:chi1} und \ref{eqn:chi2}.}
+  \label{tab:X1X2}
+  \begin{tabular}{c c c}
+          &     $\chi_\mathrm{1}$  & $\chi_\mathrm{2}$\\
+    Stoff &   mit Formel \eqref{eqn:chi1} &mit Formel \eqref{eqn:chi2}\\
+       \midrule
+       $\mathrm{Nd_2O_3}$ &0,001 & 0,003 \\
+                          &0,002 & 0,005 \\
+                          &0,002 & 0,004 \\
+       \midrule
+       $\mathrm{Gd_2O_3}$ &0,005 & 0,014  \\
+                          &0,004 & 0,012 \\
+                          &0,004 & 0,012 \\
+        \midrule
+        $\mathrm{Dy_2O_3}$&0,007 & 0,021 \\
+                          &0,007 & 0,020 \\
+                          &0,008 & 0,016 \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
 In der Tabelle \ref{tab:alle} sind
-alle berechneten Suszebtibilitäten nocheinmal aufgelistet.
-
+jeweils alle Mittelwerte
+der vorher berechneten Suszebtibilitäten
+und deren Abweichungen
+von den Theoriewerten aufgelistet.
 \begin{table}
   \centering
   \caption{Alle berechneten Suszebtibilitäten auf einen Blick.}
   \label{tab:alle}
   \begin{tabular}{c c c c c c}
-          &  Theoretisches &   $\chi_\mathrm{1}$  & $\chi_\mathrm{2}$ & Abweichung & Abweichung\\
-    Stoff &  $\chi_\mathrm{theo}$ &mit Formel \eqref{eqn:chi} &mit Formel \eqref{eqn:chi2}& $a_1$ & $a_2$\\
+          &  Theoretisches &   $\overline{\chi_\mathrm{1}}$  & $\overline{\chi_\mathrm{2}}$ & Abweichung & Abweichung\\
+    Stoff &  $\chi_\mathrm{theo}$ &mit Formel \eqref{eqn:chi1} &mit Formel \eqref{eqn:chi2}& $a_1$ & $a_2$\\
        \midrule
-       $\mathrm{Nd_2O_3}$ & & & & \\
-       $\mathrm{Gd_2O_3}$ & & & & \\
-       $\mathrm{Dy_2O_3}$ & & & & \\
+       $\mathrm{Nd_2O_3}$ &0,003 & 0,0016\pm0,0003&0,0040\pm0,0008 &0,47 &0,33 \\
+       $\mathrm{Gd_2O_3}$ &0,014 & 0,0042\pm0,0003&0,013\pm0,001   &0,38 &0,04 \\
+       $\mathrm{Dy_2O_3}$ &0,025 & 0,0072\pm0,003 &0,019\pm0,002   &0,72 &0,24 \\
       \bottomrule
     \end{tabular}
   \end{table}
