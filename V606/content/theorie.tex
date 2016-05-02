@@ -1,8 +1,8 @@
 \section{Theorie}
 \label{sec:Theorie}
-Die magnetische Flussdichte $\vec{B}$ in Materie setzt sich zusammen aus der magnetischen Feldstärke $\vec{H}$,
-der Induktionskonstante $\mu_\mathrm{0}$ und der Magnetisierung $\vec{M}$ zur
-folgenden Beziehung:
+Die magnetische Flussdichte $\vec{B}$ in Materie setzt sich, aus der magnetischen Feldstärke $\vec{H}$,
+der Induktionskonstante $\mu_\mathrm{0}$ und der Magnetisierung $\vec{M}$, zur
+folgenden Beziehung zusammen:
 \begin{align}
   \vec{B}=\mu_\mathrm{0}\vec{H}+\vec{M}.
 \end{align}
@@ -11,7 +11,6 @@ von $\vec{H}$ ab. Es gilt die Beziehiung:
 \begin{align}
   \vec{M}=\mu_\mathrm{0}\chi\vec{H}.
 \end{align}
-Die Suszeptibilität $\chi$ ist von $\vec{H}$ und der Temperatur $T$ abhängig.
 Die Suszeptibilität ist negativ im Falle des Diamagnetismus,
 dieser stammt von einer Induktion magnetischer Momente mittels äußerem
 Magnetfeld und ist eine allgemeine Eigenschaft der Materie.
@@ -20,7 +19,7 @@ Atomen mit einem Drehimpuls ungleich null. Der Paramagnetismus wird
 verursacht von der Orientierung magnetischer Momente relativ
 zu einem äußeren Feld, diese sind mit dem Drehimpuls gekoppelt.
 Durch thermische Bewegung wird die Ausrichtung der magnetischen Momente
-gestört, damit ist der Paramagnetismus eine Größe, die von der Temperatur
+gestört, damit ist die Suszeptibilität eine Größe, die von der Temperatur
 abhängt.
 Der Gesamtdrehimpuls $\vec{J}$ eines Atoms ergibt sich aus
 $\vec{L}$ dem Bahndrehimpuls der Elektronenhülle, $\vec{S}$ dem Spin
@@ -33,26 +32,33 @@ Wobei sich $\vec{L}$ und $\vec{S}$ aus den Summe der  Einzeldrehimpuls $\vec{\el
 und $\vec{s}$ zusammensetzen.
 Aus der Quantenmechanik folgen die magnetischen Momente die zu $\vec{L}$ und $\vec{S}$
 gehören:
-\begin{align}
-  \vec{\mu_\mathrm{L}}=-\frac{\mu_\mathrm{B}}{\hslash}\vec{L}
+\begin{align*}
+  \vec{\mu_\mathrm{L}}=-\frac{\mu_mathrm{B}}{\hslash}\vec{L}\\
   \vec{\mu_\mathrm{S}}=-g_\mathrm{S}\frac{\mu_\mathrm{B}}{\hslash}\vec{S}.
-\end{align}
+\end{align*}
 Mit dem sogeannten Bohrschen Magneton $\mu_\mathrm{B}=\frac{1}{2}\frac{e_0}{m_0}\hslash$
 und $g_\mathrm{S}$ dem gyromagnetischen Verhältnis.
 Die Beträge der magnetischen Momente setzen sich zusammen zu:
 \begin{align}
-  |\vec{\mu_\mathrm{J}}|=|\vec{\mu_\mathrm{S}}|\cos{\alpha}+|\vec{\mu_\mathrm{L}}|\sin{\beta}
+  |\vec{\mu_\mathrm{J}}|=|\vec{\mu_\mathrm{S}}|\cos{\alpha}+|\vec{\mu_\mathrm{L}}|\sin{\beta}.
 \end{align}
 Diese Beziehung lässt sich zurückführen auf die vektorielle Betrachtung
-in \ref{fig:winkel}.
+in Abbildung \ref{fig:winkel}.
 \begin{figure}
  \centering
- \includegraphics[width=0.4\textwidth]{winkel.png}
+ \includegraphics[width=0.3\textwidth]{winkel.png}
  \caption{Vektordiagramm der Drehimpulse einer Elektronenhülle und den resultierenden magnetischen Momenten. }
  \label{fig:winkel}
  \end{figure}
-
-Ein weiterer Quantenmechanischer Effekt ist die Richtungsquantelung,
+Mit dem Cosinussatz und weiteren Umrechnung ergibt sich folgendes:
+\begin{align}
+ |\vec{\mu_\mathrm{J}}| \approx \mu_\mathrm{B} g_\mathrm{J} \sqrt{J(J+1)}.
+\end{align}
+Der Landé-Faktor $g_\mathrm{J}$ ist definiert durch:
+\begin{align}
+  g_\mathrm{J}=\frac{3J(J+1)+\left\{S(S+1)-L(L+1)\right\}}{2J(J+1)}.
+\end{align}
+Ein Quantenmechanischer Effekt ist die Richtungsquantelung,
 die sagt aus, dass der Winkel zwischen äußerem Magnetfeld und
 $|\vec{\mu_\mathrm{J}}|$  nicht beliebig sein kann, sondern $2J+1$
 verschiedene Einstellungen. Diese Winkeleinstellungen legen potentielle Energien fest,
@@ -62,11 +68,7 @@ die Suszeptibilität:
   \Chi=\frac{\mu_0\mu_\mathrm{B}^2g_\mathrm{J}^2NJ(J+1)}{3kT}.\label{eqn:XT}
 \end{align}
 $N$ ist die Anzahl der Momente pro Volumeneinheit, $k$ ist die Bolzmann-Konstante und
-$T$ die Temperatur. An dieser Formel ist auch die proportionalität zur $1/T$
-zu erkennen.$g_\mathrm{J}$ bezeichnet man als Landé-Faktor, welcher folgendermaßen definiert ist:
-\begin{align}
-  g_\mathrm{J}=\frac{3J(J+1)+\left\{S(S+1)-L(L+1)\right\}}{2J(J+1)}.\label{eqn:lande}
-\end{align}
+$T$ die Temperatur. An dieser Formel ist auch die proportionalität zur $1/T$ zu erkennen.\\
 Atome Seltener-Erd-Metalle besitzen einen stark ausgeprägten Paramagnetismus,
 verantwortlich dafür sind die Elektronen der 4f-Schale. Die Anordnung der Elektronen dieser
 Schale und damit der Gesamtdrehimpuls folgen den hundschen Regeln:
