@@ -79,7 +79,10 @@ def lambdamittel(phi1,phi2):
     return(unp.sin(phimittelwert(phi1,phi2))*g)
 
 def delta_E(delta_l,l):
-    return(const.h*const.c*delta_l/l)
+    delta_l = delta_l*10**(-9)
+    l=l*10**(-9)
+    print(delta_l,l)
+    return(const.h*const.c*delta_l/(l**2))
 
 def o2(delta_E,n,l,z):
     return(-((delta_E*(n**3)*l*(l+1)/(const.Rydberg*const.alpha**2))**(1/4))+z)
