@@ -1,26 +1,29 @@
+\newpage
 \section{Durchführung}
 \label{sec:Durchführung}
 \subsection{Messverfahren mittels Induktivitätsbrücke}
 Bei der Messung wird die Tatsache ausgenutzt, dass die Suszeptibilität dort messbar ist wo Magnetfelder in Materie
-wirken, daher kann die Suszeptibilität mittels Induktivitätsbrücke, zu sehen in Abbildung \ref{fig:brücke}, gemessen werden.
+wirken, daher kann die Suszeptibilität mittels Induktivitätsbrücke,
+zu sehen in Abbildung \ref{fig:brücke}, gemessen werden.
 \begin{figure}
   \centering
   \includegraphics[width=0.4\textwidth]{bruecke.PNG}
-  \caption{Induktivitätsbrücke zur Messung der Suszeptibilität. }
-  \label{fig:bruecke}
+  \caption{Induktivitätsbrücke zur Messung der Suszeptibilität. \cite{sample}}
+  \label{fig:brücke}
 \end{figure}
 Diese Brücke besizt zwei Spulen gleicher Induktivität.
 Bei der ersten Möglichkeit die Suszeptibilität zu bestimmen, wird die Brücke abgegelichen und anschließend die Probe in eine Spule eingeführt.
 Über die entstandene Brückenspannung bestimmt sich die Suszeptibilität folgendermaßen:
 \begin{align}
- \Chi(\omega\textrightarrow\infty)=4\frac{FU_\mathrm{Br}}{QU_\mathrm{Sp}}.
+  \chi&=\frac{U_\mathrm{Br}}{U_\mathrm{Sp}}\frac{4l}{\omega\mu_0n^2Q}\sqrt{R^2 + \omega^2\left(\mu_0\frac{n^2}{l}F\right)^2}\label{eqn:chi1}
+ %\chi(\omega\textrightarrow\infty)=4\frac{FU_\mathrm{Br}}{QU_\mathrm{Sp}}.
 \end{align}
-Hier bedeutet $F$ der Queerschnitt der Spule und $U_\mathrm{Sp}$ die Speisespannung.
-
+Hier bedeutet $F$ der Queerschnitt, $n$ die Windungen und $l$ die Länge der Spule und $U_\mathrm{Sp}$ die Speisespannung.\\
+\\
 Die zweite Möglichkeit basiert auf der Änderung des Widerstandes $R_3$, dabei wird die abgeglichene Brücke mit der Probe versehen
 und erneut abgeglichen. Die Suszeptibilität ergibt sich folgendermaßen:
 \begin{align}
-\Chi=2\frac{\Delta R F}{R_\mathrm{3} Q}.
+\Chi=2\frac{\Delta R F}{R_\mathrm{3} Q}.\label{eqn:chi2}
 \end{align}
 
 
@@ -30,17 +33,18 @@ einen Selektivverstärker einzusetzen. Der Selektivverstärker setzt sich zusamm
 lässt im Idealfall die gesuchte, monofrequente Signalspannung durch, und einer verstärkenden Komponente, zur besseren Messung
 der Brückenspannung. Zu Beginn wird die filternde Frequenz gesucht, zu diesem Zweck wird ein Spannungsgenerator an den Selektivverstärker
 angeschlossen. Nun lässt sich die Frequenz variieren und die zugehörige Spannung kann am Voltmeter abgelesen werden.
-Gemessen wird zwischen $30.000-40.000 \si{herz}$ in sinnvollen Schritten, d.h. im Bereich des Maximums wird in kleinschrittiger gemessen
+Gemessen wird zwischen $30.000-40.000 \si{herz}$ in sinnvollen Schritten, d.h. im Bereich des Maximums wird kleinschrittiger gemessen
 als außerhalb. Die Abbildung \ref{fig:sv} zeigt den Aufbau der genutzten Komponenten.
 \begin{figure}
   \centering
   \includegraphics[width=0.6\textwidth]{Selektiv.PNG}
-  \caption{Aufbau der verwendeten Apparatur.}
+  \caption{Aufbau der verwendeten Apparatur.\cite{sample}}
   \label{fig:sv}
 \end{figure}
 
 
 \subsection{Eigentliche Messung}
+\label{sec:test}
 Bei der eigentlichen Messung wurde zu Beginn die Länge der Probe vermessen.
 Am Generator wurde eine Speisespannung von $1\si{\volt}$ eingestellt.
 Nach dem Abgleichen der Brücke wurde der Widerstand gemessen und die Probe eingeschoben, dann wird die Brückenspannung $U_\mathrm{Br}$
