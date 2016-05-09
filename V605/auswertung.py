@@ -82,10 +82,10 @@ def delta_E(delta_l,l):
     delta_l = delta_l*10**(-9)
     l=l*10**(-9)
     print(delta_l,l)
-    return(const.h*const.c*delta_l/(l**2))
+    return(const.h*const.c*delta_l/(l**2))/const.e
 
 def o2(delta_E,n,l,z):
-    return(-((delta_E*(n**3)*l*(l+1)/(const.Rydberg*const.alpha**2))**(1/4))+z)
+    return(-((delta_E*(n**3)*l*(l+1)/(13.6*const.alpha**2))**(1/4))+z)
 
 print(lambdamittel(268,268))
 #werte für natrum n
@@ -119,7 +119,7 @@ n,#quantenzahl
     ,',\n lambdamittelwert=',lambdamittel(phi1,phi2)
     ,',\n delta s=', delta_s
     ,',\n delta_lambda=',delta_lambda(phi1,phi2,delta_s)
-    ,',\n Delta E=',delta_E(d_lXx,lXmitx)/const.e
+    ,',\n Delta E=',delta_E(d_lXx,lXmitx)
     ,',\n o2=',o2(d_ENx,l,n,z)
     ,'\n \n \n')
     return()
