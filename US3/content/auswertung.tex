@@ -1,8 +1,16 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 Um die Messwert auswerten zu können, ist es erforderlich,
-dass zunächst der Dopplerwinkel \alpha der drei Prismenwinkel \theta
-mit Hilfe der Formel \eqref{eqn:prism} berechnet wird.
+dass zunächst der Dopplerwinkel $\alpha$ zu den drei Prismenwinkel $\theta$
+mit Hilfe der Formel \eqref{eqn:prism} berechnet wird:
+\begin{align}
+  \alpha=90^°-\arcsin(\sin\theta\cdot\frac{c_L}{c_P})\label{eqn:prism}.
+\end{align}
+
+\begin{align*}
+c_L= 1800\si{\meter\per\second}  \ \text{ist die Schallgeschwingigkeit in der Flüssigkeit},\\
+c_P= 2700\si{\meter\per\second} \ \text{ist die Schallgeschwingigkeit im Prismenmaterial.}
+\end{align*}
 Die Dopplerwinkel zu den entsprechenden Prismenwinkel
 sind in der Tabelle \ref{tab:winkel} zu finden.
 \begin{table}
@@ -20,7 +28,7 @@ sind in der Tabelle \ref{tab:winkel} zu finden.
   \end{tabular}
 \end{table}
 \subsection{Messung 1}
-Die Messwerte, die durch die im Kapitel \ref{sec:durchführung} beschriebenen Methode
+Die Messwerte, die durch die im Kapitel \ref{sec:durch} beschriebenen Methode
 aufgenommen werden, sind in der Tabelle \ref{tab:mess1} aufgelistet.
 \begin{table}
   \centering
@@ -45,10 +53,10 @@ Ebenfalls enthält die Abbildung \ref{fig:mess1} eine Gerade, die sich durch ums
 \begin{align}
   \frac{\Delta\nu}{\cos{\alpha}}=2\nu_0\cdot\frac{v}{c}.\label{eqn:theo}
 \end{align}
-ergibt. Das c in der Formel ist die Schallgeschwindkeit ( im  Medium) (Luft), die genau
-\begin{align}
-  c=??.
-\end{align}
+ergibt. Das c in der Formel ist die Schallgeschwindkeit in der Luft, die
+\begin{align*}
+  c=343\si{\meter\per\second},
+\end{align*}
 beträgt. Die Frequenz der Ultraschallquelle $\nu_0$ beträt hier:
 \begin{align}
   \nu_0=2\si{\mega\hertz}.
@@ -58,17 +66,17 @@ beträgt. Die Frequenz der Ultraschallquelle $\nu_0$ beträt hier:
   \includegraphics[width=0.7\textwidth]{plot1.pdf}
   \centering
    \caption{$\Delta\nu/\cos\alpha$ in Abhängigkeit von der Geschwindigkeit $v$ für die Messwerte aus der Tabelle \ref{tab:mess1} und für die theorietische Formel \eqref{eqn:theo}.}
-  \label{fig:plot}
+  \label{fig:mess1}
 \end{figure}
 
 \newpage
 \subsection{Messung 2}
 Die Werte der gemessenen Strömungsprofile des $3/8$ Zoll Schlauches bei einem Winkel
-$\theta$ von $15\si{\degree}$ für eine Strömungsleistung von 40 und 60 Prozent sind in der Tabelle \ref{tab:mess2}
+$\theta$ von $15\si{\degree}$ für eine Strömungsleistung von $40\%$ und $60\%$  sind in der Tabelle \ref{tab:mess2}
 aufgelistelt.
 \begin{table}
   \centering
-  \caption{Messwerte der Geschwindigkeit $v$ und der Streuintensität $\beta$ bei unterschiedlichen Eindringtiefe $s$.}
+  \caption{Messwerte der Geschwindigkeit $v$ und der Streuintensität $\beta$ bei unterschiedlichen Eindringtiefen $s$.}
   \label{tab:mess2}
   \begin{tabular}{c c c c c}
     \toprule

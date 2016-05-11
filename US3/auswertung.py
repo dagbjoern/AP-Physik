@@ -14,6 +14,8 @@ c30=c30*10**(-3)
 c60=c60*10**(-3)
 
 x=np.linspace(0,0.16)
+allewertec=np.array([c15,c30,c60])
+allewertecos=np.array([d15/np.cos(2*np.pi*80.064/360),d30/np.cos(2*np.pi*70.529/360),d60/np.cos(2*np.pi*54.736/360)])
 
 plt.figure(1)
 plt.plot(c15,d15/np.cos(2*np.pi*80.064/360),'rx',label=r'$Messwerte für \alpha=15°$')
