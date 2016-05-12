@@ -78,9 +78,9 @@ Vm_z=9.16*10**(-6) #molares volumen
 U_z=U_z*10**(-3)
 U_hall_z=U_hall_z*10**(-3)
 R_z=URI(I_z,U_z)
-print('R_Z=',R_z)
+print('\nWerte Für Zink','R_Z=',R_z)
 R_z=unp.uarray(np.mean(R_z),np.std(R_z))
-print(R_z)
+print('Wiederstand Mittelwert',R_z)
 
 
 d_z=d(I_hall_z,B,U_hall_z,A_hz)
@@ -124,11 +124,48 @@ print('Beweglichkeit mu',mu_z)
 #wolfram
 I_w, U_w =np.genfromtxt('messungRwolfram.txt',unpack=True)
 I_hall_w, U_hall_w=np.genfromtxt('hallwolfram.txt',unpack=True)
-b=0.026#breite
-l=0.04#länge
+b_w=0.026#breite
+l_w=0.04#länge
+Vm_w=9.47*10**(-6)#molares Volumen Wolfram
+A_hw=11.8*10**(-11)
 U_w=U_w*10**(-3)
 U_hall_w=U_hall_w*10**(-3)
 R_w=URI(I_w,U_w)
-print('R_w=',R_w)
+print('\nWerte für wolfram','R_w=',R_w)
 R_w=unp.uarray(np.mean(R_w),np.std(R_w))
-print(R_w)
+print('gemittelter wiederstand ',R_w)
+
+d_w=d(I_hall_w,B,U_hall_w,A_hw)
+print('Dicke d',d_w)
+Q_w=d_w*b_w
+
+#def n(I,d,B,U):
+n_w=n(I_hall_w,d_w,B,U_hall_w)
+print('n von wolfram',n_w)
+
+#def z(n,Vm):
+print('ladungsträger pro Atom',z(n_w,Vm_w))
+
+#def t(n,R,Q,L):
+t_w=t(n_w,R_w,Q_w,l_w)
+print('tau von wolfram',t_w)
+
+#def v(n):
+v_w=v(n_w)
+print('mittlere Driftgeschwindigkeit',v_w)
+
+#def Ef(n):
+Ef_w=Ef(n_w)
+print('fermie Energie',Ef_w)
+
+#def v_total(n):
+v_total_w=v_total(n_w)
+print('v Total',v_total_w)
+
+#def l(t,n):
+l_w=l(t_w,n_w)
+print('mittlere Wellenlänge',l_w)
+
+#def mu(t):
+mu_w=mu(t_w)
+print('Beweglichkeit mu',mu_w)
