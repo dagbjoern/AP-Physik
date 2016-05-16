@@ -9,12 +9,12 @@ Diese Formel wird nun nach $d$ umgestellt und die Messwerte eingesetzt.
 Die Hallkonstanten $A_\mathrm{H}$ betragen dabei:
 \begin{align*}
   \text{Zink:}\ \ 6,4\cdot10^{-11}\si{\meter\tothe{3}\per\coulomb}\\
-  \text{Wolfram:}\ \ 11,8\cdot10^{-11}\si{\meter\tothe{3}\per\coulomb}
+  \text{Wolfram:}\ \ 11,8\cdot10^{-11}\si{\meter\tothe{3}\per\coulomb}.
   \end{align*}
 Die Ergebnisse für $d$ werden gemittelt und es ergeben sich die zwei Dicken von:
 \begin{align*}
 d_\mathrm{Zink}&=(0,67\pm0,16)\si{\micro\meter}\\
-d_\mathrm{Wolfram}&=(1,6\pm0,5)\si{\micro\meter}
+d_\mathrm{Wolfram}&=(1,6\pm0,5)\si{\micro\meter}.
 \end{align*}
 Ebenfalls lässt sich
 der Widerstand nach
@@ -26,7 +26,7 @@ Die Werte für $U$ und $I$ für Zink und Wolfram werden aus der Tabelle \ref{tab
 Es ergeben sich gemittelte Widerstände von:
 \begin{align*}
 \text{Für Zink:} \ R&=(11,2\pm0.4)\si{\milli\ohm}\\
-\text{Für Wolfram:} \ R&=(12,4\pm0,6pm)\si{\milli\ohm}
+\text{Für Wolfram:} \ R&=(12,4\pm0,6)\si{\milli\ohm}
 \end{align*}
 \begin{table}
   \centering
@@ -58,7 +58,7 @@ Strom $I/\si{\ampere}$ & Spannung $U/\si{\milli\volt}$  & Spannung $U/\si{\milli
 \end{table}
 
 
-In Tabelle \ref{eqn:hys} sind die Werte für die Hysteresekurve des Magnetfeldes aufgelistet, daraus lässt sich die Flussdichte des Magnetfeld
+In Tabelle \ref{eqn:hys} sind die Werte für die Hysteresekurve des Magnetfeldes aufgelistet, daraus lässt sich die maximale Flussdichte des Magnetfeld
 für die Messung der Hall-Spannung entnehmen:
 \begin{align*}
  B_\mathrm{max}=1,229\si{\tesla}.
@@ -98,45 +98,73 @@ für die Messung der Hall-Spannung entnehmen:
 
 Mit Hilfe der zuvor bestimmten Parametern werden nun die mikroskopischen Leitfähigkeitsparameter
 bestimmt.
-Dazu gehört unteranderem die Ladungsträger pro Volumen $n$, die durch umstellen der Formel \eqref{eqn:u_h} in die Form
+Dazu gehören unter anderem die Ladungsträger pro Volumen $n$, die durch umstellen der Formel \eqref{eqn:u_h} in die Form
 \begin{align}
   n=\frac{B \cdot I}{U_\mathrm{H}\cdot e_0 \cdot d}
 \end{align}
 berechnet werden kann.
-Aus den Ladungsträgern pro Volumen kann nun die Zahl der Ladungsträgern pro Atom $z$
-bestimmt werden. Dies geschied über die folgende Formel.
+Für Zink und Wolfram ergibt sich folgendes:
+\begin{align*}
+n_\mathrm{Zink}&=(9,8\pm2,3)\cdot10^{28}\si{\coulomb\per\meter\tothe{3}}\\
+n_\mathrm{Wolfram}&=(5,3\pm2,1)\cdot10^{28}\si{\coulomb\per\meter\tothe{3}}.
+\end{align*}
+
+Aus den Ladungsträgern pro Volumen kann nun die Zahl der Ladungsträger pro Atom $z$
+bestimmt werden. Dies geschieht über die folgende Formel:
 \begin{align}
-  z=\frac{n \cdot V_m}{N_\mathrm{A}}
+  z=\frac{n \cdot V_m}{N_\mathrm{A}}.
 \end{align}
 Hierbei steht $V_m$ für das Molare Volumen des Stoffes.
 \begin{align*}
 \text{Dieses beträgt für Zink:}& \ V_m=9,16\cdot10^{-6}\si{\meter\tothe{3}\per\mol}\\
 \text{ und für Wolfram}:& \ V_m=9,47\cdot10^{-6}\si{\meter\tothe{3}\per\mol}
 \end{align*}
-
+Es ergibt sich:
+\begin{align}
+z_\mathrm{Zinn}&=1,45\pm0,35)\\ %Einheiten???
+z_\mathrm{Wolfram}&=(0,83\pm0,33)
+\end{align}
 Desweiteren kann nun durch die Formel \eqref{eqn:wiederstand} die mittlere
 Flugzeit $\overline\tau$ bestimmt werden. Durch umstellen ergibt sich:
 \begin{align}
   \overline{\tau}=\frac{2m_0\cdot L}{e_0^2 \cdot n \cdot R \cdot Q}
 \end{align}
 Dabei ist Q der Querschnitt und L die Länge der Leiterplatte.
-
+%Abmessungen!! war zu faul um das Messheft zu holen :D
+Für die mittlere Flugzeit ergeben sich Werte von:
+\begin{align*}
+\overline{\tau}_\mathrm{Zinn}&=(1,33\pm0,2)\cdot10^{-18}\si{sec}\\
+\overline{\tau}_\mathrm{Wolfram}&=(1,4\pm0,07)\cdot10^{-19}\si{sec}
+\end{align*}
 Die mittlere Driftgeschwindigkeit $\overline{v}_\mathrm{d}$ ergibt sich durch die Formel \eqref{eqn:vd}:
 \begin{equation}
   \overline{v}_\mathrm{d}=-\frac{j}{n \cdot e_0}\label{eqn:vd}
 \end{equation}
+Für eine Stromdichte von $1\si{\ampere\per\milli\meter\tothe{3}}$ ergeben sich folgende Driftgeschwindigkeiten:
+\begin{align}
+\overline{v}_\mathrm{d}_\mathrm{Zinn}&=(-6,4\pm1,5)\cdot10^{-5}\si{}\\
+\overline{v}_\mathrm{d}_\mathrm{Wolfram}&=(1,2\pm0,5)\cdot10^{-4}\si{}.
+\end{align}
 
-Eine weiterer mikroskopischer leitfäigkeitsparameter ist die Beweglichkeit $\mu$.
+Eine weiterer mikroskopischer Leitfäigkeitsparameter ist die Beweglichkeit $\mu$.
 Dieser berechnete sich aus der Formel \eqref{eqn:mu}:
 \begin{equation}
-\mu=-\frac{e_0\cdot\overline{\tau}}{2m_0}\label{eqn:mu}
+\mu=-\frac{e_0\cdot\overline{\tau}}{2m_0}\label{eqn:mu}.
 \end{equation}
-
+Die beiden Werte betragen:
+\begin{align*}
+\mu_\mathrm{Zinn}&=(-0,0117\pm0,0004)\si{}\\
+\mu_\mathrm{Wolfram}&=(-0,0123\pm0,0006)\si{}
+\end{align*}
 Für die Totalgeschwindigkeit $|v|$ ist es notwendig zuvor die entsprechende Fermi-Energie
 $E_\mathrm{F}$ aus der Formel \eqref{eqn:EF} zu berechnen.
 \begin{equation}
-E_\mathrm{F}=\frac{\mathrm{h}^2}{2m_0}\sqrt[3]{\left(\frac{3}{8\pi}n\right)^2}\label{eqn:vd}
+E_\mathrm{F}=\frac{\mathrm{h}^2}{2m_0}\sqrt[3]{\left(\frac{3}{8\pi}n\right)^2}\label{eqn:EF}
 \end{equation}
-
+Die Fermi-Energie ergibt sich zu:
+\begin{align*}
+E_\mathrm{F_\mathrm{Zinn}}&=(1,24\pm0,20)\cdot10^{-18}\si{}\\
+E_\mathrm{F_\mathrm{Wolfram}}&=(8,2\pm2,2)\cdot10^{-19}\si{}.
+\end{align*}
 Nun  kann sowohl über die Formel \ref{eqn:v} die Totalgeschwindigkeit $|v|$ also auch
 über die Formel \ref{eqn:l} die mittlere frei Wellenlänge  $\overline{\ell}$ bestimmt werden.

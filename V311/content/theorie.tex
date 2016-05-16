@@ -9,18 +9,18 @@ Die Elektronen des Äußeren nicht vollständig besetzten Bandes können beim an
 und sich damit in Richtung des Feldes bewegen, somit entsteht ein Strom. Die Leitfähigkeit von Metallen wird von vielen verschiedenen Parametern bestimmt.
 
 \subsection{Parameter in Abhängigkeit vom Widerstand eines stromdurchflossenen Leiters}
-Die Leiterelektronen führen in einem realen Kristall auf Grund von Fehlstellen oder Defekten in der Struktur ständig
+Die Leiterelektronen führen in einem realen Kristall auf Grund von Fehlstellungen oder Defekten in der Struktur ständig
 Zusammenstöße aus. $\overline{\tau}$ ist dabei das gemittelte Zeitintervall zwischen zwei Zusammenstößen. Liegt ein elektrisches Feld an
 einer Probe an, ergibt sich eine Geschwindigkeitsängerung in Richtung des elektrischen Feldes in der Zeit $\overline{\tau}$:
 \begin{align}
-\Delta v=-\frac{e_0}{m_0}\vec{E}\overline{\tau}
+\Delta\vec{\overline{v}}=-\frac{e_0}{m_0}\vec{E}\overline{\tau}.
 \end{align}
-Bei einem Zusammenstoß werden die Leiterelektronen in zufällige Richtungen geleitet, eine mittlere Driftgeschwindigkeit wird daher eingeführt.
+Bei einem Zusammenstoß werden die Leiterelektronen in zufällige Richtungen gestreut, eine mittlere Driftgeschwindigkeit wird daher eingeführt.
 Für ein Elektron gilt dann:
 \begin{align}
-\vec{v_\mathrm{d}}=\frac{1}{2}\Delta v.
+\vec{\overline{v_\mathrm{d}}}=\frac{1}{2}\Delta v.
 \end{align}
-Die Stromdichte eines Leiters mit n Elektronen pro Volumeneinheit ergibt sich zu:
+Die Stromdichte eines Leiters mit n Elektronen pro Volumeneinheit ergibt sich damit zu:
 \begin{align}
 j=\frac{1}{2}\frac{e_0^2}{\m_0 n} \overline{\tau} E.
 \end{align}
@@ -33,21 +33,22 @@ Die reziproke Leitfähigkeit ist der Widerstand $R$, dieser ergibt sich zu:
 \begin{align}
 R=2\frac{\m_o}{e_0^2}\frac{1}{n\overline{\tau}}\frac{L}{Q}\label{eqn:wiederstand}.
 \end{align}
-Mit dem leicht messbaren Widerstand kann auf alle größen bis auf $n$ und $\overline{\tau}$ geschlossen werden.
+Der Widerstand $R$ ist eine leicht messbare Größe und damit besteht eine Möglichkeit weitere mikroskopische Leitfähigkeitsparameter
+zu bestimmen.
 
 \subsection{Parameter in Abhängigkeit vom Hall-Effekt}
 Der Hall-Effekt beschreibt im wesentlichen eine auftretende Spannung in einem stromdurchflossenen Leiter, welcher sich in
 einem homogenen Magnetfeld befindet. Die Spannung entsteht durch die Lorentz-Kraft.
-Mit weiteren Überlegungen ergibt sich die Hall-Spannung:
+Mit weiteren Überlegungen ergibt sich die Hall-Spannung zu:
 \begin{align}
- U_\mathrm{H}=-\frac{1}{ne_0}\frac{B\cdot I_\mathrm{q}}{d}.
+ U_\mathrm{H}=-\frac{1}{ne_0}\frac{B\cdot I_\mathrm{q}}{d} \label{eqn:u_h}.
 \end{align}
 Die Größe $B$ bezeichnet die magnetische Flussdichte, $d$ die Dicke des Leiters und $I_\mathrm{q}$ den Queerstrom.
-Aus de Hall-Spannung lassen sich nun auch $n$ und $\overline{\tau}$ berechen.
+Aus de Hall-Spannung lässt sich nun die Ladungsträgerdichte $n$ berechen und mit dem Widerstand auch $\overline{\tau}$.
 
-\subsection{Weitere Parameter}
-Von Interesse für die Leitfähigkeit ist ebenfalls die mittlere freie Weglänge $\ell$, dies ist die Entfernung eines Elektrons die
-es beim Zusammenstoß zurücklegt im Mittel. Definiert ist diese durch $\ell=\tau\cdot|v|$ mit $|v|$ der Totalgeachwindigkeit.
+\subsection{Weitere Leitfähigkeitsparameter}
+Von Interesse für die Leitfähigkeit ist ebenfalls die mittlere freie Weglänge $\ell$, dies ist, im Mittel, die Entfernung eines Elektrons die
+es beim Zusammenstoß zurücklegt. Definiert ist diese durch $\ell=\tau\cdot|v|$ mit $|v|$ der Totalgeachwindigkeit.
 Unter Beachtung des Pauli-Verbotes und der Fermi-Energie gilt für $|v|$:
 \begin{align}
  |v|\approx \sqrt{\frac{2E_\mathrm{F}}{m_0}}\label{eqn:v}
@@ -56,8 +57,13 @@ und damit für die mittlere freie Weglänge:
 \begin{align}
 \overline{\ell} \approx \overline{\tau}\sqrt{\frac{2 E_\mathrm{F}}{m_0}}.\label{eqn:l}
 \end{align}
-Der letzte Parameter ist die Beweglichkeit $\mu$ der Ladungsträger, diese stellt den Proportionalitätsfaktor
-zwischen der Driftgeschwindigkeit und der elektrischen Feldstärke:
+Die sogenannte Fermi-Energie bezeichnet $E_\mathrm{F}$, sie besschreibt den Wert der energiereichsten Elektronen am absoluten Nullpunkt unter
+Berücksichtigung des Pauli-Verbotes. Die Fermi-Energie ist definiert durch:
+\begin{align}
+E_\mathrm{F}=\frac{h^2}{2m_0}\sqrt[3]{\left(\frac{3}{8\pi}n\right)^2}.%\label{eqn:EF}.
+\end{align}
+Ein weiterer Parameter ist die Beweglichkeit $\mu$ der Ladungsträger, diese stellt den Proportionalitätsfaktor
+zwischen der Driftgeschwindigkeit und der elektrischen Feldstärke dar:
 \begin{align}
 \vec{v_\mathrm{d}}=\mu \vec{E}.
-\end{align}
+\end{align}.
