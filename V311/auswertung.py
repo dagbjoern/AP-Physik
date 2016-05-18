@@ -73,6 +73,7 @@ I_z, U_z =np.genfromtxt('messungRzink.txt',unpack=True)
 I_hall_z, U_hall_z=np.genfromtxt('hallzink.txt',unpack=True)
 b_z=0.024#breite
 l_z=0.034#länge
+print('länge',l_z)
 A_hz=6.4*10**(-11)  #hallkonstante
 Vm_z=9.16*10**(-6) #molares volumen
 U_z=U_z*10**(-3)
@@ -118,14 +119,14 @@ print('mittlere Wellenlänge',l_z)
 mu_z=mu(t_z)
 print('Beweglichkeit mu',mu_z)
 
-
-
+print('Querschnitt',Q_z)
 
 #wolfram
 I_w, U_w =np.genfromtxt('messungRwolfram.txt',unpack=True)
 I_hall_w, U_hall_w=np.genfromtxt('hallwolfram.txt',unpack=True)
 b_w=0.026#breite
 l_w=0.04#länge
+print('länge',l_w)
 Vm_w=9.47*10**(-6)#molares Volumen Wolfram
 A_hw=11.8*10**(-11)
 U_w=U_w*10**(-3)
@@ -169,3 +170,5 @@ print('mittlere Wellenlänge',l_w)
 #def mu(t):
 mu_w=mu(t_w)
 print('Beweglichkeit mu',mu_w)
+
+print('Querschnitt',Q_w)
