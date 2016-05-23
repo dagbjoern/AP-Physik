@@ -1,2 +1,132 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+In dem Versuch wurde Thallium 204 als radioaktive Quelle verwendent.
+In der Tabelle \ref{tab:mess} sind die Messwerte für
+die Zählrohr-Charakteristik
+aufgelistet. Der gewählte Fehler für die Zählrate $N$
+beträgt $\sqrt{N}$.
+\begin{table}
+  \centering
+  \caption{Messwerte für die Zählrohr-Charakteristik.}
+  \label{tab:mess}
+  \begin{tabular}{c c}
+    \toprule
+Spannung & Zählrate\\
+$U$ in $\si{\volt}$ & $N$ in $\si{\per\second}$ \\
+    \midrule
+    330  & 274,1\pm16,6    \\
+    350  & 284,3\pm16,9    \\
+    325  & 278,7\pm16,7    \\
+    375  & 291,3\pm17,1    \\
+    395  & 295,3\pm17,2    \\
+    400  & 291,6\pm17,1    \\
+    430  & 297,6\pm17,3    \\
+    450  & 295,4\pm17,2    \\
+    470  & 294,9\pm17,2    \\
+    500  & 299,3\pm17,3    \\
+    530  & 298,9\pm17,3    \\
+    550  & 302,7\pm17,4    \\
+    570  & 310,8\pm17,6    \\
+    590  & 304,4\pm17,4    \\
+    600  & 303,2\pm17,4    \\
+    630  & 305,0\pm17,5    \\
+    650  & 315,5\pm17,8    \\
+    670  & 308,7\pm17,6    \\
+    690  & 317,6\pm17,8    \\
+    695  & 319,7\pm17,9    \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\FloatBarrier
+Die Zählrate $N$ wird, wie in Abbildung \ref{fig:plot1} zu sehen,
+in Abhängigkeit von der Spannung $U$ aufgetragen.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{a).pdf}
+  \caption{Die Zählrate $N$ pro sekunde in Abhängigkeit von der Spannung $U$.}
+  \label{fig:plot1}
+\end{figure}
+\FloatBarrier
+Aus der Abbildung lässt sich nun die Lage des Plateau-Bereiches
+abschätzen. Dieser beginnt ungefähr bei  $375\si{\volt}$ und
+endet ungefähr bei $670\si{\volt}$ somit beträgt die Länge
+des Plateaus $295\si{\volt}$.
+Aus den Messwerten innerhalb der Plateaus wird nun mit Hilfe
+einer lineraren Regression eine Gerade bestimmt.
+Es ergeben sich folgende Werte für die Parameter der Geraden.
+\begin{align*}
+A=(267\pm5)\si{\per\second}
+B=(0,065\pm0,009)\si{\per\volt\second}
+\intertext{Somit ergibt sich eine Plateau-Steigung von:}
+(102,3\pm0,3)\%
+\end{align*}
+Der durch das Ozilloskop gemessene Abstand, der mit einer 
+Genauigkeit von $\pm20$ vom Ozilloskop abgelesen wird, zwischen Primär- und
+Nachentladungsimpulsen beträt
+\begin{align*}
+\text{bei einer Spannung von $350\si{\volt}$} \ &(120\pm20)\si{\micro\second}\\
+\text{und bei einer Spannung von $700\si{\volt}$} \ &(105\pm20)\si{\micro\second}
+\end{align*}
+Die ebenfalls mit Hilfe des Oszilloskop bestimmte Totzeit beträgt
+bei einer Betriebspannng von $700\si{\volt}$:
+\begin{align*}
+  T=(80\pm20)\si{\micro\second}
+\end{align*}
+Bei der Zwei-Quelllen-Methode ergibt sich aus den gemessenen
+Zählraten,
+\begin{align*}
+  N_1&= (195,2\pm14,0)\si{\per\second},\\
+  N_{1+2}&=(417,9\pm20,4)\si{\per\second},\\
+  N_2&=(236,0\pm15,4)\si{\per\second}
+\end{align*}
+und der folgenden Formel  \eqref{eqn:totzeit}
+\begin{align}
+T\approx\frac{N_1+N_2-N_{1+2}}{2N_1N_2}\label{eqn:totzeit}\\
+\end{align}
+\begin{align*}
+\intertext{eine Totzeit von:}\\
+T=(140\pm310)\si{\micro\second}
+\end{align*}
+Desweiteren soll die pro einfallendem Teilchen im Zählrohr freigesetzten
+Ladungen in Abbhängigkeit von der Zählrohrspannung untersucht werden.
+Dabei berechnene sich die freigesetzten Ladungen nach der Formel \eqref{eqn:Q}
+\begin{align}
+  \Delta sQ=\frac{\overline{I}}{N}.\label{eqn:Q}
+\end{align}
+In der Tabelle \ref{tab:I} sind die berechneten Ladungen $\Delta Q$in Abhängigkeit
+von der Zählrohrspannung $U$ und des gemessenen Stroms aufgelistet.
+Als Fehler für den gemessenen Strom $I$ wir
+ein Fehler von $0,2\si{\micro\ampere}$ abgeschätzt.
+\begin{table}
+  \centering
+  \caption{Messwerte zur Bestimmung der freigesetzten Ladungen.}
+  \label{tab:I}
+  \begin{tabular}{c c c c}
+    \toprule
+Spannung & Zählrate  & Strom & Ladungen \\
+$U$ in $\si{\volt}$ & $N$ in $\si{\per\second}$ & $I$ in $\si{\micro\ampere}$ & $Q$ in $10^{9}\si{\elementarycharge}$\\
+    \midrule
+    330  & 274,1\pm16,6  &  0,1\pm0,2 &  2,2\pm0,5 \\
+    350  & 284,3\pm16,9  &  0,2\pm0,2 &  4,4\pm0,4 \\
+    325  & 278,7\pm16,7  &  0,1\pm0,2 &  2,2\pm0,4 \\
+    375  & 291,3\pm17,1  &  0,2\pm0,2 &  4,2\pm0,4 \\
+    395  & 295,3\pm17,2  &  0,4\pm0,2 &  8,5\pm0,4 \\
+    400  & 291,6\pm17,1  &  0,4\pm0,2 &  8,6\pm0,4 \\
+    430  & 297,6\pm17,3  &  0,5\pm0,2 & 10,5\pm0,4 \\
+    450  & 295,4\pm17,2  &  0,6\pm0,2 & 12,7\pm0,4 \\
+    470  & 294,9\pm17,2  &  0,7\pm0,2 & 14,8\pm0,4 \\
+    500  & 299,3\pm17,3  &  0,8\pm0,2 & 16,7\pm0,4 \\
+    530  & 298,9\pm17,3  &  0,9\pm0,2 & 18,8\pm0,4 \\
+    550  & 302,7\pm17,4  &  1,0\pm0,2 & 20,6\pm0,4 \\
+    570  & 310,8\pm17,6  &  1,1\pm0,2 & 22,1\pm0,4 \\
+    590  & 304,4\pm17,4  &  1,1\pm0,2 & 22,6\pm0,4 \\
+    600  & 303,2\pm17,4  &  1,2\pm0,2 & 24,7\pm0,4 \\
+    630  & 305,0\pm17,5  &  1,3\pm0,2 & 26,6\pm0,4 \\
+    650  & 315,5\pm17,8  &  1,4\pm0,2 & 27,7\pm0,4 \\
+    670  & 308,7\pm17,6  &  1,4\pm0,2 & 28,3\pm0,4 \\
+    690  & 317,6\pm17,8  &  1,6\pm0,2 & 31,4\pm0,4 \\
+    695  & 319,7\pm17,9  &  1,7\pm0,2 & 33,2\pm0,4 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+\FloatBarrier
