@@ -9,142 +9,111 @@ import scipy.constants as const
 
 
 
-#def gaus1(x,mu,sigma):
-#    return((1/(sigma*np.sqrt(2*np.pi))*np.exp(-0.5*((x-mu)/sigma)**2)))
+#Berechnung
+def sigma():
+    ep=1.295
+    re=2.82e-15
+    eins=(1+ep)/(ep**2)
+    zwei=(2*(1-ep)/(1+2*ep))
+    drei=(1/ep)*np.log(1+2*ep)
+    vier=(1/(2*ep))*np.log(1+2*ep)
+    fünf=(1+3*ep)/((1+2*ep)**2)
+    return(2*np.pi*(re**2)*(eins*(zwei-drei)+vier-fünf))
 
-def gaus2(x,a,mu,sigma):
-  	return(a*np.exp(-0.5*((x-mu)/sigma)**2))
 
-#Gausplot
-v , U_A =np.genfromtxt('a).txt', unpack=True)
-v=1000*v
 
-n = len(v)                          #the number of data
-mean = np.sum(v*U_A)/n                   #note this correction
-sigma_test = np.sqrt(np.sum(U_A*(v-mean)**2)/n)
-print(mean)
-print(sigma_test)
-params, covariance = curve_fit(gaus2,v,U_A,p0=[1.14,35300,300])
-x=np.linspace(30000,40000,10000)
+def n(z,V_M):
+    N_L=2.6867774e25
+    return((z*N_L)/(V_M))
+#n für Kupfer
+z_cu=29
+V_M_cu=7.11e-06
+print('\nKufer z=',z_cu,'\n Molares Volumen=',7.11e-06)
+print('n_cu=',n(z_cu,V_M_cu))
+#n für Blei
+z_pb=82
+V_M_pb=18.26*10e-6
+print('\n Blei z=',z_pb,'\n Molares Volumen=',7.11e-06)
+print('n_pb=',n(z_pb,V_M_pb))
+
+
+
+sig=sigma()
+print('\nsigma',sigma())
+print('\nKufper theorie\n mu=',n(z_cu,V_M_cu)*sig)
+
+print('\nBlei theorie\n mu=',n(z_pb,V_M_pb)*sig)
+
+
+
+
+def N_D(D,N_0,mu):
+    return(N_0*np.exp(-mu*D))
+
+
+T_cu ,n_cu ,d_cu =np.genfromtxt('messdatenGcu.txt',unpack=True)
+d_cu=d_cu*10**(-2)
+n_cu=unp.uarray(n_cu,np.sqrt(n_cu))
+print(n_cu)
+
+
+N_cu=n_cu/T_cu
+#print(N_cu)
+
+params_cu, covariance_cu =curve_fit(N_D,d_cu,noms(N_cu))
+N_0_cu=params_cu[0]
+mu_cu=params_cu[1]
+print('\n N_0_cu=',N_0_cu)
+print('mu_cu=',mu_cu)
+
+
+#*params
+x=np.linspace(0,0.70)
 plt.figure(1)
-print(params)
-plt.plot(v,U_A,'rx',label=r'$Messwerte$')
-#plt.plot(x,gaus2(x,1.14,35300,290),'k-',label=r'$Messwerte$')
-plt.plot(x,gaus2(x,*params),'b-',label=r'$Ausgleichsfunktion$')
+plt.errorbar(d_cu,noms(N_cu) ,xerr=0,yerr=stds(N_cu), fmt='cx')
+plt.plot(d_cu,noms(N_cu),'rx',label=r'$Messwerte$')
+plt.plot(x,N_D(x,*params_cu),'b-',label=r'$Ausgleichsfunktion$')
 plt.legend(loc='best')
-plt.xlabel(r'$Frequenz \ \nu /hz$')
-plt.ylabel(r'$frac{U_A}{U_E} $')
-plt.savefig('a).pdf')
-#
-def fit(x):
-    return(gaus(x,*params)-(1/np.sqrt(2))*np.max(U_A))
-
-    print(scipy.optimize.fsolve(fit(x,*params),0))
-
-Uvor_ND , Rvor_ND, Unach_ND , Rnach_ND=np.genfromtxt('b)ND.txt',unpack=True)
-#
-Uvor_DY , Rvor_DY, Unach_DY , Rnach_DY=np.genfromtxt('b)DY.txt',unpack=True)
-#
-Uvor_GD , Rvor_GD, Unach_GD , Rnach_GD=np.genfromtxt('b)GD.txt',unpack=True)
-
-Rvor_ND=Rvor_ND*5e-3
-Rvor_DY=Rvor_DY*5e-3
-Rvor_GD=Rvor_GD*5e-3
-
-Rnach_ND=Rnach_ND*5e-3
-Rnach_DY=Rnach_DY*5e-3
-Rnach_GD=Rnach_GD*5e-3
-
-Delta_R_ND=Rvor_ND-Rnach_ND
-Delta_R_DY=Rvor_DY-Rnach_DY
-Delta_R_GD=Rvor_GD-Rnach_GD
-print('\n \nRvorND',Rvor_ND,'\n RnachND', Rnach_ND,'\n Delta_R_ND',Delta_R_ND)
-print('\n \nRvorGD',Rvor_GD,'\n RnachGD', Rnach_GD,'\n Delta_R_GD',Delta_R_GD)
-print('\n \nRvorDY',Rvor_DY,'\n RnachDY', Rnach_DY,'\n Delta_R_DY',Delta_R_DY)
-
-#Dichten der Stoffel
-
-#R3
-R3=998
-#daten der Messspule
-n=250
-F=86.6e-6
-l=125e-3
-R=0.7
+plt.xlabel(r'$\mathrm{Dicke \ d \ in \ m}$')
+plt.ylabel(r'$\mathrm{Zählrate \ N \ in \ 1/s}$')
+plt.savefig('a)cu.pdf')
 
 
-def Qreal(M,L,rho):
-    return(M/(L*rho))
+T_pb ,n_pb ,d_pb =np.genfromtxt('messdatenGpb.txt',unpack=True)
+d_pb=d_pb*10**(-2)
+n_pb=unp.uarray(n_pb,np.sqrt(n_pb))
+print(n_pb)
+N_pb=n_pb/T_pb
+#print(N_pb)
 
 
-#eignschafeten von den proben
-#ND203
-rhow_ND = 7240
-M_ND=0.0095# masse der probe
-l_ND=0.16 #länge der probe
-Q_ND=Qreal(M_ND,l_ND,rhow_ND)
+params_pb, covariance_pb =curve_fit(N_D,d_pb,noms(N_pb))
 
-#GD203
-rhow_GD = 7400
-M_GD=0.01408
-l_GD=0.16
-Q_GD=Qreal(M_GD,l_GD,rhow_GD)
-#DJ203
-rhow_DY = 7800
-M_DY=0.0185
-l_DY=0.16
-Q_DY=Qreal(M_DY,l_DY,rhow_DY)
+N_0_pb=params_pb[0]
+mu_pb=params_pb[1]
 
+print('N_0_pb=',N_0_pb)
+print('mu_pb=',mu_pb)
 
-print('Qreal',Q_ND,Q_GD,Q_DY)
+plt.figure(2)
+plt.errorbar(d_pb,noms(N_pb) ,xerr=0,yerr=stds(N_pb), fmt='cx')
+plt.plot(d_pb,noms(N_pb),'rx',label=r'$Messwerte$')
+plt.plot(x,N_D(x,*params_pb),'b-',label=r'$Ausgleichsfunktion$')
+plt.legend(loc='best')
+plt.xlabel(r'$\mathrm{Dicke \ d \ in \ m}$')
+plt.ylabel(r'$\mathrm{Zählrate \ N \ in \ 1/s}$')
+plt.savefig('a)pb.pdf')
 
-def Fall1(U_br,Q):
-    w=2*np.pi*35300
-    X=(U_br/100)*(4*l/(w*const.mu_0*(n**2)*Q))*np.sqrt((R**2)+(w**2)*(const.mu_0*(n**2)*F/l)**2)
-    return X
+T_b, n_b ,d_b =np.genfromtxt('messdatenB.txt',unpack=True)
+n_b=unp.uarray(n_b,np.sqrt(n_b))
+N_b=n_b/T_b
+#print(N_b)
 
-
-def Fall2(Delta_R,Q):
-    return(2*Delta_R*F/(R3*Q))
-
-def Fall3(N,J,gj):
-    mu_B=(const.e*const.hbar)/(2*const.m_e)
-    return(((const.mu_0*(mu_B**2)*(gj**2)*N*J)*(J+1))/(3*const.k*293))
-
-
-J=np.array([9/2,7/2,15/2])
-gj=np.array([8/11,2,4/3])
-
-
-
-
-#momente pro Volumeneinheit
-Mol=np.array([0.33684,0.3625,0.372998])
-rho_alle=np.array([7240,7400,7800])
-N=2*const.N_A*rho_alle/Mol
-
-
-theo=Fall3(N,J,gj)
-print('X für theorie',Fall3(N,J,gj))
-print('\n X für ND Fall 1',Fall1(Unach_ND,Q_ND),
-'\n X für ND Fall 2',Fall2(Delta_R_ND,Q_ND),
-'\n X für ND Fall 1 Mittelwert',np.mean(Fall1(Unach_ND,Q_ND)),np.std(Fall1(Unach_ND,Q_ND)),
-'\n X für ND Fall 2 Mittelwert',np.mean(Fall2(Delta_R_ND,Q_ND)),np.std(Fall2(Delta_R_ND,Q_ND)),
-'\n relative Abweichung fall 1',(theo[0]-np.mean(Fall1(Unach_ND,Q_ND)))/theo[0],
-'\n relative Abweichung fall 2',(theo[0]-np.mean(Fall2(Delta_R_ND,Q_ND)))/theo[0],)
-
-
-
-print('\nX für GD Fall 1',Fall1(Unach_GD,Q_GD),
-'\n X für GD Fall 2',Fall2(Delta_R_GD,Q_GD),
-'\n X für GD Fall 1 Mittelwert',np.mean(Fall1(Unach_GD,Q_GD)),np.std(Fall1(Unach_GD,Q_GD)),
-'\n X für ND Fall 2 Mittelwert',np.mean(Fall2(Delta_R_GD,Q_GD)),np.std(Fall2(Delta_R_GD,Q_GD)),
-'\n relative Abweichung fall 1',(theo[1]-np.mean(Fall1(Unach_GD,Q_GD)))/theo[2],
-'\n relative Abweichung fall 2',(theo[1]-np.mean(Fall2(Delta_R_GD,Q_GD)))/theo[2],)
-
-print('\n X für DY Fall 1',Fall1(Unach_DY,Q_DY),
-'\n X für DY Fall 2',Fall2(Delta_R_DY,Q_DY),
-'\n X für DY Fall 1 Mittelwert',np.mean(Fall1(Unach_DY,Q_DY)),np.std(Fall1(Unach_DY,Q_DY)),
-'\n X für DY Fall 2 Mittelwert',np.mean(Fall2(Delta_R_DY,Q_DY)),np.std(Fall2(Delta_R_DY,Q_DY)),
-'\n relative Abweichung fall 1',(theo[2]-np.mean(Fall1(Unach_DY,Q_DY)))/theo[2],
-'\n relative Abweichung fall 2',(theo[2]-np.mean(Fall2(Delta_R_DY,Q_DY)))/theo[2],)
+#plt.figure(1)
+#plt.plot(v,U_A,'rx',label=r'$Messwerte$')
+#plt.plot(x,gaus2(x,1.14,35300,290),'k-',label=r'$Messwerte$')
+#plt.plot(x,gaus2(x,*params),'b-',label=r'$Ausgleichsfunktion$')
+#plt.legend(loc='best')
+#plt.xlabel(r'$Frequenz \ \nu /hz$')
+#plt.ylabel(r'$frac{U_A}{U_E} $')
+#plt.savefig('a).pdf')
