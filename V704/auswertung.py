@@ -14,16 +14,18 @@ def sigma():
     ep=1.295
     re=2.82*10**(-15)
     eins=(1+ep)/(ep**2)
-    zwei=(2*(1+ep)/(1+2*ep))
+    zwei=(2*(1+ep))/(1+2*ep)
     drei=(1/ep)*np.log(1+2*ep)
     vier=(1/(2*ep))*np.log(1+2*ep)
     fünf=(1+3*ep)/((1+2*ep)**2)
+    print('thomschonscher Wirkungsquerschnitt',(8/3)*np.pi*(re**2))
     return(2*np.pi*(re**2)*(eins*(zwei-drei)+vier-fünf))
 
 
 
 def n(z,V_M):
     N_L=2.6867774e25
+    N_L=const.N_A
     return((z*N_L)/(V_M))
 #n für Kupfer
 z_cu=29
@@ -39,11 +41,12 @@ print('n_pb=',n(z_pb,V_M_pb))
 
 
 sig=sigma()
-print('\nsigma',sigma())
+print('\nsigma',sig)
 print('\nKufper theorie\n mu=',n(z_cu,V_M_cu)*sig)
 
 print('\nBlei theorie\n mu=',n(z_pb,V_M_pb)*sig)
-
+re=2.82*10**(-15)
+print(' thomschonscher schitt mu=',n(z_pb,V_M_pb)*(8/3)*np.pi*(re**2) )
 
 
 
@@ -126,14 +129,21 @@ df=np.array([1,1,0.5,1,1,1,1,5,1,2,1])
 df=df*10**(-6)
 D_b=unp.uarray(d_b,df)
 
+Zb_0=unp.uarray(292,np.sqrt(292))
+Nb_0=Zb_0/900
+print(' \n Nullmessung yZ',Zb_0,'\n YNs',Nb_0)
+
+
+
+
 print(D_b)
 print(n_b)
 N_b=n_b/T_b
-print(N_b)
+print('Impulsrate beta',N_b)
 
 Zb_0=unp.uarray(292,np.sqrt(292))
 Nb_0=Zb_0/900
-print('Nullmessung y',Ny_0)
+
 
 
 

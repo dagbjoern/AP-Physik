@@ -108,56 +108,65 @@ berechnen.
 Nun kann durch den Zusammenhang aus der Formel \eqref{eqn:mucom} der
 Apsorptionskoeffizienten $\mu_\mathrm{com}$ berechnet werden.
 \begin{align}
-\mu_\mathrm{com}=\frac{zN_L}{V_\mathrm{Mol}}\sigma_\mathrm{com}.\label{eqn:mucom}
+\mu_\mathrm{com}=\frac{zN_A}{V_\mathrm{Mol}}\sigma_\mathrm{com}.\label{eqn:mucom}
 \end{align}
-Wobei $N_l$ die Loschmidtsche Zahl ist.
-\begin{align*}
-N_L=2,6867811\cdot10^{25}\si{\per\meter\tothe{3}}\text{\cite{constants}}
-\end{align*}
-Desweiteren werde noch die
+%??Wobei $N_l$ die Loschmidtsche Zahl ist.
+%\begin{align*}
+%N_L=2,6867811\cdot10^{25}\si{\per\meter\tothe{3}}\text{\cite{constants}}
+%\end{align*}
+Dafür werde noch die
 Kernladungszahl $z$ und das Molvolumen $V_\mathrm{Mol}$ der
 verwendeten Materialien  benötigt.
 Die Werte für Kufer sind:
 \begin{align*}
 z_{Cu}=29\\
-V_{M_{Cu}}=7,11 \cdot 10^{-6}\si{\meter\tothe{3}\per\mol} \text{\cite{chemie.de}}
+V_{M_{Cu}}=7,11 \cdot 10^{-6}\si{\meter\tothe{3}\per\mol} \text{\cite{chemiecu.de}}
 \end{align*}
 Somit ergibt sich ein Absorptionskoeffizient $\mu_\mathrm{Com}$ für Kupfer:
 \begin{align*}
-  \mu_\mathrm{Com_{cu}}=.
+  \mu_\mathrm{Com_{cu}}={63,02\si{\per\meter}}.
 \end{align*}
 Die Werte für Blei sind:
 \begin{align*}
 z_{Pb}=82\\
-V_{M_{Pb}}=18,26 \cdot 10^{-6}x\si{\meter\tothe{3}\per\mol} \text{ \cite{chemie.de}}
+V_{M_{Pb}}=18,26 \cdot 10^{-6}x\si{\meter\tothe{3}\per\mol} \text{ \cite{chemiepb.de}}
 \end{align*}
 Daraus ergibt sich ein Absorptionskoeffizient $\mu_\mathrm{Com}$ für Bei:
 \begin{align*}
-  \mu_\mathrm{Com_{pb}}=.
+  \mu_\mathrm{Com_{pb}}={6,94\si{\per\meter}}.
 \end{align*}
 
 \subsection{ $β$-Absorption}
+
 Die Tablelle \ref{tab:b} enthält die
 Messwerte für einer $\beta$-Quelle hier $^{99}Tc$
 und  dem Absorptionsmaterial Aluminium.
+Wobei die Nullmessung über $900\si{\second}$ den folgenden Wert lieferte:
+\begin{align*}
+Z_u=292\pm17.
+\intertext{Dies entspricht einer Impulsrate von:}
+N_u=(0,324\pm0,019)\si{\per\second}
+\end{align*}
+Diese muss nicht wie bei der $\gamma$ von der gemessen Impulsrate $N$ abgezogen werden,
+da diese in der folgenden linearen Regression berücksichtigt wird.
 \begin{table}
   \centering
   \caption{Messwerte bei dem Absorbtionsmaterial Aluminium.}
   \label{tab:b}
   \begin{tabular}{c c c c}
-Zeit $s$ in $\si{\second}$& Impulse $Z$  & Dicke $D$ in \si{\micro\meter} & Impulsrate $N-N_u$ in $\si{\per\second}$\\
+Zeit $s$ in $\si{\second}$& Impulse $Z$  & Dicke $D$ in \si{\micro\meter} & Impulsrate $N$ in $\si{\per\second}$\\
        \midrule
-       40  & 1386\pm37  & 102\pm1 & ?? \\
-       40  &  665\pm26  & 126\pm1 & \\
-       60  &  431\pm21  & 153\pm0.5 & \\
-       100 &  462\pm21  & 160\pm1 & \\
-       250 &  287\pm17  & 200\pm1 & \\
-       400 &  269\pm16  & 253\pm1 & \\
-       650 &  241\pm16  & 302\pm1 & \\
-       800 &  419\pm20  & 338\pm5 & \\
-       700 &  333\pm18  & 400\pm1 & \\
-       800 &  497\pm22  & 444\pm2 & \\
-       800 &  441\pm21  & 482\pm1 & \\
+       40  & 1386\pm37  & 102\pm1 &34,65\pm0,93   \\
+       40  &  665\pm26  & 126\pm1 &16,63\pm0,64 \\
+       60  &  431\pm21  & 153\pm0.5 &7,18\pm0,35 \\
+       100 &  462\pm21  & 160\pm1 &4,63\pm0,21 \\
+       250 &  287\pm17  & 200\pm1 &1,15\pm0,68 \\
+       400 &  269\pm16  & 253\pm1 &0,67\pm0,04 \\
+       650 &  241\pm16  & 302\pm1 &0,37\pm0,02 \\
+       800 &  419\pm20  & 338\pm5 &0,52\pm0,03 \\
+       700 &  333\pm18  & 400\pm1 &0,48\pm0,03 \\
+       800 &  497\pm22  & 444\pm2 &0,62\pm0,03 \\
+       800 &  441\pm21  & 482\pm1 &0,55\pm0,03 \\
       \bottomrule
     \end{tabular}
 \end{table}
