@@ -128,6 +128,10 @@ n_b=unp.uarray(n_b,np.sqrt(n_b))
 df=np.array([1,1,0.5,1,1,1,1,5,1,2,1])
 df=df*10**(-6)
 D_b=unp.uarray(d_b,df)
+D_b=D_b*10**3
+
+R=2.7*D_b
+
 
 Zb_0=unp.uarray(292,np.sqrt(292))
 Nb_0=Zb_0/900
@@ -151,21 +155,21 @@ def fehler_b(std_m,x):
     return(std_m*np.sqrt(np.mean(x**2)))
 
 
-bereich1x=d_b[:5]
+bereich1x=R[:5]
 bereich1y=N_b[:5]
 A1 , B1 , r ,p ,stdA1 =stats.linregress(noms(bereich1x),np.log(noms(bereich1y)))
 
 A1=unp.uarray(A1,stdA1)
-B1=unp.uarray(B1,fehler_b(stdA1,bereich1x))
+B1=unp.uarray(B1,fehler_b(stdA1,noms(bereich1x)))
 print('\nA1',A1,'B1',B1)
 
-bereich2x=d_b[5:]
+bereich2x=R[5:]
 bereich2y=N_b[5:]
 
 A2 , B2 , r ,p ,stdA2 =stats.linregress(noms(bereich2x),np.log(noms(bereich2y)))
 
 A2=unp.uarray(A2,stdA2)
-B2=unp.uarray(B2,fehler_b(stdA2,bereich2x))
+B2=unp.uarray(B2,fehler_b(stdA2,noms(bereich2x)))
 
 print('\nA2',A2,'\nB2',B2)
 
@@ -180,9 +184,9 @@ print('E_max',E_max)
 def g(x,A,B):
  return A*x+B
 
-x=np.linspace(0,0.0005)
+x=np.linspace(0,1.4)
 plt.figure(3)
-plt.errorbar(d_b,noms(N_b) ,xerr=df,yerr=stds(N_b), fmt='cx')
+plt.errorbar(noms(R),noms(N_b) ,xerr=stds(R),yerr=stds(N_b), fmt='cx')
 plt.plot(noms(bereich1x),noms(bereich1y),'gx',label=r'$\mathrm{Messwerte\ für\ erste\ Gerade}$')
 plt.plot(noms(bereich2x),noms(bereich2y),'bx',label=r'$\mathrm{Messwerte\ für\ zweite\ Gerade}$')
 plt.plot(x,np.exp(g(x,noms(A1),noms(B1))),'g-',label=r'$\mathrm{Ausgleichsgerade\ für\ ersten\ Bereich}$')
@@ -190,7 +194,7 @@ plt.plot(x,np.exp(g(x,noms(A2),noms(B2))),'b-',label=r'$\mathrm{Ausgleichsgerade
 plt.yscale('log')
 plt.ylim(0,100)
 plt.legend(loc='best')
-plt.xlabel(r'$\mathrm{Dicke \ d \ in \ m}$')
+plt.xlabel(r'$\mathrm{Massenbelegung \ R \ in \ g/cm^2\ }$')
 plt.ylabel(r'$\mathrm{Zählrate \ N \ in \ 1/s}$')
 plt.savefig('b).pdf')
 
