@@ -8,181 +8,147 @@ from scipy.optimize import curve_fit
 import scipy.constants as const
 
 
-
-#Berechnung
-def sigma():
-    ep=1.295
-    re=2.82*10**(-15)
-    eins=(1+ep)/(ep**2)
-    zwei=(2*(1+ep)/(1+2*ep))
-    drei=(1/ep)*np.log(1+2*ep)
-    vier=(1/(2*ep))*np.log(1+2*ep)
-    fünf=(1+3*ep)/((1+2*ep)**2)#
-    print('thomson',(8/3)*np.pi*(re**2))
-    return(2*np.pi*(re**2)*(eins*(zwei-drei)+vier-fünf))
+def einzel(phi,b,A_0):
+    lamda=633e-9
+    teil1=(A_0**2)*(b**2)*((lamda/(np.pi*b*np.sin(phi)))**2)
+    teil2=np.sin((np.pi*b*np.sin(phi))/lamda)**2
+    return(teil1*teil2)
 
 
-
-def n(z,V_M):
-    N_L=2.6867774e25
-    return((z*N_L)/(V_M))
-#n für Kupfer
-z_cu=29
-V_M_cu=7.11e-06
-print('\nKufer z=',z_cu,'\n Molares Volumen=',7.11*10**(-6))
-print('n_cu=',n(z_cu,V_M_cu))
-#n für Blei
-z_pb=82
-V_M_pb=18.26*10e-6
-print('\n Blei z=',z_pb,'\n Molares Volumen=',7.11e-06)
-print('n_pb=',n(z_pb,V_M_pb))
-print(n(z_pb,V_M_pb)*(8/3)*np.pi*(2.82*10**(-15))**2)
+def doppel(phi,b,A_0,s):
+    lamda=633e-9
+    teil1=(A_0**2)*np.cos((np.pi*s*np.sin(phi)/lamda))**2
+    teil2=(lamda/(np.pi*b*np.sin(phi)))**2
+    teil3=np.sin((np.pi*b*np.sin(phi))/lamda)**2
+    return(teil1*teil2*teil3)
 
 
-sig=sigma()
-print('\nsigma',sigma())
-print('\nKufper theorie\n mu=',n(z_cu,V_M_cu)*sig)
+def a(ag,at):
+    return(np.absolute(ag-at)/(at))
 
-print('\nBlei theorie\n mu=',n(z_pb,V_M_pb)*sig)
+L=0.9 #abstand schirm spalt
+I_dunkelstrom=0.225*1e-9#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+d_1, I_1= np.genfromtxt('spalt1.txt',unpack=True)
+d_2, I_2= np.genfromtxt('spalt2.txt',unpack=True)
+d_3, I_3= np.genfromtxt('spalt3.txt',unpack=True)
+d_dopp , I_dopp =np.genfromtxt('doppelspalt.txt',unpack=True)
 
-
-
-def N_D(D,N_0,mu):
-    return(N_0*np.exp(-mu*D))
-
-
-T_cu ,n_cu ,d_cu =np.genfromtxt('messdatenGcu.txt',unpack=True)
-d_cu=d_cu*10**(-3)
-D_cu=unp.uarray(d_cu,0.0002)
-n_cu=unp.uarray(n_cu,np.sqrt(n_cu))
-print(n_cu)
-
-Zy_0=unp.uarray(935,np.sqrt(935))
-Ny_0=Zy_0/900
-print('Nullmessung yZ',Zy_0,'\n YNs',Ny_0)
-
-N_cu=n_cu/T_cu
-print(N_cu)
-print('Abgezogen von N_0',N_cu-Ny_0)
-N_cu=N_cu-Ny_0
-params_cu, covariance_cu =curve_fit(N_D,d_cu,noms(N_cu))
-errors_cu = np.sqrt(np.diag(covariance_cu))
+print(I_1,1e-3)
 
 
-N_0_cu=unp.uarray(params_cu[0],errors_cu[0])
-mu_cu=unp.uarray(params_cu[1],errors_cu[1])
-print('\n N_0_cu=',N_0_cu)
-print('mu_cu=',mu_cu)
+print(d_1)
+d_1=d_1*1e-3
+I_1=I_1*1e-6-I_dunkelstrom
+phi_1=d_1/L
+
+print(I_1)
+
+d_2=d_2*1e-3
+I_2=I_2*1e-6-I_dunkelstrom
+phi_2=d_2/L
+
+d_3=d_3*1e-3
+I_3=I_3*1e-6-I_dunkelstrom
+phi_3=d_3/L
+
+I_dopp=I_dopp*1e-6-I_dunkelstrom
+#np.savetxt('doppelspaltab.txt',np.column_stack((d_dopp[:49],I_dopp[:49],d_dopp[49:],I_dopp[49:])),fmt='%r',delimiter=' & ')
+d_dopp=d_dopp*1e-3
+phi_dopp=d_dopp/L
+
+phi_1f=phi_1[1:]
+phi_2f=phi_2[1:]
+phi_3f=phi_3[1:]
+phi_doppf=phi_dopp[1:]
+
+I_1f=I_1[1:]
+I_2f=I_2[1:]
+I_3f=I_3[1:]
+I_doppf=I_dopp[1:]
+
+print('phi_dopp',phi_doppf)
 
 
-#*params
-x=np.linspace(0,0.070)
+params_1, covariance_1 =curve_fit(einzel,phi_1f,I_1f,p0=[0.000075,1])
+errors_1 = np.sqrt(np.diag(covariance_1))
+print('\n1')
+print('breite des Spaltes:', params_1[0],'+-',errors_1[0])
+print('Abweichung',a(params_1[0],0.000075))
+print('A_0:',params_1[1],'+-',errors_1[1])
+#def einzel(phi,b,lamda,A_0)
+
+x=np.linspace(-0.025,0.025,10000)
+
 plt.figure(1)
-plt.errorbar(d_cu,noms(N_cu) ,xerr=stds(D_cu),yerr=stds(N_cu), fmt='cx')
-plt.plot(d_cu,noms(N_cu),'rx',label=r'$Messwerte$')
-plt.plot(x,N_D(x,*params_cu),'b-',label=r'$Ausgleichsfunktion$')
+#plt.errorbar(d_cu,noms(N_cu) ,xerr=stds(D_cu),yerr=stds(N_cu), fmt='cx')
+plt.plot(phi_1,I_1,'rx',label=r'$Messwerte$')
+plt.plot(x,einzel(x,*params_1),'b-',label=r'$Ausgleichsfunktion$')
 plt.legend(loc='best')
-plt.xlabel(r'$\mathrm{Dicke \ d \ in \ m}$')
-plt.ylabel(r'$\mathrm{Zählrate \ N \ in \ 1/s}$')
-plt.savefig('a)cu.pdf')
+plt.xlabel(r'$\mathrm{Abstand \ von \ 0.-Hauptmaxima \ d \ in \ m}$')
+plt.ylabel(r'$\mathrm{Intensität \ I/A}$')
+plt.savefig('spalt1.pdf')
 
-
-T_pb ,n_pb ,d_pb =np.genfromtxt('messdatenGpb.txt',unpack=True)
-d_pb=d_pb*10**(-3)
-D_pb=unp.uarray(d_pb,0.0002)
-n_pb=unp.uarray(n_pb,np.sqrt(n_pb))
-print(n_pb)
-N_pb=n_pb/T_pb
-print(N_pb)
-N_pb=N_pb-Ny_0
-print('abgezogen ny_0 pb',N_pb)
-params_pb, covariance_pb =curve_fit(N_D,d_pb,noms(N_pb))
-errors_pb = np.sqrt(np.diag(covariance_pb))
-
-
-N_0_pb=unp.uarray(params_pb[0],errors_pb[0])
-mu_pb=unp.uarray(params_pb[1],errors_pb[1])
-
-
-
-print('N_0_pb=',N_0_pb)
-print('mu_pb=',mu_pb)
+params_2, covariance_2 =curve_fit(einzel,phi_2f,I_2f,p0=[0.00015,5])
+errors_2 = np.sqrt(np.diag(covariance_2))
+print('\n2')
+print('breite des Spaltes:', params_2[0],'+-',errors_2[0])
+print('Abweichung',a(params_2[0],0.00015))
+print('A_0:',params_2[1],'+-',errors_2[1])
 
 plt.figure(2)
-plt.errorbar(d_pb,noms(N_pb) ,xerr=stds(D_pb),yerr=stds(N_pb), fmt='cx')
-plt.plot(d_pb,noms(N_pb),'rx',label=r'$Messwerte$')
-plt.plot(x,N_D(x,*params_pb),'b-',label=r'$Ausgleichsfunktion$')
+#plt.errorbar(d_cu,noms(N_cu) ,xerr=stds(D_cu),yerr=stds(N_cu), fmt='cx')
+plt.plot(phi_2,I_2,'rx',label=r'$Messwerte$')
+plt.plot(x,einzel(x,*params_2),'b-',label=r'$Ausgleichsfunktion$')
 plt.legend(loc='best')
-plt.xlabel(r'$\mathrm{Dicke \ d \ in \ m}$')
-plt.ylabel(r'$\mathrm{Zählrate \ N \ in \ 1/s}$')
-plt.savefig('a)pb.pdf')
+plt.xlabel(r'$\mathrm{Abstand von 0.-Hauptmaxima \ d \ in \ m}$')
+plt.ylabel(r'$\mathrm{Intensität \ I/A}$')
+plt.savefig('spalt2.pdf')
 
 
+params_3, covariance_3 =curve_fit(einzel,phi_3f,I_3f,p0=[0.0004,1])
+errors_3 = np.sqrt(np.diag(covariance_3))
+
+print('\n3')
+print('breite des Spaltes:', params_3[0],'+-',errors_3[0])
+print('Abweichung',a(params_3[0],0.0004))
+print('A_0:',params_3[1],'+-',errors_3[1])
 
 
-T_b, n_b ,d_b =np.genfromtxt('messdatenB.txt',unpack=True)
-n_b=unp.uarray(n_b,np.sqrt(n_b))
-df=np.array([1,1,0.5,1,1,1,1,5,1,2,1])
-df=df*10**(-6)
-D_b=unp.uarray(d_b,df)
-
-print(D_b)
-print(n_b)
-N_b=n_b/T_b
-print(N_b)
-
-Zb_0=unp.uarray(292,np.sqrt(292))
-Nb_0=Zb_0/900
-print('Nullmessung y',Ny_0)
-
-
-
-def fehler_b(std_m,x):
-    return(std_m*np.sqrt(np.mean(x**2)))
-
-
-bereich1x=d_b[:5]
-bereich1y=N_b[:5]
-A1 , B1 , r ,p ,stdA1 =stats.linregress(noms(bereich1x),np.log(noms(bereich1y)))
-
-A1=unp.uarray(A1,stdA1)
-B1=unp.uarray(B1,fehler_b(stdA1,bereich1x))
-print('\nA1',A1,'B1',B1)
-
-bereich2x=d_b[5:]
-bereich2y=N_b[5:]
-
-A2 , B2 , r ,p ,stdA2 =stats.linregress(noms(bereich2x),np.log(noms(bereich2y)))
-
-A2=unp.uarray(A2,stdA2)
-B2=unp.uarray(B2,fehler_b(stdA2,bereich2x))
-
-print('\nA2',A2,'\nB2',B2)
-
-R_max=(B2-B1)/(A1-A2)
-print('\n R_max',(B2-B1)/(A1-A2))
-
-E_max=1.92*unp.sqrt(R_max**2+0.22*R_max)
-
-print('E_max',E_max)
-
-
-def g(x,A,B):
- return A*x+B
-
-x=np.linspace(0,0.0005)
 plt.figure(3)
-plt.errorbar(d_b,noms(N_b) ,xerr=df,yerr=stds(N_b), fmt='cx')
-plt.plot(noms(bereich1x),noms(bereich1y),'gx',label=r'$\mathrm{Messwerte\ für\ erste\ Gerade}$')
-plt.plot(noms(bereich2x),noms(bereich2y),'bx',label=r'$\mathrm{Messwerte\ für\ zweite\ Gerade}$')
-plt.plot(x,np.exp(g(x,noms(A1),noms(B1))),'g-',label=r'$\mathrm{Ausgleichsgerade\ für\ ersten\ Bereich}$')
-plt.plot(x,np.exp(g(x,noms(A2),noms(B2))),'b-',label=r'$\mathrm{Ausgleichsgerade\ für\ zweite\ Bereich}$')
-plt.yscale('log')
-plt.ylim(0,100)
-plt.legend(loc='best')
-plt.xlabel(r'$\mathrm{Dicke \ d \ in \ m}$')
-plt.ylabel(r'$\mathrm{Zählrate \ N \ in \ 1/s}$')
-plt.savefig('b).pdf')
+#plt.errorbar(d_cu,noms(N_cu) ,xerr=stds(D_cu),yerr=stds(N_cu), fmt='cx')
+plt.plot(phi_3,I_3,'rx',label=r'$Messwerte$')
+plt.plot(x,einzel(x,*params_3),'b-',label=r'$Ausgleichsfunktion$')
+#plt.plot(x,einzel(x,0.0004,3),'g-',label=r'$Ausgleichsfunktion$')
 
-#plt.plot(x,N_D(x,*params_pb),'b-',label=r'$Ausgleichsfunktion$')
+plt.legend(loc='best')
+plt.xlabel(r'$\mathrm{Abstand von 0.-Hauptmaxima \ d \ in \ m}$')
+plt.ylabel(r'$\mathrm{Intensität \ I/A}$')
+plt.savefig('spalt3.pdf')
+
+#def doppel(phi,b,lamda,A_0,s):
+
+params_dopp, covariance_dopp =curve_fit(doppel,phi_doppf,I_doppf,p0=[0.0001,1,0.0004])
+errors_dopp = np.sqrt(np.diag(covariance_dopp))
+
+print('\n Doppel')
+print('breite des Spaltes:', params_dopp[0],'+-',errors_dopp[0])
+print('Abweichung',a(params_dopp[0],0.0001))
+print('A_0:',params_dopp[1],'+-',errors_dopp[1])
+print('abstand',params_dopp[2],'+-',errors_dopp[2])
+print('Abweichung',a(params_dopp[2],0.0004))
+
+
+
+
+plt.figure(4)
+#plt.errorbar(d_cu,noms(N_cu) ,xerr=stds(D_cu),yerr=stds(N_cu), fmt='cx')
+plt.plot(d_dopp,I_dopp,'rx',label=r'$Messwerte$')
+plt.plot(x,doppel(x,*params_dopp),'b-',label=r'$Ausgleichsfunktion$')
+plt.legend(loc='best')
+plt.xlabel(r'$\mathrm{winkel von 0.-Hauptmaxima \ d \ in \ m}$')
+plt.ylabel(r'$\mathrm{Intensität \ I/A}$')
+plt.savefig('doppelspalt.pdf')
+
+print((d_dopp[:51]))
+print()
