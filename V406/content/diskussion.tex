@@ -2,25 +2,14 @@
 \section{Diskussion}
 \label{sec:Diskussion}
 Die berechenten Spaltbreiten aus der Auswertung können nun mit den Herstellerangaben
-verglichen werden. Dies ist in den Tabelle \ref{tab:abweich1} und \ref{tab:abweicn2} dargestellt.
-
-\begin{align*}
-  \text{Spalt 1:}  b_1= 0,075\si{\milli\meter}\\
-  \text{Spalt 2:}  b_2= 0,15\si{\milli\meter}\\
-  \text{Spalt 3:}  b_3= 0,4\si{\milli\meter}\\
-\text{Doppelspalt:} b_\mathrm{doppelspalt}=0,1\si{\milli\meter}\\
-\text{und Abstand der Spalte beim Doppelspalt:} s_\mathrm{doppelspalt}=0,4\si{\milli\meter}\\
-\end{align*}
-
-
-
+verglichen werden. Dies ist in den Tabelle \ref{tab:abweich1} und \ref{tab:abweich2} dargestellt.
 \begin{table}
   \centering
   \caption{Abweichung der Messwerte von den Herstellerangaben für die einzel Spaltbreite b.}
   \label{tab:abweich1}
-  \begin{tabular}{c c c c c c}
-Spalt & Herstellerangaben & \multicolumn{c c}{Mikroskopmessung} &\multicolumn{c c}{Über Begungsfiguren} \\
-      & in $\si{\milli\meter}$ & $b\si{\milli\meter}$ & $a/\si{\percent}$ & $b\si{\milli\meter}$ & $a/\si{\percent}$  \\
+  \begin{tabular}{c c| c c| c c }
+Spalt & Herstellerangaben & \multicolumn{2}{c}{Mikroskopmessung} & \multicolumn{2}{c}{Über Begungsfiguren} \\
+      & $b/\si{\milli\meter}$ & $b/\si{\milli\meter}$ & $a/\si{\percent}$ & $b/\si{\milli\meter}$ & $a/\si{\percent}$ \\
     \midrule
 1 & 0,075 & 0,083 & 11 & 0,054\pm0,001 & 28\\
 2 & 0,15  & 0,125 & 17 & 0,119\pm0,003 & 21\\
@@ -28,3 +17,26 @@ Spalt & Herstellerangaben & \multicolumn{c c}{Mikroskopmessung} &\multicolumn{c 
     \bottomrule
   \end{tabular}
 \end{table}
+
+\begin{table}
+  \centering
+  \caption{Abweichung der Messwerte von den Herstellerangaben für den Doppelspalt.}
+  \label{tab:abweich2}
+  \begin{tabular}{c c |c c c c| c c c c}
+ \multicolumn{2}{c}{Herstellerangaben} & \multicolumn{4}{c}{Mikroskopmessung} &\multicolumn{4}{c}{Über Begungsfiguren} \\
+$b/\si{\milli\meter}$& $s/\si{\milli\meter}$ & $b/\si{\milli\meter}$ & $a/\si{\percent}$& $s/\si{\milli\meter}$& $a/\si{\percent}$ &$b/\si{\milli\meter}$ & $a/\si{\percent}$ & $s/\si{\milli\meter}$ & $a/\si{\percent}$  \\
+    \midrule
+  0,1 & 0,4 & 0,1875 & 88 & 0,4 & 0 & 0,068\pm0,005 & 32 & 0,446\pm0,004  & 12\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+Durch die Tabellen wird deutlich, dass die Messung der Spaltbreite $b$ über ein Mikroskop
+bei allen Messungen genauer ist, als die über die Beugungsbilder.
+Dies liegt zu einem an Ablesefehler beim aufnehemen des
+Stromes $I$ und den häufigen wechselnden Messskalen.
+Wechselde Lichtverhältnisse bei der Messung könnten ebenfalls zur Messungenauhigkeiten führen.
+Ebenfalls weichen mache Messwerte aus den Abblidungnen \ref{fig:spalt1}-\ref{fig:dopp} deulich von dem Fitts ab.
+Bei der Messung des Doppelspaltes sind die Messintervalle zu größ gewählt worden, da
+da der charakatristische Verlauf nicht aus den Messwerten zu erkennen ist.
+Alles im allen kann also gesagt werden, dass die Vermessung des Beugungsbilder zur Bestimmung des Spaltbreite sich
+nicht eigenet, da zu viele Fehlerquellen bei der Messung existieren.
