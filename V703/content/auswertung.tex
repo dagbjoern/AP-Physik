@@ -4,7 +4,11 @@ In dem Versuch wurde Thallium 204 als radioaktive Quelle verwendent.
 In der Tabelle \ref{tab:mess} sind die Messwerte für
 die Zählrohr-Charakteristik
 aufgelistet. Der gewählte Fehler für die Zählrate $N$
-beträgt $\sqrt{N}$.
+beträg:
+\begin{align*}
+  \Delta=\frac{\sqrt{Impulszahl}}{\Delta t}
+\end{align*}
+
 \begin{table}
   \centering
   \caption{Messwerte für die Zählrohr-Charakteristik.}
@@ -14,26 +18,26 @@ beträgt $\sqrt{N}$.
 Spannung & Zählrate\\
 $U$ in $\si{\volt}$ & $N$ in $\si{\per\second}$ \\
     \midrule
-    330  & 274,1\pm16,6    \\
-    350  & 284,3\pm16,9    \\
-    325  & 278,7\pm16,7    \\
-    375  & 291,3\pm17,1    \\
-    395  & 295,3\pm17,2    \\
-    400  & 291,6\pm17,1    \\
-    430  & 297,6\pm17,3    \\
-    450  & 295,4\pm17,2    \\
-    470  & 294,9\pm17,2    \\
-    500  & 299,3\pm17,3    \\
-    530  & 298,9\pm17,3    \\
-    550  & 302,7\pm17,4    \\
-    570  & 310,8\pm17,6    \\
-    590  & 304,4\pm17,4    \\
-    600  & 303,2\pm17,4    \\
-    630  & 305,0\pm17,5    \\
-    650  & 315,5\pm17,8    \\
-    670  & 308,7\pm17,6    \\
-    690  & 317,6\pm17,8    \\
-    695  & 319,7\pm17,9    \\
+    330  & 274,1\pm5,2    \\
+    350  & 284,3\pm5,3    \\
+    325  & 278,7\pm5,3    \\
+    375  & 291,3\pm5,4    \\
+    395  & 295,3\pm5,4    \\
+    400  & 291,6\pm5,4    \\
+    430  & 297,6\pm5,5    \\
+    450  & 295,4\pm5,4    \\
+    470  & 294,9\pm5,4    \\
+    500  & 299,3\pm5,5    \\
+    530  & 298,9\pm5,5    \\
+    550  & 302,7\pm5,5    \\
+    570  & 310,8\pm5,6    \\
+    590  & 304,4\pm5,5    \\
+    600  & 303,2\pm5,5    \\
+    630  & 305,0\pm5,5    \\
+    650  & 315,5\pm5,6    \\
+    670  & 308,7\pm5,6    \\
+    690  & 317,6\pm5,6    \\
+    695  & 319,7\pm5,7    \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -57,15 +61,22 @@ Es ergeben sich folgende Werte für die Parameter der Geraden.
 \begin{align*}
 A=&(267\pm5)\si{\per\second}\\
 B=&(0,065\pm0,009)\si{\per\volt\second}
-\intertext{Somit ergibt sich eine Plateau-Steigung von:}
-&(102,3\pm0,3)\%.
+\intertext{Die Plateau-Steigung $\epsilon$ ergibt sich über die Formel \eqref{eqn:relf}}
 \end{align*}
+\begin{align}
+ \epsilon=\frac{\mathrm{Steigung}\cdot100}{\mathrm{Zählrate \ bei} \ 500\si{\volt}} \label{eqn:relf}
+\end{align}
+\begin{align*}
+\intertext{Sie beträgt:}
+\epsilon=(2,2\pm0,3)\%.
+\end{align*}
+
 Der durch das Ozilloskop gemessene Abstand, der mit einer
 Genauigkeit von $\pm20$ vom Ozilloskop abgelesen wird, zwischen Primär- und
 Nachentladungsimpulsen beträgt
 \begin{align*}
-\text{bei einer Spannung von $350\si{\volt}$} \ &(120\pm40)\si{\micro\second}\\
-\text{und bei einer Spannung von $700\si{\volt}$} \ &(105\pm40)\si{\micro\second}.
+\text{bei einer Spannung von $350\si{\volt}$} \ &(120\pm20)\si{\micro\second}\\
+\text{und bei einer Spannung von $700\si{\volt}$} \ &(105\pm20)\si{\micro\second}.
 \end{align*}
 Die ebenfalls mit Hilfe des Oszilloskop bestimmte Totzeit beträgt
 bei einer Betriebspannng von $700\si{\volt}$:
@@ -75,9 +86,9 @@ bei einer Betriebspannng von $700\si{\volt}$:
 Bei der Zwei-Quelllen-Methode ergibt sich aus den gemessenen
 Zählraten,
 \begin{align*}
-  N_1&= (195,2\pm14,0)\si{\per\second},\\
-  N_{1+2}&=(417,9\pm20,4)\si{\per\second},\\
-  N_2&=(236,0\pm15,4)\si{\per\second}
+  N_1&= (195,2\pm4,4)\si{\per\second},\\
+  N_{1+2}&=(417,9\pm6,4)\si{\per\second},\\
+  N_2&=(236,0\pm4,9)\si{\per\second}
 \end{align*}
 und der folgenden Formel  \eqref{eqn:totzeit}
 \begin{align}
@@ -85,11 +96,11 @@ T\approx\frac{N_1+N_2-N_{1+2}}{2N_1N_2}\label{eqn:totzeit}.\\
 \end{align}
 \begin{align*}
 \intertext{eine Totzeit von:}\\
-T=(140\pm310)\si{\micro\second}.
+T=(140\pm100)\si{\micro\second}.
 \end{align*}
 Desweiteren sollen die pro einfallendem Teilchen im Zählrohr freigesetzten
 Ladungen in Abbhängigkeit von der Zählrohrspannung untersucht werden.
-Dabei berechnene sich die freigesetzten Ladungen nach der Formel \eqref{eqn:Q}
+Dabei berechnen sich die freigesetzten Ladungen nach der Formel \eqref{eqn:Q}
 \begin{align}
   \Delta Q=\frac{\overline{I}}{N}.\label{eqn:Q}
 \end{align}
@@ -130,3 +141,13 @@ $U$ in $\si{\volt}$ & $N$ in $\si{\per\second}$ & $I$ in $\si{\micro\ampere}$ & 
   \end{tabular}
 \end{table}
 \FloatBarrier
+In der Abbildung \ref{fig:IU} ist die gemessen Ladung $Q$ aus der Tabelle \ref{tab:I} in Ahbängigkeit von der eingestellten Zählrohrspannung  $U$
+abgebildet.
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{plotIU.pdf}
+  \caption{Die Ladung $Q$ in Abhängigkeit von dem Zählrohrspannung $U$ von den Messwerten aus der Tabelle \ref{tab:I}.}
+  \label{fig:IU}
+\end{figure}
