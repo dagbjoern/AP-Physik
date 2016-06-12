@@ -34,7 +34,7 @@ print('\nKufer z=',z_cu,'\n Molares Volumen=',7.11*10**(-6))
 print('n_cu=',n(z_cu,V_M_cu))
 #n für Blei
 z_pb=82
-V_M_pb=18.26*10e-6
+V_M_pb=18.26*1e-6
 print('\n Blei z=',z_pb,'\n Molares Volumen=',7.11e-06)
 print('n_pb=',n(z_pb,V_M_pb))
 
@@ -143,6 +143,7 @@ print(' \n Nullmessung yZ',Zb_0,'\n YNs',Nb_0)
 print(D_b)
 print(n_b)
 N_b=n_b/T_b
+N_b=N_b-Nb_0
 print('Impulsrate beta',N_b)
 
 Zb_0=unp.uarray(292,np.sqrt(292))
@@ -183,13 +184,13 @@ print('E_max',E_max)
 
 def g(x,A,B):
  return A*x+B
-
-x=np.linspace(0,1.4)
+x1=np.linspace(0,0.675)
+x=np.linspace(0.675,1.4)
 plt.figure(3)
 plt.errorbar(noms(R),noms(N_b) ,xerr=stds(R),yerr=stds(N_b), fmt='cx')
 plt.plot(noms(bereich1x),noms(bereich1y),'gx',label=r'$\mathrm{Messwerte\ für\ erste\ Gerade}$')
 plt.plot(noms(bereich2x),noms(bereich2y),'bx',label=r'$\mathrm{Messwerte\ für\ zweite\ Gerade}$')
-plt.plot(x,np.exp(g(x,noms(A1),noms(B1))),'g-',label=r'$\mathrm{Ausgleichsgerade\ für\ ersten\ Bereich}$')
+plt.plot(x1,np.exp(g(x1,noms(A1),noms(B1))),'g-',label=r'$\mathrm{Ausgleichsgerade\ für\ ersten\ Bereich}$')
 plt.plot(x,np.exp(g(x,noms(A2),noms(B2))),'b-',label=r'$\mathrm{Ausgleichsgerade\ für\ zweite\ Bereich}$')
 plt.yscale('log')
 plt.ylim(0,100)

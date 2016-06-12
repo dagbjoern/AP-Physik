@@ -96,7 +96,7 @@ Die verwendete $^{137}$Cs-Strahlung besitzt eine relative Energie $\epsilon$ von
 \begin{align*}
   \epsilon=1,295.
 \end{align*}
-Über diese und dem \"klassischen Elektronenradius\" $r_e$, welcher $2,82\cdot10^{-15}\si{\meter}$
+Über diese und dem klassischen Elektronenradius $r_e$, welcher $2,82\cdot10^{-15}\si{\meter}$
 beträgt, lässt sich nun mit der Formel \eqref{eqn:sigma}
 der Wirkungsquerschnitt $\sigma_\mathrm{Com}$ für die Comption-Streuung
 berechnen.
@@ -118,21 +118,15 @@ Kernladungszahl $z$ und das Molvolumen $V_\mathrm{Mol}$ der
 verwendeten Materialien benötigt.
 Die Werte für Kupfer sind:
 \begin{align*}
-z_{Cu}=29\\
-V_{M_{Cu}}=7,11 \cdot 10^{-6}\si{\meter\tothe{3}\per\mol} \text{\cite{chemiecu}}.
-\end{align*}
-Somit ergibt sich ein Absorptionskoeffizient $\mu_\mathrm{Com}$ für Kupfer:
-\begin{align*}
-  \mu_\mathrm{Com_{cu}}={63,02\si{\per\meter}}.
-\end{align*}
-Die Werte für Blei sind:
-\begin{align*}
-z_{Pb}=82\\
-V_{M_{Pb}}=18,26 \cdot 10^{-6}x\si{\meter\tothe{3}\per\mol} \text{ \cite{chemiepb}}.
-\end{align*}
-Daraus ergibt sich ein Absorptionskoeffizient $\mu_\mathrm{Com}$ für Blei von:
-\begin{align*}
-  \mu_\mathrm{Com_{pb}}={6,94\si{\per\meter}}.
+z_{Cu}&=29\\
+V_{M_{Cu}}&=7,11 \cdot 10^{-6}\si{\meter\tothe{3}\per\mol} \text{\cite{chemiecu}}.
+\intertext{Somit ergibt sich ein Absorptionskoeffizient $\mu_\mathrm{Com}$ für Kupfer:}
+\mu_\mathrm{Com_{cu}}&={63,02\si{\per\meter}}.
+\intertext{Die Werte für Blei sind:}
+z_{Pb}&=82\\
+V_{M_{Pb}}&=18,26 \cdot 10^{-6}\si{\meter\tothe{3}\per\mol} \text{ \cite{chemiepb}}.
+\intertext{Daraus ergibt sich ein Absorptionskoeffizient $\mu_\mathrm{Com}$ für Blei von:}
+  \mu_\mathrm{Com_{pb}}&={69,38\si{\per\meter}}.
 \end{align*}
 
 \subsection{ $β$-Absorption}
@@ -142,30 +136,29 @@ Messwerte für einer $\beta$-Quelle hier $^{99}Tc$
 und dem Absorptionsmaterial Aluminium.
 Wobei die Nullmessung über $900\si{\second}$ den folgenden Wert lieferte:
 \begin{align*}
-Z_u=292\pm17.
+Z_u&=292\pm17.
 \intertext{Dies entspricht einer Impulsrate von:}
-N_u=(0,324\pm0,019)\si{\per\second}.
+N_u&=(0,324\pm0,019)\si{\per\second}.
 \end{align*}
-Diese muss nicht wie bei der $\gamma$-Strahlung von der gemessen Impulsrate $N$ abgezogen werden,
-da dies in der folgenden linearen Regression berücksichtigt wird.
+Diese wird wieder, wie bei der $\gamma$-Strahlung, von der gemessen Impulsrate $N$ abgezogen.
 \begin{table}
   \centering
   \caption{Messwerte bei dem Absorbtionsmaterial Aluminium.}
   \label{tab:b}
   \begin{tabular}{c c c c}
-Zeit $s$ in $\si{\second}$& Impulse $Z$  & Dicke $D$ in \si{\micro\meter} & Impulsrate $N$ in $\si{\per\second}$\\
+Zeit $s$ in $\si{\second}$& Impulse $Z$  & Dicke $D$ in \si{\micro\meter} & Impulsrate $N-N_u$ in $\si{\per\second}$\\
        \midrule
-       40  & 1386\pm37  & 102\pm1 &34,65\pm0,93   \\
-       40  &  665\pm26  & 126\pm1 &16,63\pm0,64 \\
-       60  &  431\pm21  & 153\pm0.5 &7,18\pm0,35 \\
-       100 &  462\pm21  & 160\pm1 &4,63\pm0,21 \\
-       250 &  287\pm17  & 200\pm1 &1,15\pm0,68 \\
-       400 &  269\pm16  & 253\pm1 &0,67\pm0,04 \\
-       650 &  241\pm16  & 302\pm1 &0,37\pm0,02 \\
-       800 &  419\pm20  & 338\pm5 &0,52\pm0,03 \\
-       700 &  333\pm18  & 400\pm1 &0,48\pm0,03 \\
-       800 &  497\pm22  & 444\pm2 &0,62\pm0,03 \\
-       800 &  441\pm21  & 482\pm1 &0,55\pm0,03 \\
+       40  & 1386\pm37  & 102\pm1   &34,33\pm0,93   \\
+       40  &  665\pm26  & 126\pm1   &16,30\pm0,64 \\
+       60  &  431\pm21  & 153\pm0.5 &6,86\pm0,35 \\
+       100 &  462\pm21  & 160\pm1   &4,30\pm0,22 \\
+       250 &  287\pm17  & 200\pm1   &0,82\pm0,68 \\
+       400 &  269\pm16  & 253\pm1   &0,35\pm0,07 \\
+       650 &  241\pm16  & 302\pm1   &0,07\pm0,05 \\
+       800 &  419\pm20  & 338\pm5   &0,20\pm0,03 \\
+       700 &  333\pm18  & 400\pm1   &0,15\pm0,03 \\
+       800 &  497\pm22  & 444\pm2   &0,30\pm0,03 \\
+       800 &  441\pm21  & 482\pm1   &0,23\pm0,03 \\
       \bottomrule
     \end{tabular}
 \end{table}
@@ -197,10 +190,10 @@ Bereichen durchgeführt und es ergeben sich zwei Geraden in der Form von:
 \begin{align*}
   y&=A_\mathrm{i}x+B_\mathrm{i}
 \intertext{Mit den Parametern:}
-A_1&=-13,0\pm0.5,\\
-B_1&=7,19\pm0,21,\\
-A_2&=0,1\pm0,4,\\
-B_2&=-0,7\pm0,5.
+A_1&=-14,1\pm0,8,\\
+B_1&=7,56\pm0,33,\\
+A_2&=0,7\pm1,5,\\
+B_2&=-2,4\pm1,5.
 \end{align*}
 
 Mit Hilfe dieser Parameter lässt sich nun über die Formel \eqref{eqn:rmax}
@@ -208,11 +201,11 @@ $R_{max}$ bestimmen.
 \begin{align}
 R_{max}&=\frac{B_2-B_1}{A_1-A_2}\label{eqn:rmax}
 \intertext{Somit ergibt sich ein $R_{max}$ von:}
-R_{max}&=(0,61\pm0,05)\si{\gram\per\centi\meter\tothe{2}}
+R_{max}&=(0,67\pm0,13)\si{\gram\per\centi\meter\tothe{2}}
 \end{align}
 Über $R_{max}$ kann nun die beim $\beta$-Zerfall freiwerdende Gesamtenergie
 $E_\mathrm{max}$ durch einsetzen in die Formel \eqref{eqn:emax} bestimmt werden.
 Es ergibt sich ein $E_\mathrm{max}$ von:
 \begin{align*}
-  E_{max}=(1,36\pm0,10)\si{\mega\electronvolt}
+  E_{max}=(1,49\pm0,25)\si{\mega\electronvolt}
 \end{align*}
