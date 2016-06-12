@@ -32,7 +32,7 @@ plt.plot(v,U_A,'rx',label=r'$Messwerte$')
 #plt.plot(x,gaus2(x,1.14,35300,290),'k-',label=r'$Messwerte$')
 plt.plot(x,gaus2(x,*params),'b-',label=r'$Ausgleichsfunktion$')
 plt.legend(loc='best')
-plt.xlabel(r'$Frequenz \ \nu /hz$')
+plt.xlabel(r'$Frequenz \ \nu /Hz$')
 plt.ylabel(r'$frac{U_A}{U_E} $')
 plt.savefig('a).pdf')
 #
@@ -55,12 +55,19 @@ Rnach_ND=Rnach_ND*5e-3
 Rnach_DY=Rnach_DY*5e-3
 Rnach_GD=Rnach_GD*5e-3
 
+
+Delta_U_ND=Uvor_ND-Unach_ND
+Delta_U_DY=Uvor_DY-Unach_DY
+Delta_U_GD=Uvor_GD-Unach_GD
+
+
+
 Delta_R_ND=Rvor_ND-Rnach_ND
 Delta_R_DY=Rvor_DY-Rnach_DY
 Delta_R_GD=Rvor_GD-Rnach_GD
-print('\n \nRvorND',Rvor_ND,'\n RnachND', Rnach_ND,'\n Delta_R_ND',Delta_R_ND)
-print('\n \nRvorGD',Rvor_GD,'\n RnachGD', Rnach_GD,'\n Delta_R_GD',Delta_R_GD)
-print('\n \nRvorDY',Rvor_DY,'\n RnachDY', Rnach_DY,'\n Delta_R_DY',Delta_R_DY)
+print('\n \nRvorND',Rvor_ND,'\n RnachND', Rnach_ND,'\n Delta_R_ND',Delta_R_ND,'\n Delta_U_ND',Delta_U_ND )
+print('\n \nRvorGD',Rvor_GD,'\n RnachGD', Rnach_GD,'\n Delta_R_GD',Delta_R_GD,'\n Delta_U_GD',Delta_U_GD)
+print('\n \nRvorDY',Rvor_DY,'\n RnachDY', Rnach_DY,'\n Delta_R_DY',Delta_R_DY,'\n Delta_U_DY',Delta_U_DY)
 
 #Dichten der Stoffel
 
@@ -101,6 +108,7 @@ print('Qreal',Q_ND,Q_GD,Q_DY)
 def Fall1(U_br,Q):
     w=2*np.pi*35300
     X=(U_br/100)*(4*l/(w*const.mu_0*(n**2)*Q))*np.sqrt((R**2)+(w**2)*(const.mu_0*(n**2)*F/l)**2)
+    print('\n Test mit Vereinfacherung \n',(4*F*U_br)/(Q*100))
     return X
 
 
