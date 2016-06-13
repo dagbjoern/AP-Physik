@@ -130,7 +130,7 @@ f_bessel_blau=[f_Bessel(d1blau,eblau),f_Bessel(d2blau,eblau)]
 #Methode von abbe
 
 def f_abbe(f1,f2):
-    D_abbe=(1/f1)+(1/f2)-(10/(f1*f2))
+    D_abbe=(1/f1)+(1/f2)-(61/(f1*f2))
     return 1/D_abbe
 
 

@@ -1,6 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-\subsection{Bestimmung der Brennweite über Linsengleichung.}
+\subsection{Bestimmung der Brennweite über die Linsengleichung.}
 \label{sec:1}
 Die gemessenen Werte  der Gegenstandsweite $g$ und der Bildweite $b$  sind
 in der Tabelle \ref{tab:1} und \ref{tab:2} aufgeliste.
@@ -104,10 +104,19 @@ Die zuvermessene Linse besitzt lauf Herstellerangaben eine Brennweite von:
 \end{align*}
 Die Tabelle \ref{tab:bessel} enthält die Messwerte für die Messung mit der Bessel Methode.
 Die Brennweite $f$ errechnet sich bei dieser Methode mit Hilfe der Formel \ref{eqn:bessel}.
+\begin{align}
+    f=\frac{e^2-d^2}{4e}\label{eqn:bessel}
+\end{align}
+\begin{align*}
+    \intertext{Dabei ist $e$ der Abstand zwischen Gegenstand und Schirm und
+    $d$ der Abstand zwischen den beiden linsen und es gilt:}
+    e=g_x+b_x\\
+    d=|g_x-b_x|
+\end{align*}
 \begin{table}
     \centering
     \caption{Messwerte die mit Hilfe der Methode von Bessel aufgenommen worden sind
-    und die Brennweiten $f$ die über die Formel \eqref{eqn:Bessel} berechnet werden.}
+    und die Brennweiten $f$ die über die Formel \eqref{eqn:bessel} berechnet werden.}
     \label{tab:bessel}
     \begin{tabular}{c c c c c c c}
     \toprule
@@ -137,7 +146,7 @@ werden wieder gemittelt und es ergibt sich ein $f$ von:
 Die Methode wird nun einmal mit einem  roten und einem blauen Filter durchgeführt.
 Die Messwerte dafür sind für rot in der Tabelle \ref{tab:rot} und für blau
 in der Tabelle \ref{tab:blau} gelistet.
-Die Brennweiten $f$ berechnen sich wieder nach Formel \eqref{eqn:Bessel}.
+Die Brennweiten $f$ berechnen sich wieder nach Formel \eqref{eqn:bessel}.
 
 \begin{table}
     \centering
@@ -180,7 +189,7 @@ Die Brennweiten $f$ berechnen sich wieder nach Formel \eqref{eqn:Bessel}.
 Werden diese Ergebnisse nun gemittel, ergibt sich somit für
 die Linse bei einem rotem Filter eine Brennweite von:
 \begin{align*}
-  f_\mathrm{rot}=(161,81\pm1,84)\si{\milli\meter}
+  f_\mathrm{rot}=(161,81\pm1,84)\si{\milli\meter}\\
 \intertext{Für einem blauen Filter:}
   f_\mathrm{blau}=(161,83\pm1,45)\si{\milli\meter}
 \end{align*}
@@ -193,7 +202,7 @@ aus einer Zerstreuungslinse mit Brennweite
 \intertext{und einer Sammellinse mit Brennweite}
   f=100\si{\milli\meter}
 \intertext{die einen Abstand $d$ von}
-  d=??\si{\milli\meter}
+  d=61\si{\milli\meter}
 \end{align*}
 zusammengeschoben sind.
 Mit diesen Werten und der Formel \eqref{eqn:abbetheo} kann die theoretische
@@ -203,7 +212,7 @@ Brennweite $f_\mathrm{ges}$ des Linsensystems bestimmt werden.
 \end{align}
 Es ergibt sich ein Wert von:
 \begin{align*}
-  f_\mathrm{theo}=??
+  f_\mathrm{theo}=164\si{\milli\meter}
 \end{align*}
 
 In der Tabelle \ref{tab:abbe} sind die Messwerte der Messung nach der Methode von Abbe aufgeliste.
@@ -216,7 +225,7 @@ Der Abbildungsmaßstab $V$ wird aus der Formel \label{eqn:V} berechnet
 \begin{table}
     \centering
     \caption{Messwerte die mit Hilfe der Methode von Bessel mit einem blauen Filteraufgenommen worden sind.}
-    \label{tab:blau}
+    \label{tab:abbe}
     \begin{tabular}{c c c c c c c}
     \toprule
     Bildgröße  & Bildweite &Gegenstandsweite & Abbildungsmaßstab
@@ -260,7 +269,12 @@ $(1+V)$ aufgetragen, siehe Abbildung\ref{fig:Plotb'}.
 \FloatBarrier
 
 Es wird nun eine lineare Ausgleichsrechnung mit den Messwerte durchgeführt.
-Aus den Formeln  \eqref{eqn:abbeg} und \eqref{eqn:abbeb} und den Parameter der
+Aus den Formeln  \eqref{eqn:abbeg} und \eqref{eqn:abbeb}
+\begin{align}
+  g'=g+h=f\cdot \left(1+\frac{1}{V}\right)+h \label{eqn:abbeg}\\
+  b'=b+h'=f\cdot \left(1+V\right)+h' \label{eqn:abbeb}
+\end{align}
+und den Parameter der
 Ausgleichsrechung ergeben sich die folgenden Werte:
 \begin{align*}
 \intertext{Aus der Gerade aus Abblidung \ref{fig:Plotg'} :}
