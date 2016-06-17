@@ -56,9 +56,9 @@ Rnach_DY=Rnach_DY*5e-3
 Rnach_GD=Rnach_GD*5e-3
 
 
-Delta_U_ND=Uvor_ND-Unach_ND
-Delta_U_DY=Uvor_DY-Unach_DY
-Delta_U_GD=Uvor_GD-Unach_GD
+Delta_U_ND=-Uvor_ND+Unach_ND
+Delta_U_DY=-Uvor_DY+Unach_DY
+Delta_U_GD=-Uvor_GD+Unach_GD
 
 
 
@@ -108,7 +108,7 @@ print('Qreal',Q_ND,Q_GD,Q_DY)
 def Fall1(U_br,Q):
     w=2*np.pi*35300
     X=(U_br/100)*(4*l/(w*const.mu_0*(n**2)*Q))*np.sqrt((R**2)+(w**2)*(const.mu_0*(n**2)*F/l)**2)
-    print('\n Test mit Vereinfacherung \n',(4*F*U_br)/(Q*100))
+    #print('\n Test mit Vereinfacherung \n',(4*F*U_br)/(Q*100))
     return X
 
 
@@ -134,25 +134,25 @@ N=2*const.N_A*rho_alle/Mol
 
 theo=Fall3(N,J,gj)
 print('X für theorie',Fall3(N,J,gj))
-print('\n X für ND Fall 1',Fall1(Unach_ND,Q_ND),
+print('\n X für ND Fall 1',Fall1(Delta_U_ND,Q_ND),
 '\n X für ND Fall 2',Fall2(Delta_R_ND,Q_ND),
-'\n X für ND Fall 1 Mittelwert',np.mean(Fall1(Unach_ND,Q_ND)),np.std(Fall1(Unach_ND,Q_ND)),
+'\n X für ND Fall 1 Mittelwert',np.mean(Fall1(Delta_U_ND,Q_ND)),np.std(Fall1(Delta_U_ND,Q_ND)),
 '\n X für ND Fall 2 Mittelwert',np.mean(Fall2(Delta_R_ND,Q_ND)),np.std(Fall2(Delta_R_ND,Q_ND)),
-'\n relative Abweichung fall 1',(theo[0]-np.mean(Fall1(Unach_ND,Q_ND)))/theo[0],
+'\n relative Abweichung fall 1',(theo[0]-np.mean(Fall1(Delta_U_ND,Q_ND)))/theo[0],
 '\n relative Abweichung fall 2',(theo[0]-np.mean(Fall2(Delta_R_ND,Q_ND)))/theo[0],)
 
 
 
-print('\nX für GD Fall 1',Fall1(Unach_GD,Q_GD),
+print('\nX für GD Fall 1',Fall1(Delta_U_GD,Q_GD),
 '\n X für GD Fall 2',Fall2(Delta_R_GD,Q_GD),
-'\n X für GD Fall 1 Mittelwert',np.mean(Fall1(Unach_GD,Q_GD)),np.std(Fall1(Unach_GD,Q_GD)),
-'\n X für ND Fall 2 Mittelwert',np.mean(Fall2(Delta_R_GD,Q_GD)),np.std(Fall2(Delta_R_GD,Q_GD)),
-'\n relative Abweichung fall 1',(theo[1]-np.mean(Fall1(Unach_GD,Q_GD)))/theo[2],
+'\n X für GD Fall 1 Mittelwert',np.mean(Fall1(Delta_U_GD,Q_GD)),np.std(Fall1(Delta_U_GD,Q_GD)),
+'\n X für GD Fall 2 Mittelwert',np.mean(Fall2(Delta_R_GD,Q_GD)),np.std(Fall2(Delta_R_GD,Q_GD)),
+'\n relative Abweichung fall 1',(theo[1]-np.mean(Fall1(Delta_U_GD,Q_GD)))/theo[2],
 '\n relative Abweichung fall 2',(theo[1]-np.mean(Fall2(Delta_R_GD,Q_GD)))/theo[2],)
 
-print('\n X für DY Fall 1',Fall1(Unach_DY,Q_DY),
+print('\n X für DY Fall 1',Fall1(Delta_U_DY,Q_DY),
 '\n X für DY Fall 2',Fall2(Delta_R_DY,Q_DY),
-'\n X für DY Fall 1 Mittelwert',np.mean(Fall1(Unach_DY,Q_DY)),np.std(Fall1(Unach_DY,Q_DY)),
+'\n X für DY Fall 1 Mittelwert',np.mean(Fall1(Delta_U_DY,Q_DY)),np.std(Fall1(Delta_U_DY,Q_DY)),
 '\n X für DY Fall 2 Mittelwert',np.mean(Fall2(Delta_R_DY,Q_DY)),np.std(Fall2(Delta_R_DY,Q_DY)),
-'\n relative Abweichung fall 1',(theo[2]-np.mean(Fall1(Unach_DY,Q_DY)))/theo[2],
+'\n relative Abweichung fall 1',(theo[2]-np.mean(Fall1(Delta_U_DY,Q_DY)))/theo[2],
 '\n relative Abweichung fall 2',(theo[2]-np.mean(Fall2(Delta_R_DY,Q_DY)))/theo[2],)
