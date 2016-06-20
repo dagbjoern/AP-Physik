@@ -1,20 +1,20 @@
 \section{Theorie}
 \label{sec:Theorie}
 Metalle weisen eine Gitterstruktur auf, dieses Ionen-Gitter wird von freien Elektronen, den Leitungselektronen,
-umhüllt. Diese Elektronen unterliegen dem Kraftfeld aller Ionen.
+umhüllt. Diese Elektronen unterliegen dem Kraftfeld aller Ionen im Gitter.
 Damit ein Elektron aus der Metalloberfläche austreten kann, muss, zur Potentialüberwindung, eine
 Austrittsarbeit geleistet werden. Mit Betrachtungen aus der Quantenmechanik ergibt sich, dass
 ein Elektronen mindestens die Energie $\zeta+e_\mathrm{0}\Phi$ aufweisen muss um aus der Metalloberfläche
-austreten zu können. Für die Wahrscheinlichkeit, dass ein Elektron bei einer bestimmten Energie austritt gilt:
+austreten zu können. Für die Wahrscheinlichkeit, dass ein Elektron bei einer bestimmten Energie austritt, gilt:
 \begin{align}
 f(E)\approx e^{\frac{\zeta-E}{kT}}\label{eqn:naeherung}.
 \end{align}
 $T$ beschreibt dabei die Temperatur und $k$ die Boltzmann-Konstante.
 
 \subsection{Hochvakuum-Diode}
-Da freie Elektronen in der Luft mit Gasmolekühlen wechselwirken, wird der Sättigungsstrom im Hochvakuum gemessen.
-Als Apparatur eignet sich eine Hochvakuum-Diode, diese besteht aus einem Glaskörper mit eingeschmolzenem Wolfram
-Draht als Kathode und einer positiv geladenen Anode,die freie Elektronen anzieht.
+Da freie Elektronen in der Luft mit Gasmolekühlen wechselwirken, wird die Messung im Hochvakuum durchgeführt.
+Als Apparatur eignet sich eine Hochvakuum-Diode, diese besteht aus einem Glaskörper mit eingeschmolzenem Wolfram-
+Draht als Kathode und einer positiv geladenen Anode, die die freien Elektronen anzieht.
 Die Apparatur findet sich in Abbildung \ref{fig:aufbau} wieder.
 \begin{figure}
  \centering
@@ -22,8 +22,9 @@ Die Apparatur findet sich in Abbildung \ref{fig:aufbau} wieder.
  \caption{Darstellung und Schaltung einer Hochvakuumsdiode.\cite{sample}}
  \label{fig:aufbau}
  \end{figure}
+ Mit dieser Anordnung lassen sich sogenannte Kennlinien aufnehmen, diese besitzen drei Bereiche mit unterschiedlichen Abhängigkeiten.
 
-\subsection{Sättigungsstrom}
+\subsection{Sättigungsstromdichte}
 Ausgehend von der Formel \eqref{eqn:näherung} und weiteren Betrachtungen ergibt sich
 die Sättigungsstromdichte:
 \begin{align}
@@ -40,7 +41,7 @@ Dies hängt mit der zur Anode hin abnehmenden Raumladungsdichte zusammen, welche
 auf die Feldstärke zwischen Anode und Kathode hat. Die Feldlinien, ausgehend von der Anode, enden
 an den Raumladungselektronen vor der Kathode. Der Diodenstrom fällt somit kleiner aus als erwartet.
 Für den Zusammenhang von Anodenspannung und Anodenstrom im Raumladungsbereich wird die
-Poissonsche Gleichung
+Poissonsche Gleichung:
 \begin{align}
 \Delta V =-\frac{1}{\epsilon_\mathrm{0}}\rho
 \end{align}
@@ -79,9 +80,10 @@ Die die beiden sogenannten Fermi-Oberflächen unterscheiden sich um $e_\mathrm{0
 \begin{align}
 j(V)=j_\mathrm{0}e^{\frac{-e_\mathrm{0}\Phi_\mathrm{A}+e_\mathrm{0}V}{kT}}=\mathrm{const}e^{-\frac{e_\mathrm{0}V}{kT}}\label{eqn:pot}.
 \end{align}
+
 \subsection{Kennlinie}
 Um eine Kennlinie der Hochvakuumsdiode zu erhalten, wird der Anodenstrom gegen das äußere Potential
-aufgetragen. Eine exemplarische Darstellung findet sich in Abbildung ?? wieder.
+aufgetragen. Eine exemplarische Darstellung findet sich in Abbildung \ref{fig:kennlinie} wieder.
 \begin{figure}
  \centering
  \includegraphics[width=0.5\textwidth]{kennlinie.png}
@@ -91,4 +93,4 @@ aufgetragen. Eine exemplarische Darstellung findet sich in Abbildung ?? wieder.
 Es lässt sich erkennen, dass im Anlaufstromgebiet ($V<0$) ein exponentieller zusammenhang
 zwischen $I$ und $V$ besteht. Im Raumladungsgebiet besteht die $V^{\frac{3}{2}}$ Abhängigkeit, diese ist
 allerdings nicht für beliebig hohe Anodenspannungen gültig. Der Anodenstrom strebt mit wachsendem $V$
-einem Sättigungswert entgegen.
+einem Sättigungswert entgegen. 
