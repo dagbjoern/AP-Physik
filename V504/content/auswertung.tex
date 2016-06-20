@@ -3,22 +3,22 @@
 Die Tabelle \ref{tab:1} enthält die Messwerte für die Kennlinienschar
 bei unterschiedlichen Heizströmen $I_{f}$ und Heizspannungen $U_f$.
 \begin{align*}
-\intertext{Messung 1:}  I_f&=2,5\si{\ampere} \ \ \ \ &V_f=6,5\si{\volt}\\
-\intertext{Messung 2:}  I_f&=2,4\si{\ampere} \ \ \ \ &V_f=6,0\si{\volt}\\
-\intertext{Messung 3:}  I_f&=2,3\si{\ampere} \ \ \ \ &V_f=5,5\si{\volt}\\
-\intertext{Messung 4:}  I_f&=2,2\si{\ampere} \ \ \ \ &V_f=5,2\si{\volt}\\
-\intertext{Messung 5:}  I_f&=2,1\si{\ampere} \ \ \ \ &V_f=5,0\si{\volt}
+\intertext{Messung 1:}  I_f&=2,5\si{\ampere} \ \ \ \ &U_f=6,5\si{\volt}.\\
+\intertext{Messung 2:}  I_f&=2,4\si{\ampere} \ \ \ \ &U_f=6,0\si{\volt}.\\
+\intertext{Messung 3:}  I_f&=2,3\si{\ampere} \ \ \ \ &U_f=5,5\si{\volt}.\\
+\intertext{Messung 4:}  I_f&=2,2\si{\ampere} \ \ \ \ &U_f=5,2\si{\volt}.\\
+\intertext{Messung 5:}  I_f&=2,1\si{\ampere} \ \ \ \ &U_f=5,0\si{\volt}.
 \end{align*}
 
 
 \begin{table}
   \centering
-  \caption{.}
+  \caption{Messwerte für die Kennlinienschar.}
   \label{tab:1}
   \begin{tabular}{c c c c c c}
   \toprule
   Anodenspannung &  Messung 1 & Messung 2 & Messung 3 & Messung 4 & Messung 5\\ %\multicolumn{2}{c}{Verhältniss}\\
-  $V/\si{\volt}$ & $I_1/\si{\milli\ampere}$ & $I_2/\si{\milli\ampere}$ &$ I_3/\si{\milli\ampere}$ &$I_4/\si{\milli\ampere}$ & $I_5/\si{\milli\ampere}$\\
+  $U/\si{\volt}$ & $I_1/\si{\milli\ampere}$ & $I_2/\si{\milli\ampere}$ &$ I_3/\si{\milli\ampere}$ &$I_4/\si{\milli\ampere}$ & $I_5/\si{\milli\ampere}$\\
   \midrule
   0   & 0,000 &  0,000 &  0,000 &  0,000 &  0,000    \\
   5   & 0,013 &  0,017 &  0,016 &  0,013 &  0,011\\
@@ -64,7 +64,8 @@ aufgetragen.
 \begin{figure}
  \centering
  \includegraphics[width=0.7\textwidth]{plot1.pdf}
- \caption{Der gemessene Annodenstrom $I$ in Abhängigkeit von der Annodenspannung $U$}
+ \caption{Der gemessene Annodenstrom $I$ in
+ Abhängigkeit von der Annodenspannung $U$.}
  \label{fig:1}
 \end{figure}
 \FloatBarrier
@@ -76,12 +77,12 @@ Die Tabelle \ref{tab:I_s} enthält die entsprechenden Werte für den Sättigungs
 \begin{table}
   \centering
   \caption{Die Sättigungsströme $I_S$ der einzelnen Messungen.}
-  \label{tab:1}
+  \label{tab:I_s}
   \begin{tabular}{c c c c c c}
   \toprule
    &  Messung 1 & Messung 2 & Messung 3 & Messung 4 & Messung 5\\ %\multicolumn{2}{c}{Verhältniss}\\
    \midrule
-  $I_S/\si{\milli\ampere}$ & 3,110 & 2,440  & 1,294 & 0,721 & 0,350?? \\
+  $I_S/\si{\milli\ampere}$ & 3,110 & 2,440  & 1,294 & 0,721 & 0,350\\
   \bottomrule
   \end{tabular}
 \end{table}
@@ -90,7 +91,7 @@ Die Tabelle \ref{tab:I_s} enthält die entsprechenden Werte für den Sättigungs
 Nun wird für die maximale Heizleistung $I_f=2,5\si{\ampere}$
 das Raumladungsgebiet abgeschätzt.
 Dieses lässt sich aus der Abblidung \ref{fig:fitt} abschätzen
-und liegt ungefähr zwischen $0\si{volt}$ und $170\si{\volt}$.
+und liegt ungefähr zwischen $0\si{\volt}$ und $170\si{\volt}$.
 \begin{figure}
  \centering
  \includegraphics[width=0.7\textwidth]{plotfitt.pdf}
@@ -110,8 +111,8 @@ Dabei wird versucht ein Ausgleichsfunktion, der Form
 an die Messwerte aus dem Raumladungsgebiet zu fitten.
 Es ergeben sich die folgenden Koeffizienten:
 \begin{align*}
-a=(9,64\pm0,38)\cdot10^{-10}\si{\ampere\per\volt}
-b=(1,48\pm0,01)
+a&=(9,64\pm0,38)\cdot10^{-10}\si{\ampere\per\volt}\\
+b&=1,48\pm0,01
 \end{align*}
 
 
@@ -179,7 +180,7 @@ wie in Abbildung \ref{fig:log}
  \label{fig:log}
 \end{figure}
 
-Über eine Lineareregression und der Formel \eqref{eqn:Pot}kann die Kathodentemperatur $T$
+Über eine Lineareregression und der Formel \eqref{eqn:pot}kann die Kathodentemperatur $T$
 berechnet werden.
 Es ergeben sich die Folgenden werte:
 \begin{align*}
@@ -194,12 +195,13 @@ T=(2573\pm35)\si{\kelvin}.
 \end{align*}
 
 \subsection{Leistungsbilanz}
-Ebenfalls dann die Kathodentemperatur $T$ auch über die
-Leistungsbilanz der Heizstromkreises berechnen.
+Ebenfalls dann die
+Kathodentemperatur $T$ auch über
+die Leistungsbilanz der Heizstromkreises berechnen.
 Dafür werden die gegebenen Werte in Gleichung \eqref{eqn:leistung}
 eingesetzt und nach $T$ umgestellt.
 \begin{align}
-I_f\cdot U_f=f\eta\sigma T^4- N_{WL} \label{eqn:leistung}
+I_f\cdot U_f=f\cdot\eta\cdot\sigma\cdot T^4- N_{WL} \label{eqn:leistung}
 \end{align}
 Dabei ist $f$ die Kathodenoberfäche
 \begin{align*}
@@ -209,13 +211,31 @@ Dabei ist $f$ die Kathodenoberfäche
 \intertext{$\sigma$ die Stefan-Boltzmannsche Strahlungskonstante}
  \sigma=5,7\cdot10^{-12}\si{\watt\per\centi\meter\tothe{2}\kelvin\tothe{4}},
 \intertext{und $N_{WL}$ die abeschätzte Wärmeleitung der Apparatur}
-N_{WL}=0,9\si{\watt}.
+N_{WL}=(0,95\pm0,05)\si{\watt}.
 \end{align*}
 Es ergibt sich eine Kathodentemperatur von
 \begin{align*}
-  T=2235\si{\kelvin}
+  T=(2235\pm2)\si{\kelvin}
 \end{align*}
 
 \subsection{Austrittsarbeit}
-Aus den berechneten Temperaturenen $T$ und den
-Sättigungsstrom $I_S$ beim höchsten Heizstrom
+Aus den berechneten Temperaturenen $T$ und dem ermittelten
+Sättigungsstrom $I_S$ beim größt möglichen Heizstrom, lässt sich
+durch Umgestellten der Richardson-Gleichung \eqref{eqn:st}
+in die Form \eqref{eqn:umge} die Austrittsarbeit $\Phi$ in $\si{\electronvolt}$
+berechenen. Dafür wir der Zusammenhang
+\begin{align*}
+  j_S=\frac{I_S}{f}.
+\end{align*}
+benötigt.
+\begin{align}
+\Phi=\log\left(\frac{I_S \, \hbar^{3}}{4\pi \, f \, e_0 \, m_0 \, {k}^{2} \, T^2 }\right) \cdot \frac{k \ T}{e_0}\label{eqn:umge}
+\end{align}
+Die über das Anaufstromgebiet ermittelte Austittsarbeit beträtgt:
+\begin{align*}
+  \Phi=(5,52\pm0,08)\si{\electronvolt}.
+\intertext{Über die Werte der Leistungsbilanz folgt:}
+  \Phi=(4,737\pm0,005)\si{\electronvolt}.
+\intertext{Der gemittel Wert der beiden Austrittsarbeiten lautet:}
+  \overline{\Phi}=(5,1\pm0,4)\si{\electronvolt}.
+\end{align*}

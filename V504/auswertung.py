@@ -34,11 +34,11 @@ print(U)
 
 
 plt.figure(1)
-plt.plot(U,I1*1e6,'rx',label=r'$\mathrm{Messwerte \  für \ I=2,5}$')
-plt.plot(U,I2*1e6,'gx',label=r'$\mathrm{Messwerte \  für \ I=2,4}$')
-plt.plot(U,I3*1e6,'bx',label=r'$\mathrm{Messwerte \  für \ I=2,3}$')
-plt.plot(U,I4*1e6,'cx',label=r'$\mathrm{Messwerte \  für \ I=2,2}$')
-plt.plot(U,I5*1e6,'yx',label=r'$\mathrm{Messwerte \  für \ I=2,1}$')
+plt.plot(U,I1*1e6,'rx',label=r'$\mathrm{Messwerte \  für \ I_1}$')
+plt.plot(U,I2*1e6,'gx',label=r'$\mathrm{Messwerte \  für \ I_2}$')
+plt.plot(U,I3*1e6,'bx',label=r'$\mathrm{Messwerte \  für \ I_3}$')
+plt.plot(U,I4*1e6,'cx',label=r'$\mathrm{Messwerte \  für \ I_4}$')
+plt.plot(U,I5*1e6,'yx',label=r'$\mathrm{Messwerte \  für \ I_5}$')
 
 #plt.plot([100,100],[0,100],'b--',label=r'$\mathrm{Theorie}$')
 plt.legend(loc='best')
@@ -120,8 +120,9 @@ print(T)
 f=0.32
 o=5.7e-12
 n=0.28
+n_wl=unp.uarray(0.95,0.05)
 
-T_w=((U1*I1_leucht-0.9)/(f*n*o))**(1/4)
+T_w=((U1*I1_leucht-n_wl)/(f*n*o))**(1/4)
 print('T_w',T_w )
 
 #N_zu
@@ -129,10 +130,12 @@ print('T_w',T_w )
 I_s=3.110
 
 
-Austritt_1=unp.log(I_s*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T**2)))*const.k*T/const.e
+Austritt_1=-unp.log((I_s/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T**2)))*const.k*T/const.e
 
 
-Austritt_2=np.log(I_s*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T_w**2)))*const.k*T_w/const.e
+Austritt_2=-unp.log((I_s/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T_w**2)))*const.k*T_w/const.e
 
 print('Austritt_1',Austritt_1)
 print('Austritt_2',Austritt_2)
+print('Mittelwert normal',np.mean([Austritt_2,Austritt_1]))
+print('Mittelwert np',np.mean([Austritt_2,Austritt_1]),'+-',np.std([noms(Austritt_2),noms(Austritt_1)]))
