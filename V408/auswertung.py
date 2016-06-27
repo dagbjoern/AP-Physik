@@ -33,9 +33,9 @@ print('g/b',g1/b1)
 
 print('über die Linsen Gleichung:')
 print('Messung1: \n',f(b1,g1))
-print('mittelwert: \n', np.mean(f(b1,g1)),'+-',np.std(f(b1,g1)))
+print('mittelwert: \n', np.mean(f(b1,g1)),'+-',stats.sem(f(b1,g1)))
 print('Messung2: \n',f(b2,g2))
-print('mittelwert: \n', np.mean(f(b2,g2)),'+-',np.std(f(b2,g2)))
+print('mittelwert: \n', np.mean(f(b2,g2)),'+-',stats.sem(f(b2,g2)))
 
 
 
@@ -89,12 +89,12 @@ d1=np.abs(b1b-g1b)
 d2=np.abs(b2b-g2b)
 #print(d1,d2,eb)
 
-f_bessel=[f_Bessel(d1,eb),f_Bessel(d2,eb)]
-
+#f_bessel=[f_Bessel(d1,eb),f_Bessel(d2,eb)]
+f_bessel=np.concatenate((f_Bessel(d1,eb),f_Bessel(d2,eb)), axis=0)
 #print('f1_bessel',f_Bessel(d1,eb))
 #print('f2_bessel',f_Bessel(d2,eb))
-
-print('fbessel mittelwert:',np.mean(f_bessel),'+-',np.std(f_bessel))
+print(f_bessel)
+print('fbessel mittelwert:',np.mean(f_bessel),'+-',stats.sem(f_bessel))
 
 
 #rot
@@ -105,12 +105,11 @@ d1rot=np.abs(b1rot-g1rot)
 d2rot=np.abs(b2rot-g2rot)
 #print(d1,d2,eb)
 
-f_bessel_rot=[f_Bessel(d1rot,erot),f_Bessel(d2rot,erot)]
-
+f_bessel_rot=np.concatenate((f_Bessel(d1rot,erot),f_Bessel(d2rot,erot)), axis=0)
 #print('f1_bessel rot' ,f_Bessel(d1rot,erot))
 #print('f2_bessel rot' ,f_Bessel(d2rot,erot))
 
-#print('fbessel rot mittelwert:',np.mean(f_bessel_rot),'+-',np.std(f_bessel_rot))
+print('fbessel rot mittelwert:',np.mean(f_bessel_rot),'+-',stats.sem(f_bessel_rot))
 
 
 b1blau  ,  g1blau   , b2blau ,    g2blau   , eblau= np.genfromtxt('blau.txt',unpack=True)
@@ -119,12 +118,12 @@ d1blau=np.abs(b1blau-g1blau)
 d2blau=np.abs(b2blau-g2blau)
 #print(d1,d2,eb)
 
-f_bessel_blau=[f_Bessel(d1blau,eblau),f_Bessel(d2blau,eblau)]
+f_bessel_blau=np.concatenate((f_Bessel(d1blau,eblau),f_Bessel(d2blau,eblau)), axis=0)
 
 #print('f1_bessel blau',f_Bessel(d1blau,eblau))
 #print('f2_bessel blau',f_Bessel(d2blau,eblau))
 
-#print('fbessel mittelwert blau:',np.mean(f_bessel_blau),'+-',np.std(f_bessel_blau))
+print('fbessel mittelwert blau:',np.mean(f_bessel_blau),'+-',stats.stats.sem(f_bessel_blau))
 
 
 #Methode von abbe

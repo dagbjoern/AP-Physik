@@ -85,11 +85,14 @@ def delta_E(delta_l,l):
     return(const.h*const.c*delta_l/(l**2))/const.e
 
 def o2(delta_E,n,l,z):
-    return(-((delta_E*(n**3)*l*(l+1)/(13.6*const.alpha**2))**(1/4))+z)
+    return(-(((delta_E*(n**3)*l*(l+1))/(13.6*const.alpha**2))**(1/4))+z)
+#
+# print(o2(2.02e-3,))
+
 
 print(lambdamittel(268,268))
 #werte für natrum n
-
+print('............',const.alpha)
 #o2_natrium=32
 #lNmitr=lambdamittel(268,268)
 #d_lNr=delta_lambda(268,268,27)
@@ -120,7 +123,7 @@ n,#quantenzahl
     ,',\n delta s=', delta_s
     ,',\n delta_lambda=',delta_lambda(phi1,phi2,delta_s)
     ,',\n Delta E=',delta_E(d_lXx,lXmitx)
-    ,',\n o2=',o2(d_ENx,l,n,z)
+    ,',\n o2=',o2(d_ENx,n,l,z)
     ,'\n \n \n')
     return()
 alles('natrium','rot',11,27,268,268,1,3)
@@ -133,4 +136,4 @@ alles('kalium','gelb 1',19,91,270.5,270.4,1,4)
 alles('kalium','gelb 2',19,78,270.3,270.2,1,4)
 
 
-alles('rubidium','rot',37,409,267.6,267,1,4)
+alles('rubidium','rot',37,409,267.6,267,1,5)

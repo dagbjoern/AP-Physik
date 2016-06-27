@@ -22,7 +22,7 @@ I3_leucht=2.3
 U4=5.2
 I4_leucht=2.2
 U5=5
-I1_leucht=2.1
+I5_leucht=2.1
 
 I1=I1*1e-6
 I2=I2*1e-6
@@ -122,20 +122,50 @@ o=5.7e-12
 n=0.28
 n_wl=unp.uarray(0.95,0.05)
 
-T_w=((U1*I1_leucht-n_wl)/(f*n*o))**(1/4)
-print('T_w',T_w )
+T_w1=((U1*I1_leucht-n_wl)/(f*n*o))**(1/4)
+T_w2=((U2*I2_leucht-n_wl)/(f*n*o))**(1/4)
+T_w3=((U3*I3_leucht-n_wl)/(f*n*o))**(1/4)
+T_w4=((U4*I4_leucht-n_wl)/(f*n*o))**(1/4)
+T_w5=((U5*I5_leucht-n_wl)/(f*n*o))**(1/4)
+
+
+
+print('T_w1',T_w1 )
+print('T_w2',T_w2 )
+print('T_w3',T_w3 )
+print('T_w4',T_w4 )
+print('T_w5',T_w5 )
+
+
+
+
 
 #N_zu
 
-I_s=3.110
+I_s1=3.110
+I_s2=2.440
+I_s3=1.294
+I_s4=0.721
+I_s5=0.250
 
 
-Austritt_1=-unp.log((I_s/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T**2)))*const.k*T/const.e
+Austritt_1=-unp.log((I_s1/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T_w1**2)))*const.k*T_w1/const.e
+Austritt_2=-unp.log((I_s2/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T_w2**2)))*const.k*T_w2/const.e
+Austritt_3=-unp.log((I_s3/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T_w3**2)))*const.k*T_w3/const.e
+Austritt_4=-unp.log((I_s4/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T_w4**2)))*const.k*T_w4/const.e
+Austritt_5=-unp.log((I_s5/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T_w5**2)))*const.k*T_w5/const.e
 
 
-Austritt_2=-unp.log((I_s/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T_w**2)))*const.k*T_w/const.e
+
+
+#Austritt_Leistung=-unp.log((I_s1/f)*(const.h**3)/(const.e*const.m_e*(const.k**2)*(T_w1**2)))*const.k*T_w1/const.e
 
 print('Austritt_1',Austritt_1)
 print('Austritt_2',Austritt_2)
-print('Mittelwert normal',np.mean([Austritt_2,Austritt_1]))
-print('Mittelwert np',np.mean([Austritt_2,Austritt_1]),'+-',np.std([noms(Austritt_2),noms(Austritt_1)]))
+print('Austritt_3',Austritt_3)
+print('Austritt_4',Austritt_4)
+print('Austritt_5',Austritt_5)
+
+
+print('Mittelwert normal',np.mean([Austritt_1,Austritt_2,Austritt_3,Austritt_4,Austritt_5]),'+-',np.std([noms(Austritt_1),noms(Austritt_2),noms(Austritt_3),noms(Austritt_4),noms(Austritt_5)]))
+#print('Mittelwert np',np.mean([Austritt_2,Austritt_1]),'+-',np.std([noms(Austritt_2),noms(Austritt_1)]))

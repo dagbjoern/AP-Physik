@@ -1,5 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Kennlinien}
 Die Tabelle \ref{tab:1} enthält die Messwerte für die Kennlinienschar
 bei unterschiedlichen Heizströmen $I_{f}$ und Heizspannungen $U_f$.
 \begin{align*}
@@ -104,23 +105,23 @@ Heizleistung. Sowie die Ausgleichsfunktion für das Raumladungsgebiet.}
 Für das Raumladungsgebiet soll der Zusammenhang
 zwischen der Annodenspannung $U$ und dem Annodenstrom $I$ untersucht
 werden.
-Dabei wird versucht ein Ausgleichsfunktion, der Form
+Dabei wird versucht eine Ausgleichsfunktion, der Form
 \begin{align}
   I=a\cdot U^{b},
 \end{align}
 an die Messwerte aus dem Raumladungsgebiet zu fitten.
 Es ergeben sich die folgenden Koeffizienten:
 \begin{align*}
-a&=(9,64\pm0,38)\cdot10^{-10}\si{\ampere\per\volt}\\
-b&=1,48\pm0,01
+a&=(9,64\pm0,38)\cdot10^{-10}\si{\ampere\per\volt},\\
+b&=1,48\pm0,01.
 \end{align*}
 
 
 
 
 \subsection{Anlaufstromgebiet}
-In der Tabelle \ref{tab:2} sind die gemessenen Anlaufström $I_A$
-und die Gegenspannung $U_g$ aufgelistet.
+In der Tabelle \ref{tab:2} sind die gemessenen Anlaufströme $I_A$
+und die Gegenspannungen $U_g$ aufgelistet.
 Um nun mit Hilfe einer Ausgleichsfunktion die Kathodentemperatur $T$
 zu berechnen, muss der Spannungsverlust
 \begin{align*}
@@ -128,7 +129,7 @@ zu berechnen, muss der Spannungsverlust
 \end{align*}
 and dem nA-Meter, welches einen Innenwiederstand $R_i=1\si{\mega\ohm}$ besitzt,
 berücksichtigt werden.
-Die Korriegierte Spannung $U_k$ ergibt sich somit aus
+Die korriegierte Spannung $U_k$ ergibt sich somit aus
 \begin{align}
 U_k=U_g-R_i\cdot I_A \label{eqn:U_k}
 \end{align}
@@ -170,7 +171,7 @@ und ist ebenfalls in der Tabelle \ref{tab:2} enthalten.
 %
 Wird nun der Strom $I_A$ halblogarithmisch gegen
 die korriegierte Gegenspannung $U_k$ aufgetragen
-wie in Abbildung \ref{fig:log}
+wie in Abbildung \ref{fig:log} zu sehen.
 
 \begin{figure}
  \centering
@@ -180,28 +181,28 @@ wie in Abbildung \ref{fig:log}
  \label{fig:log}
 \end{figure}
 
-Über eine Lineareregression und der Formel \eqref{eqn:pot}kann die Kathodentemperatur $T$
+Über eine Lineareregression und die Formel \eqref{eqn:pot} kann die Kathodentemperatur $T$
 berechnet werden.
 Es ergeben sich die Folgenden werte:
 \begin{align*}
 m=-4,51\pm0,06\\
 b=-18,62\pm0,03
 \intertext{Die Steigung $m$ entspricht dabei}
-  m=-\frac{e_0}{k\cdot T}.
+  m&=-\frac{e_0}{k\cdot T}.
 \intertext{Daraus folgt}
-T=-\frac{e_0}{k\cdot m}.
+T&=-\frac{e_0}{k\cdot m}.
 \intertext{Somit beträgt die Kathodentemperatur}
-T=(2573\pm35)\si{\kelvin}.
+T&=(2573\pm35)\si{\kelvin}.
 \end{align*}
 
 \subsection{Leistungsbilanz}
 Ebenfalls dann die
 Kathodentemperatur $T$ auch über
-die Leistungsbilanz der Heizstromkreises berechnen.
+die Leistungsbilanz des Heizstromkreises berechnet werden.
 Dafür werden die gegebenen Werte in Gleichung \eqref{eqn:leistung}
 eingesetzt und nach $T$ umgestellt.
 \begin{align}
-I_f\cdot U_f=f\cdot\eta\cdot\sigma\cdot T^4- N_{WL} \label{eqn:leistung}
+I_f\cdot U_f=f\cdot\eta\cdot\sigma\cdot T^4- N_{WL}. \label{eqn:leistung}
 \end{align}
 Dabei ist $f$ die Kathodenoberfäche
 \begin{align*}
@@ -210,32 +211,58 @@ Dabei ist $f$ die Kathodenoberfäche
   \eta=0,28,
 \intertext{$\sigma$ die Stefan-Boltzmannsche Strahlungskonstante}
  \sigma=5,7\cdot10^{-12}\si{\watt\per\centi\meter\tothe{2}\kelvin\tothe{4}},
-\intertext{und $N_{WL}$ die abeschätzte Wärmeleitung der Apparatur}
+\intertext{und $N_{WL}$ die abgeschätzte Wärmeleitung der Apparatur}
 N_{WL}=(0,95\pm0,05)\si{\watt}.
 \end{align*}
-Es ergibt sich eine Kathodentemperatur von
-\begin{align*}
-  T=(2235\pm2)\si{\kelvin}
-\end{align*}
+In der Tabelle \ref{tab:temp} sind die Temperaturen für die unterschiedlichen
+Heizströme $I_{f}$ und Heizspannungen $U_f$
+aufgelistete.
+
+
+\begin{table}
+  \centering
+  \caption{Die berechnenten Kathoden Temperaturen aus der Leistungsbilanz.}
+  \label{tab:temp}
+  \begin{tabular}{c c c c c c}
+  \toprule
+   & Messung 1  & Messung 2 &  Messung 3  & Messung 4 & Messung5\\ %\multicolumn{2}{c}{Verhältniss}\\
+   \midrule
+   $T/\si{\kelvin}$&  2340\pm2 &  2265\pm2  & 2188\pm2  &2129\pm3 &  2080\pm3\\
+   \bottomrule
+ \end{tabular}
+\end{table}
+
 
 \subsection{Austrittsarbeit}
-Aus den berechneten Temperaturenen $T$ und dem ermittelten
-Sättigungsstrom $I_S$ beim größt möglichen Heizstrom, lässt sich
-durch Umgestellten der Richardson-Gleichung \eqref{eqn:st}
-in die Form \eqref{eqn:umge} die Austrittsarbeit $\Phi$ in $\si{\electronvolt}$
+Aus den berechneten Temperaturenen $T$ aus der Leistungsbilanz und den ermittelten
+Sättigungsströmen $I_S$ bei den unterschiedlichen Heizströmen, lässt sich
+durch Umgestellten der Richardson-Gleichung \eqref{eqn:st},
+in die Form \eqref{eqn:umge}, die Austrittsarbeit $\Phi$ in $\si{\electronvolt}$
 berechenen. Dafür wir der Zusammenhang
 \begin{align*}
-  j_S=\frac{I_S}{f}.
+  j_S=\frac{I_S}{f}
 \end{align*}
-benötigt.
+benötigt. Somit ergibt sich
 \begin{align}
-\Phi=\log\left(\frac{I_S \, \hbar^{3}}{4\pi \, f \, e_0 \, m_0 \, {k}^{2} \, T^2 }\right) \cdot \frac{k \ T}{e_0}\label{eqn:umge}
+\Phi=\log\left(\frac{I_S \, \hbar^{3}}{4\pi \, f \, e_0 \, m_0 \, {k}^{2} \, T^2 }\right) \cdot \frac{k \ T}{e_0}.\label{eqn:umge}
 \end{align}
-Die über das Anaufstromgebiet ermittelte Austittsarbeit beträtgt:
+Die Tabelle \ref{tab:phi} enthält die
+
+
+\begin{table}
+  \centering
+  \caption{Die berechnenten Austrittsarbeiten $\Phi$ für die unterschiedlichen Messungen.}
+  \label{tab:phi}
+  \begin{tabular}{c c c c c c}
+  \toprule
+   & Messung 1  & Messung 2 &  Messung 3  & Messung 4 & Messung5\\ %\multicolumn{2}{c}{Verhältniss}\\
+   \midrule
+   $\Phi/\si{\electronvolt}$ &  4,982\pm0,004 &   4,858\pm0,005 & 4,798\pm0,006  &4,767\pm0,006 &  4,837\pm0,007 \\
+   \bottomrule
+ \end{tabular}
+\end{table}
+
+Der gemittelte Wert für die Austrittsarbeiten aus der Tabelle \ref{tab:phi} lautet:
 \begin{align*}
-  \Phi=(5,52\pm0,08)\si{\electronvolt}.
-\intertext{Über die Werte der Leistungsbilanz folgt:}
-  \Phi=(4,737\pm0,005)\si{\electronvolt}.
-\intertext{Der gemittel Wert der beiden Austrittsarbeiten lautet:}
-  \overline{\Phi}=(5,1\pm0,4)\si{\electronvolt}.
+  \overline{\Phi}=(4,,85\pm0,07)\si{\electronvolt}.
 \end{align*}
