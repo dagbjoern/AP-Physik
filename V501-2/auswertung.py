@@ -178,7 +178,7 @@ def f(D):
 def B(I):
     n=20
     r=0.282
-    return(const.mu_0*2*(125**(-0.5))*n*I/r)
+    return(const.mu_0*8*(125**(-0.5))*n*I/r)
 
 
 
@@ -204,12 +204,23 @@ B55=unp.uarray(b55,fehler_b(std55,B(I5)))
 
 
 Mges2=unp.uarray([m11,m22,m33,m44,m55],[stds(M11),stds(M22),stds(M33),stds(M44),stds(M55)])
+Bges2=unp.uarray([b11,b22,b33,b44,b55],[stds(B11),stds(B22),stds(B33),stds(B44),stds(B55)])
+
+
+
+
+print('M11',M11)
+print('M22',M22)
+print('M33',M33)
+print('M44',M44)
+print('M55',M55)
 
 
 
 
 
-x_I=np.linspace(0,0.00005)
+
+x_I=np.linspace(0,0.0002)
 
 plt.figure(4)
 plt.plot(B(I1),noms(f(D_I1)),'rx',label=r'$\mathrm{Messwerte \  für \ U_b=250\mathrm{V}}$')
@@ -226,7 +237,7 @@ plt.plot(x_I,m33*x_I+b33,'b-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_B=350
 plt.plot(x_I,m55*x_I+b55,'m-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_B=500V  }$')
 plt.legend(loc='best')
 plt.xlabel(r'$\mathrm{Feldstärke \  B/T}$')
-plt.ylabel(r'$\mathrm{ D/(L^2+D^2)}$')
+plt.ylabel(r'$\mathrm{ D/(L^2+D^2)\ /m}$')
 plt.savefig('plotV5021.pdf')
 
 
@@ -242,16 +253,20 @@ plt.plot(x_I,m22*x_I+b22,'c-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=300
 plt.plot(x_I,m44*x_I+b44,'g-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=400V  }$')
 plt.legend(loc='best')
 plt.xlabel(r'$\mathrm{Flussdichte \  B/T}$')
-plt.ylabel(r'$\mathrm{ D/(L^2+D^2)}$')
+plt.ylabel(r'$\mathrm{ D/(L^2+D^2)\ /m}$')
 plt.savefig('plotV5022.pdf')
 
 def e0_m0(U_B,m):
     return(8*U_B*(m**2))
 
 print('e0/m0',e0_m0(U_bges2,Mges2))
+print('e_0/m_0 mittel', np.mean(e0_m0(U_bges2,Mges2)))
 
 
-I_erde=1.6
+np.savetxt('tabelleB.txt',np.column_stack((U_bges2,Mges2,Bges2,e0_m0(U_bges2,Mges2)  )),fmt='%r',delimiter=' & ')
+
+
+I_erde=0.16
 B_hor=B(I_erde)
 
 print('B_hor',B_hor)
@@ -260,6 +275,10 @@ phi=75*2*np.pi/360
 B_erde=B_hor/np.cos(phi)
 
 print('B_erde',B_erde)
+
+
+
+
 
 #
 #

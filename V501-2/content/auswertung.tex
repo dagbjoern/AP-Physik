@@ -135,7 +135,7 @@ aufgetragen. Dieses ist in der Abbildung \ref{fig:A} zusehen.
 Druch eine lineare Regession wird wieder eine Ausgleichsgerade bestimmt.
 Als Parameter ergeben sich:
 \begin{align*}
-  m&=(0,233\pm0,003)\,\si{\meter},\\
+  m&=(0,323\pm0,003)\,\si{\meter},\\
   b&=(0,5\pm0,1)\cdot10^{-6}\,\si{\meter\per\volt}.
 \end{align*}
 Aus der Formel
@@ -170,7 +170,7 @@ aus der Synchronisationsbedingung
 bestimmt werden.
 Da der Sinusgenerator eine Frequenz
 ungefähr zwischen $80\si{\kilo\hertz}$ und $90\si{\kilo\hertz}$
-ausgibt,kann angenommen werden, dass für $\nu_\mahtrm{Sä_1}$ die Faktoren $m$ und $n$
+ausgibt,kann angenommen werden, dass für $\nu_\mathrm{Sä_1}$ die Faktoren $m$ und $n$
 gleich $1$ sind. Somit lässt sich auch für die anderen Frequenezen $\nu_\mathrm{Sä}$ die Faktoren über
 die Synchronisationsbedingungen abschätzen.
 
@@ -180,12 +180,12 @@ die Synchronisationsbedingungen abschätzen.
   \label{tab:syn}
   \begin{tabular}{c c c c}
 \toprule  %\multicolumn{2}{c}{}
-& $\nu_\mathrm{Sä}/\si{\kilo\hertz}$ & n & m \\
+ &  $ \nu_\mathrm{Sä} / \si{\kilo\hertz} $  n & m \\
 \midrule
-\nu_\mathrm{Sä_1} & 79,39  & 1 & 1 \\
-\nu_\mathrm{Sä_2} & 26,47  & 3 & 1 \\
-\nu_\mathrm{Sä_3} & 19,85  & 4 & 1 \\
-\nu_\mathrm{Sä_4} & 129,57 & $\frac{1}{2}$ & 1\\
+$\nu_\mathrm{Sä_1}$ & 79,39  & 1 & 1 \\
+$\nu_\mathrm{Sä_2}$ & 26,47  & 3 & 1 \\
+$\nu_\mathrm{Sä_3}$ & 19,85  & 4 & 1 \\
+$\nu_\mathrm{Sä_4}$ & 129,57 & $\frac{1}{2}$ & 1\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -269,9 +269,9 @@ in der Form $D/(L^2+D2)$ in Abhängigkeit von $B$.}
 \begin{figure}
  \centering
  \includegraphics[width=0.7\textwidth]{plotV5022.pdf}
- \caption{Die Werte der Tabellen \ref{tab:12}
+ \caption{Die Werte der Tabellen \ref{tab:11}
   in der Form $D/(L^2+D2)$ in Abhängigkeit von $B$.}
- \label{fig:12}
+ \label{fig:22}
 \end{figure}
 
 Wieder wird mit den aufgetragenen Werten
@@ -284,14 +284,15 @@ m=\frac{1}{\sqrt{8\,U_B}}\sqrt{\frac{e_0}{m_0}}\label{eqn:m}
 \end{align}
 entspricht. Um nun die spezifische Ladung zu bestimmen,
  wird die Formel \eqref{eqn:m} nach $e_0/m_0$ umgestellt
-\begin{align*}
-  \frac{e_0}{m_0}=8\,U_B\,m^2\label{eqn:em}
-\end{align*}
+\begin{align}
+  \frac{e_0}{m_0}=8\,U_B\,m^2 \label{eqn:em}
+\end{align}
 und die entsprechenden Steigungen $m$ sowie die
 Beschleunigungsspannungen $U_B$ in die Formel \eqref{eqn:em}
 eingesetzt.
 In der Tabelle \ref{tab:em} sind die Parameter der
-Ausgleichsrechnung bei den unterschiedlichen $U_B$ sowie die berechneten spezifischen Ladungen aus Formel \eqref{eqn:em}
+Ausgleichsrechnung bei den unterschiedlichen $U_B$
+sowie die berechneten spezifischen Ladungen aus Formel \eqref{eqn:em}
 aufgelistet.
 
 
@@ -301,9 +302,13 @@ aufgelistet.
   \label{tab:em}
   \begin{tabular}{c c c c}
   \toprule  %\multicolumn{2}{c}{}
-$U_B/\si{\volt}$ & $m/\si{\per\tesla\per\meter}$ & $b/\si{\per\meter}$ & $\frac{e_0}{m_0}/\si{\coulomb\per\kilo\gram}$ \\
+$U_B/\si{\volt}$ & $m/\si{\per\tesla\per\meter}$ & $b/\si{\per\meter}$ & $\frac{e_0}{m_0}/ \si{\coulomb\per\kilo\gram}\cdot 10^{11}$ \\
   \midrule
-&  &  &   \\
+  250 & 13727\pm315 & 0,07\pm0,03  & 3,77\pm1,73 \\
+  300 & 12346\pm329 & 0,09\pm0,03  & 3,66\pm1,95 \\
+  350 & 11448\pm251 & 0,05\pm0,03  & 3,67\pm1,61 \\
+  400 & 11170\pm202 & 0,03\pm0,02  & 3,99\pm1,44 \\
+  500 & 10524\pm78  & 0,01\pm0,01  & 4,43\pm0,66 \\
 %\multicolumn{2}{c}{}
 \bottomrule
 \end{tabular}
@@ -314,7 +319,7 @@ Die berechneten Werte aus Tabelle \ref{tab:em}
 für die spezifische Ladung des Elektron werden gemittelt
 und des ergibt sich ein Wert von:
 \begin{align*}
-\overline{\frac{e_0}{m_0}}=.
+\overline{\frac{e_0}{m_0}}=3,90\cdot 10^{11}\,\si{\coulomb\per\kilo\gram},.
 \end{align*}
 
 
@@ -329,19 +334,19 @@ von dem Spulenfeld $B_\mathrm{Spule} $ kompensiert wird in die
 Gleichung \eqref{eqn:b} eigesetzt.
 Es gilt somit:
 \begin{align*}
-|B_\mathrm{hor}|=|B_\mathrm{Spule}|=... .
+|B_\mathrm{hor}|=|B_\mathrm{Spule}|=10,2\si{\micro\tesla} .
 \end{align*}
 Für die Gesamtintensität $B_\mathrm{total}$
 wird der gemessene Inklinationswinkel
 \begin{align*}
-  \phi=
+  \phi=75\,\si{\degree}
 \end{align*}
-und B_\mathrm{hor} in die Formel \eqref{eqn:total}
-\begin{align}
-  B_\mathrm{total}=\frac{B_\mahtrm{hor}}{\cos{phi}}\label{eqn:total}
-\end{align}
+und $B_\mathrm{hor}$ in die Formel \eqref{eqn:total}
+\begin{equation}
+ B_\mathrm{total}=\frac{B_\mathrm{hor}}{\cos(\phi)} \label{eqn:total}
+\end{equation}
 eingesetzt.
 Es ergibt sich eine Gesamtintensität von:
 \begin{align*}
-  B_\mathrm{total}=..
+  B_\mathrm{total}=39,4\si{\micro\tesla}.
 \end{align*}
