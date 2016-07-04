@@ -1,0 +1,246 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+Die Tabelle \ref{tab:1} enthält die Messwerte
+der Bremsspannung $U$ bei einem bestimmten Photostrom $I$
+für verschiedene Wellenlängen.
+
+
+\begin{table}
+  \centering
+  \caption{Die Messwerten von Photostrom $I_\mathrm{ph}$ Bremsspannung $U$
+   für unterschiedlichen Wellenlängen.}
+  \label{tab:1}
+  \begin{tabular}{c | c c c c c}
+  \toprule  %\multicolumn{2}{c}{}
+  Photostrom  & $\lambda=578\,\si{\nano\meter}$ & $\lambda=546\,\si{\nano\meter}$ & $\lambda=492\,\si{\nano\meter}$ & $\lambda=435\,\si{\nano\meter}$ & $\lambda=405\,\si{\nano\meter}$ \\
+$I/\si{\pico\ampere}$  & $U_\mathrm{gelb}/\si{\volt}$ & $U_\mathrm{grün}/\si{\volt}$ & $U_\mathrm{blaugrün}/\si{\volt}$ & $ U_\mathrm{violett_1}/\si{\volt}$ & $ U_\mathrm{violett_2}/\si{\volt}$ \\
+  \midrule
+  0   &   0,45  &  0,542  &  0,82   &  0,980  &   1,054 \\
+  2   &   0,413 &  0,527  &  0,628  &  0,970  &   1,040 \\
+  4   &   0,394 &  0,517  &  0,507  &  0,962  &   1,025 \\
+  6   &   0,371 &  0,507  &  0,387  &  0,953  &   1,012 \\
+  8   &   0,353 &  0,496  &  0,304  &  0,937  &   0,994 \\
+  10  &   0,344 &  0,489  &  0,239  &  0,933  &   0,984 \\
+  12  &   0,330 &  0,479  &  0,180  &  0,935  &   0,975 \\
+  14  &   0,314 &  0,469  &  0,103  &  0,922  &   0,962 \\
+  16  &   0,301 &  0,463  &  0,010  &  0,916  &   0,951 \\
+  18  &   0,291 &  0,455  &  -      &  0,902  &   0,937 \\
+  20  &   0,284 &  0,447  &  -      &  0,903  &   0,952 \\
+%\multicolumn{2}{c}{}
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+
+
+Die Werte aus der Tabelle \ref{tab:1} werden nun in der
+Form $\sqrt{I}$ in Abhängigkeit von U aufgetragen,
+wie in Abbildung \ref{fig:1} zu sehen.
+
+
+\begin{figure}
+\centering
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[height=5.70cm]{plotV500aGelb.pdf}
+\caption{Gelbes Licht $\lambda=577\,\si{\nano\meter}$.}
+\label{fig:ge}
+\end{subfigure}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[height=5.70cm]{plotV500aGrun.pdf}
+\caption{Grünes Licht $\lambda=546\,\si{\nano\meter}$.}
+\label{fig:gr}
+\end{subfigure}
+
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[height=5.70cm]{plotV500agrunblau.pdf}
+\caption{Grün-blaues Licht  $\lambda=492\,\si{\nano\meter}$.}
+\label{fig:gb}
+\end{subfigure}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[height=5.70cm]{plotV500aBlau.pdf}
+\caption{Violettes Licht $\lambda=435\,\si{\nano\meter}$.}
+\label{fig:v1}
+\end{subfigure}
+
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[height=5.70cm]{plotV500aviolett.pdf}
+\caption{Violettes Licht $\lambda=405\,\si{\nano\meter}$.}
+\label{fig:v2}
+\end{subfigure}
+
+\caption{Die Abbildungen \subref{fig:ge}-\subref{fig:v2} enthalten die
+Messwerte, für das jeweilige Licht aus der Tabelle \ref{tab:1}. Diese sind in der Form
+$\sqrt{I}$ gegen $U$ aufgetragen.}
+\label{fig:1}
+\end{figure}
+
+
+
+
+Für die Messwerte für die unterschiedlichen Wellenlängen werden
+nun mit Hilfe eines lineraren Fit eine Ausgleichsgerade bestimmt.
+Um nun $U_g$ für die unterschiedlichen Wellenlängen zu bestimmen,
+werden die Nullstellen der verschiedenen Ausgleichsgeraden mit der Formel \eqref{eqn:Ug}
+\begin{align}
+  U_g=-\frac{b}{m}\label{eqn:Ug}
+\end{align}
+bestimmt.
+Die berechneten Werte aus dem linearen Fit und für $U_g$ aus der Formel
+\eqref{eqn:Ug} sind in der Tabelle \ref{tab:Ug} aufgelistet.
+Desweiteren wird die Frequenz $\nu$ für die Wellenlängen $\lambda$ über die Formel \eqref{eqn:nu}
+\begin{align}
+ \nu=\frac{c}{\lambda}\label{eqn:nu}
+\end{align}
+berechenet. Die Frequenzen sind ebenfalls in der Tabelle \ref{tab:Ug} zu finden.
+
+
+
+\begin{table}
+  \centering
+  \caption{Die berechneten Werte aus dem linearen Fit und für $U_g$.}
+  \label{tab:2}
+  \begin{tabular}{c c c c c}
+  \toprule  %\multicolumn{2}{c}{}
+  $\lambda\,\si{\nano\meter}$ & $\nu/\si{\tera\mathrm{h}ertz}$& $m/\si{\per\micro\volt}$  & $b/10^{-6}$ & $U_g/\si{\volt}$      \\
+  \midrule
+  578 & 520 & -25,2\pm1,0 & 11,7\pm0,4 & 0,464\pm0.024\\
+  546 & 549 & -42,8\pm3,1 & 23,9\pm1,5 & 0,558\pm0.053\\
+  492 & 609 &  -4,8\pm0,2 &  4,3\pm0,1 & 0,884\pm0.049\\
+  435 & 689 & -49,6\pm4,5 & 49,4\pm4,2 & 0,996\pm0.124\\
+  405 & 740 & -33,6\pm2.8 & 36,2\pm2,8 & 1,076\pm0.123\\
+%\multicolumn{2}{c}{}
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+
+In dem Diagramm \ref{fig:e/h} wird die Gegenspannung $U_g$ gegen die Lichtfrequenz $\nu$
+aufgetragen.
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.7\textwidth]{plotV500b.pdf}
+ \caption{Die Messwerte der Tabelle \ref{tab:2} in der Form
+ $U_g$ gegen $\nu$ aufgetragen.}
+ \label{fig:e/h}
+\end{figure}
+
+Wieder wird eine linearer Fit durchgeführt, der
+ebenfalls in Abbildung \ref{fig:e/h} enthalten ist.
+Aus der umgestellten Gleichung \eqref{eqn:??}
+\begin{align}
+U_g=\frac{\mathrm{h}}{\mathrm{e_0}}\cdot\nu - \frac{A_k}{\mathrm{e_0}}
+\end{align}
+kann entnommen werden, dass
+es sich bei der ermittelten Steigung
+\begin{align*}
+m&=(2,8\pm0,5)\si{\volt\second}\cdot10^{-15}
+\intertext{um das gesuchten Verhältnis $\mathrm{h/e_0}$ handelt.
+Desweiteren ist der bestimmte y-Achsenabschitt}
+b&=-(0,95\pm0,28)\si{\volt}
+\intertext{die negative Austrittsarbeit in $\si{\electronvolt}$, also folgt:}
+\frac{\mathrm{h}}{\mathrm{e_0}}&=(2,8\pm0,5)\si{\volt\second}\cdot10^{-15}\\
+A_k&=(0,95\pm0,28)\si{\electronvolt}.
+\end{align*}
+
+Die folgende Tabelle \ref{tab:speck} enthält für die Wellenlänge $\lambda=578$
+die Messwerte für den Photostrom $I$ bei einer Spannung $U$ zwischen $-20\si{\volt}$ und
+$20\si{\volt}$. Die negative Spannung entspricht dabei einer Gegenspannung und
+die positive einer Beschleunigungsspannung.
+\begin{center}
+\begin{longtable}{c c}
+  \caption{Die Messwerte des Photostroms $I$ bei $\lambda=578$ und bei einer Spannung $U$ zwischen $-20\si{\volt}$ und
+  $20\si{\volt}$.}
+  \label{tab:2}\\
+  \toprule
+  $U/\si{\volt}$ & $I/\si{\pico\ampere}$      \\
+  \midrule
+  \endfirsthead
+  \toprule
+  $U/\si{\volt}$ & $I/\si{\pico\ampere}$      \\
+  \midrule
+  \endhead
+  \bottomrule
+  \endfoot
+  -19  &  -17\\
+  -18  &  -17\\
+  -17  &  -16\\
+  -16  &  -16\\
+  -15  &  -15\\
+  -14  &  -12\\
+  -13  &  -12\\
+  -12  &  -12\\
+  -11  &  -11\\
+  -10  & -12\\
+  -9   & -11\\
+  -8   & -10\\
+  -7   & -10\\
+  -6   & -9\\
+  -5   & -9\\
+  -4   & -8\\
+  -3   & -7\\
+  -2   & -7\\
+  -1.8 & -6\\
+  -1.6 &  -6\\
+  -1.4 &  -6\\
+  -1.2 &  -6\\
+  -1.0 &  -5\\
+  -0.8 &  -4\\
+  -0.6 &  -3\\
+  -0.4 &   1\\
+  -0.3 &   8\\
+  -0.2 &   20\\
+  -0.1 &   31\\
+  0    &   46\\
+  0.1  &   57\\
+  0.2  &   65\\
+  0.3  &   70\\
+  0.4  &   80\\
+  0.6  &   90\\
+  0.8  &   96\\
+  1.0  &  120\\
+  1.2  &  140\\
+  1.4  &  150\\
+  1.6 &  160\\
+  1.8 &  180\\
+  2   &  190\\
+
+  3   &  280\\
+  4   &  330\\
+  5   &  380\\
+  6   &  400\\
+  7   &  400\\
+  8   &  460\\
+  9   &  480\\
+  10  &  500\\
+  11  &  490\\
+  12  &  540\\
+  13  &  550\\
+  14  &  540\\
+  15  &  570\\
+  16  &  660\\
+  17  &  620\\
+  18  &  580\\
+  19  &  620\\
+% multicolumn{2}{c}{}
+\end{longtable}
+\end{center}
+
+Der Photostrom aus der Tabelle\ref{tab:speck} wird nun in der Abbildung \ref{fig:speck} gegen
+die Spannung $U$ aufgetragen.
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.7\textwidth]{plotV500c.pdf}
+ \caption{Die Messwerte der Tabelle \ref{tab:speck} in der Form
+ $I$ gegen $U$ aufgetragen.}
+ \label{fig:speck}
+\end{figure}

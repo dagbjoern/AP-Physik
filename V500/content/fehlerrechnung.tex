@@ -1,0 +1,48 @@
+\newpage
+\section{Fehlerrechnung}
+\label{sec:Fehlerrechnung}
+Die Mittelwerte bestimmen sich in der Auswertung nach:
+\begin{align}
+  \bar{x}=\frac{1}{n} \sum_{i=1}^n x_i\,.
+\end{align}
+Für die Standardabweichung ergibt sich:
+\begin{align}
+ s_i=\sqrt{\frac{1}{n-1}\sum_{j=1}^n (v_j-\bar{v_i})^2}
+\end{align}
+mit $v_j$ mit $j=1,..,n$ als Wert mit zufällig behafteten Fehlern.\\
+Diese werden mit Hilfe von
+Numpy 1.9.2, einer Erweiterung von Python 3.2.0, berechnet.
+Die Fehlerfortpflanzung wird mit der Gauß´schen Fehlerfortpflanzung berechnet
+ \eqref{eqn:gaus}.
+\begin{equation}
+\Delta f=\sqrt{\sum_{j=1}^n \left(\frac{\partial f}{\partial x_j}\Delta x_j \right)^{2} }\label{eqn:gaus}.
+\end{equation}
+Diese wird von der Erweiterung Uncertainties 2.4.6.1 von Python 3.2.0 übernommen.
+Desweitern wird in der Auswertung eine Lineare Regression benutzt,
+um die Konstanten m und b aus einen Gleichung der Form
+\begin{align}
+  y(x)=&m\cdot x + b\label{eqn:lin}
+\intertext{zu berechnen. m errechnet sich hierbei aus der Formel}
+m&=\frac{\overline{xy}-\overline{x}\cdot \overline{y}}{\overline{x^2}-\overline{x}^2}.
+\intertext{und b durch die Geleichung }\\
+b&=\overline{y}-m\cdot \overline{x}\,.\\
+\intertext{Die Ungenauigkeit von m und b ergibt sich aus der
+mittleren Streuung:}\\
+s_{\mathrm{y}}&=\sqrt{\frac{1}{N-2}\cdot \sum_{i=1}^{N}\left(y_i-b-m\cdot x_i\right)^2}\,.\\
+\intertext{Für die Ungenauigkeit von m gilt:}\\
+s_{\mathrm{m}}&=s_{\mathrm{y}} \cdot \sqrt{\frac{1}{N \cdot \left(\overline{x^2}-\left(\overline{x}\right)^2\right)}}\,.\\
+\intertext{Für die Ungenauigkeit von b gilt:}\\
+s_{\mathrm{b}}&=s_{\mathrm{m}} \cdot\sqrt{\overline{x^2}}\,.
+\end{align}
+Für die Lineare Regression wird die Erweiterung Scipy 0.15.1 für Python 3.2.0
+benutzt.
+Für andere Fits wird die Funktion curve$\_$fit, die ebenfalls in der
+Erweiterung Scipy enthalten, ist genutzt.
+
+Abweichungen von den Theoriewerten werden mit der Formel
+\begin{align}
+  a=\frac{|a_\mathrm{gemessen}-a_\mathrm{theorie}|}{a_\mathrm{theorie}} \label{eqn:abweich}
+\end{align}
+berechnet.
+
+\newpage
