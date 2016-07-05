@@ -21,7 +21,7 @@ die Quelle im Unendlichen und damit werden alle Strahlen unter dem gleichen Wink
 Da die Frauenhofer-Beugung mathematisch einfacher zu handhaben ist, wird diese mittels Laser realisiert.
 Eine weitere Vereinfachung ist die Länge des Spaltes größer gegenüber seiner Breite, damit entsteht nur
 in einer Dimension Beugung.
-Die Beugungserscheinungen könnnen durch die Kombination aus Huygenschen Prinzip und dem Interferenzprinzip nach Fresnel beschriebeen werden.
+Die Beugungserscheinungen könnnen durch die Kombination aus Huygenschen Prinzip und dem Interferenzprinzip nach Fresnel beschrieben werden.
 Ersteres besagt, dass jeder Punkt einer Wellenfront Ausgangspunkt für eine neue Elementarwelle ist.
 Das Interferenzprinzip sagt aus, dass es zwischen Wellen zur Interferenz kommt und somit eine neue Wellenfront
 entsteht, welche als Einhüllende bezeichnet wird.
@@ -47,7 +47,7 @@ I(\phi)\propto B(\phi)^2 = A_0^2 b^2\left(\frac{\lambda}{\pi b \sin\phi}\right)^
 Für einen Doppelspalt gelten analoge Betrachtungen, da dieser sich aus der Überlagerung zweier Einzelspalte
 mit Breite $b$ und Abstand $s$ zusammensetzt. Es gilt:
 \begin{align}
-I(\phi) \propto B(\phi)^2 = A_0^2*\cos^2\left(\frac{\pi s sin\phi}{\lambda}\right)\cdot\left(\frac{\lambda}{\pi s \sin\phi}\right)^2\cdot\sin^2\left(\frac{\pi b \sin\phi}{\lambda}\right).\label{eqn:dopp}
+I(\phi) \propto B(\phi)^2 = A_0^2\cdot\cos^2\left(\frac{\pi s sin\phi}{\lambda}\right)\cdot\left(\frac{\lambda}{\pi s \sin\phi}\right)^2\cdot\sin^2\left(\frac{\pi b \sin\phi}{\lambda}\right).\label{eqn:dopp}
 \end{align}
 Diese Intensitätsverteilung enthält zusätzlich $cos^2$-Terme.
 \subsection{Fourier-Transformierte}
@@ -55,9 +55,9 @@ Die Amplitudenverteilung lässt sich auch auf allgemeine Weise Berechnen, dazu l
 Fourier-Transformierte der Amplitudenverteilung der einfallenden Welle in der Beugungsebene darstellen.
 Allgemein gilt für eine Fourier-Transformation einer Funktion f(x):
 \begin{align}
-g(\xi)= \int_-\infty^\infty f(x) \cdot e^{ix\xi} \mathrm{d}x.
+g(\xi)= \int_{-\infty}^\infty f(x) \cdot e^{ix\xi} \mathrm{d}x.
 \end{align}
-Am Spalt gilt $f(x)=A_0$, durch  Einsetzen und anschließendes Anwenden der Eulerschen Formle ergibt sich:
+Am Spalt gilt $f(x)=A_0$, durch  Einsetzen und anschließendes Anwenden der Eulerschen Formel ergibt sich:
 \begin{align}
 g(\xi)=\frac{2A_0}{\xi} e^{\frac{i\xi b}{2}}\sin\left(\frac{\xi b}{2}\right).
 \end{align}
