@@ -140,7 +140,7 @@ Ba=unp.uarray(ba,fehler_b(stda,1/Ubges))
 print('ma',Ma)
 print('ba',Ba)
 
-L=143e-3
+L=153.3e-3
 p=19e-3
 d=3.8e-3
 a=(p*L)/(2*d)
@@ -157,7 +157,7 @@ print('U_max sinus',U_max)
 
 #############-B-Feld   #########
 
-
+L=175e-3
 
 U_b11=250
 U_b22=300
@@ -170,7 +170,7 @@ U_bges2=np.array([U_b11,U_b22,U_b33,U_b44,U_b55])
 
 
 def f(D):
-    L=143e-3
+    L=175e-3
     return(D/(L**2 +  D**2))
 
 

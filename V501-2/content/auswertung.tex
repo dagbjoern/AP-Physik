@@ -79,14 +79,6 @@ Der Parameter $m$ ist die gesuchte Empfindlichkeit $D/U_d$.
 
 \begin{figure}
  \centering
- \includegraphics[width=0.7\textwidth]{plotV5011.pdf}
- \caption{Die Messwerte aus der Tabellen \ref{tab:1}-\ref{tab:2} in der Form
- $D$ gegen $U_d$ aufgetragen.}
- \label{fig:2}
-\end{figure}
-
-\begin{figure}
- \centering
  \includegraphics[width=0.7\textwidth]{plotV5012.pdf}
  \caption{Die Messwerte aus der Tabellen \ref{tab:1}-\ref{tab:2} in der Form
  $D$ gegen $U_d$ aufgetragen.}
@@ -149,7 +141,7 @@ $p$ die Länge der Ablenkplatten und $d$ der Abstand zwischen den
 beiden Ablenkplatten.
 Bei diesem Experiment beträgt
 \begin{align*}
-  L&=143\si{\milli\meter},\\
+  L&=153,3\si{\milli\meter},\\
   p&=19\si{\milli\meter},\\
 \shortintertext{und}
   d&=3,8\si{\milli\meter}.
@@ -157,7 +149,7 @@ Bei diesem Experiment beträgt
 Aus diesen Werten ergibt sich eine theoretische Apperaturkonstante
 von
 \begin{align*}
-  a_\mathrm{theo}=357,5\,\si{\milli\meter}.
+  a_\mathrm{theo}=383,3\,\si{\milli\meter}.
 \end{align*}
 
 Für die gemessenen Sychronisationsfrequenzen siehe Tabelle \ref{tab:syn}
@@ -170,27 +162,33 @@ aus der Synchronisationsbedingung
 bestimmt werden.
 Da der Sinusgenerator eine Frequenz
 ungefähr zwischen $80\si{\kilo\hertz}$ und $90\si{\kilo\hertz}$
-ausgibt,kann angenommen werden, dass für $\nu_\mathrm{Sä_1}$ die Faktoren $m$ und $n$
+ausgibt, kann angenommen werden, dass für $\nu_\mathrm{Sä_1}$ die Faktoren $m$ und $n$
 gleich $1$ sind. Somit lässt sich auch für die anderen Frequenezen $\nu_\mathrm{Sä}$ die Faktoren über
-die Synchronisationsbedingungen abschätzen.
-
+die umgestellte Synchronisationsbedingungen  mit $m=1$ und
+ \begin{align*}
+   n=\frac{\nu_{sin}}{\nu_{Sä}}
+ \end{align*}
+ abschätzen.
 \begin{table}
   \centering
   \caption{Die Sychronisationsfrequenzen der Sinusspannung.}
   \label{tab:syn}
-  \begin{tabular}{c c c c}
+  \begin{tabular}{c c c c c}
 \toprule  %\multicolumn{2}{c}{}
- &  $ \nu_\mathrm{Sä} / \si{\kilo\hertz} $  n & m \\
+ &  $ \nu_\mathrm{Sä} / \si{\kilo\hertz} $ & n & m & $n\cdot\nu_{Sä}/\si{\kilo\hertz} (\nu_{sin})$ \\
 \midrule
-$\nu_\mathrm{Sä_1}$ & 79,39  & 1 & 1 \\
-$\nu_\mathrm{Sä_2}$ & 26,47  & 3 & 1 \\
-$\nu_\mathrm{Sä_3}$ & 19,85  & 4 & 1 \\
-$\nu_\mathrm{Sä_4}$ & 129,57 & $\frac{1}{2}$ & 1\\
+$\nu_\mathrm{Sä_1}$ & 79,39  & 1 & 1 &  79,39  \\
+$\nu_\mathrm{Sä_2}$ & 26,47  & 3 & 1 &  79,41  \\
+$\nu_\mathrm{Sä_3}$ & 19,85  & 4 & 1 &  79,40  \\
+$\nu_\mathrm{Sä_4}$ & 129,57 & $\frac{3}{5}$ & 1 & 77,74\\
 \bottomrule
 \end{tabular}
 \end{table}
 \FloatBarrier
-
+Die Ergebnisse für  $\nu_{sin}$ können nun gemittelt werden und es ergibt sich:
+\begin{align*}
+  \nu_{sin}=(78,98\pm0,72)\,\si{\kilo\hertz} 
+\end{align*}
 Des weiteren kann die Amplitude der Sinusspannung bestimmt werden.
 Dafür wird die gemessenen maximale Strahlauslenkung
 \begin{align*}
@@ -203,7 +201,7 @@ U_B=300\,\si{\volt}
 \end{align*}
 in die nach $U_d$ umgestellte Gleichung \eqref{eqn:umge}
 \begin{align}
-U_d=\frac{U_B\,D_max}{a_\mathrm{theo}}\label{eqn:umge}
+U_d=\frac{U_B\,D_{max}}{a_\mathrm{theo}}\label{eqn:umge}
 \end{align}
 eingesetzt.
 Es ergibt sich eine Amplitude von

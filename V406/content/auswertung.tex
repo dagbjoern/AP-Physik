@@ -2,17 +2,20 @@
 \label{sec:Auswertung}
 \subsection{Messung mit Mikrosop}
 Zunächt wird mit einem Mikroskop die Spaltbreite der verwendenten
-Spalte bestimmt:
-\begin{align*}
-  \text{Spalt 1:}  b_1&= 0,083\si{\milli\meter},\\
-  \text{Spalt 2:}  b_2&= 0,125\si{\milli\meter},\\
-  \text{Spalt 3:}  b_3&= 0,375\si{\milli\meter},\\
-\text{Doppelspalt:} \\
-b_\mathrm{doppel}&=0,1875\si{\milli\meter},\\
-\text{Abstand der Spalte}\\
-\text{beim Doppelspalt:}\\
- s_\mathrm{doppel}&=0,4\si{\milli\meter}.\\
-\end{align*}
+Spalte bestimmt. Die gemessenen Werte sind in der Tabelle \ref{tab:cool}
+\begin{table}
+  \centering
+  \caption{Breite der Spalten für die Messung mit dem Mikroskop.}
+  \label{tab:cool}
+  \begin{tabular}{c c c c c}
+    \toprule
+  Spalt 1 & Spalt 2  & Spalt 3 &  \multicolumn{2}{c}{Doppelspalt}\\
+  Spaltbreite  &  Spaltbreite  & Spaltbreite  & Spaltbreite  & Spaltabstand \\
+    \midrule
+   0,083\,\si{\milli\meter}   &  0,125\si{\milli\meter}& 0,375\si{\milli\meter}& 0,1875\si{\milli\meter}& 0,4\si{\milli\meter}\\
+\bottomrule
+\end{tabular}
+\end{table}
 \subsection{Messung über Beugungsfiguren}
 \subsection{Einzelspalt}
 \label{sec:einzel}
@@ -72,7 +75,7 @@ Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\nano\ampere}$ 
 \end{table}
 \FloatBarrier
 Die Messwerte aus Tabelle \ref{tab:spalt1} werden nun
-in der Form $I$ in Abhängigkeit von $phi$
+in der Form $I$ in Abhängigkeit von $\phi$
 aufgetragen.
 Wobei $\phi$ sich durch
 \begin{align*}
@@ -87,8 +90,8 @@ nähren lässt.
   \label{fig:spalt1}
 \end{figure}
 \FloatBarrier
-Nun wird Versuch durch die Formel \eqref{eqn:einzel} an die Messwerte zu fitten.
-Dadurch ergeben sich folgende Parametere.
+Nun wird versucht durch die Formel \eqref{eqn:einzel} an die Messwerte zu fitten.
+Dadurch ergeben sich folgende Parameter.
 \begin{align*}
   A_0&=9,0\pm0,1\\
   \text{Die Spaltbreite:} \ b&=(0,054\pm0,001)\si{\milli\meter}\\
@@ -203,12 +206,12 @@ an die Messwerte gefittet und es ergeben sich die folgenden Paramter.
   A_0&=13,3\pm0,3\\
 \text{Die Spaltbreite:} \ b&=(0,119\pm0,003)\si{\milli\meter}\\
 \\
-\text{Für den 3. Spatl:}\\
+\text{Für den 3. Spalt:}\\
   A_0&=9,8\pm0,3\\
   \text{Die Spaltbreite}\ b&=(0,07\pm0,002)\si{\milli\meter}\\
 \end{align*}
 
-\subsubsection{Doppel-Spalt}
+\subsection{Doppel-Spalt}
 Hierbei wird der Laser an einem Doppel-Spalt gebeugt. Dies Messwerte
 sind in der Tabelle \ref{tab:dopp} zu finden
 nd werden in der Abllidung \ref{fig:dopp} wie in dem Kapitel \ref{sec:einzel} gegen einander aufgetragen.
@@ -280,6 +283,8 @@ Es ergebenden sich die folgenden
 Parameter:
 \begin{align*}
   A_0&=0,00116\pm0,00005\\
-  \text{Für den Abstand der beiden Spalte:} \  s&=(0,458\pm0,004)\si{\milli\meter}\\
-  \text{und die Spaltbreite:} \  b&=(0,068\pm0,005)\si{\milli\meter}\\
+  \intertext{Für den Abstand der beiden Spalte:}
+    s&=(0,458\pm0,004)\si{\milli\meter}\\
+  \intertext{und die Spaltbreite:}
+    b&=(0,068\pm0,005)\si{\milli\meter}\\
 \end{align*}
