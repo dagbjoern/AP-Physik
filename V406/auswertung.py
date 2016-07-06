@@ -53,7 +53,7 @@ I_3=I_3*1e-6-I_dunkelstrom
 phi_3=d_3/L
 
 I_dopp=I_dopp*1e-6-I_dunkelstrom
-#np.savetxt('doppelspaltab.txt',np.column_stack((d_dopp[:49],I_dopp[:49],d_dopp[49:],I_dopp[49:])),fmt='%r',delimiter=' & ')
+#np.savetxt('allespalte.txt',np.column_stack((d_1*1e3,I_1*1e9,I_2*1e6,I_3*1e6)),fmt='%r',delimiter=' & ')
 d_dopp=d_dopp*1e-3
 phi_dopp=d_dopp/L
 

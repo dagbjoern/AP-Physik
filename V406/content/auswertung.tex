@@ -16,10 +16,10 @@ Spalte bestimmt. Die gemessenen Werte sind in der Tabelle \ref{tab:cool}
 \bottomrule
 \end{tabular}
 \end{table}
+
 \subsection{Messung über Beugungsfiguren}
 \subsection{Einzelspalt}
 \label{sec:einzel}
-
 Zu Beginn der Messung der Spaltbreite über die Beugungsfiguren wird der Dunkelstrom vermessen, dieser beträgt:
 \begin{align*}
   I_\mathrm{dunkel}= 0,225\si{\nano\ampere}
@@ -34,47 +34,131 @@ Es wird ein Helium-Neon-Laser verwendet, dieser besitzt eine Wellenlänge $\lamb
   \lambda=633\si{\nano\meter}.
 \end{align*}
 
+In der Tabelle \ref{tab:spalt} sind die gemessen Werte
+für die ersten drei Spalte aufgetragen.
+\newpage
+\begin{center}
+\begin{longtable}{c c c c }
+  \caption{Die Messwerte für die ersten drei Spalte .}
+  \label{tab:spalt}\\
+  \toprule
+      & Spalt 1 & Spalt 2 & Spalt 3\\
+  Abstand $d/\si{\milli\meter}$ & Strom $I/\si{\nano\ampere}$ & Strom $I/\si{\nano\ampere}$   & Strom $I/\si{\nano\ampere}$     \\
+  \midrule
+  \endfirsthead
+  \toprule
+  & Spalt 1 & Spalt 2 & Spalt 3\\
+Abstand $d/\si{\milli\meter}$ & Strom $I/\si{\nano\ampere}$ & Strom $I/\si{\nano\ampere}$   & Strom $I/\si{\nano\ampere}$     \\
+  \midrule
+  \endhead
+  \bottomrule
+  \endfoot
+  0,0 & 254,8  & 2124,8 & 1499,8\\
+  1,0 & 242,3  & 1799,8 &  539,8\\
+  2,0 & 225,31 & 1199,8 &  359,8\\
+  3,0 & 199,8  &  509,8 &  259,8\\
+  4,0 & 162,3  &  149,8 &  219,8\\
+  5,0 & 124,8  &   17,8 &   73,8\\
+  6,0 & 76,0   &   35,8 &   67,8\\
+  7,0 & 52,3   &   60,8 &   53,8\\
+  8,0 & 29,8   &   39,8 &   31,8\\
+  9,0 & 13,8   &   11,8 &   50,8\\
+  10,0 & 4,8   &   05,8 &   22,8\\
+  11,0 & 2,8   &   15,8 &   21,1\\
+  12,0 & 3,4   &   19,8 &   20,3\\
+  13,0 & 5,6   &   11,8 &   13,5\\
+  14,0 & 7,6   &    4,8 &   14,8\\
+  15,0 & 8,8   &    5,6 &    9,5\\
+  16,0 & 8,6   &    8,0 &    7,6\\
+  17,0 & 7,2   &    6,6 &    7,6\\
+  18,0 & 5,4   &    4,3 &    5,5\\
+  19,0 & 3,6   &    2,6 &    6,4\\
+  20,0 & 2,2   &    4,1 &    8,6\\
+  21,0 & 1,4   &    4,5 &    4,0\\
+  22,0 & 1,0   &    2,9 &    6,0\\
+  23,0 & 1,2   &    1,8 &    3,6\\
+  24,0 & 1,4   &    2,2 &    3,2\\
+  25,0 & 1,5   &    2,8 &    3,1\\
+  -1,0 & 219,8 & 2499,8 &  439,8\\
+  -2,0 & 189,8 & 1504,8 &  459,8\\
+  -3,0 & 159,8 &  509,8 &  209,8\\
+  -4,0 & 119,8 &  149,8 &  279,8\\
+  -5,0 & 79,8  &   15,8 &   79,8\\
+  -6,0 & 59,8  &   43,8 &   69,8\\
+  -7,0 & 39,8  &   80,8 &   59,8\\
+  -8,0 & 19,8  &   61,8 &   41,8\\
+  -9,0 & 9,8   &   21,8 &   40,8\\
+  -10,0 & 3,8  &    6,8 &   30,8\\
+  -11,0 & 2,8  &   17,8 &   27,8\\
+  -12,0 & 2,8  &   27,8 &   15,6\\
+  -13,0 & 3,8  &   21,8 &   10,3\\
+  -14,0 & 4,8  &   9,8 &    19,3\\
+  -15,0 & 5,0  &   7,8 &    11,8\\
+  -16,0 & 4,7  &   8,6 &     8,8\\
+  -17,0 & 4,0  &   9,8 &     9,2\\
+  -18,0 & 2,9  &   7,3 &     7,2\\
+  -19,0 & 2,0  &   3,8 &     8,6\\
+  -20,0 & 1,3  &   2,8 &     7,0\\
+  -21,0 & 0,8  &   3,6 &     4,2\\
+  -22,0 & 0,6  &   3,6 &     5,0\\
+  -23,0 & 0,5  &   2,3 &     4,2\\
+  -24,0 & 0,4  &   1,6 &     4,0\\
+  -25,0 & 0,4  &   1,8 &     4,2\\
+  \end{longtable}
+  \end{center}
 
-In der Tabelle \ref{tab:spalt1} sind die gemessen Werte
-des ersten Spaltes aufgetragen.
-\begin{table}
-  \centering
-  \caption{Messwerte des ersten Einzelspalt.}
-  \label{tab:spalt1}
-  \begin{tabular}{c c c c}
-Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\nano\ampere}$ & Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\nano\ampere}$\\
-    \midrule
-     0 & 255,8 & -1   & 219,8\\
-     1 & 242,3 & -2   & 189,8\\
-     2 & 225,3 & -3   & 159,8\\
-     3 & 199,8 & -4   & 119,8\\
-     4 & 162,3 & -5   & 79,8 \\
-     5 & 124,8 & -6   & 59,8 \\
-     6 & 76,0  & -7   & 39,8 \\
-     7 & 52,3  & -8   & 19,8 \\
-     8 & 29,9  & -9   & 9,8  \\
-     9 & 13,8  & -10  & 3,8  \\
-    10 & 4,8   & -11  & 2,7  \\
-    11 & 2,8   & -12  & 2,8  \\
-    12 & 3,4   & -13  & 3,8  \\
-    13 & 5,6   & -14  & 4,8  \\
-    14 & 7,6   & -15  & 5,0  \\
-    15 & 8,8   & -16  & 4,7  \\
-    16 & 8,6   & -17  & 4,0  \\
-    17 & 7,2   & -18  & 2,9  \\
-    18 & 5,4   & -19  & 2,0  \\
-    19 & 3,6   & -20  & 1,3  \\
-    20 & 2,2   & -21  & 0,8  \\
-    21 & 1,4   & -22  & 0,6  \\
-    22 & 1,0   & -23  & 0,5  \\
-    23 & 1,2   & -24  & 0,4  \\
-    24 & 1,4   & -25  & 0,4  \\
-    25 & 1,5   & &           \\
-    \bottomrule
-    \end{tabular}
-\end{table}
-\FloatBarrier
-Die Messwerte aus Tabelle \ref{tab:spalt1} werden nun
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+% \begin{table}
+%   \centering
+%   \caption{Messwerte des ersten Einzelspalt.}
+%   \label{tab:spalt1}
+%   \begin{tabular}{c c c c}
+% Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\nano\ampere}$ & Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\nano\ampere}$\\
+%     \midrule
+%      0 & 255,8 & -1   & 219,8\\
+%      1 & 242,3 & -2   & 189,8\\
+%      2 & 225,3 & -3   & 159,8\\
+%      3 & 199,8 & -4   & 119,8\\
+%      4 & 162,3 & -5   & 79,8 \\
+%      5 & 124,8 & -6   & 59,8 \\
+%      6 & 76,0  & -7   & 39,8 \\
+%      7 & 52,3  & -8   & 19,8 \\
+%      8 & 29,9  & -9   & 9,8  \\
+%      9 & 13,8  & -10  & 3,8  \\
+%     10 & 4,8   & -11  & 2,7  \\
+%     11 & 2,8   & -12  & 2,8  \\
+%     12 & 3,4   & -13  & 3,8  \\
+%     13 & 5,6   & -14  & 4,8  \\
+%     14 & 7,6   & -15  & 5,0  \\
+%     15 & 8,8   & -16  & 4,7  \\
+%     16 & 8,6   & -17  & 4,0  \\
+%     17 & 7,2   & -18  & 2,9  \\
+%     18 & 5,4   & -19  & 2,0  \\
+%     19 & 3,6   & -20  & 1,3  \\
+%     20 & 2,2   & -21  & 0,8  \\
+%     21 & 1,4   & -22  & 0,6  \\
+%     22 & 1,0   & -23  & 0,5  \\
+%     23 & 1,2   & -24  & 0,4  \\
+%     24 & 1,4   & -25  & 0,4  \\
+%     25 & 1,5   & &           \\
+%     \bottomrule
+%     \end{tabular}
+% \end{table}
+% \FloatBarrier
+Die Messwerte aus Tabelle \ref{tab:spalt} werden nun für jeden Spalt
 in der Form $I$ in Abhängigkeit von $\phi$
 aufgetragen.
 Wobei $\phi$ sich durch
@@ -83,6 +167,85 @@ Wobei $\phi$ sich durch
 \end{align*}
 nähren lässt.
 
+In den Abbildung \ref{fig:spalt1}-\ref{fig:spalt3} sind
+die Messwerte des entsprechenden Spaltes wie zuvor beschrieben
+gegen einander aufgetragen.
+%
+% \begin{table}
+%   \centering
+%   \caption{Messwerte des zweiten Einzelspalt.}
+%   \label{tab:spalt2}
+%   \begin{tabular}{c c c c}
+% Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\micro\ampere}$&Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\micro\ampere}$\\
+%   \midrule
+%   0  & 2124,8 & -1  & 2499,8\\
+%   1  & 1799,8 & -2  & 1504,8\\
+%   2  & 1299,8 & -3  & 509,8 \\
+%   3  & 509,8  & -4  & 149,8 \\
+%   4  & 149,8  & -5  & 15,8  \\
+%   5  &  18,8  & -6  & 43,8  \\
+%   6  & 38,8   & -7  & 80,8  \\
+%   7  & 61,8   & -8  & 61,8  \\
+%   8  & 39,8   & -9  & 21,8  \\
+%   9  & 11,8   & -10 & 6,8   \\
+%   10 & 5,8    & -11 & 17,8\\
+%   11 & 15,8   & -12 & 27,8\\
+%   12 & 19,8   & -13 & 21,8\\
+%   13 & 11,8   & -14 & 9,8     \\
+%   14 & 4,8    & -15 & 7,8     \\
+%   15 & 5,6    & -16 & 8,6     \\
+%   16 & 8,0    & -17 & 9,8   \\
+%   17 & 6,6    & -18 & 7,3   \\
+%   18 & 4,3    & -19 & 3,8   \\
+%   19 & 2,6    & -20 & 2,8       \\
+%   20 & 4,1    & -21 & 3,6       \\
+%   21 & 4,5    & -22 & 3,6       \\
+%   22 & 2,9    & -23 & 2,3     \\
+%   23 & 1,8    & -24 & 1,6     \\
+%   24 & 2,2    & -25 & 1,8 \\
+%   25 & 2,8    & &\\
+%   \bottomrule
+%   \end{tabular}
+% \end{table}
+% \FloatBarrier
+% \begin{table}
+%   \centering
+%   \caption{Messwerte des dritten Einzelspalt.}
+%   \label{tab:spalt3}
+%   \begin{tabular}{c c c c}
+% Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\micro\ampere}$&Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\micro\ampere}$\\
+%   \midrule
+%   0  & 1509,8 & -1 & 439,8\\
+%   1  & 539,8  & -2 & 459,8\\
+%   2  & 359,8  & -3 & 209,8\\
+%   3  & 259,8  & -4 & 279,8\\
+%   4  & 219,8  & -5 &  79,8\\
+%   5  & 73,8   & -6 &  69,8\\
+%   6  & 67,8   & -7 &  59,8\\
+%   7  & 53,8   & -8 &  41,8\\
+%   8  & 31,8   & -9 &  40,8\\
+%   9  & 50,8   & -10 & 30,8\\
+%   19 & 22,8   & -11 & 27,8\\
+%   11 & 21,0   & -12 & 15,6\\
+%   12 & 20,3   & -13 & 10,3\\
+%   13 & 13,5   & -14 & 19,3\\
+%   14 & 14,8   & -15 & 11,8\\
+%   15 & 9,5    & -16 &  8,8\\
+%   16 & 7,6    & -17 &  9,2\\
+%   17 & 7,6    & -18 &  7,2\\
+%   18 & 5,4    & -19 &  8,6\\
+%   19 & 6,4    & -20 &  7,0\\
+%   20 & 8,6    & -21 &  4,2\\
+%   21 & 4,0    & -22 &  5,0\\
+%   22 & 6,0    & -23 &  4,2\\
+%   23 & 3,6    & -24 &  4,0\\
+%   24 & 3,2    & -25 &  4,2\\
+%   25 & 3,1    &     &     \\
+%   \bottomrule
+%   \end{tabular}
+% \end{table}
+% \FloatBarrier
+
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{spalt1.pdf}
@@ -90,105 +253,12 @@ nähren lässt.
   \label{fig:spalt1}
 \end{figure}
 \FloatBarrier
-Nun wird versucht durch die Formel \eqref{eqn:einzel} an die Messwerte zu fitten.
-Dadurch ergeben sich folgende Parameter.
-\begin{align*}
-  A_0&=9,0\pm0,1\\
-  \text{Die Spaltbreite:} \ b&=(0,054\pm0,001)\si{\milli\meter}\\
-\end{align*}
-
-Dieses Vorgehen wird nun für zwei weitere Einzelspalte wiederholt.
-Die Tabelle \ref{tab:spalt2} enthält die Messwerte des zweiten Spaltes
-und die Tabelle \ref{tab:spalt3} die des dritten Spaltes.
-
-
-
-
-\begin{table}
-  \centering
-  \caption{Messwerte des zweiten Einzelspalt.}
-  \label{tab:spalt2}
-  \begin{tabular}{c c c c}
-Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\micro\ampere}$&Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\micro\ampere}$\\
-  \midrule
-  0  & 2124,8 & -1  & 2499,8\\
-  1  & 1799,8 & -2  & 1504,8\\
-  2  & 1299,8 & -3  & 509,8 \\
-  3  & 509,8  & -4  & 149,8 \\
-  4  & 149,8  & -5  & 15,8  \\
-  5  &  18,8  & -6  & 43,8  \\
-  6  & 38,8   & -7  & 80,8  \\
-  7  & 61,8   & -8  & 61,8  \\
-  8  & 39,8   & -9  & 21,8  \\
-  9  & 11,8   & -10 & 6,8   \\
-  10 & 5,8    & -11 & 17,8\\
-  11 & 15,8   & -12 & 27,8\\
-  12 & 19,8   & -13 & 21,8\\
-  13 & 11,8   & -14 & 9,8     \\
-  14 & 4,8    & -15 & 7,8     \\
-  15 & 5,6    & -16 & 8,6     \\
-  16 & 8,0    & -17 & 9,8   \\
-  17 & 6,6    & -18 & 7,3   \\
-  18 & 4,3    & -19 & 3,8   \\
-  19 & 2,6    & -20 & 2,8       \\
-  20 & 4,1    & -21 & 3,6       \\
-  21 & 4,5    & -22 & 3,6       \\
-  22 & 2,9    & -23 & 2,3     \\
-  23 & 1,8    & -24 & 1,6     \\
-  24 & 2,2    & -25 & 1,8 \\
-  25 & 2,8    & &\\
-  \bottomrule
-  \end{tabular}
-\end{table}
-\FloatBarrier
-\begin{table}
-  \centering
-  \caption{Messwerte des dritten Einzelspalt.}
-  \label{tab:spalt3}
-  \begin{tabular}{c c c c}
-Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\micro\ampere}$&Abstand $d$/$\si{\milli\meter}$ & Strom $I-I_\mathrm{dunkel}/\si{\micro\ampere}$\\
-  \midrule
-  0  & 1509,8 & -1 & 439,8\\
-  1  & 539,8  & -2 & 459,8\\
-  2  & 359,8  & -3 & 209,8\\
-  3  & 259,8  & -4 & 279,8\\
-  4  & 219,8  & -5 &  79,8\\
-  5  & 73,8   & -6 &  69,8\\
-  6  & 67,8   & -7 &  59,8\\
-  7  & 53,8   & -8 &  41,8\\
-  8  & 31,8   & -9 &  40,8\\
-  9  & 50,8   & -10 & 30,8\\
-  19 & 22,8   & -11 & 27,8\\
-  11 & 21,0   & -12 & 15,6\\
-  12 & 20,3   & -13 & 10,3\\
-  13 & 13,5   & -14 & 19,3\\
-  14 & 14,8   & -15 & 11,8\\
-  15 & 9,5    & -16 &  8,8\\
-  16 & 7,6    & -17 &  9,2\\
-  17 & 7,6    & -18 &  7,2\\
-  18 & 5,4    & -19 &  8,6\\
-  19 & 6,4    & -20 &  7,0\\
-  20 & 8,6    & -21 &  4,2\\
-  21 & 4,0    & -22 &  5,0\\
-  22 & 6,0    & -23 &  4,2\\
-  23 & 3,6    & -24 &  4,0\\
-  24 & 3,2    & -25 &  4,2\\
-  25 & 3,1    &     &     \\
-  \bottomrule
-  \end{tabular}
-\end{table}
-\FloatBarrier
-
-In den Abblidung \ref{fig:spalt2} und \ref{fig:spalt3} sind
-die Messwerte des entsprechenden Spaltes wie zuvor beim Spalt 1 beschrieben
-gegen einander aufgetragen.
-
 
 \begin{figure}
   \centering
   \includegraphics[width=0.7\textwidth]{spalt1.pdf}
   \caption{ Der Strom $I$ in Abhängigkeit von dem Winkel $\phi$ von dem 2. Spalt.}
- \label{fig:spalt2}
+  \label{fig:spalt2}
 \end{figure}
 \FloatBarrier
 
@@ -199,19 +269,22 @@ gegen einander aufgetragen.
   \label{fig:spalt3}
 \end{figure}
 \FloatBarrier
-Ebenfall wird wieder die Funktion \eqref{eqn:einzel}
-an die Messwerte gefittet und es ergeben sich die folgenden Paramter.
+
+Nun wird Versucht durch die Formel \eqref{eqn:einzel} an die Messwerte zu fitten.
+Dadurch ergeben sich folgende Parameter, wobei b die Spaltbreite ist.
 \begin{align*}
-  \text{Für den 2. Spalt :}\\
+  \intertext{Für den ersten Spalt:}
+  A_0&=9,0\pm0,1\\
+ b&=(0,054\pm0,001)\si{\milli\meter}\\
+\intertext{Für den 2. Spalt :}\\
   A_0&=13,3\pm0,3\\
-\text{Die Spaltbreite:} \ b&=(0,119\pm0,003)\si{\milli\meter}\\
-\\
-\text{Für den 3. Spalt:}\\
+ b&=(0,119\pm0,003)\si{\milli\meter}\\
+\intertext{Für den 3. Spalt:}\\
   A_0&=9,8\pm0,3\\
-  \text{Die Spaltbreite}\ b&=(0,07\pm0,002)\si{\milli\meter}\\
+ b&=(0,07\pm0,002)\si{\milli\meter}\\
 \end{align*}
 
-\subsection{Doppel-Spalt}
+\subsubsection{Doppel-Spalt}
 Hierbei wird der Laser an einem Doppel-Spalt gebeugt. Dies Messwerte
 sind in der Tabelle \ref{tab:dopp} zu finden
 nd werden in der Abllidung \ref{fig:dopp} wie in dem Kapitel \ref{sec:einzel} gegen einander aufgetragen.
@@ -283,8 +356,6 @@ Es ergebenden sich die folgenden
 Parameter:
 \begin{align*}
   A_0&=0,00116\pm0,00005\\
-  \intertext{Für den Abstand der beiden Spalte:}
-    s&=(0,458\pm0,004)\si{\milli\meter}\\
-  \intertext{und die Spaltbreite:}
-    b&=(0,068\pm0,005)\si{\milli\meter}\\
+  \intertext{Für den Abstand der beiden Spalte:} \  s&=(0,458\pm0,004)\si{\milli\meter}\\
+  \intertext{und die Spaltbreite:} \  b&=(0,068\pm0,005)\si{\milli\meter}\\
 \end{align*}
