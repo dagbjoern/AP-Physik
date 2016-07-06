@@ -32,6 +32,7 @@ D_U3=D_sonst
 D_I3=unp.uarray(D_sonst,0.002)
 
 D_U4=käst*2.54e-2*(1/8)
+
 D_I4=unp.uarray(käst[:8]*2.54e-2*(1/4),0.002)
 
 D_U5=D_U4
@@ -83,28 +84,33 @@ plt.errorbar(Ud1,D_U1,xerr=0,yerr=0.002, fmt='rx')
 plt.plot(Ud3,D_U3,'yx',label=r'$\mathrm{Messwerte \  für \ U_b=300\mathrm{V}}$')
 plt.errorbar(Ud3,D_U3,xerr=0,yerr=0.002, fmt='yx')
 
-plt.plot(Ud5,D_U5,'bx',label=r'$\mathrm{Messwerte \  für \ U_b=500\mathrm{V}}$')
-plt.errorbar(Ud5,D_U5,xerr=0,yerr=0.002, fmt='bx')
-
 
 plt.plot(x_U,m1*x_U+b1,'r-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=180V  }$')
 
 plt.plot(x_U,m3*x_U+b3,'y-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=300V  }$')
 
-plt.plot(x_U,m5*x_U+b5,'b-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=500V  }$')
 plt.legend(loc='best')
 plt.xlabel(r'$\mathrm{Ablenkspannung \ U_d/V}$')
 plt.ylabel(r'$\mathrm{Verschiebung \ D/m}$')
 plt.savefig('plotV5011.pdf')
 
-plt.figure(2)
+plt.figure(6)
 
+plt.plot(Ud5,D_U5,'bx',label=r'$\mathrm{Messwerte \  für \ U_b=500\mathrm{V}}$')
+plt.errorbar(Ud5,D_U5,xerr=0,yerr=0.002, fmt='bx')
+
+plt.plot(x_U,m5*x_U+b5,'b-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=500V  }$')
+plt.legend(loc='best')
+plt.xlabel(r'$\mathrm{Ablenkspannung \ U_d/V}$')
+plt.ylabel(r'$\mathrm{Verschiebung \ D/m}$')
+plt.savefig('plotV5013.pdf')
+
+
+plt.figure(2)
 plt.plot(Ud2,D_U2,'cx',label=r'$\mathrm{Messwerte \  für \ U_b=250\mathrm{V}}$')
 plt.errorbar(Ud2,D_U2,xerr=0,yerr=0.002, fmt='cx')
-
 plt.plot(Ud4,D_U4,'gx',label=r'$\mathrm{Messwerte \  für \ U_b=400\mathrm{V}}$')
 plt.errorbar(Ud4,D_U4,xerr=0,yerr=0.002, fmt='gx')
-
 plt.plot(x_U,m2*x_U+b2,'c-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=250V  }$')
 plt.plot(x_U,m4*x_U+b4,'g-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=400V  }$')
 plt.legend(loc='best')
@@ -180,6 +186,10 @@ def B(I):
     r=0.282
     return(const.mu_0*8*(125**(-0.5))*n*I/r)
 
+#np.savetxt('tabellewerteB.txt',np.column_stack((B(I1) f(D_I1),Bges2,e0_m0(U_bges2,Mges2)  )),fmt='%r',delimiter=' & ')
+print(I4)
+#print
+#B(I1) f(D_I1)
 
 
 m11 , b11 , r11 ,p11 ,std11 =stats.linregress(B(I1),noms(f(D_I1)))
@@ -229,16 +239,26 @@ plt.errorbar(B(I1),noms(f(D_I1)),xerr=0,yerr=stds(f(D_I1)), fmt='rx')
 plt.plot(B(I3),noms(f(D_I3)),'bx',label=r'$\mathrm{Messwerte \  für \ U_b=350\mathrm{V}}$')
 plt.errorbar(B(I3),noms(f(D_I3)),xerr=0,yerr=stds(f(D_I3)), fmt='bx')
 
+
+plt.plot(x_I,m11*x_I+b11,'r-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_B=250V  }$')
+plt.plot(x_I,m33*x_I+b33,'b-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_B=350V  }$')
+plt.legend(loc='best')
+plt.xlabel(r'$\mathrm{  B/T}$')
+plt.ylabel(r'$\mathrm{ D/(L^2+D^2)\ /m}$')
+plt.savefig('plotV5021.pdf')
+
+
+plt.figure(7)
+
 plt.plot(B(I5),noms(f(D_I5)),'mx',label=r'$\mathrm{Messwerte \  für \ U_b=500\mathrm{V}}$')
 plt.errorbar(B(I5),noms(f(D_I5)),xerr=0,yerr=stds(f(D_I5)), fmt='mx')
 
-plt.plot(x_I,m11*x_I+b11,'r-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U-B=250V  }$')
-plt.plot(x_I,m33*x_I+b33,'b-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_B=350V  }$')
 plt.plot(x_I,m55*x_I+b55,'m-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_B=500V  }$')
 plt.legend(loc='best')
-plt.xlabel(r'$\mathrm{Feldstärke \  B/T}$')
+plt.xlabel(r'$\mathrm{  B/T}$')
 plt.ylabel(r'$\mathrm{ D/(L^2+D^2)\ /m}$')
-plt.savefig('plotV5021.pdf')
+plt.savefig('plotV5023.pdf')
+
 
 
 
@@ -252,7 +272,7 @@ plt.errorbar(B(I4),noms(f(D_I4)),xerr=0,yerr=stds(f(D_I4)), fmt='gx')
 plt.plot(x_I,m22*x_I+b22,'c-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=300V  }$')
 plt.plot(x_I,m44*x_I+b44,'g-',label=r'$\mathrm{Ausgleichsfunkion \ für\ U_b=400V  }$')
 plt.legend(loc='best')
-plt.xlabel(r'$\mathrm{Flussdichte \  B/T}$')
+plt.xlabel(r'$\mathrm{  B/T}$')
 plt.ylabel(r'$\mathrm{ D/(L^2+D^2)\ /m}$')
 plt.savefig('plotV5022.pdf')
 
@@ -300,3 +320,11 @@ print('B_erde',B_erde)
 #
 #
 #
+print('F1',f(D_I1),
+'\nB1',B(I1),
+'\nB2',B(I2),
+'\nB3',B(I3),
+'\nB4',B(I4),
+'\nF2',f(D_I5),
+'\nB5',B(I5))
+#np.savetxt('tabellewerteB.txt',np.column_stack((B(I1) f(D_I1),Bges2,e0_m0(U_bges2,Mges2)  )),fmt='%r',delimiter=' & ')

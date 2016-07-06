@@ -54,9 +54,9 @@ $D/\si{\milli\meter}$ & $U_d/\si{\volt}$ & $U_d/\si{\volt}$ \\
 \end{tabular}
 \end{table}
 \FloatBarrier
-
+\newpage
 Die Messwerte aus den Tabellen \ref{tab:1}-\ref{tab:2} werden
-nun in den Abbildungen \ref{fig:1} \ref{fig:2} in der Form
+nun in den Abbildungen \ref{fig:1}-\ref{fig:2} in der Form
 $D$ gegen $U_d$ aufgetragen. Mit Hilfe einer linearen Regression
 wird die Empfindichkeit $D/U_d$ für die
 unterschiedlichen Beschleunigungsspannugen $U_d$ berechnet.
@@ -71,21 +71,33 @@ Der Parameter $m$ ist die gesuchte Empfindlichkeit $D/U_d$.
 
 \begin{figure}
  \centering
- \includegraphics[width=0.7\textwidth]{plotV5011.pdf}
+ \includegraphics[width=0.8\textwidth]{plotV5011.pdf}
  \caption{Die Messwerte der Tabellen \ref{tab:1}-\ref{tab:2} in der Form
  $D$ gegen $U_d$ aufgetragen.  }
  \label{fig:1}
 \end{figure}
 
+
 \begin{figure}
  \centering
- \includegraphics[width=0.7\textwidth]{plotV5012.pdf}
+ \includegraphics[width=0.8\textwidth]{plotV5013.pdf}
+ \caption{Die Messwerte aus der Tabellen \ref{tab:1}-\ref{tab:2} in der Form
+ $D$ gegen $U_d$ aufgetragen.}
+ \label{fig:3}
+\end{figure}
+
+
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.8\textwidth]{plotV5012.pdf}
  \caption{Die Messwerte aus der Tabellen \ref{tab:1}-\ref{tab:2} in der Form
  $D$ gegen $U_d$ aufgetragen.}
  \label{fig:2}
 \end{figure}
 
-
+\FloatBarrier
 
 Die unterschiedlichen Empfindlichkeiten aus den linearen Regressionen sind in
 der Tabelle \ref{tab:m} aufgelistet.
@@ -166,7 +178,7 @@ ausgibt, kann angenommen werden, dass für $\nu_\mathrm{Sä_1}$ die Faktoren $m$
 gleich $1$ sind. Somit lässt sich auch für die anderen Frequenezen $\nu_\mathrm{Sä}$ die Faktoren über
 die umgestellte Synchronisationsbedingungen  mit $m=1$ und
  \begin{align*}
-   n=\frac{\nu_{sin}}{\nu_{Sä}}
+   n=\frac{\nu_{\sin}}{\nu_{Sä}}
  \end{align*}
  abschätzen.
 \begin{table}
@@ -175,7 +187,7 @@ die umgestellte Synchronisationsbedingungen  mit $m=1$ und
   \label{tab:syn}
   \begin{tabular}{c c c c c}
 \toprule  %\multicolumn{2}{c}{}
- &  $ \nu_\mathrm{Sä} / \si{\kilo\hertz} $ & n & m & $n\cdot\nu_{Sä}/\si{\kilo\hertz} (\nu_{sin})$ \\
+ &  $ \nu_\mathrm{Sä} / \si{\kilo\hertz} $ & n & m & $n\cdot\nu_{Sä}/\si{\kilo\hertz}\ \ (\nu_{\sin})$ \\
 \midrule
 $\nu_\mathrm{Sä_1}$ & 79,39  & 1 & 1 &  79,39  \\
 $\nu_\mathrm{Sä_2}$ & 26,47  & 3 & 1 &  79,41  \\
@@ -185,9 +197,9 @@ $\nu_\mathrm{Sä_4}$ & 129,57 & $\frac{3}{5}$ & 1 & 77,74\\
 \end{tabular}
 \end{table}
 \FloatBarrier
-Die Ergebnisse für  $\nu_{sin}$ können nun gemittelt werden und es ergibt sich:
+Die Ergebnisse für  $\nu_{\sin}$ können nun gemittelt werden und es ergibt sich:
 \begin{align*}
-  \nu_{sin}=(78,98\pm0,72)\,\si{\kilo\hertz} 
+  \nu_{\sin}=(78,98\pm0,72)\,\si{\kilo\hertz}
 \end{align*}
 Des weiteren kann die Amplitude der Sinusspannung bestimmt werden.
 Dafür wird die gemessenen maximale Strahlauslenkung
@@ -206,7 +218,7 @@ U_d=\frac{U_B\,D_{max}}{a_\mathrm{theo}}\label{eqn:umge}
 eingesetzt.
 Es ergibt sich eine Amplitude von
 \begin{align*}
-U_\mathrm{sin}=(8,0\pm1,7)\,\si{\volt}
+U_\mathrm{\sin}=(8,0\pm1,7)\,\si{\volt}
 \end{align*}
 
 
@@ -222,7 +234,7 @@ aufgelistet.
   \centering
   \caption{Die Werten von der Messung mit B-Feld.}
   \label{tab:11}
-  \begin{tabular}{c |c c c c |c| c}
+  \begin{tabular}{c |c c c c ||c| c}
   \toprule  %\multicolumn{2}{c}{}
           & $U_B=250\,\si{\volt}$ & $U_B=300\,\si{\volt}$ &  $U_B=350\,\si{\volt}$ &  $U_B=400\,\si{\volt}$  & &  $U_B=500\,\si{\volt}$ \\
 \midrule
@@ -255,11 +267,40 @@ Die Windungen der Spule $N$ beträgt
   \intertext{Der Radius $R$ beträgt:}
 R&=0,282\,\si{\meter}
 \end{align*}
+In Tabelle \ref{tab:werte} sind die berechneten
+Werte für  $D/(L^2+D2)$ und $B$ nocheinmal aufgelistet.
+
+
+\begin{table}
+  \centering
+  \caption{Die berechnetne Werten für die Abbildungen \ref{fig:11}-\ref{fig:22}.}
+  \label{tab:werte}
+  \begin{tabular}{c |c c c c ||c| c}
+  \toprule  %\multicolumn{2}{c}{}
+          & $U_B=250\,\si{\volt}$ & $U_B=300\,\si{\volt}$ &  $U_B=350\,\si{\volt}$ &  $U_B=400\,\si{\volt}$  & &  $U_B=500\,\si{\volt}$ \\
+\midrule
+$\frac{D}{L^2+D2}/\si{\per\meter}$ & $B/\si{\micro\tesla}$ &  $B/\si{\micro\tesla}$ & $B/\si{\micro\tesla}$ &  $B/\si{\micro\tesla}$  & $\frac{D}{L^2+D2}/\si{\per\meter}$  &$B/\si{\micro\tesla}$\\
+  \midrule
+0,00\pm0,07  &   0,0 &  0,0    & 0,0    &  0,0    & 0,00\pm0,07  & 0,0\\
+0,21\pm0,07  &  19,1 &  19,8   & 25,5   &  26,8   & 0,10\pm0,07  & 13,4\\
+0,41\pm0,06  &  38,3 &  39,5   & 49,1   &  52,3   & 0,21\pm0,07  & 29,3\\
+0,61\pm0,2   &  58,0 &  64,4   & 71,4   &  75,9   & 0,31\pm0,06  & 42,7\\
+0,81\pm0,2   &  79,7 &  86,1   & 96,3   &  102,0  & 0,41\pm0,06  & 56,8\\
+1,00\pm0,2   &  99,5 &  109,0  & 121,2  &  128,2  & 0,51\pm0,06  & 71,4\\
+1,19\pm0,2   & 119,9 &  131,4  & 145,4  &  153,1  & 0,61\pm0,06  & 86,1\\
+1,36\pm0,2   & 141,6 &  156,2  & 170,9  &  179,2  & 0,71\pm0,06  & 99,5\\
+1,53\pm0,2   & 160,1 &  177,3  & 177,3  &   -     & 0,81\pm0,06  & 114,8\\
+%\multicolumn{2}{c}{}
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
 
 \begin{figure}
  \centering
- \includegraphics[width=0.7\textwidth]{plotV5021.pdf}
- \caption{Die Werte der Tabellen \ref{tab:11}
+ \includegraphics[width=0.8\textwidth]{plotV5021.pdf}
+ \caption{Die Werte der Tabellen \ref{tab:werte}
 in der Form $D/(L^2+D2)$ in Abhängigkeit von $B$.}
  \label{fig:11}
 \end{figure}
@@ -267,12 +308,22 @@ in der Form $D/(L^2+D2)$ in Abhängigkeit von $B$.}
 
 \begin{figure}
  \centering
- \includegraphics[width=0.7\textwidth]{plotV5022.pdf}
- \caption{Die Werte der Tabellen \ref{tab:11}
+ \includegraphics[width=0.8\textwidth]{plotV5023.pdf}
+ \caption{Die Werte der Tabellen \ref{tab:werte}
+  in der Form $D/(L^2+D2)$ in Abhängigkeit von $B$.}
+ \label{fig:33}
+\end{figure}
+
+
+
+\begin{figure}
+ \centering
+ \includegraphics[width=0.8\textwidth]{plotV5022.pdf}
+ \caption{Die Werte der Tabellen \ref{tab:werte}
   in der Form $D/(L^2+D2)$ in Abhängigkeit von $B$.}
  \label{fig:22}
 \end{figure}
-
+\FloatBarrier
 Wieder wird mit den aufgetragenen Werten
 eine lineare Ausgleichsrechnung durchgeführt.
 Aus der Formel \eqref{eqn:B} kann
@@ -303,11 +354,11 @@ aufgelistet.
   \toprule  %\multicolumn{2}{c}{}
 $U_B/\si{\volt}$ & $m/\si{\per\tesla\per\meter}$ & $b/\si{\per\meter}$ & $\frac{e_0}{m_0}/ \si{\coulomb\per\kilo\gram}\cdot 10^{11}$ \\
   \midrule
-  250 & 13727\pm315 & 0,07\pm0,03  & 3,77\pm1,73 \\
-  300 & 12346\pm329 & 0,09\pm0,03  & 3,66\pm1,95 \\
-  350 & 11448\pm251 & 0,05\pm0,03  & 3,67\pm1,61 \\
-  400 & 11170\pm202 & 0,03\pm0,02  & 3,99\pm1,44 \\
-  500 & 10524\pm78  & 0,01\pm0,01  & 4,43\pm0,66 \\
+  250 & 9506\pm160  & 0.04\pm0,02   & 1,81\pm0,06\\
+  300 & 8549\pm176  & 0.05\pm0.02   & 1,75\pm0,07\\
+  350 & 7926\pm125  & 0.02\pm0.01   & 1,76\pm0,05\\
+  400 & 7673\pm99   & 0.01\pm0.01   & 1,88\pm0,05\\
+  500 & 7095\pm44   & 0.005\pm0.003 & 2,01\pm0,03\\
 %\multicolumn{2}{c}{}
 \bottomrule
 \end{tabular}
@@ -318,7 +369,7 @@ Die berechneten Werte aus Tabelle \ref{tab:em}
 für die spezifische Ladung des Elektrons werden gemittelt
 und des ergibt sich ein Wert von:
 \begin{align*}
-\overline{\frac{e_0}{m_0}}=3,90\cdot 10^{11}\,\si{\coulomb\per\kilo\gram},.
+\overline{\frac{e_0}{m_0}}=(1,84\pm0,02)\cdot 10^{11}\,\si{\coulomb\per\kilo\gram},.
 \end{align*}
 
 
