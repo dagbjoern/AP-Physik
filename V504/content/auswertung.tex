@@ -1,21 +1,37 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-\subsection{Kennlinien}
+\subsection{Messung der Kennlinien}
 Die Tabelle \ref{tab:1} enthält die Messwerte für die Kennlinienschar
-bei unterschiedlichen Heizströmen $I_{f}$ und Heizspannungen $U_f$.
-\begin{align*}
-\intertext{Messung 1:}  I_f&=2,5\si{\ampere} \ \ \ \ &U_f=6,5\si{\volt}.\\
-\intertext{Messung 2:}  I_f&=2,4\si{\ampere} \ \ \ \ &U_f=6,0\si{\volt}.\\
-\intertext{Messung 3:}  I_f&=2,3\si{\ampere} \ \ \ \ &U_f=5,5\si{\volt}.\\
-\intertext{Messung 4:}  I_f&=2,2\si{\ampere} \ \ \ \ &U_f=5,2\si{\volt}.\\
-\intertext{Messung 5:}  I_f&=2,1\si{\ampere} \ \ \ \ &U_f=5,0\si{\volt}.
-\end{align*}
+bei unterschiedlichen Heizströmen $I_{f}$ und Heizspannungen $U_f$, die
+in der Tabelle \ref{tab:cool}.
+\begin{table}
+  \centering
+  \caption{Messwerte Heizströmen $I_{f}$ und Heizspannungen $U_f$.}
+  \label{tab:1}
+  \begin{tabular}{c | c c c c c}
+  \toprule
+   &  Messung 1 & Messung 2 & Messung 3 & Messung 4 & Messung 5\\ %\multicolumn{2}{c}{Verhältniss}\\
+   \midrule
+$I_f/\si{\ampere}$ & 2,5 & 2,4 & 2,3 & 2,2 & 2,1\\
+$U_f/\si{\volt}$   & 6,5 & 6,0 & 5,5 & 5,2 & 5,0\\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+
+%
+% \intertext{Messung 1:}  I_f&=2,5\si{\ampere} \ \ \ \ &U_f=6,5\si{\volt}.\\
+% \intertext{Messung 2:}  I_f&=2,4\si{\ampere} \ \ \ \ &U_f=6,0\si{\volt}.\\
+% \intertext{Messung 3:}  I_f&=2,3\si{\ampere} \ \ \ \ &U_f=5,5\si{\volt}.\\
+% \intertext{Messung 4:}  I_f&=2,2\si{\ampere} \ \ \ \ &U_f=5,2\si{\volt}.\\
+% \intertext{Messung 5:}  I_f&=2,1\si{\ampere} \ \ \ \ &U_f=5,0\si{\volt}.
+% \end{align*}
 
 
 \begin{table}
   \centering
-  \caption{Messwerte für die Kennlinienschar.}
-  \label{tab:1}
+  \caption{Kennlinienschar im Raumladungsgebietes.}
+  \label{tab:cool}
   \begin{tabular}{c c c c c c}
   \toprule
   Anodenspannung &  Messung 1 & Messung 2 & Messung 3 & Messung 4 & Messung 5\\ %\multicolumn{2}{c}{Verhältniss}\\
@@ -56,7 +72,7 @@ bei unterschiedlichen Heizströmen $I_{f}$ und Heizspannungen $U_f$.
   \bottomrule
  \end{tabular}
 \end{table}
-\FloatBarrier
+% ''\FloatBarrier
 
 Diese Messwerte werden nun in der Abbildung \ref{fig:1} in der Form
 Annodenstrom $I$ in Abhängigkeit von der Annodenspannung $U$
@@ -73,7 +89,7 @@ aufgetragen.
 
 Aus der der Abbildung \ref{fig:1} und der Tabelle \ref{tab:1}
 kann für jede Heizspannung $I_f$ der
-Sättigungsstrom $I_S$ abgelesen werden.
+Sättigungsstrom $I_S$ abgeschätzt werden.
 Die Tabelle \ref{tab:I_s} enthält die entsprechenden Werte für den Sättigungsstrom $I_S$.
 \begin{table}
   \centering
@@ -83,7 +99,7 @@ Die Tabelle \ref{tab:I_s} enthält die entsprechenden Werte für den Sättigungs
   \toprule
    &  Messung 1 & Messung 2 & Messung 3 & Messung 4 & Messung 5\\ %\multicolumn{2}{c}{Verhältniss}\\
    \midrule
-  $I_S/\si{\milli\ampere}$ & 3,110 & 2,440  & 1,294 & 0,721 & 0,350\\
+  $I_S/\si{\milli\ampere}$ & 3,400 & 2,700  & 1,294 & 0,721 & 0,350\\
   \bottomrule
   \end{tabular}
 \end{table}
@@ -96,14 +112,14 @@ und liegt ungefähr zwischen $0\si{\volt}$ und $170\si{\volt}$.
 \begin{figure}
  \centering
  \includegraphics[width=0.7\textwidth]{plotfitt.pdf}
- \caption{Der gemessene Annodenstrom $I$ in Abhängigkeit von der Annodenspannung $U$ bei maximaler
-Heizleistung. Sowie die Ausgleichsfunktion für das Raumladungsgebiet.}
+ \caption{Der gemessene Anodenstrom $I$ in Abhängigkeit von der Anodenspannung $U$ bei maximaler
+Heizleistung. Sowie der Fit für das Raumladungsgebiet.}
  \label{fig:fitt}
 \end{figure}
 \FloatBarrier
 
 Für das Raumladungsgebiet soll der Zusammenhang
-zwischen der Annodenspannung $U$ und dem Annodenstrom $I$ untersucht
+zwischen der Anodenspannung $U$ und dem Annodenstrom $I$ untersucht
 werden.
 Dabei wird versucht eine Ausgleichsfunktion, der Form
 \begin{align}
@@ -119,7 +135,7 @@ b&=1,48\pm0,01.
 
 
 
-\subsection{Anlaufstromgebiet}
+\subsection{Untersuchung des Anlaufstromgebiet}
 In der Tabelle \ref{tab:2} sind die gemessenen Anlaufströme $I_A$
 und die Gegenspannungen $U_g$ aufgelistet.
 Um nun mit Hilfe einer Ausgleichsfunktion die Kathodentemperatur $T$
@@ -127,9 +143,9 @@ zu berechnen, muss der Spannungsverlust
 \begin{align*}
   \Delta U=R_i\cdot I_A
 \end{align*}
-and dem nA-Meter, welches einen Innenwiederstand $R_i=1\si{\mega\ohm}$ besitzt,
+and dem nA-Meter, welches einen Innenwiderstand $R_i=1\si{\mega\ohm}$ besitzt,
 berücksichtigt werden.
-Die korriegierte Spannung $U_k$ ergibt sich somit aus
+Die korrigierte Spannung $U_k$ ergibt sich somit aus
 \begin{align}
 U_k=U_g-R_i\cdot I_A \label{eqn:U_k}
 \end{align}
@@ -137,39 +153,39 @@ und ist ebenfalls in der Tabelle \ref{tab:2} enthalten.
 
 \begin{table}
   \centering
-  \caption{.}
+  \caption{Messwerte für das Anlaufstromgebiet .}
   \label{tab:2}
   \begin{tabular}{c c c}
   \toprule
   Gegenspannung  & Anodenstrom & korriegierte Gegenspannung\\ %\multicolumn{2}{c}{Verhältniss}\\
-  $U_g/\si{\volt}$ & $I_A/\si{\nano\ampere}$ & $U_k/\si{\milli\volt}$\\
+  $U_g/\si{\milli\volt}$ & $I_A/\si{\nano\ampere}$ & $U_k/\si{\milli\volt}$\\
    \midrule
-0     &  9,5  & -9,5\\
-0,05  &  7,3  & 42,7\\
-0,1   &  5,5  & 94,45\\
-0,15  &  4,45 & 145,55\\
-0,2   &  3,4  & 196,66\\
-0,25  &  2,65 & 247,35\\
-0,3   &  2,05 & 297,95 \\
-0,35  &  1,50 & 348,5\\
-0,4   &  1,2  & 398,8\\
-0,45  &  0,9  & 449,1\\
-0,5   &  0,89 & 499,11\\
-0,55  &  0,69 & 549,31\\
-0,6   &  0,55 & 599,45\\
-0,65  &  0,42 & 649,58\\
-0,7   &  0,34 & 699,66\\
-0,75  &  0,27 & 749,73\\
-0,8   &  0,22 & 799,78\\
-0,85  &  0,18 & 849,82\\
-0,9   &  0,15 & 899,85\\
-0,95  &  0,13 & 949,87\\
+0     &  9,5  & 0\\
+50  &  7,3  & 43\\
+100   &  5,5  & 94\\
+150  &  4,45 & 146\\
+200   &  3,4  & 197\\
+250  &  2,65 & 247\\
+300   &  2,05 & 298 \\
+350  &  1,50 & 349\\
+400   &  1,2  & 399\\
+450  &  0,9  & 449\\
+500   &  0,89 & 499\\
+550  &  0,69 & 549\\
+600   &  0,55 & 599\\
+650  &  0,42 & 650\\
+700   &  0,34 & 700\\
+750  &  0,27 & 750\\
+800   &  0,22 & 800\\
+850  &  0,18 & 850\\
+900   &  0,15 & 900\\
+950  &  0,13 & 950\\
 \bottomrule
 \end{tabular}
 \end{table}
 \FloatBarrier
-%
-Wird nun der Strom $I_A$ halblogarithmisch gegen
+
+Nun wird der Strom $I_A$ halblogarithmisch gegen
 die korriegierte Gegenspannung $U_k$ aufgetragen
 wie in Abbildung \ref{fig:log} zu sehen.
 
@@ -181,9 +197,9 @@ wie in Abbildung \ref{fig:log} zu sehen.
  \label{fig:log}
 \end{figure}
 
-Über eine Lineareregression und die Formel \eqref{eqn:pot} kann die Kathodentemperatur $T$
+Über eine lineare Regression und mit Hilfe Formel \eqref{eqn:pot} kann die Kathodentemperatur $T$
 berechnet werden.
-Es ergeben sich die Folgenden werte:
+Es ergeben sich die folgenden Werte:
 \begin{align*}
 m=-4,51\pm0,06\\
 b=-18,62\pm0,03
@@ -192,23 +208,24 @@ b=-18,62\pm0,03
 \intertext{Daraus folgt}
 T&=-\frac{e_0}{k\cdot m}.
 \intertext{Somit beträgt die Kathodentemperatur}
-T&=(2573\pm35)\si{\kelvin}.
+T&=(2570\pm40)\si{\kelvin}.
 \end{align*}
 
-\subsection{Leistungsbilanz}
-Ebenfalls dann die
-Kathodentemperatur $T$ auch über
+\subsection{Bestimmung der Kathodentemperatur über die Leistungsbilanz}
+Ebenfalls kann die
+Kathodentemperatur $T$ über
 die Leistungsbilanz des Heizstromkreises berechnet werden.
-Dafür werden die gegebenen Werte in Gleichung \eqref{eqn:leistung}
-eingesetzt und nach $T$ umgestellt.
+Dafür wird die Gleichung \eqref{eqn:leistung}
+nach $T$ umgestellt und die gegebenen Werte eingesetzt.
 \begin{align}
-I_f\cdot U_f=f\cdot\eta\cdot\sigma\cdot T^4- N_{WL}. \label{eqn:leistung}
+I_f\cdot U_f&=f\cdot\eta\cdot\sigma\cdot T^4- N_{WL}\label{eqn:leistung}\\
+\Rightarrow T&= \sqrt[4]{\frac{I_f\cdot U_f + N_{WL}}{f\cdot\eta\cdot\sigma}}
 \end{align}
 Dabei ist $f$ die Kathodenoberfäche
 \begin{align*}
-  f=0,32\si{\centi\meter\tothe{2}},
+  f=0,32\,\si{\centi\meter\tothe{2}},
 \intertext{$\eta$ der Emissiongrad der Oberfläche}
-  \eta=0,28,
+  \eta=0,28\quad,
 \intertext{$\sigma$ die Stefan-Boltzmannsche Strahlungskonstante}
  \sigma=5,7\cdot10^{-12}\si{\watt\per\centi\meter\tothe{2}\kelvin\tothe{4}},
 \intertext{und $N_{WL}$ die abgeschätzte Wärmeleitung der Apparatur}
@@ -216,12 +233,12 @@ N_{WL}=(0,95\pm0,05)\si{\watt}.
 \end{align*}
 In der Tabelle \ref{tab:temp} sind die Temperaturen für die unterschiedlichen
 Heizströme $I_{f}$ und Heizspannungen $U_f$
-aufgelistete.
+aufgelistet.
 
 
 \begin{table}
   \centering
-  \caption{Die berechnenten Kathoden Temperaturen aus der Leistungsbilanz.}
+  \caption{Die berechneten Kathoden-Temperaturen aus der Leistungsbilanz.}
   \label{tab:temp}
   \begin{tabular}{c c c c c c}
   \toprule
@@ -233,10 +250,10 @@ aufgelistete.
 \end{table}
 
 
-\subsection{Austrittsarbeit}
+\subsection{Berechen der Austrittsarbeit}
 Aus den berechneten Temperaturenen $T$ aus der Leistungsbilanz und den ermittelten
 Sättigungsströmen $I_S$ bei den unterschiedlichen Heizströmen, lässt sich
-durch Umgestellten der Richardson-Gleichung \eqref{eqn:st},
+durch Umstellten der Richardson-Gleichung \eqref{eqn:st},
 in die Form \eqref{eqn:umge}, die Austrittsarbeit $\Phi$ in $\si{\electronvolt}$
 berechenen. Dafür wir der Zusammenhang
 \begin{align*}
@@ -244,23 +261,24 @@ berechenen. Dafür wir der Zusammenhang
 \end{align*}
 benötigt. Somit ergibt sich
 \begin{align}
-\Phi=\log\left(\frac{I_S \, \hbar^{3}}{4\pi \, f \, e_0 \, m_0 \, {k}^{2} \, T^2 }\right) \cdot \frac{k \ T}{e_0}.\label{eqn:umge}
+\Phi=\ln\left(\frac{I_S \, \hbar^{3}}{4\pi \, f \, e_0 \, m_0 \, {k}^{2} \, T^2 }\right) \cdot \frac{k \ T}{e_0}.\label{eqn:umge}
 \end{align}
-Die Tabelle \ref{tab:phi} enthält die
+Die Tabelle \ref{tab:phi} enthält die berechneten Austrittsarbeiten $\Phi$
 
 
 \begin{table}
   \centering
-  \caption{Die berechnenten Austrittsarbeiten $\Phi$ für die unterschiedlichen Messungen.}
+  \caption{Die berechneten Austrittsarbeiten $\Phi$ für die unterschiedlichen Messungen.}
   \label{tab:phi}
   \begin{tabular}{c c c c c c}
   \toprule
-   & Messung 1  & Messung 2 &  Messung 3  & Messung 4 & Messung5\\ %\multicolumn{2}{c}{Verhältniss}\\
+   & Messung 1  & Messung 2 &  Messung 3  & Messung 4 & Messung 5\\ %\multicolumn{2}{c}{Verhältniss}\\
    \midrule
    $\Phi/\si{\electronvolt}$ &  4,982\pm0,004 &   4,858\pm0,005 & 4,798\pm0,006  &4,767\pm0,006 &  4,837\pm0,007 \\
    \bottomrule
  \end{tabular}
 \end{table}
+\FloatBarrier
 
 Der gemittelte Wert für die Austrittsarbeiten aus der Tabelle \ref{tab:phi} lautet:
 \begin{align*}

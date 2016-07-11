@@ -64,7 +64,7 @@ x=np.linspace(0,190)
 plt.figure(2)
 plt.plot(U,I1*1e6,'cx',label=r'$\mathrm{Messwerte \ außerhalb \ des \ Raumladungsgebietes} $')
 plt.plot(U_fit,I1_fit*1e6,'rx',label=r'$\mathrm{Messwerte \ innerhalb \ des\ Raumladungsgebietes }$')
-plt.plot(x,V_23(x,*params_1)*1e6,'b-',label=r'$\mathrm{Ausgleichsfunktion}$')
+plt.plot(x,V_23(x,*params_1)*1e6,'b-',label=r'$\mathrm{Fit}$')
 plt.plot(U_fit,I1_fit*1e6,'rx')
 
 #plt.plot(x,V_23(x,3/2,400),'b-',label=r'$Ausgleichsfunktion$')

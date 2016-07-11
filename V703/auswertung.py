@@ -17,7 +17,7 @@ n=n_10/10
 n_10=unp.uarray(n_10,np.sqrt(n_10))
 N=n_10/10
  #Zählrate pro secunde
-I=unp.uarray(I*10**(-6),0.000002)
+I=unp.uarray(I*10**(-6),0.0000002)
 print(N)
 def fehler_b(std_m,x):
     return(std_m*np.sqrt(np.mean(x**2)))
@@ -59,6 +59,7 @@ def T(N1,N12,N2):
 
 print('totzeit bei 2.methode', T(n1,n12,n2))
 
+print(N,'\n',I)
 
 def delta_Q(I,N):
     return(I/N)
@@ -70,7 +71,7 @@ print('\n Q in -Q/e \n',deltaQ/const.e)
 
 deltaQe=deltaQ/const.e
 
-
+print('deltaQe',deltaQe*1e-9)
 plt.figure(2)
 plt.errorbar(U ,noms(deltaQe*1e-9),xerr=0,yerr=stds(deltaQe*1e-9), fmt='cx')
 plt.plot(U,noms(deltaQe*1e-9),'bx',label=r'$\mathrm{Messwert}$')
