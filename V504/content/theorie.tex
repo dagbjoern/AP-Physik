@@ -1,20 +1,23 @@
 \section{Theorie}
 \label{sec:Theorie}
-Metalle weisen eine Gitterstruktur auf, dieses Ionen-Gitter wird von freien Elektronen, den Leitungselektronen,
+Metalle weisen eine Gitterstruktur auf. Dieses Ionen-Gitter wird von freien Elektronen, den Leitungselektronen,
 umhüllt. Diese Elektronen unterliegen dem Kraftfeld aller Ionen im Gitter.
 Damit ein Elektron aus der Metalloberfläche austreten kann, muss, zur Potentialüberwindung, eine
 Austrittsarbeit geleistet werden. Mit Betrachtungen aus der Quantenmechanik ergibt sich, dass
 ein Elektronen mindestens die Energie $\zeta+e_\mathrm{0}\Phi$ aufweisen muss um aus der Metalloberfläche
-austreten zu können. Für die Wahrscheinlichkeit, dass ein Elektron bei einer bestimmten Energie austritt, gilt:
+austreten zu können. Hierbei beschreibt $\Phi$ das Potential im Metallinneren, $e_\mathrm{0}$ die Elementarladung
+und $\zeta$ die fermische Grenzenergie, diese ist abhängig
+von der Anzahl der Elektronen im Gasvolumen.
+Für die Wahrscheinlichkeit, dass ein Elektron bei einer bestimmten Energie austritt, gilt:
 \begin{align}
 f(E)\approx e^{\frac{\zeta-E}{kT}}\label{eqn:naeherung}.
 \end{align}
 $T$ beschreibt dabei die Temperatur und $k$ die Boltzmann-Konstante.
 
 \subsection{Hochvakuum-Diode}
-Da freie Elektronen in der Luft mit Gasmolekühlen wechselwirken, wird die Messung im Hochvakuum durchgeführt.
-Als Apparatur eignet sich eine Hochvakuum-Diode, diese besteht aus einem Glaskörper mit eingeschmolzenem Wolfram-
-Draht als Kathode und einer positiv geladenen Anode, die die freien Elektronen anzieht.
+Da freie Elektronen in der Luft mit Gasmolekülen wechselwirken, wird die Messung im Hochvakuum durchgeführt.
+Als Apparatur eignet sich eine Hochvakuum-Diode. Diese besteht aus einem Glaskörper mit eingeschmolzenem Wolfram-
+Draht als Kathode und einer positiv geladenen Anode, die die freien Elektronen absaugt.
 Die Apparatur findet sich in Abbildung \ref{fig:aufbau} wieder.
 \begin{figure}
  \centering
@@ -32,7 +35,7 @@ die Sättigungsstromdichte:
 j_\mathrm{s}(T)=4\pi\frac{e_\mathrm{0} m_\mathrm{0} k^2}{h^3} T^2 e^{\frac{-e_\mathrm{0}\Phi}{kT}} \label{eqn:st}.
 \end{align}
 Die Größen $m_\mathrm{0}$ und $h$ bschreiben die Elektronenmasse und das Planksche Wirkungsquantum.
-Die Sättigungsstromdichte gibt die Anahl der austretenden Elektronen pro Zeit-und Flächeneinheit
+Die Sättigungsstromdichte gibt die Anzahl der austretenden Elektronen pro Zeit-und Flächeneinheit
 in Abhängigkeit von der Temperatur wieder.
 
 \subsection{Langmuir-Schottkysche Raumladungsdichte}
@@ -47,11 +50,12 @@ Poissonsche Gleichung:
 \Delta V =-\frac{1}{\epsilon_\mathrm{0}}\rho
 \end{align}
 herangezogen. $V$ beschreibt das Potential am Aufpunkt und $\epsilon_\mathrm{0}$ die Dielektrizitätskonstante.
-Nach weiteren Rechnungen folgt daraus das Langmuir-Schottkysche Raumladungsgesetzt:
+Ausgehend von einer Potentialgleichung, Anwendung des Energiesatzes und anschließendem Integrieren
+ergibt sich daraus das Langmuir-Schottkysche Raumladungsgesetz:
 \begin{align}
 j=\frac{4}{9}\epsilon_\mathrm{0}\sqrt{\frac{e_\mathrm{0}}{m_\mathrm{0}}}\frac{V^{\frac{3}{2}}}{a^2} .\label{eqn:LRS}
 \end{align}
-Stromdichte und Spannung sind nicht direkt proportional, wie es der Fall beim ohmschen Gesetzt ist, sondern
+Stromdichte und Spannung sind nicht direkt proportional, wie es der Fall beim ohmschen Gesetz ist, sondern
 hier wächst $j$ mit $V^{\frac{3}{2}}$. Diese Gesetzmäßigkeit ist gültig im Raumladungsgebiet einer Hochvakuumdiode.
 Wie sich das Potential $V$, die Feldstärke $E$ und die Raumladungsdichte $\rho$ im Raumladungsgebiet
 verhalten, zeigt die Abbildung \ref{fig:verlauf}.
@@ -70,14 +74,14 @@ Die Gleichung \eqref{eqn:LRS} besagt, dass bei $V=0$ auch $j=0$ gilt. Im Experim
 dass ein geringer Anodenstrom beobachtet werden kann. Dieser Strom stammt von der Eigengeschwindigkeit
 der Elektronen, die nach dem Austreten aus der Kathode noch einen Überschuss an Energie besitzen.
 Diese Elektronen können gegen ein geringes Gegenfeld anlaufen, daher stammt die Bezeichnung Anlaufstrom.
-Die Abbildung \ref{fig:pv} zeigt die Potentialverhältnisse zwischen Anode und Kathode im Bereich des Anlaufstromes.
+Die Abbildung \ref{fig:pv} zeigt die Potentialverhältnisse zwischen Anode und Kathode im Bereich des Anlaufstromgebietes.
 \begin{figure}
  \centering
  \includegraphics[width=0.5\textwidth]{pv.png}
  \caption{Potentialverhälnisse im Anlaufstromgebiet.\cite{sample}}
  \label{fig:pv}
  \end{figure}
-Die die beiden sogenannten Fermi-Oberflächen unterscheiden sich um $e_\mathrm{0}V$, dies stammt von einem
+Die beiden sogenannten Fermi-Oberflächen unterscheiden sich um $e_\mathrm{0}V$, dies stammt von einem
 äußeren Potential. Für die vom äußeren Potential $V$  abhängige Anlaufstromstärke gilt:
 \begin{align}
 j(V)=j_\mathrm{0}e^{\frac{-e_\mathrm{0}\Phi_\mathrm{A}+e_\mathrm{0}V}{kT}}=\mathrm{const} \, e^{-\frac{e_\mathrm{0}V}{kT}}\label{eqn:pot}.
@@ -92,7 +96,7 @@ aufgetragen. Eine exemplarische Darstellung findet sich in Abbildung \ref{fig:ke
  \caption{Darstellung einer Kennlinie einer Hochvakuumsdiode.\cite{sample}}
  \label{fig:kennlinie}
  \end{figure}
-Es lässt sich erkennen, dass im Anlaufstromgebiet ($V<0$) ein exponentieller zusammenhang
+Es lässt sich erkennen, dass im Anlaufstromgebiet ($V<0\,\si{\volt}$) ein exponentieller zusammenhang
 zwischen $I$ und $V$ besteht. Im Raumladungsgebiet besteht die $V^{\frac{3}{2}}$ Abhängigkeit, diese ist
 allerdings nicht für beliebig hohe Anodenspannungen gültig. Der Anodenstrom strebt mit wachsendem $V$
 einem Sättigungswert entgegen.
